@@ -1,0 +1,87 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Menjadi Data Analyst",
+    "section": "",
+    "text": "Pengantar\nData Analyst dan Data Scientist menjadi pekerjaan yang diinginkan banyak orang saat ini, terutama bagi lulusan baru dari universitas. Mereka yang memang menempuh pendidikan yang berkaitan erat dengan data seperti Statistika dan Ilmu Komputer, atau yang tidak hubungannya sama sekali seperti lulusan Ilmu Hukum, Perikanan dan Kelautan, dan lain-lain yang ingin beralih karir menjadi data analyst atau data scientist mulai banyak bermunculan.\nKarena banyaknya keinginan dan kebutuhan akan pendidikan tentang data, banyak universitas atau kampus mulai mempertimbangkan atau bahkan sudah mulai untuk mengampu pendidikan yang berkaitan dengan bidang ini. Bahkan banyak lembaga penyedia pendidikan, training atau kursus yang menydiakan kesempatan bagi mereka yang ingin belajar untuk menjadi Data Analyst atau Data Scientist. Buku ini akan mengajak Anda untuk mulai memahami apa itu data analyst, kemampuan yang dibutuhkan dan disertai dengan contoh kasus dan teknis pengerjaannya yang akan menambah pemahaman dan kemampuan Anda untuk menjadi data analyst.\nAlat atau Tools yang akan sangat berguna dan biasanya digunakan dalam mengerjakan analisis data adalah Excel, SQL, dan terkadang juga menggunakan bahasa pemrograman. Bahasa Pemrograman yang biasanya digunakan dalam kegiatan analisis data adalah R atau Python. Oleh karena itu, buku ini akan mengajak Anda untuk mengenal lebih jauh tentang data analytics dan tools yang biasanya digunakan untuk menunjang aktivitas analisis data.",
+    "crumbs": [
+      "Pengantar"
+    ]
+  },
+  {
+    "objectID": "polapikir.html",
+    "href": "polapikir.html",
+    "title": "1  Pola Pikir Data Analyst",
+    "section": "",
+    "text": "1.1 Membuat Pertanyaan\nKetika seorang data analyst akan bekerja maka yang pertama kali harus dia lakukan adalah membuat pertanyaan.\nPertanyaan 1:\nPertama Anda harus tahu dulu apa permasalahan yang ingin Anda geluti ini. Gali lebih dalam informasi dari masalah tersebut dengan orang-orang (stakeholder) yang berhubungan langsung dengan masalah ini. Setelah itu buat pertanyaan berikutnya.\nPertanyaan 2:\nPertanyaan 3:\nPertanyaan 4:\nPertanyaan 5:",
+    "crumbs": [
+      "Dasar Data Analytics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
+    ]
+  },
+  {
+    "objectID": "polapikir.html#membuat-pertanyaan",
+    "href": "polapikir.html#membuat-pertanyaan",
+    "title": "1  Pola Pikir Data Analyst",
+    "section": "",
+    "text": "Apa masalah yang ingin diselesaikan atau dianalisis dan apakah masalah ini penting untuk diselesaikan?\n\n\n\n\nSiapa yang berkepentingan dan memiliki data untuk masalah ini?\n\n\n\nDarimana dan bagaimana saya bisa mendapatkan data?\n\n\n\nKapan analisis data ini harus selesai?\n\n\n\nBagaimana hasil analisis data ini akan digunakan nantinya?",
+    "crumbs": [
+      "Dasar Data Analytics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
+    ]
+  },
+  {
+    "objectID": "polapikir.html#fokus-pada-nilai",
+    "href": "polapikir.html#fokus-pada-nilai",
+    "title": "1  Pola Pikir Data Analyst",
+    "section": "1.2 Fokus pada Nilai",
+    "text": "1.2 Fokus pada Nilai\nTak jarang data analyst lebih berfokus pada metodologi atau teknologi. Metodologi terkini apa yang akan digunakan? Teknologi terbaru apa yang akan diimplementasikan? Dashboard seperti apa yang akan dibuat?\nAgar pekerjaan analisis data yang kita lakukan memiliki manfaat maka dari awal kita harus selalu berorientasi pada nilai (value) yang akan dihasilkan nantinya. Value ini bisa kita lihat berdasarkan pertanyaan-pertanyaan di atas. Jika kita mendapatkan jawaban yang “memuaskan” untuk kita lakukan maka analisis data akan menjadi cara yang efektif untuk mendapatkan hasil.",
+    "crumbs": [
+      "Dasar Data Analytics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
+    ]
+  },
+  {
+    "objectID": "fondasi.html",
+    "href": "fondasi.html",
+    "title": "2  Fondasi Data Analytics",
+    "section": "",
+    "text": "Data adalah faktor yang paling krusial ketika Anda menjadi seorang data analyst. Menjadi seorang data analyst membutuhkan pola pikir (mindset) yang komprehensif tentang data.",
+    "crumbs": [
+      "Dasar Data Analytics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fondasi Data Analytics</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "9  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Mahir SQL",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "statistik.html",
+    "href": "statistik.html",
+    "title": "Memahami Statistik",
+    "section": "",
+    "text": "Sebelum menginjakan kaki di tanah teknis dalam mengerjakan analisis data, Anda harus tahu dulu beberapa hal dasar tentang statistik.",
+    "crumbs": [
+      "Memahami Statistik"
+    ]
+  },
+  {
+    "objectID": "excel.html",
+    "href": "excel.html",
+    "title": "Menguasai Excel",
+    "section": "",
+    "text": "Spreadsheet atau yang biasa disebut juga Excel merupakan alat utama yang biasanya digunakan oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart.\nExcel biasanya digunakan untuk menyimpan data berupa data tabular atau pekerjaan yang menggunakan formula/fungsi. Data ini bisa disimpan dalam format *.xlsx atau *.csv. Pada bagian ini kita akan mempelajari Excel dari dasar. Mulai dari pengenalan tampilan antar muka (interface) hingga membuat visualisasi menggunakan chart.",
+    "crumbs": [
+      "Menguasai Excel"
+    ]
+  }
+]
