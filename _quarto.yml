@@ -13,6 +13,8 @@ book:
   cover-image: dawhitecrop.png
   favicon: icon.png
   chapters:
+    - part: |
+            Daftar Isi 
     - index.qmd
     
     - part: dasar.qmd
@@ -43,6 +45,7 @@ book:
     
     - part: komunikasi.qmd 
       chapters: 
+        - visualisasi.qmd
         - storytelling.qmd
 
     - references.qmd
