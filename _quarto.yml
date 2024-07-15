@@ -38,7 +38,14 @@ book:
     
     - part: programming.qmd
       chapters: 
-        - references.qmd
+        - rprogramming.qmd 
+        - python.qmd 
+    
+    - part: komunikasi.qmd 
+      chapters: 
+        - storytelling.qmd
+
+    - references.qmd
 
 bibliography: references.bib
 
