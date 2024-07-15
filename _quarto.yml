@@ -1,0 +1,54 @@
+project:
+  type: book
+  output-dir: _book
+  preview: 
+    port: 4201
+    browser: true
+
+book:
+  title: "Menjadi Data Analyst"
+  subtitle: "Konsep, Statistika, Excel, SQL dan R/Python"
+  author: "Aep Hidayatuloh"
+  date: "7/14/2024"
+  cover-image: dawhitecrop.png
+  favicon: icon.png
+  chapters:
+    - index.qmd
+    
+    - part: dasar.qmd
+      chapters: 
+        - polapikir.qmd
+        - fondasi.qmd
+    
+    - part: statistik.qmd
+      chapters: 
+        - dasarstats.qmd
+        - eksplorasi.qmd
+    
+    - part: excel.qmd
+      chapters: 
+        - pengenalanexcel.qmd
+        - tabelformula.qmd
+        - pivot.qmd
+        - chart.qmd
+    
+    - part: sql.qmd
+      chapters: 
+        - summary.qmd
+    
+    - part: programming.qmd
+      chapters: 
+        - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    df-print: tibble
+    css: style.css
+  pdf:
+    documentclass: scrreprt
+
+
+
