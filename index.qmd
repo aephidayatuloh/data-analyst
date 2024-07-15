@@ -1,0 +1,8 @@
+# Pengantar {.unnumbered}
+
+Data Analyst dan Data Scientist menjadi pekerjaan yang diinginkan banyak orang saat ini, terutama bagi lulusan baru dari universitas. Mereka yang memang menempuh pendidikan yang berkaitan erat dengan data seperti Statistika dan Ilmu Komputer, atau yang tidak hubungannya sama sekali seperti lulusan Ilmu Hukum, Perikanan dan Kelautan, dan lain-lain yang ingin beralih karir menjadi data analyst atau data scientist mulai banyak bermunculan. 
+
+Karena banyaknya keinginan dan kebutuhan akan pendidikan tentang data, banyak universitas atau kampus mulai mempertimbangkan atau bahkan sudah mulai untuk mengampu pendidikan yang berkaitan dengan bidang ini. Bahkan banyak lembaga penyedia pendidikan, training atau kursus yang menydiakan kesempatan bagi mereka yang ingin belajar untuk menjadi Data Analyst atau Data Scientist. Buku ini akan mengajak Anda untuk mulai memahami apa itu data analyst, kemampuan yang dibutuhkan dan disertai dengan contoh kasus dan teknis pengerjaannya yang akan menambah pemahaman dan kemampuan Anda untuk menjadi data analyst. 
+
+Alat atau _Tools_ yang akan sangat berguna dan biasanya digunakan dalam mengerjakan analisis data adalah Excel, SQL, dan terkadang juga menggunakan bahasa pemrograman. Bahasa Pemrograman yang biasanya digunakan dalam kegiatan analisis data adalah R atau Python. Oleh karena itu, buku ini akan mengajak Anda untuk mengenal lebih jauh tentang data analytics dan _tools_ yang biasanya digunakan untuk menunjang aktivitas analisis data.
+

@@ -1,0 +1,39 @@
+# Pola Pikir Data Analyst {#sec-polapikir} 
+
+<h1 style='font-size: 156;font-weight:bold;text-align:center;'>Jangan menganalisis data!</h1>
+
+Mejadi seorang data analyst atau data scientist memang perlu untuk menguasai berbagai macam hal, salah satunya yang penting adalah kemampuan untuk dapat menggali informasi tentang masalah apa yang akan dianalisis. Jadi jangan langsung menganalisis data tanpa tahu konteks dan 
+
+## Membuat Pertanyaan 
+
+Ketika seorang data analyst akan bekerja maka yang pertama kali harus dia lakukan adalah membuat pertanyaan. 
+
+Pertanyaan 1: 
+
+> **Apa masalah yang ingin diselesaikan atau dianalisis dan apakah masalah ini penting untuk diselesaikan?**
+
+Pertama Anda harus tahu dulu apa permasalahan yang ingin Anda geluti ini. Gali lebih dalam informasi dari masalah tersebut dengan orang-orang (_stakeholder_) yang berhubungan langsung dengan masalah ini. Setelah itu buat pertanyaan berikutnya.
+
+Pertanyaan 2: 
+
+> **Siapa yang berkepentingan dan memiliki data untuk masalah ini?**
+
+
+Pertanyaan 3: 
+
+> **Darimana dan bagaimana saya bisa mendapatkan data?**
+
+Pertanyaan 4: 
+
+> **Kapan analisis data ini harus selesai?**
+
+Pertanyaan 5: 
+
+> **Bagaimana hasil analisis data ini akan digunakan nantinya?** 
+
+
+## Fokus pada Nilai 
+
+Tak jarang data analyst lebih berfokus pada metodologi atau teknologi. Metodologi terkini apa yang akan digunakan? Teknologi terbaru apa yang akan diimplementasikan? Dashboard seperti apa yang akan dibuat? 
+
+Agar pekerjaan analisis data yang kita lakukan memiliki manfaat maka dari awal kita harus selalu berorientasi pada nilai (_value_) yang akan dihasilkan nantinya. _Value_ ini bisa kita lihat berdasarkan pertanyaan-pertanyaan di atas. Jika kita mendapatkan jawaban yang "memuaskan" untuk kita lakukan maka analisis data akan menjadi cara yang efektif untuk mendapatkan hasil. 
