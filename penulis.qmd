@@ -1,0 +1,5 @@
+# Tentang Penulis {.unnumbered}
+
+**Aep Hidayatuloh**
+
+Sejak lulus dari Program Sarjana Statistika di Institut Pertanian Bogor (IPB University), dia menempati beberapa posisi sebagai Data Analyst mulai dari level internship, junior, senior hingga Head of Data Analytics di beberapa perusahaan dan konsultan analisis data science. Sepanjang karirnya dia memiliki pengalaman luas terlibat di berbagai proyek analisis data di perbankan, telekomunikasi, instansi pemerintahan dan retail. Bahasa pemrograman R menjadi pilihan utama, Python sebagai bahasa pemrograman kedua dan juga kemampuan SAS. Dia mengajar di berbagai pelatihan, menjadi dosen tamu di beberapa universitas dan menjadi narasumber di berbagai webinar.
