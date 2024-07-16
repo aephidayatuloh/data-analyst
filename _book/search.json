@@ -14,7 +14,7 @@
     "href": "polapikir.html",
     "title": "1  Pola Pikir Data Analyst",
     "section": "",
-    "text": "1.1 Membuat Pertanyaan\nKetika seorang data analyst akan bekerja maka yang pertama kali harus dia lakukan adalah membuat pertanyaan.\nPertanyaan 1:\nPertama Anda harus tahu dulu apa permasalahan yang ingin Anda geluti ini. Gali lebih dalam informasi dari masalah tersebut dengan orang-orang (stakeholder) yang berhubungan langsung dengan masalah ini. Setelah itu buat pertanyaan berikutnya.\nPertanyaan 2:\nPertanyaan 3:\nPertanyaan 4:\nPertanyaan 5:",
+    "text": "1.1 Membuat Pertanyaan\nKetika seorang data analyst akan bekerja maka yang pertama kali harus dia lakukan adalah membuat pertanyaan atau hipotesis. Hal ini penting agar langkah yang diambil menjadi terarah dan bukan hanya pekerjaan receh yang nantinya akan gagal di tengah jalan atau bahkan hasil analisisnya tidak penting sama sekali.\nPertanyaan 1:\nPertama Anda harus tahu dulu apa permasalahan yang ingin Anda geluti ini. Gali lebih dalam informasi dari masalah tersebut dengan orang-orang (stakeholder) yang berhubungan langsung dengan masalah ini. Setelah itu buat pertanyaan berikutnya.\nPertanyaan 2:\nAnda perlu mengetahui siapa saja atau bagian dari organisasi yang mana yang memiliki data. Karena Anda akan sering berinteraksi dengan mereka.\nPertanyaan 3:\nPertanyaan 4:\nPertanyaan 5:",
     "crumbs": [
       "Dasar Data Analytics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
@@ -25,7 +25,7 @@
     "href": "polapikir.html#membuat-pertanyaan",
     "title": "1  Pola Pikir Data Analyst",
     "section": "",
-    "text": "Apa masalah yang ingin diselesaikan atau dianalisis dan apakah masalah ini penting untuk diselesaikan?\n\n\n\n\nSiapa yang berkepentingan dan memiliki data untuk masalah ini?\n\n\n\nDarimana dan bagaimana saya bisa mendapatkan data?\n\n\n\nKapan analisis data ini harus selesai?\n\n\n\nBagaimana hasil analisis data ini akan digunakan nantinya?",
+    "text": "Apa masalah yang ingin diselesaikan atau dianalisis dan apakah masalah ini penting untuk diselesaikan?\n\n\n\n\nSiapa yang berkepentingan dan memiliki data untuk masalah ini?\n\n\n\n\nDarimana dan bagaimana saya bisa mendapatkan data?\n\n\n\nKapan analisis data ini harus selesai?\n\n\n\nBagaimana hasil analisis data ini akan digunakan nantinya?",
     "crumbs": [
       "Dasar Data Analytics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
@@ -92,6 +92,16 @@
     "text": "Pengetahuan dan kemampuan dasar yang harus dimiliki oleh seorang data analyst tentu saja adalah kemampuan menganalisa data. Lantas apa yang dimaksud dengan menganalisa data? Ini adalah proses memeriksa, membersihkan, mengubah, memodelkan dan menarik kesimpulan dari kumpulan data yang banyak atau sedikit. Tujuannya adalah untuk menemukan informasi yang berguna dan mendukung pengambilan keputusan dalam bisnis.\n\n\n\n\n\n\nAda dua kata penting untuk seorang data analyst dari paragraf di atas, yaitu data dan bisnis. Analisis data dibutuhkan oleh sebuah perusahaan atau organisasi tentu saja untuk meningkatkan kemajuan bisnis mereka. Karena itulah mereka mencari data analyst. Jadi, kemampuan dasar seorang data analyst ketika bekerja adalah kemampuannya menganalisis data dan menyesuaikan dengan konteks bisnis. Tentu saja selain itu juga perlu didukung dengan kemampuan lain seperti kemampuan teknis dalam memahami dan mengolah data menggunakan tools, mencari insight yang actionable, dan mampu menyampaikan hasil analisis data dengan komunikasi yang baik.",
     "crumbs": [
       "Dasar Data Analytics"
+    ]
+  },
+  {
+    "objectID": "penulis.html",
+    "href": "penulis.html",
+    "title": "Tentang Penulis",
+    "section": "",
+    "text": "Aep Hidayatuloh\nSejak lulus dari Program Sarjana Statistika di Institut Pertanian Bogor (IPB University), dia menempati beberapa posisi sebagai Data Analyst mulai dari level internship, junior, senior hingga Head of Data Analytics di beberapa perusahaan dan konsultan analisis data science. Sepanjang karirnya dia memiliki pengalaman luas terlibat di berbagai proyek analisis data di perbankan, telekomunikasi, instansi pemerintahan dan retail. Bahasa pemrograman R menjadi pilihan utama, Python sebagai bahasa pemrograman kedua dan juga kemampuan SAS. Dia mengajar di berbagai pelatihan, menjadi dosen tamu di beberapa universitas dan menjadi narasumber di berbagai webinar.",
+    "crumbs": [
+      "Tentang Penulis"
     ]
   }
 ]
