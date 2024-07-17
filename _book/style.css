@@ -7,3 +7,48 @@ p {
   border: 0.5px solid #000000; 
   box-shadow: 1px 2px 1px #c9c7c7;
 }
+
+.sidebar-menu-container {
+  min-width: 245;
+}
+/* div.sidebar-menu-container>ul.sidebar-item-text */
+div.sidebar-item-container>a>span.menu-text {
+  font-weight: bold;
+  color: #646464;
+}
+div.sidebar-item-container>a>span.menu-text:hover, span.menu-text:focus {
+  font-weight: bold;
+  color: #5063d3;
+}
+
+.sidebar-item-section {
+  font-weight: bold;
+  color: #cecece;
+}
+ul>li>div>a>span.menu-text>span.chapter-number {
+  font-weight: normal;
+}
+ul>li>div>a>span.menu-text>span.chapter-title {
+  font-weight: normal;
+}
+
+.sidebar-navigation a {
+  color:inherit;
+}
+a:hover {
+  --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+}
+div.sidebar-item-container:hover, div.sidebar-item-container:focus {
+  color: rgba(33, 81, 191, 0.8);
+}
+.quarto-title {
+  content: " ";
+  padding-top: 3em;
+}
+
+.chapter-number::before {
+  content: "Bab ";
+}
+.chapter-number::after {
+  content: "";
+}

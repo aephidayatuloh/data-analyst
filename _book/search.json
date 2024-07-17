@@ -16,7 +16,7 @@
     "section": "",
     "text": "1.1 Membuat Pertanyaan\nKetika seorang data analyst akan bekerja maka yang pertama kali harus dia lakukan adalah membuat pertanyaan atau hipotesis. Hal ini penting agar langkah yang diambil menjadi terarah dan bukan hanya pekerjaan receh yang nantinya akan gagal di tengah jalan atau bahkan hasil analisisnya tidak penting sama sekali.\nPertanyaan 1:\nPertama Anda harus tahu dulu apa permasalahan yang ingin Anda geluti ini. Gali lebih dalam informasi dari masalah tersebut dengan orang-orang (stakeholder) yang berhubungan langsung dengan masalah ini. Setelah itu buat pertanyaan berikutnya.\nPertanyaan 2:\nAnda perlu mengetahui siapa saja atau bagian dari organisasi yang mana yang memiliki data. Karena Anda akan sering berinteraksi dengan mereka.\nPertanyaan 3:\nPertanyaan 4:\nPertanyaan 5:",
     "crumbs": [
-      "Dasar Data Analytics",
+      "Bagian 1: Dasar Data Analytics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
     ]
   },
@@ -27,7 +27,7 @@
     "section": "",
     "text": "Apa masalah yang ingin diselesaikan atau dianalisis dan apakah masalah ini penting untuk diselesaikan?\n\n\n\n\nSiapa yang berkepentingan dan memiliki data untuk masalah ini?\n\n\n\n\nDarimana dan bagaimana saya bisa mendapatkan data?\n\n\n\nKapan analisis data ini harus selesai?\n\n\n\nBagaimana hasil analisis data ini akan digunakan nantinya?",
     "crumbs": [
-      "Dasar Data Analytics",
+      "Bagian 1: Dasar Data Analytics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
     ]
   },
@@ -38,7 +38,7 @@
     "section": "1.2 Fokus pada Nilai",
     "text": "1.2 Fokus pada Nilai\nTak jarang data analyst lebih berfokus pada metodologi atau teknologi. Metodologi terkini apa yang akan digunakan? Teknologi terbaru apa yang akan diimplementasikan? Dashboard seperti apa yang akan dibuat?\nAgar pekerjaan analisis data yang kita lakukan memiliki manfaat maka dari awal kita harus selalu berorientasi pada nilai (value) yang akan dihasilkan nantinya. Value ini bisa kita lihat berdasarkan pertanyaan-pertanyaan di atas. Jika kita mendapatkan jawaban yang “memuaskan” untuk kita lakukan maka analisis data akan menjadi cara yang efektif untuk mendapatkan hasil.",
     "crumbs": [
-      "Dasar Data Analytics",
+      "Bagian 1: Dasar Data Analytics",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
     ]
   },
@@ -49,7 +49,7 @@
     "section": "",
     "text": "Data adalah faktor yang paling krusial ketika Anda menjadi seorang data analyst. Menjadi seorang data analyst membutuhkan pola pikir (mindset) yang komprehensif tentang data.",
     "crumbs": [
-      "Dasar Data Analytics",
+      "Bagian 1: Dasar Data Analytics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fondasi Data Analytics</span>"
     ]
   },
@@ -67,31 +67,31 @@
   {
     "objectID": "statistik.html",
     "href": "statistik.html",
-    "title": "Memahami Statistik",
+    "title": "Bagian 2: Memahami Statistik",
     "section": "",
     "text": "Sebelum menginjakan kaki di tanah teknis dalam mengerjakan analisis data, Anda harus tahu dulu beberapa hal dasar tentang statistik.",
     "crumbs": [
-      "Memahami Statistik"
+      "Bagian 2: Memahami Statistik"
     ]
   },
   {
     "objectID": "excel.html",
     "href": "excel.html",
-    "title": "Menguasai Excel",
+    "title": "Bagian 3: Menguasai Excel",
     "section": "",
     "text": "Spreadsheet atau yang biasa disebut juga Excel merupakan alat utama yang biasanya digunakan oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart.\nExcel biasanya digunakan untuk menyimpan data berupa data tabular atau pekerjaan yang menggunakan formula/fungsi. Data ini bisa disimpan dalam format *.xlsx atau *.csv. Pada bagian ini kita akan mempelajari Excel dari dasar. Mulai dari pengenalan tampilan antar muka (interface) hingga membuat visualisasi menggunakan chart.",
     "crumbs": [
-      "Menguasai Excel"
+      "Bagian 3: Menguasai Excel"
     ]
   },
   {
     "objectID": "dasar.html",
     "href": "dasar.html",
-    "title": "Dasar Data Analytics",
+    "title": "Bagian 1: Dasar Data Analytics",
     "section": "",
-    "text": "Pengetahuan dan kemampuan dasar yang harus dimiliki oleh seorang data analyst tentu saja adalah kemampuan menganalisa data. Lantas apa yang dimaksud dengan menganalisa data? Ini adalah proses memeriksa, membersihkan, mengubah, memodelkan dan menarik kesimpulan dari kumpulan data yang banyak atau sedikit. Tujuannya adalah untuk menemukan informasi yang berguna dan mendukung pengambilan keputusan dalam bisnis.\n\n\n\n\n\n\nAda dua kata penting untuk seorang data analyst dari paragraf di atas, yaitu data dan bisnis. Analisis data dibutuhkan oleh sebuah perusahaan atau organisasi tentu saja untuk meningkatkan kemajuan bisnis mereka. Karena itulah mereka mencari data analyst. Jadi, kemampuan dasar seorang data analyst ketika bekerja adalah kemampuannya menganalisis data dan menyesuaikan dengan konteks bisnis. Tentu saja selain itu juga perlu didukung dengan kemampuan lain seperti kemampuan teknis dalam memahami dan mengolah data menggunakan tools, mencari insight yang actionable, dan mampu menyampaikan hasil analisis data dengan komunikasi yang baik.",
+    "text": "Pengetahuan dan kemampuan dasar yang harus dimiliki oleh seorang data analyst tentu saja adalah kemampuan menganalisa data. Lantas apa yang dimaksud dengan menganalisa data? Ini adalah proses memeriksa, membersihkan, mengubah, memodelkan dan menarik kesimpulan dari kumpulan data yang banyak atau sedikit. Tujuannya adalah untuk menemukan informasi yang berguna dan mendukung pengambilan keputusan dalam bisnis.\n\n\n\n\n\n\nAda dua kata penting untuk seorang data analyst dari paragraf di atas, yaitu data dan bisnis. Analisis data dibutuhkan oleh sebuah perusahaan atau organisasi tentu saja untuk meningkatkan kemajuan bisnis mereka. Karena itulah mereka mencari data analyst. Jadi, kemampuan dasar seorang data analyst ketika bekerja adalah kemampuannya menganalisis data dan menyesuaikan dengan konteks bisnis. Tentu saja selain itu juga perlu didukung dengan kemampuan lain seperti kemampuan teknis dalam memahami dan mengolah data menggunakan tools, mencari actionable insight, dan mampu menyampaikan hasil analisis data dengan komunikasi yang baik.",
     "crumbs": [
-      "Dasar Data Analytics"
+      "Bagian 1: Dasar Data Analytics"
     ]
   },
   {
