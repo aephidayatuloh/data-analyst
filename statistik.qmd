@@ -1,3 +1,3 @@
-# Memahami Statistik
+# Bagian 2: Memahami Statistik
 
 Sebelum menginjakan kaki di tanah teknis dalam mengerjakan analisis data, Anda harus tahu dulu beberapa hal dasar tentang statistik.

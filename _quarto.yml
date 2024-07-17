@@ -14,7 +14,7 @@ book:
   favicon: icon.png
   chapters:
     - part: |
-            Daftar Isi 
+            DAFTAR ISI
     - index.qmd
     
     - part: dasar.qmd
@@ -48,7 +48,7 @@ book:
         - visualisasi.qmd
         - storytelling.qmd
 
-    - references.qmd
+    - pustaka.qmd
     - penulis.qmd
 
 bibliography: references.bib
@@ -58,8 +58,10 @@ format:
     theme: cosmo
     df-print: tibble
     css: style.css
+    code-link: true
+
   pdf:
-    documentclass: scrreprt
+    documentclass: scrbook
 
 
 
