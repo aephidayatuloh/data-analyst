@@ -36,7 +36,12 @@ book:
     
     - part: sql.qmd
       chapters: 
-        - summary.qmd
+        - sql-database.qmd
+        - sql-select.qmd # SELECT Clause
+        - sql-filter.qmd # Filter WHERE
+        - sql-order.qmd # Sort 
+        - sql-summary.qmd # Membuat variabel dari 
+        - sql-join.qmd
     
     - part: programming.qmd
       chapters: 
