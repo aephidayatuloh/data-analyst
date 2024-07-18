@@ -9,7 +9,8 @@ book:
   title: "Menjadi Data Analyst"
   subtitle: "Konsep, Statistika, Excel, SQL dan R/Python"
   author: "Aep Hidayatuloh"
-  date: "7/14/2024"
+  date: today
+  date-format: D MMM YYYY
   cover-image: cover.png
   favicon: icon.png
   chapters:
