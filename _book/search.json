@@ -47,7 +47,7 @@
     "href": "fondasi.html",
     "title": "2  Fondasi Data Analytics",
     "section": "",
-    "text": "Data adalah faktor yang paling krusial ketika Anda menjadi seorang data analyst. Menjadi seorang data analyst membutuhkan pola pikir (mindset) yang komprehensif tentang data.",
+    "text": "Data adalah faktor yang paling krusial ketika Anda menjadi seorang data analyst. Menjadi seorang data analyst membutuhkan pola pikir (mindset) yang komprehensif tentang data.\nData adalah kumpulan fakta.",
     "crumbs": [
       "Bagian 1: Dasar Data Analytics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fondasi Data Analytics</span>"
@@ -123,6 +123,16 @@
     "text": "Spreadsheet atau yang biasa disebut juga Excel merupakan alat utama yang biasanya digunakan oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart.\nExcel biasanya digunakan untuk menyimpan data berupa data tabular atau pekerjaan yang menggunakan formula/fungsi. Data ini bisa disimpan dalam format *.xlsx atau *.csv. Pada bagian ini kita akan mempelajari Excel dari dasar. Mulai dari pengenalan tampilan antar muka (interface) hingga membuat visualisasi menggunakan chart.",
     "crumbs": [
       "Bagian 3: Menguasai Spreadsheet"
+    ]
+  },
+  {
+    "objectID": "cover-penutup.html",
+    "href": "cover-penutup.html",
+    "title": "Menjadi Data Analyst",
+    "section": "",
+    "text": "Buku ini disusun sedemikian rupa sehingga memudahkan bagi Anda yang ingin mulai mempelajari tentang Data Analytics dan menjadi seorang Data Analyst. Buku ini akan menjadi panduan yang lengkap.\nDi awal buku ini Anda akan diajak untuk memahami cara berpikir seorang data analyst. Tentu saja Anda tidak bisa lepas dari kewajiban untuk memahami tentang Statistika sebagai fondasi mutlak untuk menjadi seorang data analyst. Tapi tenang saja! Pembahasan Statistika dibuat sederhana agar mudah dipahami dan tetap dapat digunakan sebagai bekal Anda menjadi data analyst.\nAnda juga akan belajar menggunakan Spreadsheet sebagai alat bantu paling fundamental ketika bekerja dengan data, memahami SQL sebagai alat untuk berkomunikasi dengan data di dalam database, menggunakan bahasa pemrograman sebagai alat yang lebih advance untuk data analysis dan cara membuat visualisasi untuk mengomunikasikan hasil analisis data yang Anda lakukan.",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Penutup</span>"
     ]
   }
 ]

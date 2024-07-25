@@ -50,10 +50,11 @@ rsconnect/
 
 /.quarto/
 
-book-cover.png 
-book-cover.psd 
+# book-cover.png 
+book-cover.psd  
 brain.png 
-# cover.png
+cover.png
+cover.psd
 cover belakang.png 
 cover belakang path.png 
 cover depan.png 
@@ -64,6 +65,7 @@ dacolorcrop.png
 dacolourful.png
 dacrop.png 
 # dawhite.png 
+data-pana-blue.png
 dawhiteback.png 
 excel.png 
 me.jpg 

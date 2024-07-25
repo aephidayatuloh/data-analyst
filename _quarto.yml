@@ -7,7 +7,7 @@ project:
 
 book:
   title: "Menjadi Data Analyst"
-  subtitle: "Konsep, Statistika, Spreadsheet, SQL dan R/Python"
+  subtitle: "Konsep, Statistika, Spreadsheet, SQL dan R"
   author: 
     - name: Aep Hidayatuloh
   date: today
@@ -47,7 +47,7 @@ book:
     - part: programming.qmd
       chapters: 
         - rprogramming.qmd 
-        - python.qmd 
+        # - python.qmd 
     
     - part: komunikasi.qmd 
       chapters: 
@@ -56,6 +56,7 @@ book:
 
     - pustaka.qmd
     - penulis.qmd
+    - cover-penutup.qmd
 
 bibliography: references.bib
 

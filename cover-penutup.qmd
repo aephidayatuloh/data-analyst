@@ -1,0 +1,7 @@
+# Penutup {.unnumbered}
+
+Buku ini disusun sedemikian rupa sehingga memudahkan bagi Anda yang ingin mulai mempelajari tentang Data Analytics dan menjadi seorang Data Analyst. Buku ini akan menjadi panduan yang lengkap.
+
+Di awal buku ini Anda akan diajak untuk memahami  cara berpikir seorang data analyst. Tentu saja Anda tidak bisa lepas dari kewajiban untuk memahami tentang Statistika sebagai fondasi mutlak untuk menjadi seorang data analyst. Tapi tenang saja! Pembahasan Statistika dibuat sederhana agar mudah dipahami dan tetap dapat digunakan sebagai bekal Anda menjadi data analyst.
+
+Anda juga akan belajar menggunakan Spreadsheet sebagai alat bantu paling fundamental ketika bekerja dengan data, memahami SQL sebagai alat untuk berkomunikasi dengan data di dalam database, menggunakan bahasa pemrograman sebagai alat yang lebih advance untuk data analysis dan cara membuat visualisasi untuk mengomunikasikan hasil analisis data yang Anda lakukan. 

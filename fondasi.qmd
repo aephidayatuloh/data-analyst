@@ -2,3 +2,4 @@
 
 Data adalah faktor yang paling krusial ketika Anda menjadi seorang data analyst. Menjadi seorang data analyst membutuhkan pola pikir (_mindset_) yang komprehensif tentang data. 
 
+Data adalah kumpulan fakta. 
