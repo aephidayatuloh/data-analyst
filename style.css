@@ -8,10 +8,14 @@ p {
   box-shadow: 1px 2px 1px #c9c7c7;
 }
 
-.sidebar-menu-container {
-  min-width: 245;
+.sidebar-navigation {
+  padding-left: 10px;
 }
-/* div.sidebar-menu-container>ul.sidebar-item-text */
+
+.sidebar-menu-container {
+  min-width: 247px;
+}
+
 div.sidebar-item-container>a>span.menu-text {
   font-weight: bold;
   color: #646464;

@@ -1,4 +1,4 @@
-# Bagian 3: Menguasai Excel 
+# Bagian 3: Menguasai Spreadsheet
 
 Spreadsheet atau yang biasa disebut juga Excel merupakan alat utama yang biasanya digunakan oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart.
 
