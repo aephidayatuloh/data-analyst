@@ -56,7 +56,7 @@ book:
 
     - pustaka.qmd
     - penulis.qmd
-    - cover-penutup.qmd
+    - penutup.qmd
 
 bibliography: references.bib
 
