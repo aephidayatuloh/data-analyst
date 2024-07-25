@@ -15,7 +15,7 @@ p {
 .sidebar-menu-container {
   min-width: 247px;
 }
-/* div.sidebar-menu-container>ul.sidebar-item-text */
+
 div.sidebar-item-container>a>span.menu-text {
   font-weight: bold;
   color: #646464;

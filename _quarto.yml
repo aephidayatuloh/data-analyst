@@ -7,8 +7,11 @@ project:
 
 book:
   title: "Menjadi Data Analyst"
-  subtitle: "Konsep, Statistika, Excel, SQL dan R/Python"
-  author: "Aep Hidayatuloh"
+  subtitle: "Konsep, Statistika, Spreadsheet, SQL dan R/Python"
+  reader-mode: true
+  author: 
+    - name: Aep Hidayatuloh
+    - name: Muhammad Iqbal
   date: today
   date-format: D MMM YYYY
   cover-image: cover.png
@@ -28,9 +31,9 @@ book:
         - dasarstats.qmd
         - eksplorasi.qmd
     
-    - part: excel.qmd
+    - part: spreadsheet.qmd
       chapters: 
-        - pengenalanexcel.qmd
+        - pengenalanss.qmd
         - tabelformula.qmd
         - pivot.qmd
         - chart.qmd

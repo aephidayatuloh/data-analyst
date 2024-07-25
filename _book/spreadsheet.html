@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Aep Hidayatuloh">
-<meta name="author" content="Muhammad Iqbal">
-<meta name="dcterms.date" content="2024-07-25">
 
-<title>Menjadi Data Analyst</title>
+<title>Bagian 3: Menguasai Spreadsheet – Menjadi Data Analyst</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./dasar.html" rel="next">
+<link href="./pengenalanss.html" rel="next">
+<link href="./eksplorasi.html" rel="prev">
 <link href="./icon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -85,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Pengantar</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./spreadsheet.html">Bagian 3: Menguasai Spreadsheet</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Pengantar</span></a>
   </div>
 </li>
@@ -176,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./spreadsheet.html" class="sidebar-item-text sidebar-link">
+            <a href="./spreadsheet.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Bagian 3: Menguasai Spreadsheet</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -319,42 +317,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#pengantar" id="toc-pengantar" class="nav-link active" data-scroll-target="#pengantar">Pengantar</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Menjadi Data Analyst</h1>
-<p class="subtitle lead">Konsep, Statistika, Spreadsheet, SQL dan R/Python</p>
+<h1 class="title">Bagian 3: Menguasai Spreadsheet</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Authors</div>
-    <div class="quarto-title-meta-contents">
-             <p>Aep Hidayatuloh </p>
-             <p>Muhammad Iqbal </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">25 Jul 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -364,17 +342,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="pengantar" class="level1 unnumbered">
-<h1 class="unnumbered">Pengantar</h1><p><img src="cover.png" title="Menjadi Data Analyst" class="quarto-cover-image img-fluid"></p>
-<p>Data Analyst dan Data Scientist menjadi pekerjaan yang diinginkan banyak orang saat ini, terutama bagi lulusan baru dari universitas. Di Jobstreet tersedia <strong>lebih dari 9.000 lowongan pekerjaan dengan kata kunci “data”</strong>, termasuk data analyst, data entry, data scientist dan lain-lain dengan tingakat magang (<em>internship</em>), junior, senior hingga manager. Lowongan kerja dengan kata kunci “data analyst” sendiri ada lebih dari 1.000 lowongan pekerjaan.</p>
-<p>Mereka yang memang menempuh pendidikan yang berkaitan erat dengan data seperti Statistika dan Ilmu Komputer, atau yang tidak hubungannya sama sekali seperti lulusan Ilmu Hukum, Perikanan dan Kelautan, dan lain-lain yang ingin beralih karir menjadi data analyst atau data scientist mulai banyak bermunculan.</p>
-<p>Karena banyaknya keinginan dan kebutuhan akan pendidikan tentang data, banyak universitas atau kampus mulai mempertimbangkan atau bahkan sudah mulai untuk mengampu pendidikan yang berkaitan dengan bidang ini. Bahkan banyak lembaga penyedia pendidikan, training atau kursus yang menydiakan kesempatan bagi mereka yang ingin belajar untuk menjadi Data Analyst atau Data Scientist. Buku ini akan mengajak Anda untuk mulai memahami apa itu data analyst, kemampuan yang dibutuhkan dan disertai dengan contoh kasus dan teknis pengerjaannya yang akan menambah pemahaman dan kemampuan Anda untuk menjadi data analyst.</p>
-<p>Alat atau <em>Tools</em> yang akan sangat berguna dan biasanya digunakan dalam mengerjakan analisis data adalah Excel, SQL, dan terkadang juga menggunakan bahasa pemrograman. Bahasa Pemrograman yang biasanya digunakan dalam kegiatan analisis data adalah R atau Python. Oleh karena itu, buku ini akan mengajak Anda untuk mengenal lebih jauh tentang data analytics dan <em>tools</em> yang biasanya digunakan untuk menunjang aktivitas analisis data.</p>
-<p>Tentu saja penulis menyadari bahwa tulisan ini hanya berdasarkan pengetahuan dan pengalaman yang diketahui oleh penulis, shingga masih banyak kekurangan dan perlu perbaikan dalam berbagai hal. Jika Anda ingin berkontribusi pada tulisan ini, Anda dapat menjadi kontributor pada repository GitHub <a href="https://github.com/aephidayatuloh/data-analyst" class="uri">https://github.com/aephidayatuloh/data-analyst</a>.</p>
+<p>Spreadsheet atau yang biasa disebut juga Excel merupakan alat utama yang biasanya digunakan oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart.</p>
+<p>Excel biasanya digunakan untuk menyimpan data berupa data tabular atau pekerjaan yang menggunakan formula/fungsi. Data ini bisa disimpan dalam format *.xlsx atau *.csv. Pada bagian ini kita akan mempelajari Excel dari dasar. Mulai dari pengenalan tampilan antar muka (<em>interface</em>) hingga membuat visualisasi menggunakan chart.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -799,10 +770,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./eksplorasi.html" class="pagination-link" aria-label="Eksplorasi dan Visualisasi">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./dasar.html" class="pagination-link" aria-label="Bagian 1: Dasar Data Analytics">
-        <span class="nav-page-text">Bagian 1: Dasar Data Analytics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./pengenalanss.html" class="pagination-link" aria-label="Pengenalan Spreadsheet">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pengenalan Spreadsheet</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
