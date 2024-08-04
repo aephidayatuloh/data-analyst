@@ -7,9 +7,11 @@ project:
 
 book:
   title: "Menjadi Data Analyst"
-  subtitle: "Konsep, Statistika, Spreadsheet, SQL dan R"
+  subtitle: "Konsep, Statistika, Spreadsheet, SQL, Programming dan Visualisasi"
   author: 
     - name: Aep Hidayatuloh
+      # affiliations: StarCore Analytics
+      email: aephidayatuloh.mail@gmail.com
   date: today
   date-format: D MMM YYYY
   cover-image: cover.png
@@ -25,15 +27,19 @@ book:
     
     - part: statistik.qmd
       chapters: 
-        - dasarstats.qmd
-        - eksplorasi.qmd
+        - st-dasarstats.qmd
+        - st-tipedata.qmd
+        - st-eksplorasi.qmd
+        - st-sebaran.qmd
+        - st-ujihipotesis.qmd
+        
     
     - part: spreadsheet.qmd
       chapters: 
-        - pengenalanss.qmd
-        - tabelformula.qmd
-        - pivot.qmd
-        - chart.qmd
+        - ss-pengenalan.qmd
+        - ss-tabelformula.qmd
+        - ss-pivot.qmd
+        - ss-chart.qmd
     
     - part: sql.qmd
       chapters: 
@@ -46,8 +52,10 @@ book:
     
     - part: programming.qmd
       chapters: 
-        - rprogramming.qmd 
-        # - python.qmd 
+        - r-programming.qmd 
+        - r-ifloop.qmd 
+        - r-importexport.qmd
+        - r-eksplor.qmd
     
     - part: komunikasi.qmd 
       chapters: 
@@ -66,9 +74,14 @@ format:
     df-print: tibble
     css: style.css
     code-link: true
-
-  pdf:
-    documentclass: scrbook
+  docx:
+    reference-doc: custom-reference-doc.docx
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    highlight-style: github
+  # pdf:
+  #   documentclass: scrbook
 
 
 

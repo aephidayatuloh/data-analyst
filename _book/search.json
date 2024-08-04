@@ -21,131 +21,6 @@
     ]
   },
   {
-    "objectID": "polapikir.html#membuat-pertanyaan",
-    "href": "polapikir.html#membuat-pertanyaan",
-    "title": "1  Pola Pikir Data Analyst",
-    "section": "",
-    "text": "Apa masalah yang ingin diselesaikan atau dianalisis dan apakah masalah ini penting untuk diselesaikan?\n\n\n\n\nSiapa yang berkepentingan dan memiliki data untuk masalah ini?\n\n\n\n\nDarimana dan bagaimana saya bisa mendapatkan data?\n\n\n\nKapan analisis data ini harus selesai?\n\n\n\nBagaimana hasil analisis data ini akan digunakan nantinya?",
-    "crumbs": [
-      "Bagian 1: Dasar Data Analytics",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
-    ]
-  },
-  {
-    "objectID": "polapikir.html#fokus-pada-nilai",
-    "href": "polapikir.html#fokus-pada-nilai",
-    "title": "1  Pola Pikir Data Analyst",
-    "section": "1.2 Fokus pada Nilai",
-    "text": "1.2 Fokus pada Nilai\nTak jarang data analyst lebih berfokus pada metodologi atau teknologi. Metodologi terkini apa yang akan digunakan? Teknologi terbaru apa yang akan diimplementasikan? Dashboard seperti apa yang akan dibuat?\nAgar pekerjaan analisis data yang kita lakukan memiliki manfaat maka dari awal kita harus selalu berorientasi pada nilai (value) yang akan dihasilkan nantinya. Value ini bisa kita lihat berdasarkan pertanyaan-pertanyaan di atas. Jika kita mendapatkan jawaban yang “memuaskan” untuk kita lakukan maka analisis data akan menjadi cara yang efektif untuk mendapatkan hasil.",
-    "crumbs": [
-      "Bagian 1: Dasar Data Analytics",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pola Pikir Data Analyst</span>"
-    ]
-  },
-  {
-    "objectID": "fondasi.html",
-    "href": "fondasi.html",
-    "title": "2  Fondasi Data Analytics",
-    "section": "",
-    "text": "2.1 Konsep Dasar Data Analytics\nUntuk memahami data analytics dengan lebih baik, penting untuk membedakan antara data dan informasi. Data adalah kumpulan fakta atau angka mentah yang belum diproses atau dianalisis. Data bisa berupa angka, teks, gambar, atau jenis informasi lain yang dikumpulkan dari berbagai sumber. Di sisi lain, informasi adalah hasil dari pengolahan dan analisis data. Informasi adalah data yang telah diproses sehingga menjadi sesuatu yang bermakna dan dapat digunakan untuk membuat keputusan.\nData dapat dikategorikan menjadi dua jenis utama: kuantitatif dan kualitatif. Data kuantitatif terdiri dari angka dan dapat diukur secara objektif, seperti hasil survei yang menunjukkan skor kepuasan pelanggan atau data penjualan bulanan. Data kualitatif, di sisi lain, bersifat deskriptif dan lebih sulit diukur, seperti ulasan pelanggan yang berisi komentar tentang pengalaman mereka dengan produk atau layanan.\nSelain itu, data juga dapat diklasifikasikan sebagai data terstruktur dan tidak terstruktur. Data terstruktur adalah data yang telah diorganisasi dengan cara tertentu, biasanya dalam format tabel atau database yang dapat dengan mudah diquery menggunakan alat analisis. Contoh data terstruktur termasuk data dalam spreadsheet Excel atau tabel database relasional. Sebaliknya, data tidak terstruktur tidak memiliki format yang teratur, seperti teks bebas dari email, posting media sosial, atau gambar. Meskipun data tidak terstruktur dapat menjadi sumber informasi yang kaya, analisisnya sering kali memerlukan teknik yang lebih kompleks.",
-    "crumbs": [
-      "Bagian 1: Dasar Data Analytics",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fondasi Data Analytics</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "9  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Mahir SQL",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Summary</span>"
-    ]
-  },
-  {
-    "objectID": "statistik.html",
-    "href": "statistik.html",
-    "title": "Bagian 2: Memahami Statistik",
-    "section": "",
-    "text": "Sebelum menginjakan kaki di tanah teknis dalam mengerjakan analisis data, Anda harus tahu dulu beberapa hal dasar tentang statistik.",
-    "crumbs": [
-      "Bagian 2: Memahami Statistik"
-    ]
-  },
-  {
-    "objectID": "excel.html",
-    "href": "excel.html",
-    "title": "Bagian 3: Menguasai Excel",
-    "section": "",
-    "text": "Spreadsheet atau yang biasa disebut juga Excel merupakan alat utama yang biasanya digunakan oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart.\nExcel biasanya digunakan untuk menyimpan data berupa data tabular atau pekerjaan yang menggunakan formula/fungsi. Data ini bisa disimpan dalam format *.xlsx atau *.csv. Pada bagian ini kita akan mempelajari Excel dari dasar. Mulai dari pengenalan tampilan antar muka (interface) hingga membuat visualisasi menggunakan chart.",
-    "crumbs": [
-      "Bagian 3: Menguasai Excel"
-    ]
-  },
-  {
-    "objectID": "dasar.html",
-    "href": "dasar.html",
-    "title": "Bagian 1: Dasar Data Analytics",
-    "section": "",
-    "text": "Pengetahuan dan kemampuan dasar yang harus dimiliki oleh seorang data analyst tentu saja adalah kemampuan menganalisa data. Lantas apa yang dimaksud dengan menganalisa data? Ini adalah proses memeriksa, membersihkan, mengubah, memodelkan dan menarik kesimpulan dari kumpulan data yang banyak atau sedikit. Tujuannya adalah untuk menemukan informasi yang berguna dan mendukung pengambilan keputusan dalam bisnis.\n\n\n\n\n\n\nAda dua kata penting untuk seorang data analyst dari paragraf di atas, yaitu data dan bisnis. Analisis data dibutuhkan oleh sebuah perusahaan atau organisasi tentu saja untuk meningkatkan kemajuan bisnis mereka. Karena itulah mereka mencari data analyst. Jadi, kemampuan dasar seorang data analyst ketika bekerja adalah kemampuannya menganalisis data dan menyesuaikan dengan konteks bisnis. Tentu saja selain itu juga perlu didukung dengan kemampuan lain seperti kemampuan teknis dalam memahami dan mengolah data menggunakan tools, mencari actionable insight, dan mampu menyampaikan hasil analisis data dengan komunikasi yang baik.",
-    "crumbs": [
-      "Bagian 1: Dasar Data Analytics"
-    ]
-  },
-  {
-    "objectID": "penulis.html",
-    "href": "penulis.html",
-    "title": "Tentang Penulis",
-    "section": "",
-    "text": "Aep Hidayatuloh\nSejak lulus dari Program Sarjana Statistika di Institut Pertanian Bogor (IPB University), dia menempati beberapa posisi sebagai Data Analyst mulai dari level internship, junior, senior hingga Head of Data Analytics di beberapa perusahaan dan konsultan analisis data science. Sepanjang karirnya dia memiliki pengalaman luas terlibat di berbagai proyek analisis data di perbankan, telekomunikasi, instansi pemerintahan dan retail. Bahasa pemrograman R menjadi pilihan utama, Python sebagai bahasa pemrograman kedua dan juga kemampuan SAS. Dia mengajar di berbagai pelatihan, menjadi dosen tamu di beberapa universitas dan menjadi narasumber di berbagai webinar.",
-    "crumbs": [
-      "Tentang Penulis"
-    ]
-  },
-  {
-    "objectID": "sql-summary.html",
-    "href": "sql-summary.html",
-    "title": "\n13  Summary\n",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Bagian 4: Mahir SQL",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Summary</span>"
-    ]
-  },
-  {
-    "objectID": "spreadsheet.html",
-    "href": "spreadsheet.html",
-    "title": "Bagian 3: Menguasai Spreadsheet",
-    "section": "",
-    "text": "Spreadsheet atau yang biasa disebut juga Excel merupakan alat utama yang biasanya digunakan oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart.\nExcel biasanya digunakan untuk menyimpan data berupa data tabular atau pekerjaan yang menggunakan formula/fungsi. Data ini bisa disimpan dalam format *.xlsx atau *.csv. Pada bagian ini kita akan mempelajari Excel dari dasar. Mulai dari pengenalan tampilan antar muka (interface) hingga membuat visualisasi menggunakan chart.",
-    "crumbs": [
-      "Bagian 3: Menguasai Spreadsheet"
-    ]
-  },
-  {
-    "objectID": "cover-penutup.html",
-    "href": "cover-penutup.html",
-    "title": "Penutup",
-    "section": "",
-    "text": "Buku ini disusun sedemikian rupa sehingga memudahkan bagi Anda yang ingin mulai mempelajari tentang Data Analytics dan menjadi seorang Data Analyst. Buku ini akan menjadi panduan yang lengkap.\nDi awal buku ini Anda akan diajak untuk memahami cara berpikir seorang data analyst. Tentu saja Anda tidak bisa lepas dari kewajiban untuk memahami tentang Statistika sebagai fondasi mutlak untuk menjadi seorang data analyst. Tapi tenang saja! Pembahasan Statistika dibuat sederhana agar mudah dipahami dan tetap dapat digunakan sebagai bekal Anda menjadi data analyst.\nAnda juga akan belajar menggunakan Spreadsheet sebagai alat bantu paling fundamental ketika bekerja dengan data, memahami SQL sebagai alat untuk berkomunikasi dengan data di dalam database, menggunakan bahasa pemrograman sebagai alat yang lebih advance untuk data analysis dan cara membuat visualisasi untuk mengomunikasikan hasil analisis data yang Anda lakukan.",
-    "crumbs": [
-      "Penutup"
-    ]
-  },
-  {
-    "objectID": "penutup.html",
-    "href": "penutup.html",
-    "title": "Penutup",
-    "section": "",
-    "text": "Buku ini disusun sedemikian rupa sehingga memudahkan bagi Anda yang ingin mulai mempelajari tentang Data Analytics dan menjadi seorang Data Analyst. Buku ini akan menjadi panduan yang lengkap.\nDi awal buku ini Anda akan diajak untuk memahami cara berpikir seorang data analyst. Tentu saja Anda tidak bisa lepas dari kewajiban untuk memahami tentang Statistika sebagai fondasi mutlak untuk menjadi seorang data analyst. Tapi tenang saja! Pembahasan Statistika dibuat sederhana agar mudah dipahami dan tetap dapat digunakan sebagai bekal Anda menjadi data analyst.\nAnda juga akan belajar menggunakan Spreadsheet sebagai alat bantu paling fundamental ketika bekerja dengan data, memahami SQL sebagai alat untuk berkomunikasi dengan data di dalam database, menggunakan bahasa pemrograman sebagai alat yang lebih advance untuk data analysis dan cara membuat visualisasi untuk mengomunikasikan hasil analisis data yang Anda lakukan.",
-    "crumbs": [
-      "Penutup"
-    ]
-  },
-  {
     "objectID": "polapikir.html#berpikir-kritis",
     "href": "polapikir.html#berpikir-kritis",
     "title": "1  Pola Pikir Data Analyst",
@@ -234,6 +109,17 @@
     ]
   },
   {
+    "objectID": "fondasi.html",
+    "href": "fondasi.html",
+    "title": "2  Fondasi Data Analytics",
+    "section": "",
+    "text": "2.1 Konsep Dasar Data Analytics\nUntuk memahami data analytics dengan lebih baik, penting untuk membedakan antara data dan informasi. Data adalah kumpulan fakta atau angka mentah yang belum diproses atau dianalisis. Data bisa berupa angka, teks, gambar, atau jenis informasi lain yang dikumpulkan dari berbagai sumber. Di sisi lain, informasi adalah hasil dari pengolahan dan analisis data. Informasi adalah data yang telah diproses sehingga menjadi sesuatu yang bermakna dan dapat digunakan untuk membuat keputusan.\nData dapat dikategorikan menjadi dua jenis utama: kuantitatif dan kualitatif. Data kuantitatif terdiri dari angka dan dapat diukur secara objektif, seperti hasil survei yang menunjukkan skor kepuasan pelanggan atau data penjualan bulanan. Data kualitatif, di sisi lain, bersifat deskriptif dan lebih sulit diukur, seperti ulasan pelanggan yang berisi komentar tentang pengalaman mereka dengan produk atau layanan.\nSelain itu, data juga dapat diklasifikasikan sebagai data terstruktur dan tidak terstruktur. Data terstruktur adalah data yang telah diorganisasi dengan cara tertentu, biasanya dalam format tabel atau database yang dapat dengan mudah diquery menggunakan alat analisis. Contoh data terstruktur termasuk data dalam spreadsheet Excel atau tabel database relasional. Sebaliknya, data tidak terstruktur tidak memiliki format yang teratur, seperti teks bebas dari email, posting media sosial, atau gambar. Meskipun data tidak terstruktur dapat menjadi sumber informasi yang kaya, analisisnya sering kali memerlukan teknik yang lebih kompleks.",
+    "crumbs": [
+      "Bagian 1: Dasar Data Analytics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fondasi Data Analytics</span>"
+    ]
+  },
+  {
     "objectID": "fondasi.html#proses-data-analytics",
     "href": "fondasi.html#proses-data-analytics",
     "title": "2  Fondasi Data Analytics",
@@ -286,6 +172,221 @@
     "crumbs": [
       "Bagian 1: Dasar Data Analytics",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fondasi Data Analytics</span>"
+    ]
+  },
+  {
+    "objectID": "dasarstats.html",
+    "href": "dasarstats.html",
+    "title": "3  Statistika Dasar",
+    "section": "",
+    "text": "3.1 Populasi dan Sampel dalam Statistika\nDalam statistika, istilah populasi dan contoh (sample, sampel) merujuk pada dua konsep penting yang membantu kita dalam pengumpulan dan analisis data. Memahami perbedaan antara populasi dan sampel sangat penting dalam desain penelitian dan interpretasi hasil analisis data.\nPopulasi adalah keseluruhan kelompok yang menjadi objek perhatian atau penelitian. Populasi mencakup semua unit, individu, atau item yang memenuhi kriteria tertentu dan kita ingin membuat kesimpulan atau generalisasi. Populasi bisa sangat besar atau sangat kecil, tergantung pada konteks penelitian. Misalnya, jika kita tertarik untuk mempelajari kebiasaan makan masyarakat di suatu negara, maka seluruh populasi yang dimaksud adalah seluruh warga negara tersebut. Dalam studi tersebut, populasi mencakup setiap individu yang tinggal di negara itu.\nContoh lain dari populasi adalah dalam studi kesehatan. Jika peneliti ingin meneliti prevalensi diabetes di antara semua orang berusia 60 tahun ke atas di kota tertentu, maka populasi adalah semua orang berusia 60 tahun ke atas di kota tersebut. Populasi ini mencakup semua individu dalam kelompok umur yang relevan, yang memungkinkan peneliti untuk mendapatkan gambaran yang menyeluruh tentang prevalensi diabetes di seluruh kelompok tersebut.\nDi Indonesia pengumpulan data populasi ini dilakukan dengan sensus seperti yang dilakukan oleh Badan Pusat Statistik (BPS). Misalnya sensus penduduk, sensus ekonomi dan sensus pertanian. Karena biaya dan tenaga yang dibutuhkan untuk melakukan sensus tidak sedikit, maka sensus dilakukan dalam rentang waktu yang cukup lama dari sensus ke sensus berikutnya. Contohnya sensus penduduk dilakukan 10 tahun sekali pada setiap tahun yang berakhiran angka 0.\nNamun, dalam praktiknya, sering kali tidak mungkin atau tidak praktis untuk mengumpulkan data dari seluruh populasi. Di sinilah konsep contoh (sampel) menjadi penting. Contoh (sampel) adalah subset dari populasi yang dipilih untuk mewakili populasi secara keseluruhan. Penggunaan sampel memungkinkan peneliti untuk melakukan analisis yang dapat digunakan untuk membuat inferensi tentang populasi tanpa harus memeriksa setiap individu dalam populasi tersebut. Sampel diambil dengan berbagai metode, termasuk sampling acak, stratified sampling, dan lain-lain, untuk memastikan bahwa sampel tersebut representatif dari populasi yang lebih besar.\nContoh:\nKembali ke contoh studi kebiasaan makan masyarakat di suatu negara. Alih-alih mengumpulkan data dari semua warga negara, peneliti mungkin memutuskan untuk mengambil sampel. Misalnya, mereka bisa memilih 1.000 orang dari berbagai wilayah di negara tersebut, dengan proporsi yang mencerminkan distribusi demografis negara tersebut. Sampel ini diharapkan dapat memberikan gambaran yang cukup representatif tentang kebiasaan makan warga negara secara keseluruhan.\nDalam studi kesehatan tentang prevalensi diabetes, peneliti mungkin memilih sampel dari 500 orang yang berusia 60 tahun ke atas untuk melakukan survei. Sampel ini dipilih secara acak atau berdasarkan kriteria tertentu untuk memastikan bahwa sampel tersebut mewakili populasi berusia 60 tahun ke atas dengan cara yang adil. Hasil survei pada sampel ini kemudian digunakan untuk membuat estimasi tentang prevalensi diabetes di seluruh populasi.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "dasarstats.html#populasi-dan-sampel-dalam-statistika",
+    "href": "dasarstats.html#populasi-dan-sampel-dalam-statistika",
+    "title": "3  Statistika Dasar",
+    "section": "",
+    "text": "Dalam Matematika dan Statistika\n\n\n\nBerbagai notasi untuk populasi umumnya menggunakan huruf kapital, misalnya \\(N\\), \\(X\\), \\(\\sigma\\) (dibaca: sigma), \\(\\mu\\) (dibaca: myu) dan lain-lain, sedangkan untuk contoh (sampel) umumnya menggunakan notasi huruf kecil. Misalnya \\(n\\), \\(x\\), \\(s\\), \\(\\bar{x}\\) (dibaca: “X bar”).",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "dasarstats.html#ukuran-pemusatan-data",
+    "href": "dasarstats.html#ukuran-pemusatan-data",
+    "title": "3  Statistika Dasar",
+    "section": "3.2 Ukuran Pemusatan Data",
+    "text": "3.2 Ukuran Pemusatan Data\nUkuran pemusatan dan penyebaran data adalah dua konsep fundamental yang membentuk dasar dari analisis statistik. Untuk memahami data secara menyeluruh, tidak cukup hanya dengan mengetahui nilai rata-rata (mean atau average) atau median; penting juga untuk memahami bagaimana data tersebar di sekitar nilai pusat tersebut.\nUkuran pemusatan data adalah statistik yang digunakan untuk menentukan nilai representatif dari suatu dataset. Ukuran ini memberikan gambaran tentang pusat distribusi data, yang dapat membantu dalam memahami pola dan tren dalam data. Tiga ukuran pemusatan utama yang sering digunakan adalah mean, median, dan modus (mode). Masing-masing memiliki kegunaan dan aplikasi tertentu tergantung pada sifat data yang dianalisis.\n\n3.2.1 Rata-Rata\nRata-rata, atau mean, adalah ukuran pemusatan yang paling umum dan sering digunakan. Mean dihitung dengan menjumlahkan semua nilai dalam dataset dan membaginya dengan jumlah data. Mean memberikan gambaran umum tentang pusat distribusi data.\nContoh:\nMisalkan kita memiliki dataset yang berisi nilai-nilai berikut: 3, 7, 5, 9, dan 11. Untuk menghitung rata-rata:\n\nJumlahkan semua nilai: 3 + 7 + 5 + 9 + 11 = 35\n\nHitung jumlah data: 5\n\nBagi total jumlah dengan jumlah data: 35 / 5 = 7\n\nJadi, rata-rata dari dataset ini adalah 7. Ini berarti bahwa, secara umum, nilai-nilai dalam dataset cenderung berada di sekitar angka 7.\n\n\n\n\n\n\nBerhati-hatilah\n\n\n\nJika ada nilai ekstrem (outlier) yang sangat tinggi atau rendah, rata-rata dapat terpengaruh. Misalnya, jika kita menambahkan nilai 100 ke dataset di atas (sehingga menjadi 3, 7, 5, 9, 11, dan 100), rata-ratanya akan berubah:\n\nJumlahkan semua nilai baru: 3 + 7 + 5 + 9 + 11 + 100 = 135\n\nHitung jumlah data: 6\n\nBagi total jumlah dengan jumlah data: 135 / 6 = 22.5\n\nRata-rata pada data baru ini adalah 22.5, yang jauh lebih tinggi dibandingkan sebelumnya karena nilai ekstrem 100.\n\n\nDari contoh sederhana di atas kita dapat memahami bahwa untuk mendapatkan nilai rata-rata adalah dengan cara menjumlahkan semua nilai dan dibagi dengan banyaknya data.\n\n\n\n\n\n\nDalam Matematika dan Statistika\n\n\n\nPenjumlahan dinotasikan dengan simbol Sigma (\\(\\sum\\)), masing-masing nilai pada data dinotasikan dengan \\(x_i\\) (dibaca: “X i”), banyaknya data adalah \\(n\\), dan nilai rata-rata dinotasikan dengan \\(\\bar{x}\\) (dibaca: “X bar”). Formula untuk menghitung rata-rata adalah:\n\\[\\frac{3 + 7 + 5 + 9 + 11}{5}\\]\n\\[\\frac{x_1 + x_2 + x_3 + x_4 + x_5}{5}\\]\nPenulisan \\(x_1 + x_2 + x_3 + x_4 + x_5\\) disederhanakan menjadi\n\\[\nx_1 + x_2 + x_3 + x_4 + x_5 = \\sum_{i = 1}^5 x_i\n\\]\nPada contoh di atas nilai \\(n = 5\\). Secara umum, jika ada sebanyak \\(n\\) data maka akan ada \\(x = \\{x_1, x_2, x_3, \\dots,x_n\\}\\). Oleh karena itu penulisannya akan menjadi\n\\[\nx_1 + x_2 + x_3 + \\dots + x_n = \\sum_{i = 1}^n x_i\n\\]\nSetelah itu hasil penjumlahan di atas dibagi sesuai dengan banyaknya data, yaitu \\(n\\).\n\\[\n\\bar{x} = \\frac{\\sum_{i = 1}^n x_i}{n}\n\\]\n\n\n\n\n3.2.2 Nilai Tengah\nNilai tengah, atau median, adalah nilai tengah dari dataset setelah data diurutkan. Jika jumlah data genap, median adalah rata-rata dari dua nilai tengah.\nContoh 1 (Jumlah Data Ganjil):\nMisalkan kita memiliki dataset berikut: 2, 8, 5, 3, 9. Untuk menghitung median:\n\nUrutkan data: 2, 3, 5, 8, 9\n\nTemukan nilai tengah: Nilai tengah adalah 5, karena 5 adalah nilai yang berada di tengah dataset yang telah diurutkan.\n\nJadi, median dari dataset ini adalah 5.\n\nContoh 2 (Jumlah Data Genap):\nMisalkan kita memiliki dataset berikut: 3, 2, 9, 8. Untuk menghitung median:\n\nUrutkan data: 2, 3, 8, 9\n\nTemukan dua nilai tengah: 3 dan 8\n\nHitung rata-rata dari dua nilai tengah: (3 + 8) / 2 = 5.5\n\nJadi, median dari dataset ini adalah 5.5.\n\n\n\n\n\n\nCatatan\n\n\n\nMedian tidak terpengaruh oleh nilai ekstrem, sehingga memberikan gambaran yang lebih stabil tentang pusat data dalam distribusi yang tidak simetris atau mengandung outlier.\n\n\n\n\n3.2.3 Modus\nModus, atau mode, adalah nilai yang paling sering muncul dalam dataset. Dataset bisa memiliki lebih dari satu modus atau tidak memiliki modus sama sekali jika tidak ada nilai yang berulang.\nContoh 1 (Satu Modus):\nMisalkan kita memiliki dataset berikut: 4, 1, 2, 4, 5, 4. Untuk menghitung modus:\nNilai 4 muncul tiga kali, lebih sering daripada nilai lainnya. Jadi, modus dari dataset ini adalah 4.\nContoh 2 (Beberapa Modus):\nMisalkan kita memiliki dataset berikut: 1, 2, 2, 3, 3, 4. Untuk menghitung modus:\nNilai 2 dan 3 masing-masing muncul dua kali, yang lebih sering daripada nilai lainnya. Jadi, modus dari dataset ini adalah 2 dan 3, sehingga dataset ini memiliki dua modus.\nContoh 3 (Tidak Ada Modus):\nMisalkan kita memiliki dataset berikut: 1, 2, 3, 4, 5. Untuk menghitung modus:\nSemua nilai muncul hanya sekali, jadi tidak ada nilai yang lebih sering muncul. Jadi, dataset ini tidak memiliki modus.\nSelain mean, median, dan modus, ada beberapa ukuran pemusatan lain yang mungkin berguna tergantung pada konteks data. Misalnya, trimmed mean adalah jenis rata-rata yang dihitung setelah menghilangkan persentase terendah dan tertinggi dari data. Ini berguna ketika data mengandung outlier yang signifikan yang dapat mempengaruhi rata-rata secara tidak proporsional.\nTrimmed Mean adalah salah satu variasi dari mean yang digunakan untuk mengatasi masalah yang disebabkan oleh nilai ekstrem atau outlier dalam dataset. Dengan memangkas sebagian dari data di ujung distribusi, trimmed mean memberikan gambaran yang lebih stabil tentang pusat data, mengurangi dampak nilai ekstrem yang mungkin mengganggu hasil analisis.\nTrimmed mean dihitung dengan menghilangkan persentase tertentu dari nilai-nilai tertinggi dan terendah dalam dataset sebelum menghitung rata-rata. Biasanya, proses ini dilakukan dengan menghapus nilai ekstrem dari kedua ujung distribusi (atas dan bawah) untuk meminimalkan pengaruh outlier.\nMisalnya, dalam sebuah dataset dengan 100 nilai, kita dapat menghapus 5% nilai terendah dan 5% nilai tertinggi, dan kemudian menghitung mean dari nilai-nilai yang tersisa.\nLangkah-Langkah Menghitung Trimmed Mean\n\nUrutkan data dari nilai terendah ke tertinggi.\n\nPilih persentase nilai yang akan dipangkas dari kedua ujung distribusi. Misalnya, jika kita menggunakan 10% pemangkasan, kita akan menghapus 10% nilai terendah dan 10% nilai tertinggi.\n\nHapus nilai dari kedua ujung sesuai dengan persentase yang telah ditentukan.\n\nHitung rata-rata dari nilai-nilai yang tersisa setelah pemangkasan.\n\nContoh\nMisalkan kita memiliki dataset dengan 6 nilai berikut: 2, 3, 4, 8, 12, 100.\n\nData yang sudah diurutkan: 2, 3, 4, 8, 12, 100\n\nMisalkan kita menggunakan 20% pemangkasan.\nDalam dataset ini yang berisi 6 nilai, 20% dari 6 adalah 1.2. Karena kita harus menggunakan angka bulat, kita memangkas 1 nilai terendah dan 1 nilai tertinggi.\n\nHapus nilai 2 dan 100. Dataset yang tersisa adalah: 3, 4, 8, 12\n\nHitung Mean dari Sisa Data:\nJumlahkan nilai-nilai yang tersisa: 3 + 4 + 8 + 12 = 27\nHitung jumlah data yang tersisa: 4\nHitung mean: 27 / 4 = 6.75\n\nJadi, trimmed mean dari dataset ini dengan 20% pemangkasan adalah 6.75.\nKeuntungan dan Kekurangan\nKeuntungan:\nMengurangi Pengaruh Outlier, Trimmed mean mengurangi dampak nilai ekstrem yang bisa mempengaruhi rata-rata aritmetika secara signifikan.\nMemberikan Gambaran Lebih Stabil, Trimmed mean memberikan gambaran yang lebih stabil tentang pusat distribusi data, terutama dalam dataset yang mengandung outlier.\nKekurangan:\nMenghilangkan Informasi, Dengan memangkas data, kita menghilangkan sebagian informasi yang mungkin masih relevan.\nPenentuan Persentase Pemangkasan, Menentukan persentase pemangkasan yang tepat bisa bersifat subjektif dan tergantung pada konteks data.\nAplikasi\nTrimmed mean sering digunakan dalam situasi di mana data mengandung outlier yang dapat mempengaruhi hasil analisis. Misalnya, dalam analisis pendapatan rumah tangga, di mana beberapa individu mungkin memiliki pendapatan yang sangat tinggi atau sangat rendah dibandingkan dengan sebagian besar populasi, trimmed mean dapat memberikan gambaran yang lebih akurat tentang pendapatan tipikal.\nDalam penelitian ilmiah, trimmed mean juga digunakan untuk mengurangi pengaruh data yang tidak konsisten atau anomali yang dapat mengganggu hasil eksperimen. Dengan menggunakan trimmed mean, peneliti dapat memastikan bahwa analisis mereka lebih representatif dari data yang mayoritas, dan lebih sedikit terpengaruh oleh nilai ekstrem yang mungkin tidak mencerminkan pola umum.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "dasarstats.html#ukuran-penyebaran-data",
+    "href": "dasarstats.html#ukuran-penyebaran-data",
+    "title": "3  Statistika Dasar",
+    "section": "3.3 Ukuran Penyebaran Data",
+    "text": "3.3 Ukuran Penyebaran Data\nStatistik lain seperti rentang (range), ragam (variance), dan deviasi standar (standard deviation) memberikan gambaran tentang penyebaran data. Namun, terkadang sulit untuk menginterpretasikan ragam karena satuannya adalah kuadrat dari unit data. Di sinilah deviasi standar menjadi lebih berguna karena berada dalam unit yang sama dengan data asli. Deviasi standar memberikan wawasan yang lebih intuitif tentang penyebaran data.\n\n3.3.1 Rentang\nRentang, atau range, adalah ukuran penyebaran yang paling sederhana. Range dihitung dengan mengurangkan nilai minimum dari nilai maksimum dalam dataset. Range memberikan gambaran kasar tentang seberapa jauh nilai-nilai dalam dataset tersebar, tetapi tidak memberikan informasi tentang distribusi nilai di antara nilai ekstrem. Misalnya, jika kita memiliki dataset nilai tes: 55, 67, 78, 85, dan 92, rentangnya adalah 92 - 55 = 37. Range ini menunjukkan bahwa ada perbedaan 37 poin antara nilai terendah dan tertinggi, tetapi tidak menggambarkan bagaimana nilai-nilai lain tersebar di antara keduanya.\n\n\n3.3.2 Ragam\nRagam, atau variance, adalah ukuran penyebaran yang lebih komprehensif dibandingkan range. Ragam dihitung dengan menghitung rata-rata kuadrat selisih antara setiap nilai dan rata-rata dataset. Ragam memberikan informasi tentang seberapa besar variasi data dari nilai rata-rata, tetapi satuannya adalah kuadrat dari unit data asli, yang dapat membuat interpretasinya menjadi kurang intuitif. Untuk menghitung ragam, pertama-tama kita menghitung rata-rata dari dataset, lalu kita hitung selisih antara setiap nilai dan rata-rata, kuadratkan selisih tersebut, dan ambil rata-ratanya.\nSebagai contoh, jika dataset nilai ujian adalah 55, 67, 78, 85, dan 92, pertama-tama kita hitung rata-rata (75.4). Selisih setiap nilai dari rata-rata adalah 55-75.4 = -20.4, 67-75.4 = -8.4, dan seterusnya hingga 92-75.4 = 16.6. Kuadratkan selisih tersebut dan rata-ratakan hasilnya untuk mendapatkan varians.\n\n\n\n\n\n\nDalam Matematika dan Statistika\n\n\n\nKita memiliki nili ujian dari 5 siswa adalah \\(x = \\{ 55, 67, 78, 85, 92 \\}\\), \\(n = 5\\). Pertama, kita hitung nilai rata-rata, \\(\\bar{x}\\), terlebih dahulu. \\[\n\\begin{align}\n\\bar{x} &= \\frac{\\sum_{i=1}^{n} x_i}{n}\\\\\n        &= \\frac{\\sum_{i=1}^{5} x_i}{5}\\\\\n        &= \\frac{55 + 67 + 78 + 85 + 92}{5}\\\\\n        &= \\frac{377}{5}\\\\\n\\bar{x} &= 75.4\n\\end{align}\n\\]\nSelanjutnya hitung selisih masing-masing nilai terhadap rata-rata dan dikuadratkan. \\[\n\\begin{align}\n&=(55-75.4)^2 + (67-75.4)^2 + (78-75.4)^2 + (85-75.4)^2 + (92-75.4)^2\\\\\n&= (-20.4)^2 + (-8.4)^2 + (2.6)^2 + (9.6)^2 + (16.6)^2\\\\\n&= 416.16 + 70.56 + 6.76 + 92.16 + 275.56\\\\\n&= 861.2\n\\end{align}\n\\]\nJika diperhatikan, kita dapat menyederhanakan penulisan di atas menjadi notasi matematika\n\\[\n\\sum_{i=1}^n(x_i - \\bar{x})^2\n\\]\nTerakhir, kita rata-ratakan dengan membagi nilai tersebut dengan banyaknya data \\(n\\), sedangkan untuk data contoh (sample) maka pembaginya adalah \\(n-1\\).\n\\[\n\\sigma^2 = \\frac{\\sum_{i=1}^N(x_i - \\mu)^2}{N}\n\\]\n\\[\ns^2 = \\frac{\\sum_{i=1}^n(x_i - \\bar{x})^2}{n-1}\n\\]\n\n\nDeviasi standar adalah ukuran dispersi yang merupakan akar kuadrat dari varians. Deviasi standar memberikan ukuran variasi data dalam satuan yang sama dengan data asli, membuatnya lebih mudah diinterpretasikan dibandingkan varians. Jika deviasi standar kecil, berarti data cenderung berkumpul di sekitar mean, sedangkan deviasi standar besar menunjukkan variasi yang lebih besar. Menggunakan contoh yang sama, setelah menghitung varians, kita menghitung akar kuadrat dari varians untuk mendapatkan deviasi standar. Dalam kasus dataset nilai tes sebelumnya, jika variansnya adalah 142.16, deviasi standarnya adalah √142.16 ≈ 11.94. Ini menunjukkan seberapa jauh, rata-rata, nilai-nilai dalam dataset menyimpang dari mean.\nKetiga ukuran ini—rentang, varians, dan deviasi standar—menyediakan informasi penting tentang bagaimana data tersebar dan bervariasi. Rentang memberikan gambaran umum, tetapi tidak mendetail. Varians memberikan informasi lebih mendalam namun dalam unit kuadrat, sedangkan deviasi standar, sebagai akar kuadrat dari varians, menawarkan ukuran variasi dalam satuan yang lebih intuitif dan mudah dipahami. Dalam analisis data, memilih ukuran dispersi yang tepat membantu kita untuk mendapatkan gambaran yang jelas tentang distribusi dan variasi data, yang penting untuk pengambilan keputusan dan interpretasi data yang akurat.\nUntuk data yang sangat besar atau kompleks, konsep seperti koefisien variasi juga dapat digunakan. Koefisien variasi adalah rasio deviasi standar terhadap mean, sering dinyatakan sebagai persentase. Ini memungkinkan perbandingan variasi antara dataset yang memiliki unit yang berbeda atau mean yang berbeda.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "dasarstats.html#distribusi-probabilitas",
+    "href": "dasarstats.html#distribusi-probabilitas",
+    "title": "3  Statistika Dasar",
+    "section": "3.4 Distribusi Probabilitas",
+    "text": "3.4 Distribusi Probabilitas\nDistribusi probabilitas adalah konsep yang menghubungkan probabilitas dengan nilai data yang mungkin. Dalam statistika, distribusi probabilitas digunakan untuk memahami dan memodelkan bagaimana data terdistribusi dan seberapa mungkin nilai-nilai tertentu terjadi.\nDistribusi normal, atau distribusi Gaussian, adalah salah satu distribusi yang paling sering digunakan dalam statistika. Distribusi ini memiliki bentuk lonceng simetris dan ditentukan oleh dua parameter: mean dan deviasi standar. Banyak fenomena alami, seperti tinggi badan manusia dan hasil ujian, cenderung mengikuti distribusi normal.\nNamun, tidak semua data mengikuti distribusi normal. Dalam kasus seperti itu, distribusi lain mungkin lebih sesuai. Misalnya, distribusi binomial digunakan untuk model probabilitas dari sejumlah percobaan independen dengan dua hasil yang mungkin, seperti lemparan koin. Distribusi Poisson digunakan untuk menghitung probabilitas kejadian yang jarang terjadi dalam interval waktu tertentu.\nSelain distribusi-distribusi tersebut, distribusi eksponensial, chi-square, dan t-student juga memiliki aplikasi penting dalam statistika, terutama dalam analisis inferensial dan uji hipotesis.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "dasarstats.html#inferensi-statistik",
+    "href": "dasarstats.html#inferensi-statistik",
+    "title": "3  Statistika Dasar",
+    "section": "3.5 Inferensi Statistik",
+    "text": "3.5 Inferensi Statistik\nInferensi statistik adalah proses menarik kesimpulan tentang populasi berdasarkan data sampel. Ini adalah salah satu aspek terpenting dari analisis data karena memungkinkan kita untuk membuat keputusan dan prediksi yang informatif dengan hanya menggunakan subset data yang lebih kecil daripada populasi keseluruhan.\nUji hipotesis adalah metode yang digunakan untuk menguji klaim atau pernyataan tentang populasi berdasarkan sampel. Proses ini melibatkan penyusunan hipotesis nol dan hipotesis alternatif. Hipotesis nol adalah pernyataan yang ingin kita uji dan sering kali merupakan asumsi bahwa tidak ada efek atau perbedaan. Hipotesis alternatif adalah pernyataan yang menunjukkan adanya efek atau perbedaan. Setelah menetapkan hipotesis, analisis dilakukan untuk menentukan apakah data mendukung hipotesis alternatif atau tidak.\nSelain uji hipotesis, interval kepercayaan memberikan rentang nilai yang diharapkan mencakup parameter populasi dengan tingkat kepercayaan tertentu. Misalnya, interval kepercayaan 95% berarti bahwa jika kita melakukan analisis yang sama berulang kali, 95% dari interval kepercayaan yang dihasilkan akan mencakup parameter populasi yang sebenarnya. Interval kepercayaan membantu kita untuk memahami sejauh mana estimasi sampel dapat dipercaya.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "dasarstats.html#aplikasi-dalam-data-analytics",
+    "href": "dasarstats.html#aplikasi-dalam-data-analytics",
+    "title": "3  Statistika Dasar",
+    "section": "3.6 Aplikasi dalam Data Analytics",
+    "text": "3.6 Aplikasi dalam Data Analytics\nKonsep-konsep statistika dasar ini sangat penting dalam praktik data analytics. Dalam proses analisis data, statistika membantu kita untuk mengidentifikasi pola, tren, dan hubungan yang signifikan. Misalnya, ukuran pemusatan dan dispersi data memungkinkan kita untuk memahami distribusi data dan mengidentifikasi outlier yang mungkin memerlukan perhatian khusus.\nDistribusi probabilitas membantu kita untuk memodelkan dan memahami ketidakpastian dalam data, sedangkan inferensi statistik memungkinkan kita untuk membuat keputusan berdasarkan data sampel. Semua ini adalah keterampilan yang sangat berharga dalam dunia data yang semakin kompleks dan berbasis bukti.\nSebagai contoh, dalam analisis data penjualan, kita dapat menggunakan statistika dasar untuk mengidentifikasi produk yang paling populer, mengevaluasi tren penjualan dari waktu ke waktu, dan membuat prediksi tentang penjualan masa depan. Dengan memahami ukuran pemusatan dan dispersi, kita dapat mengidentifikasi produk yang memiliki penjualan tinggi secara konsisten dan produk yang menunjukkan variasi besar dalam penjualan.\nDistribusi probabilitas dapat digunakan untuk memodelkan kemungkinan permintaan produk di masa depan, dan uji hipotesis dapat membantu kita untuk menguji apakah strategi pemasaran baru memiliki dampak yang signifikan terhadap penjualan.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "sql-summary.html",
+    "href": "sql-summary.html",
+    "title": "\n16  Summary\n",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Bagian 4: Mahir SQL",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "penulis.html",
+    "href": "penulis.html",
+    "title": "Tentang Penulis",
+    "section": "",
+    "text": "Aep Hidayatuloh\nSejak lulus dari Program Sarjana Statistika di Institut Pertanian Bogor (IPB University), dia menempati beberapa posisi sebagai Data Analyst mulai dari level internship, junior, senior hingga Head of Data Analytics di beberapa perusahaan dan konsultan analisis data science. Sepanjang karirnya dia memiliki pengalaman luas terlibat di berbagai proyek analisis data di perbankan, telekomunikasi, instansi pemerintahan dan retail. Bahasa pemrograman R menjadi pilihan utama, Python sebagai bahasa pemrograman kedua dan juga kemampuan SAS. Dia mengajar di berbagai pelatihan, menjadi dosen tamu di beberapa universitas dan menjadi narasumber di berbagai webinar.",
+    "crumbs": [
+      "Tentang Penulis"
+    ]
+  },
+  {
+    "objectID": "penutup.html",
+    "href": "penutup.html",
+    "title": "Penutup",
+    "section": "",
+    "text": "Buku ini disusun sedemikian rupa sehingga memudahkan bagi Anda yang ingin mulai mempelajari tentang Data Analytics dan menjadi seorang Data Analyst. Buku ini akan menjadi panduan yang lengkap.\nDi awal buku ini Anda akan diajak untuk memahami cara berpikir seorang data analyst. Tentu saja Anda tidak bisa lepas dari kewajiban untuk memahami tentang Statistika sebagai fondasi mutlak untuk menjadi seorang data analyst. Tapi tenang saja! Pembahasan Statistika dibuat sederhana agar mudah dipahami dan tetap dapat digunakan sebagai bekal Anda menjadi data analyst.\nAnda juga akan belajar menggunakan Spreadsheet sebagai alat bantu paling fundamental ketika bekerja dengan data, memahami SQL sebagai alat untuk berkomunikasi dengan data di dalam database, menggunakan bahasa pemrograman sebagai alat yang lebih advance untuk data analysis dan cara membuat visualisasi untuk mengomunikasikan hasil analisis data yang Anda lakukan.",
+    "crumbs": [
+      "Penutup"
+    ]
+  },
+  {
+    "objectID": "dasar.html",
+    "href": "dasar.html",
+    "title": "Bagian 1: Dasar Data Analytics",
+    "section": "",
+    "text": "Pengetahuan dan kemampuan dasar yang harus dimiliki oleh seorang data analyst tentu saja adalah kemampuan menganalisa data. Lantas apa yang dimaksud dengan menganalisa data? Ini adalah proses memeriksa, membersihkan, mengubah, memodelkan dan menarik kesimpulan dari kumpulan data yang banyak atau sedikit. Tujuannya adalah untuk menemukan informasi yang berguna dan mendukung pengambilan keputusan dalam bisnis.\n\n\n\n\n\n\nAda dua kata penting untuk seorang data analyst dari paragraf di atas, yaitu data dan bisnis. Analisis data dibutuhkan oleh sebuah perusahaan atau organisasi tentu saja untuk meningkatkan kemajuan bisnis mereka. Karena itulah mereka mencari data analyst. Jadi, kemampuan dasar seorang data analyst ketika bekerja adalah kemampuannya menganalisis data dan menyesuaikan dengan konteks bisnis. Tentu saja selain itu juga perlu didukung dengan kemampuan lain seperti kemampuan teknis dalam memahami dan mengolah data menggunakan tools, mencari actionable insight, dan mampu menyampaikan hasil analisis data dengan komunikasi yang baik.\n\n\n\n\n\n\n\n\n\n\nMeskipun istilah data analytics dan data analysis sering digunakan secara bergantian, keduanya memiliki perbedaan yang signifikan dalam konteks penggunaannya dan tujuan akhir yang dicapai. Data analytics adalah istilah yang lebih luas dan mencakup keseluruhan proses pengumpulan, pemrosesan, dan analisis data untuk menghasilkan wawasan yang dapat digunakan untuk pengambilan keputusan. Ini mencakup berbagai teknik dan alat, termasuk eksplorasi data, pembersihan data, serta penerapan model statistik dan prediktif. Tujuan dari data analytics adalah untuk memahami pola-pola yang mendasari data, membuat prediksi, dan memberikan rekomendasi strategis yang berdasarkan pada analisis tersebut.\nDi sisi lain, data analysis merujuk lebih spesifik pada proses menganalisis data itu sendiri, setelah data dikumpulkan dan dipersiapkan. Data analysis berfokus pada penerapan teknik statistik dan algoritma untuk menginterpretasikan data yang telah dibersihkan dan diatur. Ini termasuk prosedur seperti perhitungan statistik deskriptif, pengujian hipotesis, dan identifikasi hubungan antar variabel. Data analysis sering dianggap sebagai salah satu komponen dari data analytics, berperan dalam menghasilkan informasi yang akurat dan relevan dari data yang tersedia.\nDalam prakteknya, data analytics mencakup berbagai jenis analisis, termasuk analisis deskriptif, diagnostik, prediktif, dan preskriptif. Analisis deskriptif bertujuan untuk menjelaskan data yang ada dengan menggunakan statistik dasar, sedangkan analisis diagnostik mencari penyebab dari pola yang terlihat. Analisis prediktif menggunakan data historis untuk memprediksi tren di masa depan, dan analisis preskriptif memberikan rekomendasi tentang tindakan yang sebaiknya diambil. Semua jenis analisis ini bekerja bersama-sama dalam konteks data analytics untuk memberikan pandangan yang komprehensif dan strategis.\nSebaliknya, data analysis lebih fokus pada metode dan teknik tertentu yang digunakan untuk mengolah data. Ini bisa melibatkan penggunaan alat statistik untuk menghitung mean, median, dan modus atau menerapkan teknik lanjutan seperti regresi atau clustering untuk menemukan pola. Data analysis sering kali merupakan bagian dari proyek data analytics yang lebih besar, di mana analisis dilakukan sebagai langkah untuk mencapai hasil yang lebih luas dan untuk mendukung keputusan strategis.\nKeduanya, data analytics dan data analysis, memerlukan keterampilan dan alat yang berbeda. Dalam data analytics, keterampilan yang diperlukan termasuk pemrograman, pemahaman mendalam tentang model statistik, dan kemampuan untuk menggunakan alat visualisasi dan manajemen data. Sementara itu, data analysis membutuhkan keterampilan yang lebih spesifik dalam teknik analisis statistik dan pemrograman untuk memanipulasi dan mengevaluasi data. Meskipun ada tumpang tindih dalam keterampilan, peran dan tanggung jawab dalam masing-masing bidang dapat berbeda secara signifikan.\nTerakhir, meskipun data analytics dan data analysis sering kali digunakan dalam konteks yang sama, perbedaan mendasar terletak pada cakupan dan tujuan mereka. Data analytics adalah proses holistik yang mencakup keseluruhan siklus hidup data dari pengumpulan hingga keputusan berbasis data, sedangkan data analysis adalah proses yang lebih terfokus pada penerapan teknik analisis untuk memahami data yang telah dipersiapkan. Memahami perbedaan ini penting untuk memilih pendekatan yang tepat dalam proyek data dan untuk memastikan bahwa semua aspek dari analisis data diperhatikan dengan baik.",
+    "crumbs": [
+      "Bagian 1: Dasar Data Analytics"
+    ]
+  },
+  {
+    "objectID": "statistik.html",
+    "href": "statistik.html",
+    "title": "Bagian 2: Memahami Statistik",
+    "section": "",
+    "text": "Sebelum menginjakan kaki di tanah teknis dalam mengerjakan analisis data, Anda harus tahu dulu beberapa hal dasar tentang statistik.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik"
+    ]
+  },
+  {
+    "objectID": "spreadsheet.html",
+    "href": "spreadsheet.html",
+    "title": "Bagian 3: Menguasai Spreadsheet",
+    "section": "",
+    "text": "Spreadsheet atau yang biasa disebut juga Excel merupakan alat utama yang biasanya digunakan oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart.\nExcel biasanya digunakan untuk menyimpan data berupa data tabular atau pekerjaan yang menggunakan formula/fungsi. Data ini bisa disimpan dalam format *.xlsx atau *.csv. Pada bagian ini kita akan mempelajari Excel dari dasar. Mulai dari pengenalan tampilan antar muka (interface) hingga membuat visualisasi menggunakan chart.",
+    "crumbs": [
+      "Bagian 3: Menguasai Spreadsheet"
+    ]
+  },
+  {
+    "objectID": "st-dasarstats.html",
+    "href": "st-dasarstats.html",
+    "title": "3  Statistika Dasar",
+    "section": "",
+    "text": "3.1 Populasi dan Sampel dalam Statistika\nDalam statistika, istilah populasi dan contoh (sample, sampel) merujuk pada dua konsep penting yang membantu kita dalam pengumpulan dan analisis data. Memahami perbedaan antara populasi dan sampel sangat penting dalam desain penelitian dan interpretasi hasil analisis data.\nPopulasi adalah keseluruhan kelompok yang menjadi objek perhatian atau penelitian. Populasi mencakup semua unit, individu, atau item yang memenuhi kriteria tertentu dan kita ingin membuat kesimpulan atau generalisasi. Populasi bisa sangat besar atau sangat kecil, tergantung pada konteks penelitian. Misalnya, jika kita tertarik untuk mempelajari kebiasaan makan masyarakat di suatu negara, maka seluruh populasi yang dimaksud adalah seluruh warga negara tersebut. Dalam studi tersebut, populasi mencakup setiap individu yang tinggal di negara itu.\nContoh lain dari populasi adalah dalam studi kesehatan. Jika peneliti ingin meneliti prevalensi diabetes di antara semua orang berusia 60 tahun ke atas di kota tertentu, maka populasi adalah semua orang berusia 60 tahun ke atas di kota tersebut. Populasi ini mencakup semua individu dalam kelompok umur yang relevan, yang memungkinkan peneliti untuk mendapatkan gambaran yang menyeluruh tentang prevalensi diabetes di seluruh kelompok tersebut.\nDi Indonesia pengumpulan data populasi ini dilakukan dengan sensus seperti yang dilakukan oleh Badan Pusat Statistik (BPS). Misalnya sensus penduduk, sensus ekonomi dan sensus pertanian. Karena biaya dan tenaga yang dibutuhkan untuk melakukan sensus tidak sedikit, maka sensus dilakukan dalam rentang waktu yang cukup lama dari sensus ke sensus berikutnya. Contohnya sensus penduduk dilakukan 10 tahun sekali pada setiap tahun yang berakhiran angka 0.\nNamun, dalam praktiknya, sering kali tidak mungkin atau tidak praktis untuk mengumpulkan data dari seluruh populasi. Di sinilah konsep contoh (sampel) menjadi penting. Contoh (sampel) adalah subset dari populasi yang dipilih untuk mewakili populasi secara keseluruhan. Penggunaan sampel memungkinkan peneliti untuk melakukan analisis yang dapat digunakan untuk membuat inferensi tentang populasi tanpa harus memeriksa setiap individu dalam populasi tersebut. Sampel diambil dengan berbagai metode, termasuk sampling acak, stratified sampling, dan lain-lain, untuk memastikan bahwa sampel tersebut representatif dari populasi yang lebih besar.\nContoh:\nKembali ke contoh studi kebiasaan makan masyarakat di suatu negara. Alih-alih mengumpulkan data dari semua warga negara, peneliti mungkin memutuskan untuk mengambil sampel. Misalnya, mereka bisa memilih 1.000 orang dari berbagai wilayah di negara tersebut, dengan proporsi yang mencerminkan distribusi demografis negara tersebut. Sampel ini diharapkan dapat memberikan gambaran yang cukup representatif tentang kebiasaan makan warga negara secara keseluruhan.\nDalam studi kesehatan tentang prevalensi diabetes, peneliti mungkin memilih sampel dari 500 orang yang berusia 60 tahun ke atas untuk melakukan survei. Sampel ini dipilih secara acak atau berdasarkan kriteria tertentu untuk memastikan bahwa sampel tersebut mewakili populasi berusia 60 tahun ke atas dengan cara yang adil. Hasil survei pada sampel ini kemudian digunakan untuk membuat estimasi tentang prevalensi diabetes di seluruh populasi.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "st-dasarstats.html#populasi-dan-sampel-dalam-statistika",
+    "href": "st-dasarstats.html#populasi-dan-sampel-dalam-statistika",
+    "title": "3  Statistika Dasar",
+    "section": "",
+    "text": "Dalam Matematika dan Statistika\n\n\n\nBerbagai notasi untuk populasi umumnya menggunakan huruf kapital, misalnya \\(N\\), \\(X\\), \\(\\sigma\\) (dibaca: sigma), \\(\\mu\\) (dibaca: myu) dan lain-lain, sedangkan untuk contoh (sampel) umumnya menggunakan notasi huruf kecil. Misalnya \\(n\\), \\(x\\), \\(s\\), \\(\\bar{x}\\) (dibaca: “X bar”).",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "st-dasarstats.html#ukuran-pemusatan-data",
+    "href": "st-dasarstats.html#ukuran-pemusatan-data",
+    "title": "3  Statistika Dasar",
+    "section": "3.2 Ukuran Pemusatan Data",
+    "text": "3.2 Ukuran Pemusatan Data\nUkuran pemusatan dan penyebaran data adalah dua konsep fundamental yang membentuk dasar dari analisis statistik. Untuk memahami data secara menyeluruh, tidak cukup hanya dengan mengetahui nilai rata-rata (mean atau average) atau median; penting juga untuk memahami bagaimana data tersebar di sekitar nilai pusat tersebut.\nUkuran pemusatan data adalah statistik yang digunakan untuk menentukan nilai representatif dari suatu dataset. Ukuran ini memberikan gambaran tentang pusat distribusi data, yang dapat membantu dalam memahami pola dan tren dalam data. Tiga ukuran pemusatan utama yang sering digunakan adalah mean, median, dan modus (mode). Masing-masing memiliki kegunaan dan aplikasi tertentu tergantung pada sifat data yang dianalisis.\n\n3.2.1 Rata-Rata\nRata-rata, atau mean, adalah ukuran pemusatan yang paling umum dan sering digunakan. Mean dihitung dengan menjumlahkan semua nilai dalam dataset dan membaginya dengan jumlah data. Mean memberikan gambaran umum tentang pusat distribusi data.\nContoh:\nMisalkan kita memiliki dataset yang berisi nilai-nilai berikut: 3, 7, 5, 9, dan 11. Untuk menghitung rata-rata:\n\nJumlahkan semua nilai: 3 + 7 + 5 + 9 + 11 = 35\n\nHitung jumlah data: 5\n\nBagi total jumlah dengan jumlah data: 35 / 5 = 7\n\nJadi, rata-rata dari dataset ini adalah 7. Ini berarti bahwa, secara umum, nilai-nilai dalam dataset cenderung berada di sekitar angka 7.\n\n\n\n\n\n\nBerhati-hatilah\n\n\n\nJika ada nilai ekstrem (outlier) yang sangat tinggi atau rendah, rata-rata dapat terpengaruh. Misalnya, jika kita menambahkan nilai 100 ke dataset di atas (sehingga menjadi 3, 7, 5, 9, 11, dan 100), rata-ratanya akan berubah:\n\nJumlahkan semua nilai baru: 3 + 7 + 5 + 9 + 11 + 100 = 135\n\nHitung jumlah data: 6\n\nBagi total jumlah dengan jumlah data: 135 / 6 = 22.5\n\nRata-rata pada data baru ini adalah 22.5, yang jauh lebih tinggi dibandingkan sebelumnya karena nilai ekstrem 100.\n\n\nDari contoh sederhana di atas kita dapat memahami bahwa untuk mendapatkan nilai rata-rata adalah dengan cara menjumlahkan semua nilai dan dibagi dengan banyaknya data.\n\n\n\n\n\n\nDalam Matematika dan Statistika\n\n\n\nPenjumlahan dinotasikan dengan simbol Sigma (\\(\\sum\\)), masing-masing nilai pada data dinotasikan dengan \\(x_i\\) (dibaca: “X i”), banyaknya data adalah \\(n\\), dan nilai rata-rata dinotasikan dengan \\(\\bar{x}\\) (dibaca: “X bar”). Formula untuk menghitung rata-rata adalah:\n\\[\\frac{3 + 7 + 5 + 9 + 11}{5}\\]\n\\[\\frac{x_1 + x_2 + x_3 + x_4 + x_5}{5}\\]\nPenulisan \\(x_1 + x_2 + x_3 + x_4 + x_5\\) disederhanakan menjadi\n\\[\nx_1 + x_2 + x_3 + x_4 + x_5 = \\sum_{i = 1}^5 x_i\n\\]\nPada contoh di atas nilai \\(n = 5\\). Secara umum, jika ada sebanyak \\(n\\) data maka akan ada \\(x = \\{x_1, x_2, x_3, \\dots,x_n\\}\\). Oleh karena itu penulisannya akan menjadi\n\\[\nx_1 + x_2 + x_3 + \\dots + x_n = \\sum_{i = 1}^n x_i\n\\]\nSetelah itu hasil penjumlahan di atas dibagi sesuai dengan banyaknya data, yaitu \\(n\\).\n\\[\n\\bar{x} = \\frac{\\sum_{i = 1}^n x_i}{n}\n\\]\n\n\n\n\n3.2.2 Nilai Tengah\nNilai tengah, atau median, adalah nilai tengah dari dataset setelah data diurutkan. Jika jumlah data genap, median adalah rata-rata dari dua nilai tengah.\nContoh 1 (Jumlah Data Ganjil):\nMisalkan kita memiliki dataset berikut: 2, 8, 5, 3, 9. Untuk menghitung median:\n\nUrutkan data: 2, 3, 5, 8, 9\n\nTemukan nilai tengah: Nilai tengah adalah 5, karena 5 adalah nilai yang berada di tengah dataset yang telah diurutkan.\n\nJadi, median dari dataset ini adalah 5.\n\nContoh 2 (Jumlah Data Genap):\nMisalkan kita memiliki dataset berikut: 3, 2, 9, 8. Untuk menghitung median:\n\nUrutkan data: 2, 3, 8, 9\n\nTemukan dua nilai tengah: 3 dan 8\n\nHitung rata-rata dari dua nilai tengah: (3 + 8) / 2 = 5.5\n\nJadi, median dari dataset ini adalah 5.5.\n\n\n\n\n\n\nCatatan\n\n\n\nMedian tidak terpengaruh oleh nilai ekstrem, sehingga memberikan gambaran yang lebih stabil tentang pusat data dalam distribusi yang tidak simetris atau mengandung outlier.\n\n\n\n\n3.2.3 Modus\nModus, atau mode, adalah nilai yang paling sering muncul dalam dataset. Dataset bisa memiliki lebih dari satu modus atau tidak memiliki modus sama sekali jika tidak ada nilai yang berulang.\nContoh 1 (Satu Modus):\nMisalkan kita memiliki dataset berikut: 4, 1, 2, 4, 5, 4. Untuk menghitung modus:\nNilai 4 muncul tiga kali, lebih sering daripada nilai lainnya. Jadi, modus dari dataset ini adalah 4.\nContoh 2 (Beberapa Modus):\nMisalkan kita memiliki dataset berikut: 1, 2, 2, 3, 3, 4. Untuk menghitung modus:\nNilai 2 dan 3 masing-masing muncul dua kali, yang lebih sering daripada nilai lainnya. Jadi, modus dari dataset ini adalah 2 dan 3, sehingga dataset ini memiliki dua modus.\nContoh 3 (Tidak Ada Modus):\nMisalkan kita memiliki dataset berikut: 1, 2, 3, 4, 5. Untuk menghitung modus:\nSemua nilai muncul hanya sekali, jadi tidak ada nilai yang lebih sering muncul. Jadi, dataset ini tidak memiliki modus.\nSelain mean, median, dan modus, ada beberapa ukuran pemusatan lain yang mungkin berguna tergantung pada konteks data. Misalnya, trimmed mean adalah jenis rata-rata yang dihitung setelah menghilangkan persentase terendah dan tertinggi dari data. Ini berguna ketika data mengandung outlier yang signifikan yang dapat mempengaruhi rata-rata secara tidak proporsional.\nTrimmed Mean adalah salah satu variasi dari mean yang digunakan untuk mengatasi masalah yang disebabkan oleh nilai ekstrem atau outlier dalam dataset. Dengan memangkas sebagian dari data di ujung distribusi, trimmed mean memberikan gambaran yang lebih stabil tentang pusat data, mengurangi dampak nilai ekstrem yang mungkin mengganggu hasil analisis.\nTrimmed mean dihitung dengan menghilangkan persentase tertentu dari nilai-nilai tertinggi dan terendah dalam dataset sebelum menghitung rata-rata. Biasanya, proses ini dilakukan dengan menghapus nilai ekstrem dari kedua ujung distribusi (atas dan bawah) untuk meminimalkan pengaruh outlier.\nMisalnya, dalam sebuah dataset dengan 100 nilai, kita dapat menghapus 5% nilai terendah dan 5% nilai tertinggi, dan kemudian menghitung mean dari nilai-nilai yang tersisa.\nLangkah-Langkah Menghitung Trimmed Mean\n\nUrutkan data dari nilai terendah ke tertinggi.\n\nPilih persentase nilai yang akan dipangkas dari kedua ujung distribusi. Misalnya, jika kita menggunakan 10% pemangkasan, kita akan menghapus 10% nilai terendah dan 10% nilai tertinggi.\n\nHapus nilai dari kedua ujung sesuai dengan persentase yang telah ditentukan.\n\nHitung rata-rata dari nilai-nilai yang tersisa setelah pemangkasan.\n\nContoh\nMisalkan kita memiliki dataset dengan 6 nilai berikut: 2, 3, 4, 8, 12, 100.\n\nData yang sudah diurutkan: 2, 3, 4, 8, 12, 100\n\nMisalkan kita menggunakan 20% pemangkasan.\nDalam dataset ini yang berisi 6 nilai, 20% dari 6 adalah 1.2. Karena kita harus menggunakan angka bulat, kita memangkas 1 nilai terendah dan 1 nilai tertinggi.\n\nHapus nilai 2 dan 100. Dataset yang tersisa adalah: 3, 4, 8, 12\n\nHitung Mean dari Sisa Data:\nJumlahkan nilai-nilai yang tersisa: 3 + 4 + 8 + 12 = 27\nHitung jumlah data yang tersisa: 4\nHitung mean: 27 / 4 = 6.75\n\nJadi, trimmed mean dari dataset ini dengan 20% pemangkasan adalah 6.75.\nKeuntungan dan Kekurangan\nKeuntungan:\nMengurangi Pengaruh Outlier, Trimmed mean mengurangi dampak nilai ekstrem yang bisa mempengaruhi rata-rata aritmetika secara signifikan.\nMemberikan Gambaran Lebih Stabil, Trimmed mean memberikan gambaran yang lebih stabil tentang pusat distribusi data, terutama dalam dataset yang mengandung outlier.\nKekurangan:\nMenghilangkan Informasi, Dengan memangkas data, kita menghilangkan sebagian informasi yang mungkin masih relevan.\nPenentuan Persentase Pemangkasan, Menentukan persentase pemangkasan yang tepat bisa bersifat subjektif dan tergantung pada konteks data.\nAplikasi\nTrimmed mean sering digunakan dalam situasi di mana data mengandung outlier yang dapat mempengaruhi hasil analisis. Misalnya, dalam analisis pendapatan rumah tangga, di mana beberapa individu mungkin memiliki pendapatan yang sangat tinggi atau sangat rendah dibandingkan dengan sebagian besar populasi, trimmed mean dapat memberikan gambaran yang lebih akurat tentang pendapatan tipikal.\nDalam penelitian ilmiah, trimmed mean juga digunakan untuk mengurangi pengaruh data yang tidak konsisten atau anomali yang dapat mengganggu hasil eksperimen. Dengan menggunakan trimmed mean, peneliti dapat memastikan bahwa analisis mereka lebih representatif dari data yang mayoritas, dan lebih sedikit terpengaruh oleh nilai ekstrem yang mungkin tidak mencerminkan pola umum.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "st-dasarstats.html#ukuran-penyebaran-data",
+    "href": "st-dasarstats.html#ukuran-penyebaran-data",
+    "title": "3  Statistika Dasar",
+    "section": "3.3 Ukuran Penyebaran Data",
+    "text": "3.3 Ukuran Penyebaran Data\nStatistik lain seperti rentang (range), ragam (variance), dan deviasi standar (standard deviation) memberikan gambaran tentang penyebaran data. Namun, terkadang sulit untuk menginterpretasikan ragam karena satuannya adalah kuadrat dari unit data. Di sinilah deviasi standar menjadi lebih berguna karena berada dalam unit yang sama dengan data asli. Deviasi standar memberikan wawasan yang lebih intuitif tentang penyebaran data.\n\n3.3.1 Rentang\nRentang, atau range, adalah ukuran penyebaran yang paling sederhana. Range dihitung dengan mengurangkan nilai minimum dari nilai maksimum dalam dataset. Range memberikan gambaran kasar tentang seberapa jauh nilai-nilai dalam dataset tersebar, tetapi tidak memberikan informasi tentang distribusi nilai di antara nilai ekstrem. Misalnya, jika kita memiliki dataset nilai tes: 55, 67, 78, 85, dan 92, rentangnya adalah 92 - 55 = 37. Range ini menunjukkan bahwa ada perbedaan 37 poin antara nilai terendah dan tertinggi, tetapi tidak menggambarkan bagaimana nilai-nilai lain tersebar di antara keduanya.\n\n\n3.3.2 Ragam\nRagam, atau variance, adalah ukuran penyebaran yang lebih komprehensif dibandingkan range. Ragam dihitung dengan menghitung rata-rata kuadrat selisih antara setiap nilai dan rata-rata dataset. Ragam memberikan informasi tentang seberapa besar variasi data dari nilai rata-rata, tetapi satuannya adalah kuadrat dari unit data asli, yang dapat membuat interpretasinya menjadi kurang intuitif. Untuk menghitung ragam, pertama-tama kita menghitung rata-rata dari dataset, lalu kita hitung selisih antara setiap nilai dan rata-rata, kuadratkan selisih tersebut, dan ambil rata-ratanya.\nSebagai contoh, jika dataset nilai ujian adalah 55, 67, 78, 85, dan 92, pertama-tama kita hitung rata-rata (75.4). Selisih setiap nilai dari rata-rata adalah 55-75.4 = -20.4, 67-75.4 = -8.4, dan seterusnya hingga 92-75.4 = 16.6. Kuadratkan selisih tersebut dan rata-ratakan hasilnya untuk mendapatkan varians.\n\n\n\n\n\n\nDalam Matematika dan Statistika\n\n\n\nKita memiliki nili ujian dari 5 siswa adalah \\(x = \\{ 55, 67, 78, 85, 92 \\}\\), \\(n = 5\\). Pertama, kita hitung nilai rata-rata, \\(\\bar{x}\\), terlebih dahulu. \\[\n\\begin{align}\n\\bar{x} &= \\frac{\\sum_{i=1}^{n} x_i}{n}\\\\\n        &= \\frac{\\sum_{i=1}^{5} x_i}{5}\\\\\n        &= \\frac{55 + 67 + 78 + 85 + 92}{5}\\\\\n        &= \\frac{377}{5}\\\\\n\\bar{x} &= 75.4\n\\end{align}\n\\]\nSelanjutnya hitung selisih masing-masing nilai terhadap rata-rata dan dikuadratkan. \\[\n\\begin{align}\n&=(55-75.4)^2 + (67-75.4)^2 + (78-75.4)^2 + (85-75.4)^2 + (92-75.4)^2\\\\\n&= (-20.4)^2 + (-8.4)^2 + (2.6)^2 + (9.6)^2 + (16.6)^2\\\\\n&= 416.16 + 70.56 + 6.76 + 92.16 + 275.56\\\\\n&= 861.2\n\\end{align}\n\\]\nJika diperhatikan, kita dapat menyederhanakan penulisan di atas menjadi notasi matematika\n\\[\n\\sum_{i=1}^n(x_i - \\bar{x})^2\n\\]\nTerakhir, kita rata-ratakan dengan membagi nilai tersebut dengan banyaknya data \\(n\\), sedangkan untuk data contoh (sample) maka pembaginya adalah \\(n-1\\).\n\\[\n\\sigma^2 = \\frac{\\sum_{i=1}^N(x_i - \\mu)^2}{N}\n\\]\n\\[\ns^2 = \\frac{\\sum_{i=1}^n(x_i - \\bar{x})^2}{n-1}\n\\]\n\n\nDeviasi standar adalah ukuran dispersi yang merupakan akar kuadrat dari varians. Deviasi standar memberikan ukuran variasi data dalam satuan yang sama dengan data asli, membuatnya lebih mudah diinterpretasikan dibandingkan varians. Jika deviasi standar kecil, berarti data cenderung berkumpul di sekitar mean, sedangkan deviasi standar besar menunjukkan variasi yang lebih besar. Menggunakan contoh yang sama, setelah menghitung varians, kita menghitung akar kuadrat dari varians untuk mendapatkan deviasi standar. Dalam kasus dataset nilai tes sebelumnya, jika variansnya adalah 142.16, deviasi standarnya adalah √142.16 ≈ 11.94. Ini menunjukkan seberapa jauh, rata-rata, nilai-nilai dalam dataset menyimpang dari mean.\nKetiga ukuran ini—rentang, varians, dan deviasi standar—menyediakan informasi penting tentang bagaimana data tersebar dan bervariasi. Rentang memberikan gambaran umum, tetapi tidak mendetail. Varians memberikan informasi lebih mendalam namun dalam unit kuadrat, sedangkan deviasi standar, sebagai akar kuadrat dari varians, menawarkan ukuran variasi dalam satuan yang lebih intuitif dan mudah dipahami. Dalam analisis data, memilih ukuran dispersi yang tepat membantu kita untuk mendapatkan gambaran yang jelas tentang distribusi dan variasi data, yang penting untuk pengambilan keputusan dan interpretasi data yang akurat.\nUntuk data yang sangat besar atau kompleks, konsep seperti koefisien variasi juga dapat digunakan. Koefisien variasi adalah rasio deviasi standar terhadap mean, sering dinyatakan sebagai persentase. Ini memungkinkan perbandingan variasi antara dataset yang memiliki unit yang berbeda atau mean yang berbeda.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "st-dasarstats.html#distribusi-probabilitas",
+    "href": "st-dasarstats.html#distribusi-probabilitas",
+    "title": "3  Statistika Dasar",
+    "section": "3.4 Distribusi Probabilitas",
+    "text": "3.4 Distribusi Probabilitas\nDistribusi probabilitas adalah konsep yang menghubungkan probabilitas dengan nilai data yang mungkin. Dalam statistika, distribusi probabilitas digunakan untuk memahami dan memodelkan bagaimana data terdistribusi dan seberapa mungkin nilai-nilai tertentu terjadi.\nDistribusi normal, atau distribusi Gaussian, adalah salah satu distribusi yang paling sering digunakan dalam statistika. Distribusi ini memiliki bentuk lonceng simetris dan ditentukan oleh dua parameter: mean dan deviasi standar. Banyak fenomena alami, seperti tinggi badan manusia dan hasil ujian, cenderung mengikuti distribusi normal.\nNamun, tidak semua data mengikuti distribusi normal. Dalam kasus seperti itu, distribusi lain mungkin lebih sesuai. Misalnya, distribusi binomial digunakan untuk model probabilitas dari sejumlah percobaan independen dengan dua hasil yang mungkin, seperti lemparan koin. Distribusi Poisson digunakan untuk menghitung probabilitas kejadian yang jarang terjadi dalam interval waktu tertentu.\nSelain distribusi-distribusi tersebut, distribusi eksponensial, chi-square, dan t-student juga memiliki aplikasi penting dalam statistika, terutama dalam analisis inferensial dan uji hipotesis.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "st-dasarstats.html#inferensi-statistik",
+    "href": "st-dasarstats.html#inferensi-statistik",
+    "title": "3  Statistika Dasar",
+    "section": "3.5 Inferensi Statistik",
+    "text": "3.5 Inferensi Statistik\nInferensi statistik adalah proses menarik kesimpulan tentang populasi berdasarkan data sampel. Ini adalah salah satu aspek terpenting dari analisis data karena memungkinkan kita untuk membuat keputusan dan prediksi yang informatif dengan hanya menggunakan subset data yang lebih kecil daripada populasi keseluruhan.\nUji hipotesis adalah metode yang digunakan untuk menguji klaim atau pernyataan tentang populasi berdasarkan sampel. Proses ini melibatkan penyusunan hipotesis nol dan hipotesis alternatif. Hipotesis nol adalah pernyataan yang ingin kita uji dan sering kali merupakan asumsi bahwa tidak ada efek atau perbedaan. Hipotesis alternatif adalah pernyataan yang menunjukkan adanya efek atau perbedaan. Setelah menetapkan hipotesis, analisis dilakukan untuk menentukan apakah data mendukung hipotesis alternatif atau tidak.\nSelain uji hipotesis, interval kepercayaan memberikan rentang nilai yang diharapkan mencakup parameter populasi dengan tingkat kepercayaan tertentu. Misalnya, interval kepercayaan 95% berarti bahwa jika kita melakukan analisis yang sama berulang kali, 95% dari interval kepercayaan yang dihasilkan akan mencakup parameter populasi yang sebenarnya. Interval kepercayaan membantu kita untuk memahami sejauh mana estimasi sampel dapat dipercaya.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
+    ]
+  },
+  {
+    "objectID": "st-dasarstats.html#aplikasi-dalam-data-analytics",
+    "href": "st-dasarstats.html#aplikasi-dalam-data-analytics",
+    "title": "3  Statistika Dasar",
+    "section": "3.6 Aplikasi dalam Data Analytics",
+    "text": "3.6 Aplikasi dalam Data Analytics\nKonsep-konsep statistika dasar ini sangat penting dalam praktik data analytics. Dalam proses analisis data, statistika membantu kita untuk mengidentifikasi pola, tren, dan hubungan yang signifikan. Misalnya, ukuran pemusatan dan dispersi data memungkinkan kita untuk memahami distribusi data dan mengidentifikasi outlier yang mungkin memerlukan perhatian khusus.\nDistribusi probabilitas membantu kita untuk memodelkan dan memahami ketidakpastian dalam data, sedangkan inferensi statistik memungkinkan kita untuk membuat keputusan berdasarkan data sampel. Semua ini adalah keterampilan yang sangat berharga dalam dunia data yang semakin kompleks dan berbasis bukti.\nSebagai contoh, dalam analisis data penjualan, kita dapat menggunakan statistika dasar untuk mengidentifikasi produk yang paling populer, mengevaluasi tren penjualan dari waktu ke waktu, dan membuat prediksi tentang penjualan masa depan. Dengan memahami ukuran pemusatan dan dispersi, kita dapat mengidentifikasi produk yang memiliki penjualan tinggi secara konsisten dan produk yang menunjukkan variasi besar dalam penjualan.\nDistribusi probabilitas dapat digunakan untuk memodelkan kemungkinan permintaan produk di masa depan, dan uji hipotesis dapat membantu kita untuk menguji apakah strategi pemasaran baru memiliki dampak yang signifikan terhadap penjualan.",
+    "crumbs": [
+      "Bagian 2: Memahami Statistik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Statistika Dasar</span>"
     ]
   }
 ]
