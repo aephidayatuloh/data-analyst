@@ -6,10 +6,12 @@ project:
     browser: true
 
 book:
-  title: "Menjadi Data Analyst"
-  subtitle: "Konsep, Statistika, Spreadsheet, SQL dan R/Python"
+  title: "Langkah Awal Menjadi Data Analyst"
+  subtitle: "Menguasai Statistika, Spreadsheet, SQL, Programming dan Visualisasi untuk Pemula"
   author: 
     - name: Aep Hidayatuloh
+      # affiliations: StarCore Analytics
+      email: aephidayatuloh.mail@gmail.com
   date: today
   date-format: D MMM YYYY
   cover-image: cover.png
@@ -21,41 +23,65 @@ book:
     - part: dasar.qmd
       chapters: 
         - polapikir.qmd
-        - fondasi.qmd
+        - fondasi.qmd 
+        - text: "Keuntungan Data Analyst"
+          file: keuntungan.qmd 
+        - text: "Metrik dalam Bisnis"
+          file: metric.qmd 
     
     - part: statistik.qmd
       chapters: 
-        - dasarstats.qmd
-        - eksplorasi.qmd
-    
+        - st-dasarstats.qmd
+        - st-tipedata.qmd
+        - st-eksplorasi.qmd
+        - st-sebaran.qmd
+        - st-ujihipotesis.qmd
+        
     - part: spreadsheet.qmd
       chapters: 
-        - pengenalanss.qmd
-        - tabelformula.qmd
-        - pivot.qmd
-        - chart.qmd
+        - ss-pengenalan.qmd
+        - ss-tabelformula.qmd
+        - ss-pivot.qmd
+        - ss-chart.qmd
     
     - part: sql.qmd
       chapters: 
         - sql-database.qmd
-        - sql-select.qmd # SELECT Clause
-        - sql-filter.qmd # Filter WHERE
-        - sql-order.qmd # Sort 
+        - sql-select.qmd  # SELECT Clause
+        - sql-filter.qmd  # Filter WHERE
+        - sql-order.qmd   # Sort 
         - sql-summary.qmd # Membuat variabel dari 
         - sql-join.qmd
     
     - part: programming.qmd
       chapters: 
-        - rprogramming.qmd 
-        - python.qmd 
+        - text: "Dasar R Programming" 
+          file: r-programming.qmd 
+        - text: "Alur Kendali" 
+          file: r-ifloop.qmd 
+        - text: "Memperoleh Data" 
+          file: r-importexport.qmd
+        - text: "Eksplorasi Data" 
+          file: r-eksplor.qmd
     
     - part: komunikasi.qmd 
       chapters: 
         - visualisasi.qmd
         - storytelling.qmd
+    
+    - part: proyek.qmd 
+      chapters: 
+        - usecase1.qmd
+        - usecase2.qmd
+
+    - part: tips.qmd 
+      chapters: 
+        - portofolio.qmd
+        - jobseek.qmd
 
     - pustaka.qmd
     - penulis.qmd
+    - penutup.qmd
 
 bibliography: references.bib
 
@@ -65,9 +91,14 @@ format:
     df-print: tibble
     css: style.css
     code-link: true
-
-  pdf:
-    documentclass: scrbook
+  docx:
+    reference-doc: custom-reference-doc.docx
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    highlight-style: github
+  # pdf:
+  #   documentclass: scrbook
 
 
 

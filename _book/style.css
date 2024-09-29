@@ -6,6 +6,10 @@ p {
   margin-top: 5px;
   border: 0.5px solid #000000; 
   box-shadow: 1px 2px 1px #c9c7c7;
+  max-width: 50%;
+  float: left;
+  margin-right: 20px;
+  margin-left: 0px;
 }
 
 .sidebar-navigation {
@@ -47,7 +51,7 @@ div.sidebar-item-container:hover, div.sidebar-item-container:focus {
 }
 .quarto-title {
   content: " ";
-  padding-top: 3em;
+  padding-top: 1.5em;
 }
 
 .chapter-number::before {
@@ -55,4 +59,39 @@ div.sidebar-item-container:hover, div.sidebar-item-container:focus {
 }
 .chapter-number::after {
   content: "";
+}
+
+@media(min-width: 992px) {
+  #quarto-sidebar {
+      display:flex;
+      flex-direction: column;
+      margin-left: -24px !important;
+  }
+
+  .nav-page .nav-page-text,.sidebar-navigation .sidebar-section .sidebar-item {
+      font-size: .875rem;
+  }
+
+  .sidebar-navigation .sidebar-item {
+      font-size: .925rem;
+  }
+
+  .sidebar.sidebar-navigation {
+      display: block;
+      position: sticky;
+  }
+
+  .sidebar-search {
+      width: 100%;
+  }
+
+  .sidebar .sidebar-footer {
+      visibility: visible;
+  }
+}
+
+@media(min-width: 992px) {
+  #quarto-sidebar-glass {
+      display:none;
+  }
 }

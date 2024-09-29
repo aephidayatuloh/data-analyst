@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>7&nbsp; Eksplorasi dan Visualisasi – Langkah Awal Menjadi Data Analyst</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./st-sebaran.html" rel="next">
+<link href="./st-tipedata.html" rel="prev">
+<link href="./icon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script><link rel="stylesheet" href="style.css">
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistik</a></li><li class="breadcrumb-item"><a href="./st-eksplorasi.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Langkah Awal Menjadi Data Analyst</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">DAFTAR ISI</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengantar</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./dasar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 1: Dasar Data Analytics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./polapikir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Pola Pikir Data Analyst</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fondasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fondasi Data Analytics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./keuntungan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Keuntungan Data Analyst</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./metric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik dalam Bisnis</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./statistik.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 2: Memahami Statistik</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-dasarstats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Statistika Dasar</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-tipedata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mengenal Tipe Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-eksplorasi.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-sebaran.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sebaran Peubah Acak</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-ujihipotesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uji Hipotesis</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./spreadsheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 3: Menguasai Spreadsheet</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-pengenalan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Pengenalan Spreadsheet</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-tabelformula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Tabel dan Formula</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-pivot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pivot Tabel</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-chart.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Visualisasi Chart</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./sql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 4: Mahir SQL</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-database.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Database</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-select.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">SELECT Clause</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-filter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Filtering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-order.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Sorting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-join.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Join Tabel</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 5: Programming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r-programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Dasar R Programming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r-ifloop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Alur Kendali</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r-importexport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Memperoleh Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r-eksplor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Eksplorasi Data</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./komunikasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 6: Komunikasi</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./visualisasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Panduan Visualisasi</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./storytelling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Storytelling</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./proyek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 7: Proyek Analisis Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./usecase1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Contoh Use Case 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./usecase2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Contoh Use Case 2</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./tips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 8: Mencari Pekerjaan</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./portofolio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Membangun Portofolio</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./jobseek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tips Mencari Pekerjaan</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pustaka.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pustaka</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./penulis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tentang Penulis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./penutup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Penutup</span></a>
+  </div>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li><a href="#teknik-eksplorasi-data" id="toc-teknik-eksplorasi-data" class="nav-link active" data-scroll-target="#teknik-eksplorasi-data"><span class="header-section-number">7.1</span> Teknik Eksplorasi Data</a></li>
+  <li>
+<a href="#jenis-jenis-visualisasi-statistik" id="toc-jenis-jenis-visualisasi-statistik" class="nav-link" data-scroll-target="#jenis-jenis-visualisasi-statistik"><span class="header-section-number">7.2</span> Jenis-jenis Visualisasi Statistik</a>
+  <ul class="collapse">
+<li><a href="#histogram" id="toc-histogram" class="nav-link" data-scroll-target="#histogram"><span class="header-section-number">7.2.1</span> Histogram</a></li>
+  <li><a href="#boxplot" id="toc-boxplot" class="nav-link" data-scroll-target="#boxplot"><span class="header-section-number">7.2.2</span> Boxplot</a></li>
+  <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link" data-scroll-target="#scatter-plot"><span class="header-section-number">7.2.3</span> Scatter Plot</a></li>
+  <li><a href="#line-chart" id="toc-line-chart" class="nav-link" data-scroll-target="#line-chart"><span class="header-section-number">7.2.4</span> Line Chart</a></li>
+  </ul>
+</li>
+  <li><a href="#contoh-kasus-eksplorasi-dan-visualisasi" id="toc-contoh-kasus-eksplorasi-dan-visualisasi" class="nav-link" data-scroll-target="#contoh-kasus-eksplorasi-dan-visualisasi"><span class="header-section-number">7.3</span> Contoh Kasus Eksplorasi dan Visualisasi</a></li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistik</a></li><li class="breadcrumb-item"><a href="./st-eksplorasi.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span></a></li></ol></nav><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span>
+</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header><p>Ketika berbicara tentang data, langkah pertama yang sangat penting adalah memahami data tersebut dengan baik. Sebelum kita mulai menarik kesimpulan atau membangun model, kita harus melihat data secara mendalam—memahami distribusi, tren, pola, atau bahkan anomali yang ada di dalamnya. Di sinilah eksplorasi data berperan. Eksplorasi data atau <em>Exploratory Data Analysis</em> (EDA) adalah proses awal dalam analisis data yang berfokus pada pemahaman karakteristik dasar dari dataset. Dengan teknik ini, kita bisa lebih peka terhadap pola-pola yang mungkin tersembunyi, serta menilai asumsi-asumsi awal yang bisa kita gunakan dalam analisis lebih lanjut.</p>
+<p>Eksplorasi data tidak hanya berhenti pada angka-angka. Kadang, angka saja tidak cukup untuk memberikan gambaran lengkap tentang data. Oleh karena itu, visualisasi memainkan peran krusial. Visualisasi data memungkinkan kita untuk mengubah angka menjadi gambar yang lebih mudah dipahami dan ditangkap oleh otak manusia. Misalnya, dengan menggunakan grafik seperti <em>histogram</em>, <em>boxplot</em>, atau <em>scatter plot</em>, kita dapat melihat distribusi dan hubungan antarvariabel dengan lebih jelas. Visualisasi yang baik bisa membantu kita mengidentifikasi tren atau korelasi yang mungkin terlewat jika hanya berfokus pada angka.</p>
+<p>Sebagai seorang data analyst, kemampuan untuk melakukan eksplorasi data dan menciptakan visualisasi yang informatif sangat penting. Visualisasi yang tepat bukan hanya untuk analisis pribadi, tetapi juga sangat berguna ketika kita ingin menyampaikan hasil analisis kepada audiens yang lebih luas, termasuk mereka yang mungkin tidak memiliki latar belakang teknis. Seorang data analyst yang baik adalah yang mampu menceritakan cerita di balik data melalui visualisasi yang sederhana namun kuat.</p>
+<section id="teknik-eksplorasi-data" class="level2" data-number="7.1"><h2 data-number="7.1" class="anchored" data-anchor-id="teknik-eksplorasi-data">
+<span class="header-section-number">7.1</span> Teknik Eksplorasi Data</h2>
+<p>Eksplorasi data melibatkan beberapa teknik yang cukup sederhana namun efektif. Teknik-teknik ini biasanya dimulai dengan perhitungan statistik dasar seperti mean, median, mode, varians, dan standar deviasi untuk mendapatkan gambaran awal tentang distribusi data. Misalnya, jika kita memiliki dataset yang berisi tinggi badan sekelompok orang, langkah pertama yang bisa dilakukan adalah menghitung rata-rata dan standar deviasinya.</p>
+<p>Dari sini, kita bisa mengetahui apakah tinggi badan rata-rata kelompok tersebut tinggi atau rendah, serta seberapa besar penyebaran data tersebut. Selain itu, kita juga bisa mencari nilai ekstrim atau pencilan (<em>outlier</em>) yang mungkin ada dalam data. <em>Outlier</em> ini bisa menjadi tanda adanya kesalahan dalam pengumpulan data atau justru merupakan indikasi fenomena khusus yang perlu ditelusuri lebih lanjut.</p>
+</section><section id="jenis-jenis-visualisasi-statistik" class="level2" data-number="7.2"><h2 data-number="7.2" class="anchored" data-anchor-id="jenis-jenis-visualisasi-statistik">
+<span class="header-section-number">7.2</span> Jenis-jenis Visualisasi Statistik</h2>
+<p>Ada berbagai jenis visualisasi yang bisa digunakan tergantung dari tipe data dan tujuan analisis yang ingin dicapai. Beberapa visualisasi dasar yang sering digunakan dalam eksplorasi data antara lain:</p>
+<section id="histogram" class="level3" data-number="7.2.1"><h3 data-number="7.2.1" class="anchored" data-anchor-id="histogram">
+<span class="header-section-number">7.2.1</span> Histogram</h3>
+<p>Histogram Sangat berguna untuk melihat distribusi data kontinu. Histogram memecah data menjadi beberapa “bin” atau kelompok interval, dan memberikan gambaran tentang frekuensi data pada masing-masing kelompok. Misalnya, jika kita ingin mengetahui bagaimana distribusi penghasilan bulanan di suatu perusahaan, histogram dapat membantu kita melihat rentang penghasilan yang paling umum.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Ingat!">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ingat!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Histogram hanya bisa digunakan untuk memvisualisasikan data numerik, tidak bisa untuk data kategorik. Untuk memvisualisasikan data kategorik Anda dapat menggunakan Bar chart (diagram batang) atau pie chart (diagram lingkaran)</p>
+</div>
+</div>
+<p>Informasi atau insight yang dapat diperoleh dari histogram antara lain:</p>
+<ol type="1">
+<li>Mengetahui bentuk sebaran dan ukuran pemusatan data kontinu dengan cepat. Bentuk sebaran data dapat berupa simetrik, seragam, bimodal, menjulur ke kanan atau ke kiri.<br>
+</li>
+<li>Mengetahui rentang nilai data dengan mudah karena kita dapat langsung melihat nilai terendah dan tertinggi. Batang histogram menunjukkan banyaknya data yang berada pada rentang tersebut. Semakin tinggi batangnya maka semakin banyak data pada rentang tersebut.<br>
+</li>
+<li>Mengidentifikasi outlier pada data. Jika ada batang yang berada jauh atau terpisah dari batang histogram yang lain maka dapat dicurigai bahwa data tersebut adalah outlier.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Dari contoh histogram di atas kita dapat mengetahui bahwa sebaran data tersebut hampir simetrik. Tetapi karena ada nilai data yang jauh lebih besar dari nilai pada umumnya, sehingga menyebabkan sebarannya sedikit menjulur ke kanan(<em>skewed to the right</em>). Data yang jauh ini kita dapat mencurigainya sebagai pencilan/outlier. Outlier tersebut bernilai antara 205 hingga 210 cm.</p>
+<p>Kita perlu mengetahui rentang nilai yang dimiliki oleh masing-masing batang. Diantara nilai 160 hingga 170 terdapat 5 batang, sehingga rentang batang adalah (170-160)/5 = 2 cm. Lebar rentang ini sama untuk semua batang. Jadi untuk rentang batang dari 160 sampai 170 cm adalah [160, 162], [162, 164], [164, 166], [166, 168], dan [168, 170]. Oleh karena itu kita dapat menyimpulkan bahwa rentang nilai terbanyak pada data tersebut adalah [168, 170] cm karena batangnya yang paling tinggi. Jika kita mengabaikan outlier, maka nilai rata-rata dan median dari data ini sekitar 168 cm.</p>
+<p>Contoh pembuatan histogram berikut ini akan membantu Anda dalam memahami bagaimana histogram bekerja dan interpretasinya. Tentu saja ketika Anda bekerja sebagai data analyst tidak perlu menghitung manual. Anda dapat menggunakan software untuk mempercepat pekerjaan Anda.</p>
+<p>Misalnya, kita memiliki data tinggi badan dari 20 orang (dalam cm):</p>
+<p>180.7, 167, 166.9, 153.5, 164.8, 167.2, 174.3, 164.4, 162.7, 158.8, 169.8, 177.5, 164.4, 170.7, 176.2, 168.6, 178.8, 162, 160.2, 171.2.</p>
+<p>Maka kita tahu bahwa <span class="math inline">\(n = 20\)</span>.</p>
+<ol type="1">
+<li>
+<p>Tentukan rentang kelas<br>
+Rentang (<span class="math inline">\(r\)</span>) kelas dapat diperoleh dengan cara mengurangi nilai terbesar dan terkecil. Pada contoh data ini nilai terbesar adalah 180.7 dan nilai terkecil adalah 153.5.</p>
+<p><span class="math display">\[
+\begin{align*}
+r &amp; = \lceil max - min \rceil \\
+   &amp; = \lceil 180.7 - 153.5 \rceil \\
+   &amp; = \lceil 27.2 \rceil \\
+r &amp; = 28
+\end{align*}
+\]</span></p>
+</li>
+<li>
+<p>Menentukan jumlah kelas (binning)<br>
+Penentuan jumlah kelas (<span class="math inline">\(k\)</span>) dalam pembuatan histogram dapat dipilih berdasarkan keinginan pembuat histogram atau menggunakan aturan yang sudah dibuat. Penentuan jumlah kelas berdasarkan keinginan pembuatnya misalnya dengan menentukan <span class="math inline">\(k\)</span> sebanyak 5, 6, 7, dan seterunya. Penentuan jumlah kelas yang digunakan di software seperti R atau Python secara default menggunakan aturan yang sudah ada seperti yang diusulkan oleh H.A Sturges, DP Doane, Freedman-Diaconis, dan lain-lain. Untuk contoh ini kita akan menggunakan aturan Sturges dengan formula <span class="math display">\[
+k = \lceil 1 +  \log_2(n) \rceil
+\]</span> Maksud dari simbol <span class="math inline">\(\lceil \rceil\)</span> adalah hasil perhitungan dibulatkan ke atas (ceiling). Karena kita memiliki <span class="math inline">\(n = 20\)</span> maka</p>
+<p><span class="math display">\[
+\begin{align*}
+k &amp; = \lceil 1 + log_2(n) \rceil  \\
+   &amp; = \lceil 1 + log_2(20) \rceil  \\
+   &amp; = \lceil 1 + 4.322 \rceil  \\
+   &amp; = \lceil 5.322 \rceil  \\
+k &amp; = 6  \\
+\end{align*}
+\]</span></p>
+<p>kita dapat menggunakan $ k = 6$ untuk pembuatan histogram ini. Artinya akan ada 6 batang yang terbentuk.</p>
+</li>
+<li>
+<p>Menghitung lebar kelas<br>
+Kita dapat menghitung lebar kelas atau lebar batang histogram (<span class="math inline">\(L\)</span>)dengan</p>
+<p><span class="math display">\[
+L = \frac{r}{k} = \frac{28}{6} = 4.66667 \approx 5
+\]</span></p>
+</li>
+<li>
+<p>Membuat batas kelas Batas kelas adalah rentang nilai yang nantinya akan mengandung nilai data dari masing-masing kelas. Karena nilai terkecil pada data di atas adalah min = 153.5 dan lebar kelas adalah L = 5. maka batas kelas pertama adalah <span class="math inline">\(min + L\)</span> = <span class="math inline">\(153.5 + 5 = 158.5\)</span>. Kita dapat melakukan cara yang sama untuk batas kelas selanjutnya hingga terbentuk 5 kelas.</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{Batas kelas 1: } &amp;= 153.5 + 5 = 158.5, [153.5, 158.5) \\
+\text{Batas kelas 2: } &amp;= 158.5 + 5 = 163.5, [158.5, 163.5) \\
+\text{Batas kelas 3: } &amp;= 163.5 + 5 = 168.5, [163.5, 168.5) \\
+\text{Batas kelas 4: } &amp;= 168.5 + 5 = 173.5, [168.5, 173.5) \\
+\text{Batas kelas 5: } &amp;= 173.5 + 5 = 178.5, [173.5, 178.5) \\
+\text{Batas kelas 6: } &amp;= 178.5 + 5 = 183.5, [178.5, 183.5] \\
+\end{align*}
+\]</span></p>
+</li>
+<li>
+<p>Membuat tabel frekuensi<br>
+Tabel frekuensi adalah sebuah tabel yang memberikan informasi banyaknya kemunculan dari setiap nilai atau kelompok nilai.</p>
+<table class="caption-top table">
+<thead><tr class="header">
+<th style="text-align: center;">Kelas</th>
+<th style="text-align: center;">Batas Kelas</th>
+<th style="text-align: center;">frekuensi (fi)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">[153.5, 158.5)</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">[158.5, 163.5)</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">[163.5, 168.5)</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">[168.5, 173.5)</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">[173.5, 178.5)</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">[178.5, 183.5]</td>
+<td style="text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<p>Total dari frekuensi tersebut jika dijumlahkan adalah 20 dan sesuai dengan <span class="math inline">\(n\)</span> di awal, semua data masuk ke setiap kelas dan tidak ada nilai yang terhimpit diantara dua kelas.</p>
+</li>
+<li><p>Menggambar histogram<br>
+Selanjutnya membuat batang histogram dengan batas kelas berada di sumbu X (horizontal) dan frekuensi di sumbu Y (vertikal). Tinggi batang menyesuaikan dengan nilai frekuensi pada setiap kelas. Histogram akan terlihat seperti berikut ini.</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="boxplot" class="level3" data-number="7.2.2"><h3 data-number="7.2.2" class="anchored" data-anchor-id="boxplot">
+<span class="header-section-number">7.2.2</span> Boxplot</h3>
+<p>Boxplot atau diagram kotak garis adalah salah satu visualisasi paling populer untuk melihat distribusi data, terutama dalam mengidentifikasi median, kuartil, dan outlier. Dengan boxplot, kita bisa langsung melihat apakah ada data yang jauh lebih besar atau kecil dari yang lain, serta bagaimana rentang data pada 50% tengahnya. Jenis visualisasi ini juga sangat berguna untuk menggambarkan sebaran data dan membandingkan beberapa kelompok data.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Ingat!">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ingat!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Boxplot juga hanya bisa untuk data numerik seperti pada histogram.</p>
+</div>
+</div>
+<p><img src="boxplot.png" style="width:80%;"></p>
+<p>Dengan menggunakan data pada contoh histogram sebelumnya kita akan membuat boxplot.</p>
+<ol type="1">
+<li>
+<p>Hitung nilai <span class="math inline">\(Q_1\)</span>, <span class="math inline">\(Q_2\)</span> dan <span class="math inline">\(Q_3\)</span><br>
+Untuk mendapatkan nilai <span class="math inline">\(Q_1\)</span>, <span class="math inline">\(Q_2\)</span> dan <span class="math inline">\(Q_3\)</span> kita harus mengurutkan data dari terkecil ke terbesar terlebih dahulu. Data yang sudah diurutkan akan terlihat seperti berikut ini.</p>
+<p>153.5, 158.8, 160.2, 162, 162.7, 164.4, 164.4, 164.8, 166.9, 167, 167.2, 168.6, 169.8, 170.7, 171.2, 174.3, 176.2, 177.5, 178.8, 180.7</p>
+<ul>
+<li>
+<span class="math inline">\(Q_1\)</span> adalah data pada urutan ke 25%.<br>
+</li>
+<li>
+<span class="math inline">\(Q_2\)</span> adalah data ke 50% atau tengah-tengah, disebut juga Median atau Nilai Tengah.<br>
+</li>
+<li>
+<span class="math inline">\(Q_3\)</span> adalah data pada uturan ke 75%.</li>
+</ul>
+<p>Langkah pertama kita hitung <span class="math inline">\(Q_2\)</span> karena lebih mudah. Setelah data diurutkan kita bagi dua data sama banyaknya, yaitu</p>
+<p>180.7 167 166.9 153.5 164.8 167.2 174.3 164.4 162.7 158.8, dan<br>
+169.8 177.5 164.4 170.7 176.2 168.6 178.8 162 160.2 171.2.</p>
+<p>Karena tidak ada data yang tepat berada di tengah kedua bagian tersebut maka <span class="math inline">\(Q_2\)</span> adalah rata-rata dari dua data yang paling dekat dengan tengah pembagi tersebut.</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{lokasi } Q_2 &amp;= \frac{2\times(n+1)}{4}  \\
+     &amp;= \frac{42}{4}  \\
+     &amp;= 10.5
+\end{align*}
+\]</span></p>
+<p>Artinya nilai <span class="math inline">\(Q_2\)</span> ada di antara data ke-10 dan ke-11. Oleh karena itu kita perlu menghitung nilai rata-rata dari kedua data tersebut. Data ke-10 adalah 167.0 dan data ke-11 adalah 167.2. Maka <span class="math inline">\(Q_2\)</span> = (167.0+167.2)/2 = 167.1.</p>
+<p>Kita sebut 50% dari data yang nilainya lebih kecil dari <span class="math inline">\(Q_2\)</span> adalah data sebelah kiri, sedangkan data yang lebih besar dari <span class="math inline">\(Q_2\)</span> adalah data sebelah kanan. Untuk menghitung nilai <span class="math inline">\(Q_1\)</span> kita bisa lakukan hal yang sama seperti pada perhitungan <span class="math inline">\(Q_2\)</span> tapi hanya pada data sebelah kiri. Karena data sebelah kiri ada n_1 = 10 maka</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{lokasi } Q_1 &amp;= \frac{n+1}{4}  \\
+     &amp;= \frac{20+1}{4}  &amp; \text{(dari seluruh data)}  \\
+     &amp;= 5.25
+\end{align*}
+\]</span></p>
+<p>Kita juga bisa menghitung dari data sebelah kiri, ada <span class="math inline">\(n_1 = 10\)</span> data.</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{lokasi } Q_1 &amp;= \frac{n_1+1}{2}  \\
+     &amp;= \frac{10+1}{2}  &amp; \text{(dari data sebelah kiri)}  \\
+     &amp;= 5.5
+\end{align*}
+\]</span></p>
+<p>Dari kedua perhitungan tersebut kita dapat menyimpulkan bahwa nilai <span class="math inline">\(Q_1\)</span> ada di antara data ke-5 dan ke-6, yaitu 162.7 dan 164.4. Rata-rata dari kedua data tersebut adalah <span class="math inline">\(Q_1\)</span> = 163.55.</p>
+<p>Selanjutnya menghitung <span class="math inline">\(Q_3\)</span> adalah data pada urutan ke-75% .</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{lokasi } Q_3 &amp;= \frac{3\times(n+1)}{4}  \\
+     &amp;= \frac{63}{4}  \\
+     &amp;= 15.75
+\end{align*}
+\]</span></p>
+<p>Atau data pada urutan ke 50% dari data di sebelah kanan.</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{lokasi } Q_3 &amp;= \frac{n_2+1}{2}  \\
+     &amp;= \frac{10+1}{2}  \\
+     &amp;= \frac{11}{2}  \\
+     &amp;= 5.25
+\end{align*}
+\]</span></p>
+<p>Jadi nilai <span class="math inline">\(Q_3\)</span> adalah rata-rata dari data urutan ke-15 dan ke-16 dari seluruh data yang sudah diurutkan atau data ke-5 dan ke-6 dari data sebelah kanan. Kedua data tersebut adalah 170.7 dan 174.8, sehingga <span class="math inline">\(Q_3\)</span> = (170.7+174.8)/2 = 172.75.</p>
+<p>Tahap pertama ini cukup panjang karena kita harus menghitung tiga nilai, yaitu <span class="math inline">\(Q_1\)</span>, <span class="math inline">\(Q_2\)</span> dan <span class="math inline">\(Q_3\)</span>. Namun jika data yang kita miliki hanya sedikit maka kita dapat secara mudah hanya dengan melihat pada data yang sudah diurutkan.</p>
+</li>
+<li>
+<p>Menghitung Inter-Quartil Range (IQR)<br>
+Inter-Quartil Range (IQR) diperoleh dengan menghitung selisih antara <span class="math inline">\(Q_3\)</span> dengan <span class="math inline">\(Q_1\)</span>, sehingga</p>
+<p><span class="math display">\[
+IQR = Q_3 - Q_1 = 172.75 - 163.55 = 9.2
+\]</span></p>
+</li>
+<li>
+<p>Menghitung batas bawah dan batas atas<br>
+Batas bawah dan batas atas digunakan untuk membuat batasan penentuan suatu data dianggap sebagai pencilan atau outlier.</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{Batas bawah} &amp;= Q_1 - 1.5 \times IQR  \\
+                 &amp;= 163.55 - 1.5 \times 9.2  \\
+                 &amp;= 149.75  \\
+\text{Batas atas} &amp;= Q_3 + 1.5 \times IQR  \\
+                 &amp;= 172.75 + 1.5 \times 9.2  \\
+                 &amp;= 186.55  \\
+\end{align*}
+\]</span></p>
+<p>Data yang lebih kecil dari batas bawah atau lebih besar dari batas atas dianggap pencilan/outlier. Pada contoh ini semua data berada dalam rentang batas bawah dan batas atas sehingga tidak ada data pencilan/outlier.</p>
+</li>
+<li><p>Membuat visualisasi boxplot<br>
+Pada ilustrasi boxplot di atas, boxplot terbentuk dari kotak dan garis. Kotak tersebut dibentuk dari nilai <span class="math inline">\(Q_1\)</span> dan <span class="math inline">\(Q_3\)</span>, sedangkan garis di tengah kotak dalah <span class="math inline">\(Q_2\)</span>. Garis di sebelah kiri kotak dibentuk dengan menarik garis dari ujung kotak sebelah kiri (<span class="math inline">\(Q_1\)</span>) ke nilai batas bawah. Garis di sebelah kanan kotak dibentuk dengan menarik garis dari ujung kotak sebelah kanan (<span class="math inline">\(Q_3\)</span>) ke nilai batas atas. Jika ada data di luar batas bawah atau batas atasImaka ditandai dengan titik. Boxplot dapat dibuat dengan posisi horizontal atau vertikal. Jika boxplot dibuat dalam posisi vertikal maka akan terlihat seperti pada gambar kedua dibawah ini.</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="scatter-plot" class="level3" data-number="7.2.3"><h3 data-number="7.2.3" class="anchored" data-anchor-id="scatter-plot">
+<span class="header-section-number">7.2.3</span> Scatter Plot</h3>
+<p>Scatter plot atau diagram pencar atau plot tebaran, digunakan untuk melihat hubungan antar dua variabel numerik. Jika kita ingin mengecek apakah ada hubungan antara tinggi badan dan berat badan, scatter plot dapat menunjukkan apakah ada pola tertentu. Bentuk visual dari scatter plot berupa titik-titik berdasarkan koordinat nilai berpasangan antara variabel satu dan variabel kedua. Tujuan dari scatter plot adalah untuk melihat pola hubungan antar variabel. Jika dua variabel tersebut memiliki hubungan sebab-akibat atau sejenisnya, maka umumnya variabel yang menjadi penyebab ditempatkan pada sumbu horizontal dan variabel yang menjadi sebab ditempatkan pada sumbu vertikal.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Ingat!">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ingat!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Scatter plot hanya menunjukkan pola hubungan antara dua variabel numerik, tidak secara tegas menunjukkan sebab-akibat antara dua variabel.</p>
+</div>
+</div>
+<p>Berikut ini contoh visualisasi antara tinggi badan dan berat badan.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Dalam beberapa kasus, kita juga bisa menggunakan visualisasi yang lebih kompleks seperti heatmap untuk melihat korelasi antar banyak variabel atau pairplot untuk membandingkan distribusi dan hubungan antar beberapa variabel sekaligus.</p>
+</section><section id="line-chart" class="level3" data-number="7.2.4"><h3 data-number="7.2.4" class="anchored" data-anchor-id="line-chart">
+<span class="header-section-number">7.2.4</span> Line Chart</h3>
+<p>Line chart atau diagram garis adalah salah satu jenis visualisasi data yang paling umum dan digunakan untuk menampilkan perubahan atau tren dari data secara kontinu sepanjang waktu atau urutan. Biasanya, line chart menampilkan hubungan antara dua variabel, di mana sumbu horizontal (sumbu X) mewakili variabel waktu atau urutan, sedangkan sumbu vertikal (sumbu Y) mewakili nilai dari variabel yang diukur. Berikut ini contoh visualisasi ketinggian muka air danau Huron yang diukur sekali setiap tahun. Variabel <code>Tahun</code> menjadi urutan waktu dan ditempatkan pada sumbu X, variabel <code>Tinggi Air Danau</code> menjadi variabel yang diukur dan ditempatkan pada sumbu Y.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Beberapa poin penting tentang line chart:</p>
+<ol type="1">
+<li>
+<strong><em>Menggambarkan Tren Waktu</em></strong>: Line chart sangat cocok untuk menampilkan data yang terorganisir berdasarkan waktu (seperti harian, mingguan, bulanan, atau tahunan). Misalnya, tren penjualan tahunan atau perubahan suhu selama beberapa hari.<br>
+</li>
+<li>
+<strong><em>Perbandingan Antara Beberapa Seri Data</em></strong>: Anda juga dapat menggunakan line chart untuk membandingkan beberapa set data dalam satu grafik. Misalnya, membandingkan tren penjualan dua produk yang berbeda dalam satu tahun.<br>
+</li>
+<li>
+<strong><em>Sederhana dan Efektif</em></strong>: Line chart mudah dibaca dan memberikan gambaran visual yang jelas tentang bagaimana nilai suatu variabel berubah dari waktu ke waktu. Ini menjadikannya alat yang kuat untuk memahami pola atau fluktuasi data.</li>
+</ol>
+<p>Contohnya, jika Anda memiliki data penjualan bulanan selama satu tahun, Anda dapat memplotkan waktu pada sumbu x (bulan) dan nilai penjualan pada sumbu y. Garis yang menghubungkan titik-titik data akan menunjukkan bagaimana penjualan meningkat atau menurun selama waktu tersebut. Diagram garis sering digunakan dalam laporan bisnis, penelitian ilmiah, dan berbagai aplikasi data analitik untuk membantu melihat perubahan dan membuat keputusan berdasarkan pola yang terlihat.</p>
+</section></section><section id="contoh-kasus-eksplorasi-dan-visualisasi" class="level2" data-number="7.3"><h2 data-number="7.3" class="anchored" data-anchor-id="contoh-kasus-eksplorasi-dan-visualisasi">
+<span class="header-section-number">7.3</span> Contoh Kasus Eksplorasi dan Visualisasi</h2>
+<p>Mari kita lihat sebuah contoh kasus sederhana. Misalkan kita bekerja dengan data penjualan sebuah toko online, yang mencakup jumlah produk terjual per hari, harga per produk, dan total pendapatan harian. Langkah pertama adalah melakukan eksplorasi untuk melihat tren penjualan secara keseluruhan. Dengan menggunakan statistik dasar seperti rata-rata penjualan harian, kita bisa mengetahui apakah ada hari-hari tertentu di mana penjualan lebih tinggi dari biasanya. Kemudian, kita bisa membuat visualisasi seperti line plot untuk menggambarkan tren penjualan dari waktu ke waktu, serta scatter plot untuk melihat apakah ada korelasi antara harga produk dan jumlah penjualan.</p>
+<p>Dengan langkah-langkah ini, kita tidak hanya memahami data secara mendalam, tetapi juga mampu menyajikan informasi tersebut dengan cara yang mudah dipahami oleh pihak lain. Eksplorasi dan visualisasi adalah dua komponen yang tidak terpisahkan dalam dunia analisis data—keduanya membantu kita dalam mengambil keputusan yang lebih baik berdasarkan data yang ada.</p>
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./st-tipedata.html" class="pagination-link" aria-label="Mengenal Tipe Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mengenal Tipe Data</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./st-sebaran.html" class="pagination-link" aria-label="Sebaran Peubah Acak">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sebaran Peubah Acak</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
