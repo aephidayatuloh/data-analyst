@@ -50,7 +50,9 @@ rsconnect/
 
 /.quarto/
 
-# book-cover.png 
+# book-cover.png
+book-cover-print.png 
+book-cover-print-bw.png 
 book-cover.psd  
 brain.png 
 cover.png
