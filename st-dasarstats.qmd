@@ -93,6 +93,12 @@ Setelah itu hasil penjumlahan di atas dibagi sesuai dengan banyaknya data, yaitu
 
 $$
 \bar{x} = \frac{\sum_{i = 1}^n x_i}{n}
+$$ 
+
+atau 
+
+$$
+\bar{x} = \frac{1}{n}\sum_{i = 1}^n x_i
 $$
 
 :::
@@ -152,7 +158,7 @@ Selain mean, median, dan modus, ada beberapa ukuran pemusatan lain yang mungkin 
 
 **Trimmed Mean** adalah salah satu variasi dari mean yang digunakan untuk mengatasi masalah yang disebabkan oleh nilai ekstrem atau outlier dalam dataset. Dengan memangkas sebagian dari data di ujung distribusi, trimmed mean memberikan gambaran yang lebih stabil tentang pusat data, mengurangi dampak nilai ekstrem yang mungkin mengganggu hasil analisis.
 
-**Trimmed mean** dihitung dengan menghilangkan persentase tertentu dari nilai-nilai tertinggi dan terendah dalam dataset sebelum menghitung rata-rata. Biasanya, proses ini dilakukan dengan menghapus nilai ekstrem dari kedua ujung distribusi (atas dan bawah) untuk meminimalkan pengaruh outlier.
+_Trimmed mean_ dihitung dengan menghilangkan persentase tertentu dari nilai-nilai tertinggi dan terendah dalam dataset sebelum menghitung rata-rata. Biasanya, proses ini dilakukan dengan menghapus nilai ekstrem dari kedua ujung distribusi (atas dan bawah) untuk meminimalkan pengaruh outlier.
 
 Misalnya, dalam sebuah dataset dengan 100 nilai, kita dapat menghapus 5% nilai terendah dan 5% nilai tertinggi, dan kemudian menghitung mean dari nilai-nilai yang tersisa.
 
@@ -182,19 +188,21 @@ Jadi, trimmed mean dari dataset ini dengan 20% pemangkasan adalah 6.75.
 
 Keuntungan:
 
-Mengurangi Pengaruh Outlier, Trimmed mean mengurangi dampak nilai ekstrem yang bisa mempengaruhi rata-rata aritmetika secara signifikan.  
-Memberikan Gambaran Lebih Stabil, Trimmed mean memberikan gambaran yang lebih stabil tentang pusat distribusi data, terutama dalam dataset yang mengandung outlier.
+1. **Mengurangi Pengaruh Outlier**  
+    Trimmed mean mengurangi dampak nilai ekstrem yang bisa mempengaruhi rata-rata aritmetika secara signifikan.  
+2. **Memberikan Gambaran Lebih Stabil**  
+    Trimmed mean memberikan gambaran yang lebih stabil tentang pusat distribusi data, terutama dalam dataset yang mengandung pencilan atau outlier.  
 
 Kekurangan:
 
-Menghilangkan Informasi, Dengan memangkas data, kita menghilangkan sebagian informasi yang mungkin masih relevan.  
-Penentuan Persentase Pemangkasan, Menentukan persentase pemangkasan yang tepat bisa bersifat subjektif dan tergantung pada konteks data.
+1. **Menghilangkan Informasi**  
+    Dengan memangkas data, kita menghilangkan sebagian informasi yang mungkin masih relevan.  
+2. **Penentuan Persentase Pemangkasan**  
+    Menentukan persentase pemangkasan yang tepat bisa bersifat subjektif dan tergantung pada konteks data.  
 
-**Aplikasi**
+_Trimmed mean_ sering digunakan dalam situasi di mana data mengandung outlier yang dapat mempengaruhi hasil analisis. Misalnya, dalam analisis pendapatan rumah tangga, di mana beberapa individu mungkin memiliki pendapatan yang sangat tinggi atau sangat rendah dibandingkan dengan sebagian besar populasi, trimmed mean dapat memberikan gambaran yang lebih akurat tentang pendapatan tipikal.
 
-Trimmed mean sering digunakan dalam situasi di mana data mengandung outlier yang dapat mempengaruhi hasil analisis. Misalnya, dalam analisis pendapatan rumah tangga, di mana beberapa individu mungkin memiliki pendapatan yang sangat tinggi atau sangat rendah dibandingkan dengan sebagian besar populasi, trimmed mean dapat memberikan gambaran yang lebih akurat tentang pendapatan tipikal.
-
-Dalam penelitian ilmiah, trimmed mean juga digunakan untuk mengurangi pengaruh data yang tidak konsisten atau anomali yang dapat mengganggu hasil eksperimen. Dengan menggunakan trimmed mean, peneliti dapat memastikan bahwa analisis mereka lebih representatif dari data yang mayoritas, dan lebih sedikit terpengaruh oleh nilai ekstrem yang mungkin tidak mencerminkan pola umum.
+Dalam penelitian ilmiah, _trimmed mean_ juga digunakan untuk mengurangi pengaruh data yang tidak konsisten atau anomali yang dapat mengganggu hasil eksperimen. Dengan menggunakan _trimmed mean_, peneliti dapat memastikan bahwa analisis mereka lebih representatif dari data yang mayoritas, dan lebih sedikit terpengaruh oleh nilai ekstrem yang mungkin tidak mencerminkan pola umum.  
 
 ## Ukuran Penyebaran Data  
 
@@ -240,12 +248,27 @@ $$
 
 Terakhir, kita rata-ratakan dengan membagi nilai tersebut dengan banyaknya data $n$, sedangkan untuk data contoh (sample) maka pembaginya adalah $n-1$.
 
+Untuk populasi kita gunakan 
 $$
-\sigma^2 = \frac{\sum_{i=1}^N(x_i - \mu)^2}{N}
+\sigma^2 = \frac{\sum_{i=1}^N(X_i - \mu)^2}{N}
 $$
 
+atau 
+
+$$
+\sigma^2 = \frac{1}{N}\sum_{i=1}^N(X_i - \mu)^2
+$$
+
+
+sedangkan untuk sampel kita gunakan 
 $$
 s^2 = \frac{\sum_{i=1}^n(x_i - \bar{x})^2}{n-1}
+$$
+
+atau 
+
+$$
+s^2 = \frac{1}{n-1}\sum_{i=1}^n(x_i - \bar{x})^2
 $$
 
 :::

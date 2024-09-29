@@ -1,0 +1,66 @@
+# Metrik Bisnis 
+
+Salah satu tugas utama seorang data analyst adalah membantu perusahaan dalam mengukur performa bisnis melalui data yang dihasilkan. Untuk mencapai tujuan ini, data analyst menggunakan berbagai metrik bisnis yang relevan dengan industri dan kebutuhan perusahaan. Metrik bisnis adalah alat penting untuk memahami apakah suatu perusahaan sedang bergerak ke arah yang benar atau perlu melakukan penyesuaian. Setiap industri memiliki metrik-metrik yang spesifik, namun konsep dasarnya tetap sama: mengukur dan mengevaluasi kinerja untuk pengambilan keputusan yang lebih baik.
+
+Dalam dunia retail, misalnya, metrik seperti Customer Lifetime Value (CLV) dan Customer Acquisition Cost (CAC) menjadi sangat penting. CLV mengukur total nilai yang bisa dihasilkan dari seorang pelanggan selama masa hidup pelanggan tersebut dalam suatu bisnis. Sebaliknya, CAC menghitung berapa biaya yang dikeluarkan untuk mendapatkan pelanggan baru. Dengan membandingkan kedua metrik ini, seorang data analyst bisa memberikan rekomendasi apakah strategi marketing yang digunakan perusahaan efektif atau perlu diubah. Misalnya, jika biaya untuk mendapatkan pelanggan lebih besar daripada nilai yang dihasilkan pelanggan, perusahaan mungkin harus meninjau kembali strategi pemasaran mereka atau meningkatkan upaya retensi pelanggan.
+
+Di sektor kesehatan, metrik yang sering digunakan adalah Patient Satisfaction Score dan Average Treatment Cost. Patient Satisfaction Score mengukur tingkat kepuasan pasien terhadap pelayanan yang diterima di rumah sakit atau klinik, yang sangat penting untuk menjaga reputasi dan kualitas pelayanan. Seorang data analyst di bidang ini akan menganalisis tren data terkait kepuasan pasien dan mengidentifikasi area mana saja yang memerlukan perbaikan. Di sisi lain, Average Treatment Cost membantu rumah sakit dalam mengelola biaya operasional dan menyeimbangkan antara kualitas pelayanan dan efisiensi biaya. Dengan metrik ini, seorang data analyst dapat mengusulkan strategi untuk menekan biaya tanpa mengorbankan kualitas layanan kesehatan.
+
+Dalam industri teknologi, metrik seperti Monthly Active Users (MAU) dan Churn Rate sering kali menjadi pusat perhatian. MAU mengukur jumlah pengguna aktif yang menggunakan suatu aplikasi atau platform setiap bulan, yang memberikan gambaran langsung tentang seberapa banyak interaksi yang terjadi. Sementara itu, Churn Rate menghitung persentase pelanggan atau pengguna yang berhenti menggunakan layanan dalam periode tertentu. Data analyst akan memantau metrik ini untuk memastikan bahwa perusahaan dapat menjaga dan meningkatkan tingkat keterlibatan pengguna, serta meminimalkan kehilangan pelanggan. Misalnya, jika Churn Rate meningkat, perusahaan mungkin harus melihat faktor apa yang menyebabkan pengguna berhenti menggunakan layanan mereka, seperti masalah dalam pengalaman pengguna atau kurangnya fitur yang menarik.
+
+Metrik-metrik ini hanyalah sebagian kecil dari alat yang digunakan data analyst untuk membantu perusahaan dalam berbagai industri. Pada akhirnya, dengan menganalisis metrik-metrik bisnis ini, seorang data analyst berperan penting dalam memastikan bahwa perusahaan dapat mengambil keputusan yang lebih baik, meningkatkan efisiensi, dan menciptakan nilai jangka panjang. Bab ini akan membahas lebih lanjut bagaimana metrik bisnis diterapkan di industri-industri lain seperti keuangan, manufaktur, dan media, serta bagaimana data analyst dapat membuat perubahan nyata di dalam perusahaan melalui pemahaman yang mendalam terhadap metrik ini.
+
+Berikut adalah daftar metrik bisnis yang sering digunakan oleh data analyst di berbagai industri:
+
+## Retail & E-commerce  
+
+1. **_Customer Lifetime Value_** (CLV) – Nilai total yang dihasilkan dari seorang pelanggan selama masa hidupnya.  
+2. **_Customer Acquisition Cost_** (CAC) – Biaya yang dikeluarkan untuk memperoleh satu pelanggan baru.  
+3. **_Conversion Rate_** – Persentase pengunjung yang berubah menjadi pelanggan.  
+4. **_Average Order Value_** (AOV) – Rata-rata nilai transaksi per pesanan.  
+5. **_Cart Abandonment Rate_** – Persentase pelanggan yang meninggalkan keranjang belanja sebelum menyelesaikan pembelian.  
+6. **_Repeat Purchase Rate_** – Persentase pelanggan yang melakukan pembelian berulang.  
+7. **_Gross Margin_** – Selisih antara pendapatan penjualan dan biaya produksi, dinyatakan dalam persentase.  
+
+## Sektor Kesehatan  
+1. **_Patient Satisfaction Score_** – Tingkat kepuasan pasien terhadap pelayanan yang diterima.  
+2. **_Average Treatment Cost_** – Rata-rata biaya perawatan atau pengobatan.  
+3. **_Hospital Readmission Rate_** – Persentase pasien yang kembali dirawat dalam waktu tertentu setelah keluar dari rumah sakit.  
+4. **_Patient Retention Rate_** – Persentase pasien yang tetap menggunakan layanan dalam periode waktu tertentu.  
+5. **_Operational Efficiency_** – Ukuran efisiensi operasional dalam hal biaya dan waktu.  
+
+## Teknologi & Aplikasi Digital  
+1. **_Monthly Active Users_** (MAU) – Jumlah pengguna yang aktif menggunakan aplikasi/platform setiap bulan.  
+2. **_Daily Active Users_** (DAU) – Jumlah pengguna yang aktif setiap hari.  
+3. **_Churn Rate_** – Persentase pengguna atau pelanggan yang berhenti menggunakan layanan dalam periode waktu tertentu.  
+4. **_Retention Rate_** – Persentase pengguna yang tetap menggunakan layanan setelah periode tertentu.  
+5. **_Average Revenue Per User_** (ARPU) – Pendapatan rata-rata yang dihasilkan dari setiap pengguna dalam periode tertentu.  
+
+## Keuangan  
+1. **_Return on Investment (ROI)_** – Ukuran pengembalian investasi relatif terhadap biaya yang dikeluarkan.  
+2. **_Net Profit Margin_** – Persentase laba bersih terhadap total pendapatan.  
+3. **_Operating Cash Flow_** – Jumlah uang tunai yang dihasilkan oleh operasi perusahaan.  
+4. **_Debt-to-Equity Ratio_** – Rasio antara total utang dan ekuitas pemegang saham.  
+5. **_Current Ratio_** – Rasio likuiditas yang mengukur kemampuan perusahaan untuk membayar kewajiban jangka pendek.  
+
+## Manufaktur  
+1. **_Overall Equipment Effectiveness_** (OEE) – Ukuran efektivitas peralatan produksi, menggabungkan ketersediaan, kinerja, dan kualitas.  
+2. **_Production Downtime_** – Waktu yang hilang akibat mesin tidak berfungsi atau gangguan produksi lainnya.  
+3. **_Cost per Unit_** – Biaya untuk memproduksi satu unit produk.  
+4. **_Inventory Turnover_** – Frekuensi rata-rata persediaan diperbarui dalam satu periode waktu.  
+5. **_Defect Rate_** – Persentase produk cacat dalam produksi.  
+
+## Media & Periklanan  
+1. **_Cost per Click_** (CPC) – Biaya yang dibayar untuk setiap klik iklan.  
+2. **_Cost per Acquisition_** (CPA) – Biaya yang dibayar untuk setiap tindakan atau konversi yang diinginkan.  
+3. **_Click-Through Rate_** (CTR) – Persentase orang yang mengeklik iklan setelah melihatnya.  
+4. **_Impressions_** – Jumlah total tampilan iklan.  
+5. **_Engagement Rate_** – Persentase interaksi dengan konten atau iklan, seperti like, share, dan komentar.  
+
+## SaaS (Software as a Service)  
+1. **_Annual Recurring Revenue_** (ARR) – Pendapatan tahunan yang dapat diprediksi dari pelanggan berlangganan.  
+2. **_Customer Retention Rate_** – Persentase pelanggan yang tetap berlangganan setelah periode tertentu.  
+3. **_Customer Churn Rate_** – Persentase pelanggan yang berhenti berlangganan dalam periode tertentu.  
+4. **_Lifetime Value to Customer Acquisition Cost_** (LTV) Ratio – Perbandingan antara CLV dan CAC.  
+5. **_Net Promoter Score_** (NPS) – Ukuran kesetiaan pelanggan berdasarkan rekomendasi.  
+

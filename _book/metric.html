@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bagian 3: Menguasai Spreadsheet – Langkah Awal Menjadi Data Analyst</title>
+<title>4&nbsp; Metrik Bisnis – Langkah Awal Menjadi Data Analyst</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./ss-pengenalan.html" rel="next">
-<link href="./st-ujihipotesis.html" rel="prev">
+<link href="./statistik.html" rel="next">
+<link href="./keuntungan.html" rel="prev">
 <link href="./icon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./spreadsheet.html">Bagian 3: Menguasai Spreadsheet</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dasar.html">Bagian 1: Dasar Data Analytics</a></li><li class="breadcrumb-item"><a href="./metric.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik dalam Bisnis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -147,8 +147,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./metric.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik Bisnis</span></span></a>
+  <a href="./metric.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik dalam Bisnis</span></span></a>
   </div>
 </li>
       </ul>
@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./st-tipedata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tipe Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mengenal Tipe Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -196,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./spreadsheet.html" class="sidebar-item-text sidebar-link active">
+            <a href="./spreadsheet.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bagian 3: Menguasai Spreadsheet</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -403,15 +403,27 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#retail-e-commerce" id="toc-retail-e-commerce" class="nav-link active" data-scroll-target="#retail-e-commerce"><span class="header-section-number">4.1</span> Retail &amp; E-commerce</a></li>
+  <li><a href="#sektor-kesehatan" id="toc-sektor-kesehatan" class="nav-link" data-scroll-target="#sektor-kesehatan"><span class="header-section-number">4.2</span> Sektor Kesehatan</a></li>
+  <li><a href="#teknologi-aplikasi-digital" id="toc-teknologi-aplikasi-digital" class="nav-link" data-scroll-target="#teknologi-aplikasi-digital"><span class="header-section-number">4.3</span> Teknologi &amp; Aplikasi Digital</a></li>
+  <li><a href="#keuangan" id="toc-keuangan" class="nav-link" data-scroll-target="#keuangan"><span class="header-section-number">4.4</span> Keuangan</a></li>
+  <li><a href="#manufaktur" id="toc-manufaktur" class="nav-link" data-scroll-target="#manufaktur"><span class="header-section-number">4.5</span> Manufaktur</a></li>
+  <li><a href="#media-periklanan" id="toc-media-periklanan" class="nav-link" data-scroll-target="#media-periklanan"><span class="header-section-number">4.6</span> Media &amp; Periklanan</a></li>
+  <li><a href="#saas-software-as-a-service" id="toc-saas-software-as-a-service" class="nav-link" data-scroll-target="#saas-software-as-a-service"><span class="header-section-number">4.7</span> SaaS (Software as a Service)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dasar.html">Bagian 1: Dasar Data Analytics</a></li><li class="breadcrumb-item"><a href="./metric.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik dalam Bisnis</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Bagian 3: Menguasai Spreadsheet</h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik Bisnis</span></h1>
 </div>
 
 
@@ -428,10 +440,116 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Spreadsheet atau yang biasa disebut juga Excel merupakan alat utama yang biasanya digunakan oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart.</p>
-<p>Excel biasanya digunakan untuk menyimpan data berupa data tabular atau pekerjaan yang menggunakan formula/fungsi. Data ini bisa disimpan dalam format *.xlsx atau *.csv. Pada bagian ini kita akan mempelajari Excel dari dasar. Mulai dari pengenalan tampilan antar muka (<em>interface</em>) hingga membuat visualisasi menggunakan chart.</p>
+<p>Salah satu tugas utama seorang data analyst adalah membantu perusahaan dalam mengukur performa bisnis melalui data yang dihasilkan. Untuk mencapai tujuan ini, data analyst menggunakan berbagai metrik bisnis yang relevan dengan industri dan kebutuhan perusahaan. Metrik bisnis adalah alat penting untuk memahami apakah suatu perusahaan sedang bergerak ke arah yang benar atau perlu melakukan penyesuaian. Setiap industri memiliki metrik-metrik yang spesifik, namun konsep dasarnya tetap sama: mengukur dan mengevaluasi kinerja untuk pengambilan keputusan yang lebih baik.</p>
+<p>Dalam dunia retail, misalnya, metrik seperti Customer Lifetime Value (CLV) dan Customer Acquisition Cost (CAC) menjadi sangat penting. CLV mengukur total nilai yang bisa dihasilkan dari seorang pelanggan selama masa hidup pelanggan tersebut dalam suatu bisnis. Sebaliknya, CAC menghitung berapa biaya yang dikeluarkan untuk mendapatkan pelanggan baru. Dengan membandingkan kedua metrik ini, seorang data analyst bisa memberikan rekomendasi apakah strategi marketing yang digunakan perusahaan efektif atau perlu diubah. Misalnya, jika biaya untuk mendapatkan pelanggan lebih besar daripada nilai yang dihasilkan pelanggan, perusahaan mungkin harus meninjau kembali strategi pemasaran mereka atau meningkatkan upaya retensi pelanggan.</p>
+<p>Di sektor kesehatan, metrik yang sering digunakan adalah Patient Satisfaction Score dan Average Treatment Cost. Patient Satisfaction Score mengukur tingkat kepuasan pasien terhadap pelayanan yang diterima di rumah sakit atau klinik, yang sangat penting untuk menjaga reputasi dan kualitas pelayanan. Seorang data analyst di bidang ini akan menganalisis tren data terkait kepuasan pasien dan mengidentifikasi area mana saja yang memerlukan perbaikan. Di sisi lain, Average Treatment Cost membantu rumah sakit dalam mengelola biaya operasional dan menyeimbangkan antara kualitas pelayanan dan efisiensi biaya. Dengan metrik ini, seorang data analyst dapat mengusulkan strategi untuk menekan biaya tanpa mengorbankan kualitas layanan kesehatan.</p>
+<p>Dalam industri teknologi, metrik seperti Monthly Active Users (MAU) dan Churn Rate sering kali menjadi pusat perhatian. MAU mengukur jumlah pengguna aktif yang menggunakan suatu aplikasi atau platform setiap bulan, yang memberikan gambaran langsung tentang seberapa banyak interaksi yang terjadi. Sementara itu, Churn Rate menghitung persentase pelanggan atau pengguna yang berhenti menggunakan layanan dalam periode tertentu. Data analyst akan memantau metrik ini untuk memastikan bahwa perusahaan dapat menjaga dan meningkatkan tingkat keterlibatan pengguna, serta meminimalkan kehilangan pelanggan. Misalnya, jika Churn Rate meningkat, perusahaan mungkin harus melihat faktor apa yang menyebabkan pengguna berhenti menggunakan layanan mereka, seperti masalah dalam pengalaman pengguna atau kurangnya fitur yang menarik.</p>
+<p>Metrik-metrik ini hanyalah sebagian kecil dari alat yang digunakan data analyst untuk membantu perusahaan dalam berbagai industri. Pada akhirnya, dengan menganalisis metrik-metrik bisnis ini, seorang data analyst berperan penting dalam memastikan bahwa perusahaan dapat mengambil keputusan yang lebih baik, meningkatkan efisiensi, dan menciptakan nilai jangka panjang. Bab ini akan membahas lebih lanjut bagaimana metrik bisnis diterapkan di industri-industri lain seperti keuangan, manufaktur, dan media, serta bagaimana data analyst dapat membuat perubahan nyata di dalam perusahaan melalui pemahaman yang mendalam terhadap metrik ini.</p>
+<p>Berikut adalah daftar metrik bisnis yang sering digunakan oleh data analyst di berbagai industri:</p>
+<section id="retail-e-commerce" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="retail-e-commerce"><span class="header-section-number">4.1</span> Retail &amp; E-commerce</h2>
+<ol type="1">
+<li><strong><em>Customer Lifetime Value</em></strong> (CLV) – Nilai total yang dihasilkan dari seorang pelanggan selama masa hidupnya.<br>
+</li>
+<li><strong><em>Customer Acquisition Cost</em></strong> (CAC) – Biaya yang dikeluarkan untuk memperoleh satu pelanggan baru.<br>
+</li>
+<li><strong><em>Conversion Rate</em></strong> – Persentase pengunjung yang berubah menjadi pelanggan.<br>
+</li>
+<li><strong><em>Average Order Value</em></strong> (AOV) – Rata-rata nilai transaksi per pesanan.<br>
+</li>
+<li><strong><em>Cart Abandonment Rate</em></strong> – Persentase pelanggan yang meninggalkan keranjang belanja sebelum menyelesaikan pembelian.<br>
+</li>
+<li><strong><em>Repeat Purchase Rate</em></strong> – Persentase pelanggan yang melakukan pembelian berulang.<br>
+</li>
+<li><strong><em>Gross Margin</em></strong> – Selisih antara pendapatan penjualan dan biaya produksi, dinyatakan dalam persentase.</li>
+</ol>
+</section>
+<section id="sektor-kesehatan" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sektor-kesehatan"><span class="header-section-number">4.2</span> Sektor Kesehatan</h2>
+<ol type="1">
+<li><strong><em>Patient Satisfaction Score</em></strong> – Tingkat kepuasan pasien terhadap pelayanan yang diterima.<br>
+</li>
+<li><strong><em>Average Treatment Cost</em></strong> – Rata-rata biaya perawatan atau pengobatan.<br>
+</li>
+<li><strong><em>Hospital Readmission Rate</em></strong> – Persentase pasien yang kembali dirawat dalam waktu tertentu setelah keluar dari rumah sakit.<br>
+</li>
+<li><strong><em>Patient Retention Rate</em></strong> – Persentase pasien yang tetap menggunakan layanan dalam periode waktu tertentu.<br>
+</li>
+<li><strong><em>Operational Efficiency</em></strong> – Ukuran efisiensi operasional dalam hal biaya dan waktu.</li>
+</ol>
+</section>
+<section id="teknologi-aplikasi-digital" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="teknologi-aplikasi-digital"><span class="header-section-number">4.3</span> Teknologi &amp; Aplikasi Digital</h2>
+<ol type="1">
+<li><strong><em>Monthly Active Users</em></strong> (MAU) – Jumlah pengguna yang aktif menggunakan aplikasi/platform setiap bulan.<br>
+</li>
+<li><strong><em>Daily Active Users</em></strong> (DAU) – Jumlah pengguna yang aktif setiap hari.<br>
+</li>
+<li><strong><em>Churn Rate</em></strong> – Persentase pengguna atau pelanggan yang berhenti menggunakan layanan dalam periode waktu tertentu.<br>
+</li>
+<li><strong><em>Retention Rate</em></strong> – Persentase pengguna yang tetap menggunakan layanan setelah periode tertentu.<br>
+</li>
+<li><strong><em>Average Revenue Per User</em></strong> (ARPU) – Pendapatan rata-rata yang dihasilkan dari setiap pengguna dalam periode tertentu.</li>
+</ol>
+</section>
+<section id="keuangan" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="keuangan"><span class="header-section-number">4.4</span> Keuangan</h2>
+<ol type="1">
+<li><strong><em>Return on Investment (ROI)</em></strong> – Ukuran pengembalian investasi relatif terhadap biaya yang dikeluarkan.<br>
+</li>
+<li><strong><em>Net Profit Margin</em></strong> – Persentase laba bersih terhadap total pendapatan.<br>
+</li>
+<li><strong><em>Operating Cash Flow</em></strong> – Jumlah uang tunai yang dihasilkan oleh operasi perusahaan.<br>
+</li>
+<li><strong><em>Debt-to-Equity Ratio</em></strong> – Rasio antara total utang dan ekuitas pemegang saham.<br>
+</li>
+<li><strong><em>Current Ratio</em></strong> – Rasio likuiditas yang mengukur kemampuan perusahaan untuk membayar kewajiban jangka pendek.</li>
+</ol>
+</section>
+<section id="manufaktur" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="manufaktur"><span class="header-section-number">4.5</span> Manufaktur</h2>
+<ol type="1">
+<li><strong><em>Overall Equipment Effectiveness</em></strong> (OEE) – Ukuran efektivitas peralatan produksi, menggabungkan ketersediaan, kinerja, dan kualitas.<br>
+</li>
+<li><strong><em>Production Downtime</em></strong> – Waktu yang hilang akibat mesin tidak berfungsi atau gangguan produksi lainnya.<br>
+</li>
+<li><strong><em>Cost per Unit</em></strong> – Biaya untuk memproduksi satu unit produk.<br>
+</li>
+<li><strong><em>Inventory Turnover</em></strong> – Frekuensi rata-rata persediaan diperbarui dalam satu periode waktu.<br>
+</li>
+<li><strong><em>Defect Rate</em></strong> – Persentase produk cacat dalam produksi.</li>
+</ol>
+</section>
+<section id="media-periklanan" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="media-periklanan"><span class="header-section-number">4.6</span> Media &amp; Periklanan</h2>
+<ol type="1">
+<li><strong><em>Cost per Click</em></strong> (CPC) – Biaya yang dibayar untuk setiap klik iklan.<br>
+</li>
+<li><strong><em>Cost per Acquisition</em></strong> (CPA) – Biaya yang dibayar untuk setiap tindakan atau konversi yang diinginkan.<br>
+</li>
+<li><strong><em>Click-Through Rate</em></strong> (CTR) – Persentase orang yang mengeklik iklan setelah melihatnya.<br>
+</li>
+<li><strong><em>Impressions</em></strong> – Jumlah total tampilan iklan.<br>
+</li>
+<li><strong><em>Engagement Rate</em></strong> – Persentase interaksi dengan konten atau iklan, seperti like, share, dan komentar.</li>
+</ol>
+</section>
+<section id="saas-software-as-a-service" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="saas-software-as-a-service"><span class="header-section-number">4.7</span> SaaS (Software as a Service)</h2>
+<ol type="1">
+<li><strong><em>Annual Recurring Revenue</em></strong> (ARR) – Pendapatan tahunan yang dapat diprediksi dari pelanggan berlangganan.<br>
+</li>
+<li><strong><em>Customer Retention Rate</em></strong> – Persentase pelanggan yang tetap berlangganan setelah periode tertentu.<br>
+</li>
+<li><strong><em>Customer Churn Rate</em></strong> – Persentase pelanggan yang berhenti berlangganan dalam periode tertentu.<br>
+</li>
+<li><strong><em>Lifetime Value to Customer Acquisition Cost</em></strong> (LTV) Ratio – Perbandingan antara CLV dan CAC.<br>
+</li>
+<li><strong><em>Net Promoter Score</em></strong> (NPS) – Ukuran kesetiaan pelanggan berdasarkan rekomendasi.</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -856,13 +974,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./st-ujihipotesis.html" class="pagination-link" aria-label="Uji Hipotesis">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uji Hipotesis</span></span>
+      <a href="./keuntungan.html" class="pagination-link" aria-label="Keuntungan Data Analyst">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Keuntungan Data Analyst</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ss-pengenalan.html" class="pagination-link" aria-label="Pengenalan Spreadsheet">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Pengenalan Spreadsheet</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./statistik.html" class="pagination-link" aria-label="Bagian 2: Memahami Statistik">
+        <span class="nav-page-text">Bagian 2: Memahami Statistik</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

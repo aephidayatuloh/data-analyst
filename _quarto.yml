@@ -6,8 +6,8 @@ project:
     browser: true
 
 book:
-  title: "Menjadi Data Analyst"
-  subtitle: "Konsep, Statistika, Spreadsheet, SQL, Programming dan Visualisasi"
+  title: "Langkah Awal Menjadi Data Analyst"
+  subtitle: "Menguasai Statistika, Spreadsheet, SQL, Programming dan Visualisasi untuk Pemula"
   author: 
     - name: Aep Hidayatuloh
       # affiliations: StarCore Analytics
@@ -23,7 +23,11 @@ book:
     - part: dasar.qmd
       chapters: 
         - polapikir.qmd
-        - fondasi.qmd
+        - fondasi.qmd 
+        - text: "Keuntungan Data Analyst"
+          file: keuntungan.qmd 
+        - text: "Metrik dalam Bisnis"
+          file: metric.qmd 
     
     - part: statistik.qmd
       chapters: 
@@ -33,7 +37,6 @@ book:
         - st-sebaran.qmd
         - st-ujihipotesis.qmd
         
-    
     - part: spreadsheet.qmd
       chapters: 
         - ss-pengenalan.qmd
@@ -44,23 +47,37 @@ book:
     - part: sql.qmd
       chapters: 
         - sql-database.qmd
-        - sql-select.qmd # SELECT Clause
-        - sql-filter.qmd # Filter WHERE
-        - sql-order.qmd # Sort 
+        - sql-select.qmd  # SELECT Clause
+        - sql-filter.qmd  # Filter WHERE
+        - sql-order.qmd   # Sort 
         - sql-summary.qmd # Membuat variabel dari 
         - sql-join.qmd
     
     - part: programming.qmd
       chapters: 
-        - r-programming.qmd 
-        - r-ifloop.qmd 
-        - r-importexport.qmd
-        - r-eksplor.qmd
+        - text: "Dasar R Programming" 
+          file: r-programming.qmd 
+        - text: "Alur Kendali" 
+          file: r-ifloop.qmd 
+        - text: "Memperoleh Data" 
+          file: r-importexport.qmd
+        - text: "Eksplorasi Data" 
+          file: r-eksplor.qmd
     
     - part: komunikasi.qmd 
       chapters: 
         - visualisasi.qmd
         - storytelling.qmd
+    
+    - part: proyek.qmd 
+      chapters: 
+        - usecase1.qmd
+        - usecase2.qmd
+
+    - part: tips.qmd 
+      chapters: 
+        - portofolio.qmd
+        - jobseek.qmd
 
     - pustaka.qmd
     - penulis.qmd
