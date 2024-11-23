@@ -1,2 +1,2 @@
-# Menjadi Data Analyst
-## Konsep, Statistika, Excel, SQL, dan R/Python
+# Langkah Awal Menjadi Data Analyst
+## Menguasai Statistika, Spreadsheet, SQL, Programming dan Visualisasi untuk Pemula 
