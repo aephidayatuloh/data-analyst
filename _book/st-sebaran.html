@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -83,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistik</a></li><li class="breadcrumb-item"><a href="./st-sebaran.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sebaran Peubah Acak</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistika</a></li><li class="breadcrumb-item"><a href="./st-sebaran.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sebaran Peubah Acak</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -148,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./metric.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik Bisnis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik dalam Bisnis</span></span></a>
   </div>
 </li>
       </ul>
@@ -156,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./statistik.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bagian 2: Memahami Statistik</span></a>
+ <span class="menu-text">Bagian 2: Memahami Statistika</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -164,14 +193,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./st-dasarstats.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Statistika Dasar</span></span></a>
+  <a href="./st-tipedata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Mengenal Tipe Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./st-tipedata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tipe Data</span></span></a>
+  <a href="./st-dasarstats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Statistika Dasar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -192,6 +221,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uji Hipotesis</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-korelasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Analisis Korelasi</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -206,25 +241,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ss-pengenalan.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Pengenalan Spreadsheet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Pengenalan Spreadsheet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ss-tabelformula.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Tabel dan Formula</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Tabel dan Formula</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ss-pivot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pivot Tabel</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Pivot Tabel</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ss-chart.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Visualisasi Chart</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Visualisasi Chart</span></span></a>
   </div>
 </li>
       </ul>
@@ -241,37 +276,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sql-database.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Database</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Database</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sql-select.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">SELECT Clause</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">SELECT Clause</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sql-filter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Filtering</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Filtering</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sql-order.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Sorting</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Sorting</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sql-summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sql-join.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Join Tabel</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Join Tabel</span></span></a>
   </div>
 </li>
       </ul>
@@ -288,25 +323,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./r-programming.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">R Programming</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Dasar R Programming</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./r-ifloop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">r-ifloop.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Alur Kendali</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./r-importexport.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">r-importexport.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Memperoleh Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./r-eksplor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">r-eksplor.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Eksplorasi Data</span></span></a>
   </div>
 </li>
       </ul>
@@ -323,13 +358,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./visualisasi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Visualisasi</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Panduan Visualisasi</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./storytelling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Storytelling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Storytelling</span></span></a>
   </div>
 </li>
       </ul>
@@ -346,13 +381,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./usecase1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Contoh Use Case 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Contoh Use Case 1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./usecase2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Contoh Use Case 2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Contoh Use Case 2</span></span></a>
   </div>
 </li>
       </ul>
@@ -369,13 +404,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./portofolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">portofolio.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Membangun Portofolio</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./jobseek.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tips Mencari Pekerjaan</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tips Mencari Pekerjaan</span></span></a>
   </div>
 </li>
       </ul>
@@ -403,13 +438,52 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sebaran-peluang" id="toc-sebaran-peluang" class="nav-link active" data-scroll-target="#sebaran-peluang"><span class="header-section-number">8.1</span> Sebaran Peluang</a></li>
+  <li><a href="#contoh-sebaran-peubah-acak" id="toc-contoh-sebaran-peubah-acak" class="nav-link" data-scroll-target="#contoh-sebaran-peubah-acak"><span class="header-section-number">8.2</span> Contoh Sebaran Peubah Acak</a></li>
+  <li><a href="#sebaran-binomial" id="toc-sebaran-binomial" class="nav-link" data-scroll-target="#sebaran-binomial"><span class="header-section-number">8.3</span> Sebaran Binomial</a>
+  <ul class="collapse">
+  <li><a href="#karakteristik-sebaran-binomial" id="toc-karakteristik-sebaran-binomial" class="nav-link" data-scroll-target="#karakteristik-sebaran-binomial"><span class="header-section-number">8.3.1</span> Karakteristik Sebaran Binomial</a></li>
+  <li><a href="#fungsi-massa-peluang-binomial" id="toc-fungsi-massa-peluang-binomial" class="nav-link" data-scroll-target="#fungsi-massa-peluang-binomial"><span class="header-section-number">8.3.2</span> Fungsi Massa Peluang Binomial</a></li>
+  <li><a href="#contoh-aplikasi-sebaran-binomial" id="toc-contoh-aplikasi-sebaran-binomial" class="nav-link" data-scroll-target="#contoh-aplikasi-sebaran-binomial"><span class="header-section-number">8.3.3</span> Contoh Aplikasi Sebaran Binomial</a></li>
+  <li><a href="#parameter-sebaran-binomial" id="toc-parameter-sebaran-binomial" class="nav-link" data-scroll-target="#parameter-sebaran-binomial"><span class="header-section-number">8.3.4</span> Parameter Sebaran Binomial</a></li>
+  <li><a href="#kegunaan-sebaran-binomial" id="toc-kegunaan-sebaran-binomial" class="nav-link" data-scroll-target="#kegunaan-sebaran-binomial"><span class="header-section-number">8.3.5</span> Kegunaan Sebaran Binomial</a></li>
+  </ul></li>
+  <li><a href="#sebaran-normal" id="toc-sebaran-normal" class="nav-link" data-scroll-target="#sebaran-normal"><span class="header-section-number">8.4</span> Sebaran Normal</a>
+  <ul class="collapse">
+  <li><a href="#karakteristik-sebaran-normal" id="toc-karakteristik-sebaran-normal" class="nav-link" data-scroll-target="#karakteristik-sebaran-normal"><span class="header-section-number">8.4.1</span> Karakteristik Sebaran Normal</a></li>
+  <li><a href="#fungsi-kepekatan-peluang-fkp" id="toc-fungsi-kepekatan-peluang-fkp" class="nav-link" data-scroll-target="#fungsi-kepekatan-peluang-fkp"><span class="header-section-number">8.4.2</span> Fungsi Kepekatan Peluang (FKP)</a></li>
+  <li><a href="#transformasi-z" id="toc-transformasi-z" class="nav-link" data-scroll-target="#transformasi-z"><span class="header-section-number">8.4.3</span> Transformasi Z</a></li>
+  <li><a href="#contoh-aplikasi-sebaran-normal" id="toc-contoh-aplikasi-sebaran-normal" class="nav-link" data-scroll-target="#contoh-aplikasi-sebaran-normal"><span class="header-section-number">8.4.4</span> Contoh Aplikasi Sebaran Normal</a></li>
+  </ul></li>
+  <li><a href="#sebaran-t-student" id="toc-sebaran-t-student" class="nav-link" data-scroll-target="#sebaran-t-student"><span class="header-section-number">8.5</span> Sebaran <em>t</em>-Student</a>
+  <ul class="collapse">
+  <li><a href="#karakteristik-sebaran-t" id="toc-karakteristik-sebaran-t" class="nav-link" data-scroll-target="#karakteristik-sebaran-t"><span class="header-section-number">8.5.1</span> Karakteristik Sebaran t</a></li>
+  <li><a href="#fungsi-kepekatan-peluang-fkp-sebaran-t" id="toc-fungsi-kepekatan-peluang-fkp-sebaran-t" class="nav-link" data-scroll-target="#fungsi-kepekatan-peluang-fkp-sebaran-t"><span class="header-section-number">8.5.2</span> Fungsi Kepekatan Peluang (FKP) Sebaran <em>t</em></a></li>
+  <li><a href="#perbandingan-sebaran-t-dengan-sebaran-normal" id="toc-perbandingan-sebaran-t-dengan-sebaran-normal" class="nav-link" data-scroll-target="#perbandingan-sebaran-t-dengan-sebaran-normal"><span class="header-section-number">8.5.3</span> Perbandingan Sebaran t dengan Sebaran Normal</a></li>
+  <li><a href="#aplikasi-sebaran-t" id="toc-aplikasi-sebaran-t" class="nav-link" data-scroll-target="#aplikasi-sebaran-t"><span class="header-section-number">8.5.4</span> Aplikasi Sebaran <em>t</em></a></li>
+  </ul></li>
+  <li><a href="#sebaran-poisson" id="toc-sebaran-poisson" class="nav-link" data-scroll-target="#sebaran-poisson"><span class="header-section-number">8.6</span> Sebaran Poisson</a>
+  <ul class="collapse">
+  <li><a href="#karakteristik-sebaran-poisson" id="toc-karakteristik-sebaran-poisson" class="nav-link" data-scroll-target="#karakteristik-sebaran-poisson"><span class="header-section-number">8.6.1</span> Karakteristik Sebaran Poisson</a></li>
+  <li><a href="#fungsi-massa-peluang-poisson" id="toc-fungsi-massa-peluang-poisson" class="nav-link" data-scroll-target="#fungsi-massa-peluang-poisson"><span class="header-section-number">8.6.2</span> Fungsi Massa Peluang Poisson</a></li>
+  <li><a href="#parameter-sebaran-poisson" id="toc-parameter-sebaran-poisson" class="nav-link" data-scroll-target="#parameter-sebaran-poisson"><span class="header-section-number">8.6.3</span> Parameter Sebaran Poisson</a></li>
+  <li><a href="#contoh-aplikasi-sebaran-poisson" id="toc-contoh-aplikasi-sebaran-poisson" class="nav-link" data-scroll-target="#contoh-aplikasi-sebaran-poisson"><span class="header-section-number">8.6.4</span> Contoh Aplikasi Sebaran Poisson</a></li>
+  <li><a href="#hubungan-dengan-distribusi-lain" id="toc-hubungan-dengan-distribusi-lain" class="nav-link" data-scroll-target="#hubungan-dengan-distribusi-lain"><span class="header-section-number">8.6.5</span> Hubungan dengan Distribusi Lain</a></li>
+  <li><a href="#kapan-menggunakan-sebaran-poisson" id="toc-kapan-menggunakan-sebaran-poisson" class="nav-link" data-scroll-target="#kapan-menggunakan-sebaran-poisson"><span class="header-section-number">8.6.6</span> Kapan Menggunakan Sebaran Poisson?</a></li>
+  <li><a href="#contoh-kasus" id="toc-contoh-kasus" class="nav-link" data-scroll-target="#contoh-kasus"><span class="header-section-number">8.6.7</span> Contoh Kasus</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistik</a></li><li class="breadcrumb-item"><a href="./st-sebaran.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sebaran Peubah Acak</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistika</a></li><li class="breadcrumb-item"><a href="./st-sebaran.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sebaran Peubah Acak</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sebaran Peubah Acak</span></h1>
 </div>
@@ -428,8 +502,341 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Dalam statistik, peubah acak adalah variabel yang nilainya dihasilkan oleh proses acak. Misalnya, ketika melempar sebuah dadu, hasil yang muncul (angka 1 hingga 6) merupakan contoh dari peubah acak diskrit, karena hasilnya berupa bilangan bulat yang tetap. Sebaliknya, tinggi badan seseorang bisa dianggap sebagai peubah acak kontinu, karena bisa memiliki nilai dalam rentang tertentu, bukan hanya angka bulat.</p>
+<p>Secara formal, peubah acak dibagi menjadi dua jenis: peubah acak diskrit dan peubah acak kontinu. Peubah acak diskrit memiliki sejumlah kemungkinan hasil yang terbatas dan bisa dihitung, seperti jumlah kendaraan yang lewat di suatu jalan pada hari tertentu. Sedangkan peubah acak kontinu memiliki rentang nilai yang tak terhingga, seperti berat badan atau suhu udara.</p>
+<section id="sebaran-peluang" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="sebaran-peluang"><span class="header-section-number">8.1</span> Sebaran Peluang</h2>
+<p>Setiap peubah acak memiliki pola sebaran atau sebaran peluang, yang menunjukkan bagaimana peluang disebarankan di antara nilai-nilai yang mungkin. Untuk peubah acak diskrit, sebaran peluang bisa dijelaskan dengan Fungsi Massa Peluang (FMP). Sedangkan untuk peubah acak kontinu, kita menggunakan Fungsi Kepekatan Peluang (FKP) atau <em>Probability Density Function</em> (PDF).</p>
+<p>Sebagai contoh, untuk peubah acak diskrit seperti hasil lemparan koin, FMP memberikan peluang untuk masing-masing hasil (misalnya, peluang munculnya angka atau gambar). Sedangkan untuk peubah acak kontinu seperti tinggi badan, FKP memberikan kepadatan peluang untuk berbagai interval nilai, dan peluang untuk suatu rentang dihitung dengan mengintegrasikan FKP di sepanjang rentang tersebut.</p>
+</section>
+<section id="contoh-sebaran-peubah-acak" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="contoh-sebaran-peubah-acak"><span class="header-section-number">8.2</span> Contoh Sebaran Peubah Acak</h2>
+<p>Beberapa contoh sebaran yang sering digunakan dalam dunia data analysis meliputi:</p>
+<ol type="1">
+<li><p><strong>Sebaran Binomial</strong>: Sebaran ini digunakan untuk memodelkan jumlah keberhasilan dalam serangkaian percobaan yang independen. Misalnya, jika kita ingin menghitung peluang munculnya kepala dalam 10 lemparan koin, kita bisa menggunakan sebaran binomial.</p></li>
+<li><p><strong>Sebaran Normal</strong>: Sebaran ini adalah salah satu yang paling umum digunakan dalam analisis data. sebaran normal digunakan untuk memodelkan banyak fenomena alam seperti tinggi badan, berat badan, dan IQ. Ciri khas dari sebaran ini adalah bentuknya yang simetris dengan mean, median, dan modus yang sama.</p></li>
+<li><p><strong>Sebaran t-Student</strong>: Sebaran ini adalah salah satu yang paling umum digunakan dalam analisis data. sebaran normal digunakan untuk memodelkan banyak fenomena alam seperti tinggi badan, berat badan, dan IQ. Ciri khas dari sebaran ini adalah bentuknya yang simetris dengan mean, median, dan modus yang sama.</p></li>
+<li><p><strong>Sebaran Poisson</strong> (dibaca [pwasɔ̃]: poassong): Sebaran ini digunakan untuk memodelkan jumlah kejadian dalam interval waktu atau ruang tertentu, misalnya, jumlah pelanggan yang datang ke sebuah restoran dalam satu jam.</p></li>
+</ol>
+<p>Pemahaman yang mendalam mengenai sebaran peubah acak sangat penting bagi seorang data analyst. Sebagai seorang data analyst, Anda akan sering berhadapan dengan data yang berasal dari berbagai jenis sebaran peluang. Memahami karakteristik setiap sebaran akan membantu Anda dalam membuat inferensi yang lebih akurat, memodelkan ketidakpastian, dan pada akhirnya, menghasilkan analisis data yang lebih valid.</p>
+<p>Dengan pengetahuan ini, seorang data analyst bisa lebih percaya diri dalam menavigasi proses pengambilan keputusan berbasis data, karena mereka memahami pola sebaran yang mendasari data yang mereka analisis.</p>
+</section>
+<section id="sebaran-binomial" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="sebaran-binomial"><span class="header-section-number">8.3</span> Sebaran Binomial</h2>
+<p><strong>Sebaran Binomial</strong> adalah salah satu sebaran peluang yang paling umum digunakan dalam statistik, khususnya dalam memodelkan situasi di mana hasil percobaan bisa dibagi menjadi dua kemungkinan hasil: <strong>sukses</strong> dan <strong>gagal</strong>. Sebaran ini sangat berguna dalam berbagai situasi di dunia nyata, seperti menghitung peluang keberhasilan dalam serangkaian percobaan independen dengan hasil biner (dua hasil).</p>
+<section id="karakteristik-sebaran-binomial" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="karakteristik-sebaran-binomial"><span class="header-section-number">8.3.1</span> Karakteristik Sebaran Binomial</h3>
+<p>Beberapa karakteristik utama dari sebaran binomial adalah:</p>
+<ol type="1">
+<li><p><strong>Percobaan Berulang</strong>: Sebaran ini mengasumsikan ada serangkaian <span class="math inline">\(n\)</span> percobaan yang identik, dan setiap percobaan hanya memiliki dua hasil yang mungkin.</p></li>
+<li><p><strong>Independensi</strong>: Hasil dari setiap percobaan tidak mempengaruhi hasil percobaan lainnya. Artinya, setiap percobaan berdiri sendiri dan tidak ada ketergantungan antar percobaan.</p></li>
+<li><p><strong>Peluang Tetap</strong>: Peluang sukses <span class="math inline">\(p\)</span> tetap sama untuk setiap percobaan, begitu juga dengan peluang gagal <span class="math inline">\(q=1−p\)</span>.</p></li>
+</ol>
+</section>
+<section id="fungsi-massa-peluang-binomial" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="fungsi-massa-peluang-binomial"><span class="header-section-number">8.3.2</span> Fungsi Massa Peluang Binomial</h3>
+<p>Fungsi massa peluang (FMP) atau Probability Mass Function (PMF) dari sebaran binomial memberikan peluang bahwa kita akan mendapatkan sejumlah sukses tertentu dalam <span class="math inline">\(n\)</span> percobaan. Jika <span class="math inline">\(X\)</span> adalah peubah acak yang mengikuti sebaran binomial dengan parameter <span class="math inline">\(n\)</span> (jumlah percobaan) dan <span class="math inline">\(p\)</span> (peluang sukses), maka peluang <span class="math inline">\(P(X=k)\)</span>, yaitu mendapatkan <span class="math inline">\(k\)</span> sukses dari <span class="math inline">\(n\)</span> percobaan, diberikan oleh rumus:</p>
+<p><span class="math display">\[
+P(X=k)=\binom{n}{k}p^k (1−p)^{n−k}
+\]</span></p>
+<p>di mana:</p>
+<ul>
+<li><span class="math inline">\(n\)</span> adalah jumlah percobaan,<br>
+</li>
+<li><span class="math inline">\(k\)</span> adalah jumlah sukses yang kita hitung,<br>
+</li>
+<li><span class="math inline">\(p\)</span> adalah peluang sukses dalam satu percobaan,<br>
+</li>
+<li><span class="math inline">\(\binom{n}{k}\)</span> adalah koefisien binomial atau kombinasi, yang dihitung sebagai:</li>
+</ul>
+<p><span class="math display">\[
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+\]</span></p>
+<p><span class="math display">\[
+\begin{equation}
+n! = n \times (n-1) \times (n-2) \times (n-2) \times \dots \times 3 \times 2 \times 1
+\end{equation}
+\]</span></p>
+<p>dengan <span class="math inline">\(1! = 1\)</span> dan <span class="math inline">\(0! = 1\)</span>.</p>
+<p>Rumus ini menghitung berapa banyak cara kita bisa mendapatkan <span class="math inline">\(k\)</span> sukses dari <span class="math inline">\(n\)</span> percobaan, dikalikan dengan peluang bahwa tepat <span class="math inline">\(k\)</span> dari <span class="math inline">\(n\)</span> percobaan akan berhasil.</p>
+<p>Misalnya <span class="math inline">\(n = 5\)</span> dan <span class="math inline">\(k = 3\)</span>, maka<br>
+<span class="math display">\[
+\begin{equation}
+\begin{split}
+\binom{n}{k} &amp;= \frac{n!}{k!(n-k)!}  \\  
+\binom{5}{3} &amp;= \frac{5!}{3!(5-3)!}  \\  
+             &amp;= \frac{5!}{3!(2)!}  \\  
+             &amp;= \frac{5 \times 4 \times 3 \times 2 \times 1}{3 \times 2 \times 1 \times (2 \times 1)}  \\  
+             &amp;= 10
+\end{split}
+\end{equation}
+\]</span></p>
+</section>
+<section id="contoh-aplikasi-sebaran-binomial" class="level3" data-number="8.3.3">
+<h3 data-number="8.3.3" class="anchored" data-anchor-id="contoh-aplikasi-sebaran-binomial"><span class="header-section-number">8.3.3</span> Contoh Aplikasi Sebaran Binomial</h3>
+<p>Bayangkan kita melakukan eksperimen dengan melempar koin yang seimbang (fair coin) sebanyak 10 kali. Kita ingin mengetahui peluang mendapatkan tepat 6 kali kepala (sukses) dari 10 lemparan.</p>
+<p>Dalam hal ini:</p>
+<ul>
+<li><span class="math inline">\(n=10\)</span> (jumlah lemparan),<br>
+</li>
+<li><span class="math inline">\(p=0.5\)</span> (peluang munculnya kepala dalam satu lemparan, karena koinnya seimbang),</li>
+<li><span class="math inline">\(k=6\)</span> (jumlah kepala yang diinginkan).</li>
+</ul>
+<p>Dengan menggunakan rumus di atas:</p>
+<p><span class="math display">\[
+\begin{align*}
+P(X=6) &amp;=\binom{10}{6}(0.5)^6(1−0.5)^{10−6}  \\  
+       &amp;= \frac{10!}{6!(10-6)!}(0.5)^6(1−0.5)^{10−6}  \\
+       &amp;= \frac{10!}{6!(10-6)!}(0.5)^6(1−0.5)^{10−6}  \\
+       &amp;= \frac{10 \times 9 \times 8 \times 7 \times 6!}{6!(4)!}(0.5)^6(1−0.5)^{10−6}  \\
+       &amp;= \frac{10 \times 9 \times 8 \times 7 \times 6!}{6!(4 \times 3 \times 2 \times 1)}(0.5)^6(1−0.5)^{10−6}  \\
+       &amp;= \frac{10 \times 9 \times 8 \times 7}{4 \times 3 \times 2 \times 1}(0.5)^6(1−0.5)^{10−6}  \\
+       &amp;= 210 \times (0.5)^6(1−0.5)^{10−6}  \\
+       &amp;= 210 \times (0.5)^6(0.5)^{4}  \\
+       &amp;= 210 \times 0.0009765625  \\
+       &amp;= 0.2050781
+\end{align*}
+\]</span></p>
+<p>Perhitungan ini menghasilkan peluang bahwa kita akan mendapatkan tepat 6 kali kepala dari 10 lemparan sebesar <span class="math inline">\(\approx 0.2050781\)</span> atau sekitar <span class="math inline">\(20.50781\%\)</span>.</p>
+</section>
+<section id="parameter-sebaran-binomial" class="level3" data-number="8.3.4">
+<h3 data-number="8.3.4" class="anchored" data-anchor-id="parameter-sebaran-binomial"><span class="header-section-number">8.3.4</span> Parameter Sebaran Binomial</h3>
+<p>Sebaran binomial memiliki dua parameter yang penting, yaitu:</p>
+<ul>
+<li><p><strong>Mean</strong> (rata-rata): <span class="math inline">\(\mu=np\)</span>. Rata-rata jumlah sukses dalam <span class="math inline">\(n\)</span> percobaan adalah <span class="math inline">\(np\)</span>, yaitu jumlah percobaan dikalikan dengan peluang sukses dalam satu percobaan.</p></li>
+<li><p><strong>Varian</strong>: <span class="math inline">\(\sigma^2=np(1−p)\)</span>. Varian menunjukkan seberapa banyak penyebaran hasil dari rata-rata. Semakin besar <span class="math inline">\(p\)</span> atau <span class="math inline">\(n\)</span>, semakin besar juga varian sebaran.</p></li>
+</ul>
+</section>
+<section id="kegunaan-sebaran-binomial" class="level3" data-number="8.3.5">
+<h3 data-number="8.3.5" class="anchored" data-anchor-id="kegunaan-sebaran-binomial"><span class="header-section-number">8.3.5</span> Kegunaan Sebaran Binomial</h3>
+<p>Sebaran binomial sangat berguna dalam banyak situasi nyata, terutama ketika kita ingin memodelkan kejadian yang hanya memiliki dua kemungkinan hasil, seperti:</p>
+<ul>
+<li><p><strong>Survei dan Eksperimen</strong>: Sebaran binomial dapat digunakan untuk menghitung peluang seseorang memberikan jawaban tertentu dalam survei (misalnya, “ya” atau “tidak”), atau peluang keberhasilan suatu eksperimen.</p></li>
+<li><p><strong>Uji Hipotesis</strong>: Dalam uji hipotesis, sebaran binomial bisa digunakan untuk menguji apakah suatu hasil eksperimen berbeda secara signifikan dari yang diharapkan berdasarkan peluang sukses yang diketahui.</p></li>
+<li><p><strong>Analisis Risiko</strong>: Banyak model risiko menggunakan sebaran binomial untuk menghitung peluang dari berbagai kejadian biner yang mungkin terjadi, seperti kebangkrutan perusahaan atau suksesnya suatu proyek.</p></li>
+</ul>
+</section>
+</section>
+<section id="sebaran-normal" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="sebaran-normal"><span class="header-section-number">8.4</span> Sebaran Normal</h2>
+<p><strong>Sebaran Normal</strong> adalah salah satu sebaran peluang yang paling penting dan umum dalam statistika. Sebaran ini sering digunakan untuk memodelkan fenomena di alam dan dalam berbagai bidang, termasuk psikologi, ekonomi, ilmu sosial, dan banyak lagi. Sebaran normal juga dikenal sebagai sebaran Gaussian, dinamai setelah matematikawan Carl Friedrich Gauss yang pertama kali memperkenalkan konsep ini.</p>
+<section id="karakteristik-sebaran-normal" class="level3" data-number="8.4.1">
+<h3 data-number="8.4.1" class="anchored" data-anchor-id="karakteristik-sebaran-normal"><span class="header-section-number">8.4.1</span> Karakteristik Sebaran Normal</h3>
+<ol type="1">
+<li><p><strong>Bentuk Kurva</strong>: Sebaran normal memiliki bentuk kurva lonceng yang simetris di sekitar mean (rata-rata). Kurva ini ditandai dengan dua parameter utama: mean (<span class="math inline">\(\mu\)</span>, dibaca myu) dan deviasi standar (<span class="math inline">\(\sigma\)</span>, dibaca sigma).</p>
+<ul>
+<li><strong>Mean</strong> (<span class="math inline">\(\mu\)</span>): Titik pusat sebaran, di mana nilai-nilai tertinggi dari peluang terletak.<br>
+</li>
+<li><strong>Deviasi Standar</strong> (<span class="math inline">\(\sigma\)</span>): Mengukur sebaran data di sekitar mean. Deviasi standar yang lebih kecil berarti data lebih terpusat di sekitar mean, sementara deviasi standar yang lebih besar berarti data lebih tersebar.</li>
+</ul>
+<p><img src="Normal-Distribution.png" class="center"></p></li>
+<li><p><strong>Simetri</strong>: Sebaran normal adalah simetris. Hal ini berarti bahwa peluang untuk mendapatkan nilai yang lebih besar atau lebih kecil dari mean adalah sama.</p></li>
+<li><p><strong>Aturan Empiris (68-95-99.7)</strong>:</p>
+<ul>
+<li>Sekitar 68% dari data dalam sebaran normal terletak dalam satu deviasi standar (<span class="math inline">\(\mu \pm \sigma\)</span>).<br>
+</li>
+<li>Sekitar 95% dari data terletak dalam dua deviasi standar (<span class="math inline">\(\mu \pm 2\sigma\)</span>).<br>
+</li>
+<li>Sekitar 99.7% dari data terletak dalam tiga deviasi standar (<span class="math inline">\(\mu \pm 3\sigma\)</span>).</li>
+</ul></li>
+</ol>
+</section>
+<section id="fungsi-kepekatan-peluang-fkp" class="level3" data-number="8.4.2">
+<h3 data-number="8.4.2" class="anchored" data-anchor-id="fungsi-kepekatan-peluang-fkp"><span class="header-section-number">8.4.2</span> Fungsi Kepekatan Peluang (FKP)</h3>
+<p>Fungsi kepekatan peluang (FKP) untuk sebaran normal diberikan oleh rumus berikut:</p>
+<p><span class="math display">\[
+f(x)= \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x - \mu)^2}{2 \sigma^2}}
+\]</span></p>
+<p>di mana:</p>
+<ul>
+<li><span class="math inline">\(f(x)\)</span> adalah nilai kepadatan peluang pada titik <span class="math inline">\(x\)</span>,<br>
+</li>
+<li><span class="math inline">\(\mu\)</span> adalah mean,<br>
+</li>
+<li><span class="math inline">\(\sigma\)</span> adalah deviasi standar,<br>
+</li>
+<li><span class="math inline">\(e\)</span> adalah bilangan Euler (sekitar 2.71828),<br>
+</li>
+<li><span class="math inline">\(\pi\)</span> adalah bilangan pi (sekitar 3.14159).</li>
+</ul>
+</section>
+<section id="transformasi-z" class="level3" data-number="8.4.3">
+<h3 data-number="8.4.3" class="anchored" data-anchor-id="transformasi-z"><span class="header-section-number">8.4.3</span> Transformasi Z</h3>
+<p>Dalam analisis statistik, sering kali lebih mudah untuk bekerja dengan sebaran normal standar, yang memiliki mean 0 dan deviasi standar 1. Untuk mentransformasikan nilai <span class="math inline">\(x\)</span> ke dalam sebaran normal standar, kita menggunakan rumus berikut:</p>
+<p><span class="math display">\[
+Z=\frac{X-\mu}{\sigma}
+\]</span></p>
+<p>di mana:</p>
+<ul>
+<li><span class="math inline">\(Z\)</span> adalah nilai standar,</li>
+<li><span class="math inline">\(X\)</span> adalah nilai asli,<br>
+</li>
+<li><span class="math inline">\(\mu\)</span> adalah mean,</li>
+<li><span class="math inline">\(\sigma\)</span> adalah deviasi standar.</li>
+</ul>
+</section>
+<section id="contoh-aplikasi-sebaran-normal" class="level3" data-number="8.4.4">
+<h3 data-number="8.4.4" class="anchored" data-anchor-id="contoh-aplikasi-sebaran-normal"><span class="header-section-number">8.4.4</span> Contoh Aplikasi Sebaran Normal</h3>
+<ol type="1">
+<li><p><strong>Analisis Data</strong>: Banyak fenomena alami, seperti tinggi badan, berat badan, dan nilai ujian, mengikuti sebaran normal. Misalnya, jika tinggi badan orang dewasa di suatu populasi memiliki mean 170 cm dengan deviasi standar 10 cm, kita dapat menggunakan sebaran normal untuk menghitung peluang seseorang memiliki tinggi badan antara 160 cm dan 180 cm.</p></li>
+<li><p><strong>Statistika Inferensial</strong>: Sebaran normal digunakan dalam pengujian hipotesis dan interval kepercayaan. Banyak metode statistik, seperti analisis regresi dan ANOVA, mengasumsikan bahwa data mengikuti sebaran normal.</p></li>
+<li><p><strong>Kontrol Kualitas</strong>: Dalam industri, sebaran normal digunakan untuk mengontrol kualitas produk. Misalnya, ukuran produk yang diproduksi dapat dianalisis untuk memastikan bahwa sebagian besar produk berada dalam toleransi yang ditentukan.</p></li>
+</ol>
+</section>
+</section>
+<section id="sebaran-t-student" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="sebaran-t-student"><span class="header-section-number">8.5</span> Sebaran <em>t</em>-Student</h2>
+<p><strong>Sebaran <em>t</em>-Student</strong>, atau sering disebut sebagai <strong>sebaran <em>t</em></strong>, adalah sebaran peluang yang digunakan dalam statistik inferensial, terutama ketika ukuran sampel kecil dan varians populasi tidak diketahui. Sebaran ini diperkenalkan oleh <strong>William Sealy Gosset</strong>, yang menggunakan nama samaran “Student” untuk publikasinya, sehingga distribusi ini sering disebut sebagai sebaran <strong>t-Student</strong>.</p>
+<p>Sebaran <em>t</em> sangat mirip dengan sebaran normal, namun memiliki ekor yang lebih tebal (lebih lebar). Artinya, dalam sebaran <em>t</em>, peluang kejadian ekstrem (nilai yang jauh dari rata-rata) lebih tinggi dibandingkan dengan sebaran normal. Sebaran <em>t</em> digunakan terutama untuk mengestimasi mean suatu populasi kecil dan untuk pengujian hipotesis, seperti uji <em>t</em> (<em>t</em>-test).</p>
+<section id="karakteristik-sebaran-t" class="level3" data-number="8.5.1">
+<h3 data-number="8.5.1" class="anchored" data-anchor-id="karakteristik-sebaran-t"><span class="header-section-number">8.5.1</span> Karakteristik Sebaran t</h3>
+<ol type="1">
+<li><p><strong>Ekor Lebih Tebal</strong>: Sebaran <em>t</em> memiliki ekor yang lebih tebal dibandingkan dengan sebaran normal. Ini berarti probabilitas observasi ekstrem (nilai yang jauh dari mean) lebih besar dalam sebaran <em>t</em>, yang penting ketika bekerja dengan sampel kecil di mana ada lebih banyak ketidakpastian.</p></li>
+<li><p><strong>Derajat Kebebasan</strong> (<em>Degrees of Freedom</em>, <span class="math inline">\(df\)</span>): Parameter kunci dari sebaran <em>t</em> adalah derajat kebebasan. Semakin besar ukuran sampel (semakin besar <span class="math inline">\(df\)</span>), semakin mirip sebaran <em>t</em> dengan sebaran normal. Sebaliknya, dengan <span class="math inline">\(df\)</span> yang lebih kecil (misalnya, sampel yang sangat kecil), ekor sebaran <em>t</em> akan semakin tebal. Derajat kebebasan biasanya dihitung sebagai <span class="math inline">\(n−1\)</span>, di mana <span class="math inline">\(n\)</span> adalah ukuran sampel.</p></li>
+<li><p><strong>Mean dan Varians</strong>:</p>
+<ul>
+<li>Mean (rata-rata) dari sebaran <em>t</em> adalah 0, sama seperti pada sebaran normal standar.<br>
+</li>
+<li>Variansnya lebih besar daripada sebaran normal, terutama untuk nilai <span class="math inline">\(df\)</span> kecil, yang mencerminkan ketidakpastian yang lebih besar dalam estimasi ketika sampel kecil.</li>
+</ul></li>
+</ol>
+</section>
+<section id="fungsi-kepekatan-peluang-fkp-sebaran-t" class="level3" data-number="8.5.2">
+<h3 data-number="8.5.2" class="anchored" data-anchor-id="fungsi-kepekatan-peluang-fkp-sebaran-t"><span class="header-section-number">8.5.2</span> Fungsi Kepekatan Peluang (FKP) Sebaran <em>t</em></h3>
+<p>Fungsi kepekatan peluang (FKP) untuk sebaran <em>t</em>-Student adalah:</p>
+<p><span class="math display">\[
+f(t) = \frac{\Gamma \left(\frac{df+1}{2}\right)}{\sqrt{df \pi}\Gamma \left(\frac{df}{2}\right)}\left(1+\frac{t^2}{df}\right)^{-\frac{df+1}{2}}
+\]</span></p>
+<p>di mana:</p>
+<ul>
+<li><span class="math inline">\(t\)</span> adalah variabel acak yang mengikuti sebaran <em>t</em>,<br>
+</li>
+<li><span class="math inline">\(df\)</span> adalah derajat kebebasan,</li>
+<li><span class="math inline">\(\Gamma\)</span> adalah fungsi gamma (<em>generalization of factorial</em>).</li>
+</ul>
+<p>Meskipun rumus ini tampak rumit, dalam praktiknya, penggunaan sebaran <em>t</em> lebih sering dilakukan dengan bantuan tabel t atau perangkat lunak statistik seperti R, Python, SAS, SPSS, dan lainnya, yang secara otomatis menghitung nilai probabilitas terkait dengan nilai <em>t</em>.</p>
+</section>
+<section id="perbandingan-sebaran-t-dengan-sebaran-normal" class="level3" data-number="8.5.3">
+<h3 data-number="8.5.3" class="anchored" data-anchor-id="perbandingan-sebaran-t-dengan-sebaran-normal"><span class="header-section-number">8.5.3</span> Perbandingan Sebaran t dengan Sebaran Normal</h3>
+<p>Sebaran <em>t</em> sangat mirip dengan sebaran normal, tetapi ada beberapa perbedaan kunci:</p>
+<ol type="1">
+<li><strong>Ukuran Sampel</strong>: Sebaran <em>t</em> digunakan ketika ukuran sampel kecil (<span class="math inline">\(n&lt;30\)</span>) dan varians populasi tidak diketahui. Sebaran normal digunakan ketika ukuran sampel besar atau varians populasi diketahui.<br>
+</li>
+<li><strong>Bentuk Kurva</strong>: Sebaran <em>t</em> lebih lebar dan memiliki ekor yang lebih tebal dibandingkan dengan sebaran normal. Ini mengakomodasi variabilitas yang lebih besar karena sampel kecil.</li>
+</ol>
+<p><img src="t-dist1.gif" class="center"></p>
+<ol start="3" type="1">
+<li><strong>Derajat Kebebasan</strong>: Sebaran <em>t</em> bergantung pada derajat kebebasan. Ketika <span class="math inline">\(df\)</span> meningkat (misalnya, ukuran sampel meningkat), sebaran <em>t</em> mendekati sebaran normal. Sebagai contoh, untuk <span class="math inline">\(df\)</span> sangat besar (misalnya <span class="math inline">\(df=1000\)</span>), sebaran <em>t</em> hampir identik dengan sebaran normal standar.</li>
+</ol>
+</section>
+<section id="aplikasi-sebaran-t" class="level3" data-number="8.5.4">
+<h3 data-number="8.5.4" class="anchored" data-anchor-id="aplikasi-sebaran-t"><span class="header-section-number">8.5.4</span> Aplikasi Sebaran <em>t</em></h3>
+<p>Sebaran <em>t</em> terutama digunakan dalam statistik inferensial, khususnya dalam pengujian hipotesis dan analisis interval kepercayaan. Berikut adalah beberapa aplikasi umum:</p>
+<ol type="1">
+<li><strong>Uji t Satu Sampel</strong> (<em>One-Sample t-Test</em>): Uji ini digunakan untuk menguji apakah rata-rata sampel secara signifikan berbeda dari nilai tertentu ketika varians populasi tidak diketahui dan ukuran sampel kecil. Sebagai contoh, Anda mungkin ingin menguji apakah rata-rata tinggi badan suatu populasi berbeda dari 170 cm berdasarkan sampel kecil.<br>
+</li>
+<li><strong>Uji t Dua Sampel</strong> (<em>Two-Sample t-Test</em>): Uji ini digunakan untuk membandingkan rata-rata dua kelompok yang berbeda. Misalnya, membandingkan rata-rata gaji pria dan wanita dalam suatu perusahaan berdasarkan sampel kecil.<br>
+</li>
+<li><strong>Uji t Berpasangan</strong> (<em>Paired t-Test</em>): Digunakan untuk membandingkan rata-rata dua pengukuran yang berhubungan (misalnya, sebelum dan sesudah perlakuan dalam eksperimen).<br>
+</li>
+<li><strong>Interval Kepercayaan</strong>: Sebaran <em>t</em> digunakan untuk menghitung interval kepercayaan untuk rata-rata populasi ketika varians populasi tidak diketahui dan ukuran sampel kecil. Interval kepercayaan memberi rentang di mana rata-rata populasi mungkin terletak dengan tingkat kepercayaan tertentu (misalnya 95%).</li>
+</ol>
+</section>
+</section>
+<section id="sebaran-poisson" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="sebaran-poisson"><span class="header-section-number">8.6</span> Sebaran Poisson</h2>
+<p><strong>Sebaran Poisson</strong> adalah salah satu sebaran peluang yang digunakan untuk memodelkan jumlah kejadian dalam suatu interval waktu atau ruang yang tetap, di mana kejadian tersebut bersifat acak dan terjadi secara independen satu sama lain. Sebaran ini sangat berguna dalam situasi di mana kita menghitung jumlah kejadian tertentu, seperti jumlah pelanggan yang datang ke restoran dalam satu jam, jumlah kecelakaan di suatu jalan raya dalam sehari, atau jumlah panggilan telepon yang diterima oleh sebuah pusat layanan dalam satu jam.</p>
+<section id="karakteristik-sebaran-poisson" class="level3" data-number="8.6.1">
+<h3 data-number="8.6.1" class="anchored" data-anchor-id="karakteristik-sebaran-poisson"><span class="header-section-number">8.6.1</span> Karakteristik Sebaran Poisson</h3>
+<ol type="1">
+<li><strong>Jumlah Kejadian dalam Interval Tetap</strong>: Sebaran Poisson memodelkan jumlah kejadian yang terjadi dalam interval waktu atau ruang yang tetap, seperti jumlah kendaraan yang lewat di jalan raya dalam satu jam, atau jumlah bintang dalam suatu area tertentu di langit.<br>
+</li>
+<li><strong>Independensi Kejadian</strong>: Kejadian-kejadian yang dihitung haruslah bersifat independen. Ini berarti bahwa kejadian satu tidak memengaruhi kemungkinan terjadinya kejadian yang lain.<br>
+</li>
+<li><strong>Tingkat Kejadian Tetap</strong> (<em>Rate of Occurrence</em>): Tingkat kejadian, atau rata-rata jumlah kejadian dalam interval yang ditetapkan, harus tetap. Tingkat kejadian ini sering disebut sebagai <span class="math inline">\(\lambda\)</span> (dibaca lambda) , yang merupakan parameter utama dari distribusi Poisson.<br>
+</li>
+<li><strong>Kejadian Tunggal</strong>: Dalam sebaran Poisson, hanya satu kejadian yang dapat terjadi pada waktu atau ruang yang sangat kecil (tidak ada dua kejadian yang terjadi pada saat yang bersamaan dalam periode yang sangat pendek).</li>
+</ol>
+</section>
+<section id="fungsi-massa-peluang-poisson" class="level3" data-number="8.6.2">
+<h3 data-number="8.6.2" class="anchored" data-anchor-id="fungsi-massa-peluang-poisson"><span class="header-section-number">8.6.2</span> Fungsi Massa Peluang Poisson</h3>
+<p>Fungsi Massa Peluang (FMP) dari sebaran Poisson memberikan peluang bahwa akan ada <span class="math inline">\(k\)</span> kejadian dalam suatu interval, ketika rata-rata tingkat kejadian adalah <span class="math inline">\(\lambda\)</span>. Rumus FMP Poisson adalah:</p>
+<p><span class="math display">\[
+P(X=k)= \frac{\lambda^ke^{-\lambda}}{k!}
+\]</span> ​</p>
+<p>di mana:</p>
+<ul>
+<li><span class="math inline">\(P(X=k)\)</span> adalah probabilitas terjadinya <span class="math inline">\(k\)</span> kejadian dalam interval,<br>
+</li>
+<li><span class="math inline">\(\lambda\)</span> adalah rata-rata jumlah kejadian per interval waktu atau ruang,<br>
+</li>
+<li><span class="math inline">\(e\)</span> adalah bilangan Euler (<span class="math inline">\(\approx 2.718\)</span>),<br>
+</li>
+<li><span class="math inline">\(k\)</span> adalah jumlah kejadian yang terjadi (bilangan bulat non-negatif),<br>
+</li>
+<li><span class="math inline">\(k!\)</span> adalah faktorial dari <span class="math inline">\(k\)</span>.</li>
+</ul>
+</section>
+<section id="parameter-sebaran-poisson" class="level3" data-number="8.6.3">
+<h3 data-number="8.6.3" class="anchored" data-anchor-id="parameter-sebaran-poisson"><span class="header-section-number">8.6.3</span> Parameter Sebaran Poisson</h3>
+<p>Sebaran Poisson memiliki hanya satu parameter, yaitu <span class="math inline">\(\lambda\)</span>, yang merupakan rata-rata atau tingkat kejadian per unit interval. Rata-rata dan varian dari sebaran Poisson keduanya sama dengan <span class="math inline">\(\lambda\)</span>, yaitu:</p>
+<ul>
+<li><strong>Mean</strong> (Rata-rata): <span class="math inline">\(\mu=\lambda\)</span><br>
+</li>
+<li><strong>Varian</strong>: <span class="math inline">\(\sigma^2 = \lambda\)</span></li>
+</ul>
+<p>Ini menunjukkan bahwa dalam sebaran Poisson, deviasi standar (akar kuadrat dari varian) juga bergantung pada <span class="math inline">\(\lambda\)</span>.</p>
+</section>
+<section id="contoh-aplikasi-sebaran-poisson" class="level3" data-number="8.6.4">
+<h3 data-number="8.6.4" class="anchored" data-anchor-id="contoh-aplikasi-sebaran-poisson"><span class="header-section-number">8.6.4</span> Contoh Aplikasi Sebaran Poisson</h3>
+<ol type="1">
+<li><strong>Jumlah Panggilan Telepon</strong>: Misalkan sebuah pusat panggilan menerima rata-rata 5 panggilan per menit (<span class="math inline">\(\lambda = 5\)</span>). Kita bisa menggunakan sebaran Poisson untuk menghitung probabilitas bahwa mereka akan menerima tepat 3 panggilan dalam satu menit.</li>
+</ol>
+<p>Menggunakan rumus FMP:</p>
+<p><span class="math display">\[
+\begin{align*}
+P(X=3) &amp;= \frac{5^3e^{-5}}{3!}  \\  
+       &amp;= \frac{125e^-{5}}{6}  \\
+       &amp;\approx 0.1403739
+\end{align*}
+\]</span> ​</p>
+<p>Ini akan memberikan peluang untuk menerima 3 panggilan dalam satu menit.</p>
+<ol start="2" type="1">
+<li><p><strong>Kecelakaan di Jalan Raya</strong>: Jika diketahui bahwa di suatu jalan raya rata-rata terjadi 2 kecelakaan setiap minggu (<span class="math inline">\(\lambda=2\)</span>), kita bisa menggunakan sebaran Poisson untuk menghitung peluang bahwa minggu ini tidak akan ada kecelakaan (<span class="math inline">\(k=0\)</span>) atau bahwa akan terjadi lebih dari 3 kecelakaan (<span class="math inline">\(k&gt;3\)</span>).</p></li>
+<li><p><strong>Jumlah Pelanggan yang Datang ke Restoran</strong>: Jika sebuah restoran menerima rata-rata 10 pelanggan per jam, sebaran Poisson bisa digunakan untuk memodelkan jumlah pelanggan yang datang dalam satu jam, dan menghitung peluang berbagai skenario, seperti kedatangan tepat 15 pelanggan atau kurang dari 5 pelanggan dalam satu jam.</p></li>
+</ol>
+</section>
+<section id="hubungan-dengan-distribusi-lain" class="level3" data-number="8.6.5">
+<h3 data-number="8.6.5" class="anchored" data-anchor-id="hubungan-dengan-distribusi-lain"><span class="header-section-number">8.6.5</span> Hubungan dengan Distribusi Lain</h3>
+<p>Sebaran Poisson sering kali muncul sebagai limit dari sebaran binomial ketika jumlah percobaan (<span class="math inline">\(n\)</span>) sangat besar dan peluang sukses (<span class="math inline">\(p\)</span>) sangat kecil, tetapi nilai rata-rata (<span class="math inline">\(np\)</span>) tetap konstan. Dalam hal ini, sebaran binomial dapat diaproksimasi dengan sebaran Poisson, di mana <span class="math inline">\(\lambda=np\)</span>.</p>
+</section>
+<section id="kapan-menggunakan-sebaran-poisson" class="level3" data-number="8.6.6">
+<h3 data-number="8.6.6" class="anchored" data-anchor-id="kapan-menggunakan-sebaran-poisson"><span class="header-section-number">8.6.6</span> Kapan Menggunakan Sebaran Poisson?</h3>
+<p>Sebaran Poisson digunakan ketika:</p>
+<ul>
+<li>Kita menghitung jumlah kejadian dalam suatu interval waktu atau ruang (misalnya jumlah pelanggan, kecelakaan, atau panggilan telepon).<br>
+</li>
+<li>Tingkat kejadian per unit waktu atau ruang bersifat tetap dan diketahui (<span class="math inline">\(\lambda\)</span>).<br>
+</li>
+<li>Kejadian-kejadian tersebut terjadi secara acak dan independen satu sama lain.<br>
+</li>
+<li>Tidak ada batas maksimum untuk jumlah kejadian yang dapat terjadi (meskipun secara praktis, nilai yang sangat besar mungkin jarang terjadi).</li>
+</ul>
+</section>
+<section id="contoh-kasus" class="level3" data-number="8.6.7">
+<h3 data-number="8.6.7" class="anchored" data-anchor-id="contoh-kasus"><span class="header-section-number">8.6.7</span> Contoh Kasus</h3>
+<p>Misalkan di sebuah bank, rata-rata ada 7 nasabah yang datang setiap jam (<span class="math inline">\(\lambda=7\)</span>). Kita ingin mengetahui peluang bahwa dalam satu jam, ada tepat 5 nasabah yang datang. Dengan menggunakan rumus Poisson:</p>
+<p><span class="math display">\[
+\begin{align*}
+P(X=5) &amp;= \frac{7^5e^{-7}}{5!}  \\
+       &amp;\approx 0.128
+\end{align*}
+\]</span></p>
+<p>Jadi, peluang bahwa tepat 5 nasabah datang dalam satu jam adalah sekitar 12.8%.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
