@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -83,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistik</a></li><li class="breadcrumb-item"><a href="./st-ujihipotesis.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uji Hipotesis</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistika</a></li><li class="breadcrumb-item"><a href="./st-ujihipotesis.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uji Hipotesis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -148,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./metric.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik Bisnis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik dalam Bisnis</span></span></a>
   </div>
 </li>
       </ul>
@@ -156,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./statistik.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bagian 2: Memahami Statistik</span></a>
+ <span class="menu-text">Bagian 2: Memahami Statistika</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -164,14 +193,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./st-dasarstats.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Statistika Dasar</span></span></a>
+  <a href="./st-tipedata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Mengenal Tipe Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./st-tipedata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tipe Data</span></span></a>
+  <a href="./st-dasarstats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Statistika Dasar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -288,25 +317,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./r-programming.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">R Programming</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Dasar R Programming</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./r-ifloop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">r-ifloop.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Alur Kendali</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./r-importexport.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">r-importexport.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Memperoleh Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./r-eksplor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">r-eksplor.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Eksplorasi Data</span></span></a>
   </div>
 </li>
       </ul>
@@ -323,7 +352,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./visualisasi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Visualisasi</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Panduan Visualisasi</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -369,7 +398,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./portofolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">portofolio.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Membangun Portofolio</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -403,13 +432,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#uji-hipotesis-dengan-sebaran-binomial" id="toc-uji-hipotesis-dengan-sebaran-binomial" class="nav-link active" data-scroll-target="#uji-hipotesis-dengan-sebaran-binomial"><span class="header-section-number">9.1</span> Uji Hipotesis dengan Sebaran Binomial</a></li>
+  <li><a href="#uji-hipotesis-dengan-sebaran-normal" id="toc-uji-hipotesis-dengan-sebaran-normal" class="nav-link" data-scroll-target="#uji-hipotesis-dengan-sebaran-normal"><span class="header-section-number">9.2</span> Uji Hipotesis dengan Sebaran Normal</a></li>
+  <li><a href="#uji-hipotesis-dengan-sebaran-t-student" id="toc-uji-hipotesis-dengan-sebaran-t-student" class="nav-link" data-scroll-target="#uji-hipotesis-dengan-sebaran-t-student"><span class="header-section-number">9.3</span> Uji Hipotesis dengan Sebaran t-Student</a></li>
+  <li><a href="#uji-hipotesis-dengan-sebaran-poisson" id="toc-uji-hipotesis-dengan-sebaran-poisson" class="nav-link" data-scroll-target="#uji-hipotesis-dengan-sebaran-poisson"><span class="header-section-number">9.4</span> Uji Hipotesis dengan Sebaran Poisson</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistik</a></li><li class="breadcrumb-item"><a href="./st-ujihipotesis.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uji Hipotesis</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistika</a></li><li class="breadcrumb-item"><a href="./st-ujihipotesis.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uji Hipotesis</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uji Hipotesis</span></h1>
 </div>
@@ -428,8 +466,381 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Dalam dunia data, uji hipotesis adalah salah satu teknik yang sangat sering digunakan untuk menentukan apakah data yang kita kumpulkan cukup untuk mendukung atau menolak suatu dugaan. Sama seperti seorang detektif yang mencari bukti di tempat kejadian, kita juga menggunakan uji hipotesis untuk “membaca” data dan mencari tahu apakah hipotesis yang kita buat benar atau tidak.</p>
+<p>Pada bagian ini, kita akan membahas beberapa jenis uji hipotesis yang sering digunakan dengan sebaran yang berbeda: binomial, Normal, t-student, dan Poisson. Setiap sebaran memiliki kegunaan tertentu dalam situasi yang berbeda, tergantung pada jenis data yang kita miliki.</p>
+<section id="uji-hipotesis-dengan-sebaran-binomial" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="uji-hipotesis-dengan-sebaran-binomial"><span class="header-section-number">9.1</span> Uji Hipotesis dengan Sebaran Binomial</h2>
+<p>Sebaran binomial digunakan ketika kita berurusan dengan data yang bersifat diskrit, biasanya untuk eksperimen yang hanya memiliki dua hasil, seperti <strong>sukses</strong> atau <strong>gagal</strong>.</p>
+<p><strong>Contoh kasus</strong>:<br>
+Katakanlah kamu bekerja di perusahaan e-commerce dan ingin menguji apakah tingkat keberhasilan pengiriman barang tetap pada 95%. Hipotesis nolnya (<span class="math inline">\(H_0\)</span>) adalah bahwa tingkat keberhasilan pengiriman sama dengan 95%, sedangkan hipotesis alternatifnya (<span class="math inline">\(H_1\)</span>) adalah tingkat keberhasilan pengiriman berbeda dari 95%.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Dalam Matematika dan Statistika">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dalam Matematika dan Statistika
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Notasi hipotesis adalah <span class="math inline">\(H_0\)</span> dan <span class="math inline">\(H_1\)</span>. <span class="math inline">\(H_0\)</span> biasanya untuk hipotesis yang mengandung nilai “sama dengan” (<span class="math inline">\(=\)</span>, <span class="math inline">\(\le\)</span>, <span class="math inline">\(\ge\)</span>), sedangkan <span class="math inline">\(H_1\)</span> adalah kebalikan atau negasinya (<span class="math inline">\(\neq\)</span>, <span class="math inline">\(\lt\)</span>, <span class="math inline">\(\gt\)</span>).</p>
+<p>Hipotesis dua arah:<br>
+<span class="math display">\[
+\begin{align*}
+H_0: \theta &amp;= \theta_0  \\
+H_1: \theta &amp;\neq \theta_0  
+\end{align*}
+\]</span></p>
+<p>Hipotesis satu arah:<br>
+<span class="math display">\[
+\begin{align*}
+H_0: \theta &amp;\ge \theta_0 \\
+H_1: \theta &amp;&lt; \theta_0  \\
+\\
+H_0: \theta &amp;\le \theta_0 \\
+H_1: \theta &amp;&gt; \theta_0
+\end{align*}
+\]</span></p>
+</div>
+</div>
+<p>Misalnya, kamu mengambil sampel dari 100 (<span class="math inline">\(n = 100\)</span>) pengiriman dan mendapati bahwa 92 pengiriman berhasil. Kita bisa melakukan uji binomial untuk melihat apakah ada cukup bukti bahwa tingkat keberhasilan pengiriman telah berubah. Jika nilai <em>p-value</em> dari uji binomial lebih kecil dari tingkat signifikansi (<span class="math inline">\(\alpha\)</span>, dibaca alpha), misalnya 0.05, kita dapat menolak hipotesis nol dan menyimpulkan bahwa ada perubahan pada tingkat keberhasilan pengiriman.</p>
+<p><span class="math display">\[
+\begin{align*}
+H_0: p &amp; \ge 0.95  \\
+H_1: p &amp; \lt 0.95  \\
+x = 8 &amp; \\
+\end{align*}
+\]</span></p>
+<p>Dengan menghitung sebaran binomial kumulatif (<em>Cumulative Distribution Function</em>, CDF) untuk <span class="math inline">\(n=100\)</span>, <span class="math inline">\(p=0.95\)</span>, <span class="math inline">\(q = (1-p) = 0.05\)</span>, dan <span class="math inline">\(k=92\)</span>, kita dapat menuliskannya menjadi</p>
+<p><span class="math display">\[
+P(X \le 92)=P(X=0)+P(X=1)+P(X=2)+ \dots + P(X=92)
+\]</span></p>
+<p>Ingat bahwa <span class="math display">\[
+P(X=k) = \binom{n}{k}p^k(1-p)^{n-k}
+\]</span></p>
+<p>maka <span class="math display">\[
+\begin{align*}
+P(X \le 92) &amp;= P(X = 0) + P(X = 1) + P(X = 2) + \dots + P(X = 92)  \\
+            &amp;= \binom{100}{0}p^0(1-p)^{100-0}+\binom{100}{1}p^1(1-p)^{100-1} + \dots + \binom{100}{92}p^{92}(1-p)^{100-92}   \\  
+            &amp;=\binom{100}{0}0.95^0(0.05)^{100}+\binom{100}{1}0.95^1(0.05)^{99} + \dots + \binom{100}{92}0.95^{92}(0.05)^{8}   \\
+\textit{p-value}&amp;= 0.1279605
+\end{align*}
+\]</span></p>
+<p>Jika kita menggunakan taraf nyata (<em>significant level</em>, <span class="math inline">\(\alpha\)</span>) sebesar 5% atau <span class="math inline">\(\alpha=0.05\)</span>, maka kita gagal menolak <span class="math inline">\(H_0\)</span> karena p-value &gt; <span class="math inline">\(\alpha\)</span>. Artinya kamu masih bisa mengatakan secara statistik bahwa tingkat keberhasilan pengiriman barang tetap pada 95%. Dengan kata lain, kita tidak mempunyai cukup bukti untuk mengatakan bahwa proporsi keberhasilan pengiriman telah menurun secara signifikan dari 95%.</p>
+</section>
+<section id="uji-hipotesis-dengan-sebaran-normal" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="uji-hipotesis-dengan-sebaran-normal"><span class="header-section-number">9.2</span> Uji Hipotesis dengan Sebaran Normal</h2>
+<p>Sebaran Normal adalah sebaran kontinu yang paling sering digunakan ketika data menyebar secara simetris di sekitar mean. Uji hipotesis yang menggunakan sebaran Normal sering digunakan ketika ukuran sampel besar, dan kita ingin menguji apakah suatu rata-rata populasi berbeda dari nilai tertentu. Uji hipotesis dapat juga digunakan untuk menguji perbedaan rata-rata dari dua populasi.</p>
+<p><strong>Contoh kasus satu populasi</strong>:</p>
+<p>Bayangkan kamu bekerja di sebuah perusahaan manufaktur yang memproduksi bola lampu. Hipotesis nol (<span class="math inline">\(H_0\)</span>) menyatakan bahwa rata-rata umur bola lampu adalah 800 jam. Kamu mengambil sampel 50 bola lampu (<span class="math inline">\(n = 50\)</span>) dan mendapati rata-rata umur sampel adalah 780 jam (<span class="math inline">\(\bar{x} = 780\)</span>) dengan standar deviasi 30 jam (<span class="math inline">\(s=30\)</span>). Untuk melihat apakah ada perbedaan signifikan, kamu bisa menggunakan uji z (uji hipotesis untuk rata-rata dengan sebaran Normal). Jika <em>p-value</em> lebih kecil dari tingkat signifikansi, kita dapat menyimpulkan bahwa umur rata-rata bola lampu mungkin berbeda dari 800 jam (<span class="math inline">\(\mu = 800\)</span>).</p>
+<p>Kita harus merumuskan terlebih dahulu hipotesis yang ingin kita uji.</p>
+<ul>
+<li>Hipotesis Nol (<span class="math inline">\(H_0\)</span>): Rata-rata umur bola lampu adalah 800 jam, <span class="math inline">\(\mu=800\)</span>.</li>
+<li>Hipotesis Alternatif (<span class="math inline">\(H_1\)</span>): Rata-rata umur bola lampu berbeda dari 800 jam, <span class="math inline">\(\mu \neq 800\)</span> (dua arah).</li>
+</ul>
+<p>Untuk menguji hipotesis di atas kita dapat menggunakan uji hipotesis rata-rata sebaran Normal.</p>
+<p><span class="math display">\[
+\begin{align*}
+z &amp;= \frac{\bar{x} - \mu}{\frac{s}{\sqrt{n}}}  \\
+  &amp;= \frac{780 - 800}{\frac{30}{\sqrt{50}}}  \\
+  &amp; \approx -4.714
+\end{align*}
+\]</span></p>
+<p><span class="math display">\[
+\textnormal{p-value} = P(Z \lt -4.714) \approx  0.0000025
+\]</span></p>
+<p>Nilai <em>p-value</em> tersebut sangat kecil sehingga <em>p-value</em> <span class="math inline">\(\lt \alpha\)</span>, oleh karena itu kita tolak <span class="math inline">\(H_0\)</span> dan menyatakan cukup bukti untuk menyimpulkan bahwa rata-rata umur bola lampu berbeda secara signifikan dari 800 jam. Artinya umur bola lampu bukanlah 800 jam. Jika standar umur lampu yang diinginkan memang minimal 800 jam maka mungkin perlu dilakukan penyelidikan lebih lanjut terhadap proses produksi, bahan baku, atau formula pembuatan bola lampu.</p>
+<p><strong>Contoh kasus dua populasi</strong></p>
+<p>Sebuah pabrik ingin mengetahui apakah dua lini produksinya menghasilkan rata-rata banyaknya produk cacat per hari yang berbeda. Dari lini produksi A diperoleh rata-rata 4 cacat per hari dengan standa deviasi 1.5 berdasarkan sampel yang diambil selama 30 hari (<span class="math inline">\(\bar{x} = 4\)</span>, <span class="math inline">\(s_A=1.5\)</span>, <span class="math inline">\(n_A=30\)</span>). Dari lini produksi B rata-rata 3.7 cacat per hari dengan standar deviasi 1.2 diambil sampel selama 25 hari (<span class="math inline">\(\bar{x} = 3.7\)</span>, <span class="math inline">\(s_B=1.2\)</span>, <span class="math inline">\(n_B=25\)</span>). Apakah terdapat perbedaan signifikan dalam rata-rata cacat antara lini produksi A dan B? Gunakan tingkat signifikansi <span class="math inline">\(\alpha=0.05\)</span>.</p>
+<p>Hipotesis untuk membandingkan dua populasi adalah sebagai berikut.</p>
+<ul>
+<li>Hipotesis Nol (<span class="math inline">\(H_0\)</span>): Rata-rata cacat kedua lini produksi adalah sama (<span class="math inline">\(\mu_A=\mu_B\)</span>).<br>
+</li>
+<li>Hipotesis Alternatif (<span class="math inline">\(H_1\)</span>): Rata-rata cacat kedua lini produksi berbeda (<span class="math inline">\(\mu_A \neq \mu_B\)</span>).</li>
+</ul>
+<p>Taraf nyata yang kita gunakan adalah 5% atau <span class="math inline">\(\alpha=0.05\)</span>. Jika <em>p-value</em> dari hasil uji hipotesis ini lebih kecil dari <span class="math inline">\(\alpha\)</span> (<span class="math inline">\(\textit{p-value} \le \alpha\)</span>) maka kita tolak <span class="math inline">\(H_0\)</span>.</p>
+<p>Selanjutnya kita hitung statistik uji untuk dua populasi sebaran Normal dengan</p>
+<p><span class="math display">\[
+Z = \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s^2_A}{n_A} + \frac{s^2_B}{n_B}}}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\bar{x}_A - \bar{x}_B = 4-3.7 = 0.3\)</span><br>
+</li>
+<li><span class="math inline">\(\frac{s^2_A}{n_A} = \frac{(1.5)^2}{30} = \frac{2.25}{30} = 0.075\)</span><br>
+</li>
+<li><span class="math inline">\(\frac{s^2_B}{n_B} = \frac{(1.2)^2}{25} = \frac{1.44}{25} = 0.0576\)</span></li>
+</ul>
+<p><span class="math display">\[
+\begin{align*}
+Z &amp;= \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s^2_A}{n_A} + \frac{s^2_B}{n_B}}}  \\  
+  &amp;= \frac{0.3}{\sqrt{0.075+0.0576}}  \\  
+  &amp;\approx 0.824
+\end{align*}
+\]</span></p>
+<p>Karena ini adalah uji hipotesis dua arah, kita perlu mencari peluang untuk <span class="math inline">\(|Z| \ge 0.824\)</span>. Hasilnya kita peroleh <em>p-value</em> = 0.409. Karena <em>p-value</em> &gt; 0.05 maka kita gagal tolak <span class="math inline">\(H_0\)</span>. Tidak ada cukup bukti untuk menyimpulkan bahwa rata-rata jumlah cacat antara lini produksi A dan B berbeda secara signifikan. Dengan kata lain, rata-rata cacat dari kedua lini produksi dapat dianggap sama.</p>
+<p>Uji hipotesis dengan sebaran Normal ini mengasumsikan kita mengetahui bahwa sebaran dari jumlah cacat produksi adalah menyebar Normal dan parameter populasinya ddiketahui. Namun pada kenyataannya parameter sulit untuk diketahui.</p>
+<p>Jika data berasal dari populasi yang tidak diketahui sebarannya atau ukuran sampel lebih kecil, gunakan uji <em>t</em>.</p>
+</section>
+<section id="uji-hipotesis-dengan-sebaran-t-student" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="uji-hipotesis-dengan-sebaran-t-student"><span class="header-section-number">9.3</span> Uji Hipotesis dengan Sebaran t-Student</h2>
+<p>Sebaran <em>t</em>-Student digunakan ketika ukuran sampel kecil dan varians populasi tidak diketahui. Biasanya digunakan untuk menguji rata-rata ketika data mengikuti sebaran Normal atau mendekati Normal, tetapi ukuran sampelnya terlalu kecil untuk menggunakan sebaran Normal.</p>
+<p>Uji <em>t</em> juga dapat digunakan untuk menguji sampel dari satu populasi atau dua populasi. Untuk uji hipotesis 2 populasi perlu diperhatikan apakah kedua populasi tersebut saling bebas atau berpasangan. Contoh data sampel dari populasi yang saling bebas misalnya nilai ujian antara murid laki-laki dan murid perempuan. Tujuannya adalah ingin melihat apakah ada perbedaan rata-rata nilai ujian antara murid laki-laki dan murid perempuan. Jumlah sampel kedua populasinya pun tidak harus sama. Uji hipotesis dari dua sampel yang berpasangan contohnya adalah nilai ujian sebelum dan setelah kegiatan belajar. Tujuannya untuk melihat apakah ada peningkatan rata-rata nilai setelah melaksanakan kegiatan belajar. Murid yang mengikuti ujian sebelum dan setelah pelajaran harus orang yang sama dan jumlahnya sama.</p>
+<p><strong>Contoh kasus satu populasi</strong>:</p>
+<p>Misalkan kamu bekerja di sebuah restoran cepat saji, dan kamu ingin tahu apakah waktu rata-rata penyajian burger lebih dari 5 menit. Kamu mengambil sampel kecil, misalnya 10 pesanan (<span class="math inline">\(n=10\)</span>) dan mendapati bahwa rata-rata waktu penyajian adalah 5.3 menit (<span class="math inline">\(\bar{x}=5.3\)</span>) dengan standar deviasi 0.4 menit (<span class="math inline">\(s=0.4\)</span>). Karena ukuran sampel kecil, kita bisa menggunakan uji <em>t</em>-Student untuk menguji apakah rata-rata penyajian lebih lama dari 5 menit. Dengan menghitung statistik uji <em>t</em>, kita dapat membandingkan hasilnya dengan nilai kritis dari tabel sebaran <em>t</em>, dan membuat keputusan berdasarkan hasil tersebut.</p>
+<p>Pertama, kita harus tentukan dahulu hipotesis yang akan kita uji, yaitu</p>
+<ul>
+<li>Hipotesis Nol (<span class="math inline">\(H_0\)</span>): Rata-rata waktu penyajian burger adalah 5 menit atau kurang (<span class="math inline">\(\mu \le 5\)</span>).<br>
+</li>
+<li>Hipotesis Alternatif (<span class="math inline">\(H_1\)</span>): Rata-rata waktu penyajian burger lebih dari 5 menit (<span class="math inline">\(\mu  \gt 5\)</span>).</li>
+</ul>
+<p>Selanjutnya kita hitung statistik uji <em>t</em> untuk rata-rata sampel dengan</p>
+<p><span class="math display">\[
+t = \frac{\bar{x} - \mu}{\sqrt{\frac{s^2}{n}}}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\bar{x} - \mu = 5.3 - 5 = 0.3\)</span><br>
+</li>
+<li><span class="math inline">\(\frac{s^2}{n} = \frac{(0.4)^2}{10} = 0.016\)</span></li>
+</ul>
+<p><span class="math display">\[
+\begin{align*}
+t &amp;= \frac{\bar{x} - \mu}{\sqrt{\frac{s^2}{n}}}  \\  
+  &amp;= \frac{0.3}{\sqrt{0.016}}  \\  
+  &amp;\approx 2.371708
+\end{align*}
+\]</span></p>
+<p>Nilai yang perlu kita ketahui juga yaitu derajat kebebasan (<em>df</em>: <em>degree of freedom</em>) untuk uji <em>t</em> yaitu <span class="math inline">\(n-1 = 10-1=9\)</span>. Taraf nyata yang digunakaan yaitu <span class="math inline">\(\alpha=0.05\)</span>.</p>
+<p>Untuk uji satu arah ini kita dapatkan <em>p-value</em> <span class="math inline">\(\approx\)</span> 0.021. Karena <em>p-value</em> &lt; 0.05 maka kita tolak <span class="math inline">\(H_0\)</span>. Artinya berdasarkan data sampel, ada cukup bukti pada tingkat signifikansi <span class="math inline">\(\alpha=0.05\)</span> untuk menyimpulkan bahwa waktu rata-rata penyajian burger lebih dari 5 menit.</p>
+<p><strong>Contoh kasus dua sampel saling bebas</strong></p>
+<p>Sebuah perusahaan makanan cepat saji ingin mengetahui apakah rata-rata waktu pelayanan di dua cabangnya berbeda secara signifikan.</p>
+<ul>
+<li>Cabang A: Sampel ukuran 30, rata-rata waktu pelayanan <span class="math inline">\(\bar{x}_A = 5.5\)</span> menit, standar deviasi <span class="math inline">\(s_A = 1.2\)</span> menit.<br>
+</li>
+<li>Cabang B: Sampel ukuran 25, rata-rata waktu pelayanan <span class="math inline">\(\bar{x}_B = 6.0\)</span> menit, standar deviasi <span class="math inline">\(s_B = 1.5\)</span> menit.</li>
+</ul>
+<p>Kita gunakan tingkat signifikansi <span class="math inline">\(\alpha = 0.05\)</span> untuk menguji apakah waktu pelayanan kedua cabang tersebut berbeda.</p>
+<p>Ada beberapa asumsi yang harus kita perhatikan ketika menggunakan uji <em>t</em> dua populasi saling bebas. Pertama adalah sample berasal dr sebaran Normal. Meskipun dalam beberapa kasus kita masih dapat menggunakan uji <em>t</em> walapun data tidak menyebar Normal. Kedua adalah kesamaan ragam dari kedua populasi. Kenapa hal ini perlu diperhatikan? Karena perbedaan ragam dapat mempengaruhi perhitungan dan kesimpulan. Sangat disarankan untuk mempelajari referensi lain yang relevan untuk menambah pengetahuan tentang pengetahuan mengenai uji <em>t</em>. Untuk memudahkan penjelasan pada contoh kali ini kita gunakan asumsi ragam dari dua sampel adalah sama.</p>
+<p>Kita tentukan hipotesis yang akan kita uji, yaitu</p>
+<ul>
+<li>Hipotesis Nol (<span class="math inline">\(H_0\)</span>): Tidak ada perbedaan rata-rata waktu pelayanan antara cabang A dan B (<span class="math inline">\(\mu_A = \mu_B\)</span>).<br>
+</li>
+<li>Hipotesis Alternatif (<span class="math inline">\(H_1\)</span>): Terdapat perbedaan rata-rata waktu pelayanan (<span class="math inline">\(\mu_A \neq \mu_B\)</span>).</li>
+</ul>
+<p>Selanjutnya kita hitung statistik uji <em>t</em> untuk dua sampel saling bebas</p>
+<p><span class="math display">\[
+t = \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s^2_A}{n_A} + \frac{s^2_B}{n_B}}}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\bar{x}_A - \bar{x}_B = 5.5 - 6.0 = -0.5\)</span><br>
+</li>
+<li><span class="math inline">\(\frac{s^2_A}{n_A} = \frac{(1.2)^2}{30} = 0.048\)</span><br>
+</li>
+<li><span class="math inline">\(\frac{s^2_B}{n_B} = \frac{(1.5)^2}{25} = 0.09\)</span></li>
+</ul>
+<p><span class="math display">\[
+\begin{align*}
+t &amp;= \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s^2_A}{n_A} + \frac{s^2_B}{n_B}}} \\  
+  &amp;= \frac{-0.5}{\sqrt{0.048+0.09}}  \\  
+  &amp;\approx -1.346
+\end{align*}
+\]</span></p>
+<p>Derajat kebebasan (<em>df</em>) untuk dua sampel saling bebas kita hitung dengan</p>
+<p><span class="math display">\[
+df = \frac{\left( \frac{s^2_A}{n_A} + \frac{s^2_B}{n_B} \right)^2}{\frac{\left( \frac{s^2_A}{n_A} \right)^2}{n_A-1} + \frac{\left( \frac{s^2_B}{n_B} \right)^2}{n_B-1}}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\left( \frac{s^2_A}{n_A} + \frac{s^2_B}{n_B} \right)^2 = (0.048+0.09)^2 = 0.019044\)</span><br>
+</li>
+<li><span class="math inline">\(\frac{\left( \frac{s^2_A}{n_A} \right)^2}{n_A-1} = \frac{\left( \frac{0.048}{30} \right)^2}{30-1} \approx 0.00007945\)</span><br>
+</li>
+<li><span class="math inline">\(\frac{\left( \frac{s^2_B}{n_B} \right)^2}{n_B-1} = \frac{\left( \frac{0.09}{25} \right)^2}{30-1} \approx 0.0003375\)</span></li>
+</ul>
+<p><span class="math display">\[
+\frac{\left( \frac{s^2_A}{n_A} \right)^2}{n_A-1} + \frac{\left( \frac{s^2_B}{n_B} \right)^2}{n_B-1} \approx 0.0004169483
+\]</span></p>
+<p>Jadi</p>
+<p><span class="math display">\[
+\begin{align*}
+df &amp;= \frac{\left( \frac{s^2_A}{n_A} + \frac{s^2_B}{n_B} \right)^2}{\frac{\left( \frac{s^2_A}{n_A} \right)^2}{n_A-1} + \frac{\left( \frac{s^2_B}{n_B} \right)^2}{n_B-1}} \\
+   &amp;= \frac{0.019044}{0.0004169483} \\
+df &amp;\approx 45.67 \approx 46
+\end{align*}
+\]</span></p>
+<p>Dengan nilai di atas kita dapat membandingkan nilai statistik uji <em>t</em> dengan nilai pada tabel <em>t</em> dua arah dengan <span class="math inline">\(df = 46\)</span> dan <span class="math inline">\(\alpha=0.05\)</span>. Nilai kritisnya yaitu <span class="math inline">\(\pm 2.013\)</span>. Untuk nilai <em>p-value</em> kita peroleh <span class="math inline">\(\approx 0.185\)</span>.</p>
+<p>Karena <span class="math inline">\(\textit{p-value} = 0.185&gt;0.05\)</span>, kita gagal menolak <span class="math inline">\(H_0\)</span>$. Artinya, tidak ada cukup bukti untuk menyimpulkan bahwa rata-rata waktu pelayanan cabang A dan cabang B berbeda secara signifikan.</p>
+<p><strong>Contoh kasus dua sampel berpasangan</strong></p>
+<p>Seorang pelatih ingin mengetahui apakah program pelatihan fisik selama 4 minggu meningkatkan kemampuan lari atlet. Ia mengukur waktu tempuh lari 100 meter sebelum (<span class="math inline">\(X_1\)</span>) dan sesudah (<span class="math inline">\(X_2\)</span>) pelatihan untuk 8 atlet dalam satuan detik.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Atlet</th>
+<th>Sebelum (<span class="math inline">\(X_1\)</span>)</th>
+<th>Sesudah (<span class="math inline">\(X_2\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>15.2</td>
+<td>14.8</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>14.7</td>
+<td>14.3</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>15.4</td>
+<td>15.0</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>15.0</td>
+<td>14.5</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>14.8</td>
+<td>14.6</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>15.5</td>
+<td>15.2</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>14.9</td>
+<td>14.4</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>15.1</td>
+<td>14.7</td>
+</tr>
+</tbody>
+</table>
+<p>Hipotesis yang kita uji adalah apakah setelah mengikuti program pelatihan ada peningkatan kemampuan lari atlet. Karena yang diharapkan adalah waktu lari setelah program latihan lebih kecil dibanding sebelum latihan maka hipotesisnya satu arah.</p>
+<ul>
+<li>Hipotesis nol (<span class="math inline">\(H_0\)</span>): Tidak ada perbedaan rata-rata waktu tempuh sebelum dan sesudah pelatihan (<span class="math inline">\(\mu_1-\mu_2 = \mu_d \le 0\)</span>).<br>
+</li>
+<li>Hipotesis alternatif (<span class="math inline">\(H_1\)</span>): Rata-rata waktu tempuh sesudah pelatihan lebih cepat dari sebelum pelatihan (<span class="math inline">\(\mu_1-\mu_2 = \mu_d \gt 0\)</span>).</li>
+</ul>
+<p>Pertama, kita hitung selisih wawktu lari dari masing-masing atlet.</p>
+<p><span class="math display">\[
+d_i = X_{1i} - X_{2i}
+\]</span></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Atlet</th>
+<th>Sebelum (<span class="math inline">\(X_1\)</span>)</th>
+<th>Sesudah (<span class="math inline">\(X_2\)</span>)</th>
+<th>Selisih (<span class="math inline">\(d_i\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>15.2</td>
+<td>14.8</td>
+<td>0.4</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>14.7</td>
+<td>14.3</td>
+<td>0.4</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>15.4</td>
+<td>15.0</td>
+<td>0.4</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>15.0</td>
+<td>14.5</td>
+<td>0.5</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>14.8</td>
+<td>14.6</td>
+<td>0.2</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>15.5</td>
+<td>15.2</td>
+<td>0.3</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>14.9</td>
+<td>14.4</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>15.1</td>
+<td>14.7</td>
+<td>0.4</td>
+</tr>
+</tbody>
+</table>
+<p>Rata-rata selisih waktu dari 8 atlet tersebut adalah</p>
+<p><span class="math display">\[
+\bar{d} = 0.3875
+\]</span></p>
+<p>dan standar deviasinya adalah</p>
+<p><span class="math display">\[
+\begin{align*}
+s_d &amp;= \sqrt{\frac{\sum\left( d_i - \bar{d} \right)^2}{n-1}} \\
+    &amp;= \sqrt{\frac{(0.4 - 0.3875)^2+(0.4 - 0.3875)^2+ \dots + (0.4 - 0.3875)^2}{8-1}} \\
+    &amp;= 0.0968
+\end{align*}
+\]</span></p>
+<p>Statistik uji <em>t</em> kita hitung dengan</p>
+<p><span class="math display">\[
+t = \frac{\bar{d} - 0}{\sqrt{\frac{s_d^2}{n}}}
+\]</span></p>
+<p>Nilai <span class="math inline">\(\bar{d}\)</span> dikurangi 0 karena selisih pada hipotesis kita adalah 0.</p>
+<p><span class="math display">\[
+t = \frac{0.3875 - 0}{\sqrt{\frac{0.0968^2}{8}}} \approx 11.322
+\]</span></p>
+<p>Derajat kebebasan <span class="math inline">\(df = n-1 = 7\)</span>. Dengan nilai ini kita dapatkan <em>p-value</em> = 0.0000047 &lt; 0.05 sehingga kita tolak <span class="math inline">\(H_0\)</span>. Artinya cukup bukti untuk menyatakan bahwa kemampuan lari atlet mengalami perbedaan signifikan setlah program pelatihan.</p>
+</section>
+<section id="uji-hipotesis-dengan-sebaran-poisson" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="uji-hipotesis-dengan-sebaran-poisson"><span class="header-section-number">9.4</span> Uji Hipotesis dengan Sebaran Poisson</h2>
+<p>Sebaran Poisson digunakan ketika kita berurusan dengan data yang mewakili jumlah kejadian dalam suatu interval waktu atau ruang. Sebaran ini sering digunakan ketika data jarang terjadi, seperti jumlah kecelakaan lalu lintas per bulan atau jumlah keluhan pelanggan dalam satu hari.</p>
+<p><strong>Contoh kasus</strong>:</p>
+<p>Kamu bekerja di sebuah perusahaan transportasi dan ingin mengetahui apakah rata-rata kecelakaan dalam sebulan telah meningkat. Misalkan hipotesis nol (<span class="math inline">\(H_0\)</span>) adalah bahwa rata-rata kecelakaan per bulan adalah 3 (<span class="math inline">\(\lambda = 3\)</span>). Kamu mencatat bahwa dalam bulan terakhir, terjadi 5 kecelakaan (<span class="math inline">\(k=5\)</span>). Dengan menggunakan uji Poisson, kita dapat menghitung apakah kejadian 5 kecelakaan ini cukup signifikan untuk menyimpulkan bahwa ada peningkatan kecelakaan. Jika hasil uji menunjukkan bahwa 5 kecelakaan jauh lebih tinggi dari yang diharapkan, kita dapat menolak hipotesis nol dan menyimpulkan bahwa ada peningkatan dalam rata-rata kecelakaan.</p>
+<p>Hipotesis yang kita uji adalah apakah rata-rata kecelakaan lebih dari 3 kecelakaan, karena itu maka hipotesisnya satu arah.</p>
+<ul>
+<li>Hipotesis nol (<span class="math inline">\(H_0\)</span>): Rata-rata kecelakaan kurang dari atausama dengan 3 (<span class="math inline">\(\lambda \le 3\)</span>).<br>
+</li>
+<li>Hipotesis alternatif (<span class="math inline">\(H_1\)</span>): Rata-rata kecelakaan lebih dari 3 (<span class="math inline">\(\lambda \gt 3\)</span>).</li>
+</ul>
+<p>Untuk menghitung <em>p-value</em> dari sebaran Poisson adalah</p>
+<p><span class="math display">\[
+\begin{align*}
+P(X \ge k) &amp;= 1 - P(X \le k-1)  \\
+           &amp;= 1 - P(X \le 5-1)  \\
+           &amp;= 1 - P(X \le 4)  \\
+           &amp;= 1 - \left( P(X = 0) + P(X = 1) + \dots + P(X = 4) \right)  \\
+           &amp;= 1 - \left( \frac{\lambda^0e^{-\lambda}}{0!} + \frac{\lambda^1e^{-\lambda}}{1!} + \dots + \frac{\lambda^4e^{-\lambda}}{4!} \right)  \\
+           &amp;= 1 - \left( \frac{3^0e^{-3}}{0!} + \frac{3^1e^{-3}}{1!} + \dots + \frac{3^4e^{-3}}{4!} \right)  \\
+           &amp;= 1 - 0.8152632 \\
+   p-value &amp;\approx 0.1847368
+\end{align*}
+\]</span></p>
+<p>Karena <span class="math inline">\(\textit{p-value} \approx 0.185 \gt 0.05\)</span> maka kita gagal tolak <span class="math inline">\(H_0\)</span>. Artinya tidak ada cukup bukti untuk menyatakan bahwa rata-rata kecelakaan telah meningkat secara signifikan.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

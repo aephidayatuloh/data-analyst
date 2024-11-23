@@ -95,3 +95,10 @@ div.sidebar-item-container:hover, div.sidebar-item-container:focus {
       display:none;
   }
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}

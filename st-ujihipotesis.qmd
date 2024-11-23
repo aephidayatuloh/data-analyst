@@ -1,2 +1,333 @@
 # Uji Hipotesis 
 
+Dalam dunia data, uji hipotesis adalah salah satu teknik yang sangat sering digunakan untuk menentukan apakah data yang kita kumpulkan cukup untuk mendukung atau menolak suatu dugaan. Sama seperti seorang detektif yang mencari bukti di tempat kejadian, kita juga menggunakan uji hipotesis untuk "membaca" data dan mencari tahu apakah hipotesis yang kita buat benar atau tidak.
+
+Pada bagian ini, kita akan membahas beberapa jenis uji hipotesis yang sering digunakan dengan sebaran yang berbeda: binomial, Normal, t-student, dan Poisson. Setiap sebaran memiliki kegunaan tertentu dalam situasi yang berbeda, tergantung pada jenis data yang kita miliki.
+
+## Uji Hipotesis dengan Sebaran Binomial  
+
+Sebaran binomial digunakan ketika kita berurusan dengan data yang bersifat diskrit, biasanya untuk eksperimen yang hanya memiliki dua hasil, seperti **sukses** atau **gagal**.
+
+**Contoh kasus**:  
+Katakanlah kamu bekerja di perusahaan e-commerce dan ingin menguji apakah tingkat keberhasilan pengiriman barang tetap pada 95%. Hipotesis nolnya ($H_0$) adalah bahwa tingkat keberhasilan pengiriman sama dengan 95%, sedangkan hipotesis alternatifnya ($H_1$) adalah tingkat keberhasilan pengiriman berbeda dari 95%.
+
+:::{.callout-note title="Dalam Matematika dan Statistika"}
+Notasi hipotesis adalah $H_0$ dan $H_1$. $H_0$ biasanya untuk hipotesis yang mengandung nilai "sama dengan" ($=$, $\le$, $\ge$), sedangkan $H_1$ adalah kebalikan atau negasinya ($\neq$, $\lt$, $\gt$). 
+
+Hipotesis dua arah:  
+$$
+\begin{align*} 
+H_0: \theta &= \theta_0  \\
+H_1: \theta &\neq \theta_0  
+\end{align*}
+$$
+
+Hipotesis satu arah:  
+$$
+\begin{align*} 
+H_0: \theta &\ge \theta_0 \\
+H_1: \theta &< \theta_0  \\ 
+\\
+H_0: \theta &\le \theta_0 \\ 
+H_1: \theta &> \theta_0
+\end{align*}
+$$
+:::
+
+Misalnya, kamu mengambil sampel dari 100 ($n = 100$) pengiriman dan mendapati bahwa 92 pengiriman berhasil. Kita bisa melakukan uji binomial untuk melihat apakah ada cukup bukti bahwa tingkat keberhasilan pengiriman telah berubah. Jika nilai _p-value_ dari uji binomial lebih kecil dari tingkat signifikansi ($\alpha$, dibaca alpha), misalnya 0.05, kita dapat menolak hipotesis nol dan menyimpulkan bahwa ada perubahan pada tingkat keberhasilan pengiriman.
+
+$$
+\begin{align*} 
+H_0: p & \ge 0.95  \\
+H_1: p & \lt 0.95  \\
+x = 8 & \\
+\end{align*}
+$$
+
+Dengan menghitung sebaran binomial kumulatif (_Cumulative Distribution Function_, CDF) untuk $n=100$, $p=0.95$, $q = (1-p) = 0.05$, dan $k=92$, kita dapat menuliskannya menjadi 
+
+$$
+P(X \le 92)=P(X=0)+P(X=1)+P(X=2)+ \dots + P(X=92) 
+$$
+
+Ingat bahwa 
+$$
+P(X=k) = \binom{n}{k}p^k(1-p)^{n-k} 
+$$
+
+maka 
+$$
+\begin{align*} 
+P(X \le 92) &= P(X = 0) + P(X = 1) + P(X = 2) + \dots + P(X = 92)  \\ 
+            &= \binom{100}{0}p^0(1-p)^{100-0}+\binom{100}{1}p^1(1-p)^{100-1} + \dots + \binom{100}{92}p^{92}(1-p)^{100-92}   \\  
+            &=\binom{100}{0}0.95^0(0.05)^{100}+\binom{100}{1}0.95^1(0.05)^{99} + \dots + \binom{100}{92}0.95^{92}(0.05)^{8}   \\ 
+\textit{p-value}&= 0.1279605 
+\end{align*}
+$$
+
+Jika kita menggunakan taraf nyata (_significant level_, $\alpha$) sebesar 5% atau $\alpha=0.05$, maka kita gagal menolak $H_0$ karena p-value > $\alpha$. Artinya kamu masih bisa mengatakan secara statistik bahwa tingkat keberhasilan pengiriman barang tetap pada 95%. Dengan kata lain, kita tidak mempunyai cukup bukti untuk mengatakan bahwa proporsi keberhasilan pengiriman telah menurun secara signifikan dari 95%.
+
+
+## Uji Hipotesis dengan Sebaran Normal  
+
+Sebaran Normal adalah sebaran kontinu yang paling sering digunakan ketika data menyebar secara simetris di sekitar mean. Uji hipotesis yang menggunakan sebaran Normal sering digunakan ketika ukuran sampel besar, dan kita ingin menguji apakah suatu rata-rata populasi berbeda dari nilai tertentu. Uji hipotesis dapat juga digunakan untuk menguji perbedaan rata-rata dari dua populasi.  
+
+**Contoh kasus satu populasi**:  
+
+Bayangkan kamu bekerja di sebuah perusahaan manufaktur yang memproduksi bola lampu. Hipotesis nol ($H_0$) menyatakan bahwa rata-rata umur bola lampu adalah 800 jam. Kamu mengambil sampel 50 bola lampu ($n = 50$) dan mendapati rata-rata umur sampel adalah 780 jam ($\bar{x} = 780$) dengan standar deviasi 30 jam ($s=30$). Untuk melihat apakah ada perbedaan signifikan, kamu bisa menggunakan uji z (uji hipotesis untuk rata-rata dengan sebaran Normal). Jika _p-value_ lebih kecil dari tingkat signifikansi, kita dapat menyimpulkan bahwa umur rata-rata bola lampu mungkin berbeda dari 800 jam ($\mu = 800$).
+
+
+Kita harus merumuskan terlebih dahulu hipotesis yang ingin kita uji. 
+
+* Hipotesis Nol ($H_0$): Rata-rata umur bola lampu adalah 800 jam, $\mu=800$.
+* Hipotesis Alternatif ($H_1$): Rata-rata umur bola lampu berbeda dari 800 jam, $\mu \neq 800$ (dua arah).
+
+Untuk menguji hipotesis di atas kita dapat menggunakan uji hipotesis rata-rata sebaran Normal. 
+
+$$
+\begin{align*}
+z &= \frac{\bar{x} - \mu}{\frac{s}{\sqrt{n}}}  \\ 
+  &= \frac{780 - 800}{\frac{30}{\sqrt{50}}}  \\ 
+  & \approx -4.714
+\end{align*}
+$$
+
+$$
+\textnormal{p-value} = P(Z \lt -4.714) \approx  0.0000025
+$$
+
+Nilai _p-value_ tersebut sangat kecil sehingga _p-value_ $\lt \alpha$, oleh karena itu kita tolak $H_0$ dan menyatakan cukup bukti untuk menyimpulkan bahwa rata-rata umur bola lampu berbeda secara signifikan dari 800 jam. Artinya umur bola lampu bukanlah 800 jam. Jika standar umur lampu yang diinginkan memang minimal 800 jam maka mungkin perlu dilakukan penyelidikan lebih lanjut terhadap proses produksi, bahan baku, atau formula pembuatan bola lampu.
+
+
+**Contoh kasus dua populasi**  
+
+Sebuah pabrik ingin mengetahui apakah dua lini produksinya menghasilkan rata-rata banyaknya produk cacat per hari yang berbeda. Dari lini produksi A diperoleh rata-rata 4 cacat per hari dengan standa deviasi 1.5 berdasarkan sampel yang diambil selama 30 hari ($\bar{x} = 4$, $s_A=1.5$, $n_A=30$). Dari lini produksi B rata-rata 3.7 cacat per hari dengan standar deviasi 1.2 diambil sampel selama 25 hari ($\bar{x} = 3.7$, $s_B=1.2$, $n_B=25$). Apakah terdapat perbedaan signifikan dalam rata-rata cacat antara lini produksi A dan B? Gunakan tingkat signifikansi $\alpha=0.05$.
+
+Hipotesis untuk membandingkan dua populasi adalah sebagai berikut.  
+
+* Hipotesis Nol ($H_0$): Rata-rata cacat kedua lini produksi adalah sama ($\mu_A=\mu_B$).  
+* Hipotesis Alternatif ($H_1$): Rata-rata cacat kedua lini produksi berbeda ($\mu_A \neq \mu_B$).  
+
+Taraf nyata yang kita gunakan adalah 5% atau $\alpha=0.05$. Jika _p-value_ dari hasil uji hipotesis ini lebih kecil dari $\alpha$ ($\textit{p-value} \le \alpha$) maka kita tolak $H_0$.
+
+Selanjutnya kita hitung  statistik uji untuk dua populasi sebaran Normal dengan 
+
+$$
+Z = \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s^2_A}{n_A} + \frac{s^2_B}{n_B}}}
+$$
+
+* $\bar{x}_A - \bar{x}_B = 4-3.7 = 0.3$  
+* $\frac{s^2_A}{n_A} = \frac{(1.5)^2}{30} = \frac{2.25}{30} = 0.075$  
+* $\frac{s^2_B}{n_B} = \frac{(1.2)^2}{25} = \frac{1.44}{25} = 0.0576$
+
+
+$$
+\begin{align*}
+Z &= \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s^2_A}{n_A} + \frac{s^2_B}{n_B}}}  \\  
+  &= \frac{0.3}{\sqrt{0.075+0.0576}}  \\  
+  &\approx 0.824
+\end{align*}
+$$
+
+Karena ini adalah uji hipotesis dua arah, kita perlu mencari peluang untuk $|Z| \ge 0.824$. Hasilnya kita peroleh _p-value_ = 0.409. Karena _p-value_ > 0.05 maka kita gagal tolak $H_0$. Tidak ada cukup bukti untuk menyimpulkan bahwa rata-rata jumlah cacat antara lini produksi A dan B berbeda secara signifikan. Dengan kata lain, rata-rata cacat dari kedua lini produksi dapat dianggap sama.
+
+Uji hipotesis dengan sebaran Normal ini mengasumsikan kita mengetahui bahwa sebaran dari jumlah cacat produksi adalah menyebar Normal dan parameter populasinya ddiketahui. Namun pada kenyataannya parameter sulit untuk diketahui. 
+
+Jika data berasal dari populasi yang tidak diketahui sebarannya atau ukuran sampel lebih kecil, gunakan uji _t_.
+
+## Uji Hipotesis dengan Sebaran t-Student  
+
+Sebaran _t_-Student digunakan ketika ukuran sampel kecil dan varians populasi tidak diketahui. Biasanya digunakan untuk menguji rata-rata ketika data mengikuti sebaran Normal atau mendekati Normal, tetapi ukuran sampelnya terlalu kecil untuk menggunakan sebaran Normal. 
+
+Uji _t_  juga dapat digunakan untuk menguji sampel dari satu populasi atau dua populasi. Untuk uji hipotesis 2 populasi perlu diperhatikan apakah kedua populasi tersebut saling bebas atau berpasangan. Contoh data sampel dari populasi yang saling bebas misalnya nilai ujian antara murid laki-laki dan murid perempuan. Tujuannya adalah ingin melihat apakah ada perbedaan rata-rata nilai ujian antara murid laki-laki dan murid perempuan. Jumlah sampel kedua populasinya pun tidak harus sama. Uji hipotesis dari dua sampel yang berpasangan contohnya adalah nilai ujian sebelum dan setelah kegiatan belajar. Tujuannya untuk melihat apakah ada peningkatan rata-rata nilai setelah melaksanakan kegiatan belajar. Murid yang mengikuti ujian sebelum dan setelah pelajaran harus orang yang sama dan jumlahnya sama.   
+
+**Contoh kasus satu populasi**:  
+
+Misalkan kamu bekerja di sebuah restoran cepat saji, dan kamu ingin tahu apakah waktu rata-rata penyajian burger lebih dari 5 menit. Kamu mengambil sampel kecil, misalnya 10 pesanan ($n=10$) dan mendapati bahwa rata-rata waktu penyajian adalah 5.3 menit ($\bar{x}=5.3$) dengan standar deviasi 0.4 menit ($s=0.4$). Karena ukuran sampel kecil, kita bisa menggunakan uji _t_-Student untuk menguji apakah rata-rata penyajian lebih lama dari 5 menit. Dengan menghitung statistik uji _t_, kita dapat membandingkan hasilnya dengan nilai kritis dari tabel sebaran _t_, dan membuat keputusan berdasarkan hasil tersebut.
+
+Pertama, kita harus tentukan dahulu hipotesis yang akan kita uji, yaitu   
+
+* Hipotesis Nol ($H_0$): Rata-rata waktu penyajian burger adalah 5 menit atau kurang ($\mu \le 5$).  
+* Hipotesis Alternatif ($H_1$): Rata-rata waktu penyajian burger lebih dari 5 menit ($\mu  \gt 5$). 
+
+Selanjutnya kita hitung statistik uji _t_ untuk rata-rata sampel dengan 
+
+$$
+t = \frac{\bar{x} - \mu}{\sqrt{\frac{s^2}{n}}}
+$$
+
+* $\bar{x} - \mu = 5.3 - 5 = 0.3$  
+* $\frac{s^2}{n} = \frac{(0.4)^2}{10} = 0.016$  
+
+$$
+\begin{align*}
+t &= \frac{\bar{x} - \mu}{\sqrt{\frac{s^2}{n}}}  \\  
+  &= \frac{0.3}{\sqrt{0.016}}  \\  
+  &\approx 2.371708
+\end{align*}
+$$
+
+Nilai yang perlu kita ketahui juga yaitu derajat kebebasan (_df_: _degree of freedom_) untuk uji _t_ yaitu $n-1 = 10-1=9$. Taraf nyata yang digunakaan yaitu $\alpha=0.05$.
+
+Untuk uji satu arah ini kita dapatkan _p-value_ $\approx$ 0.021. Karena _p-value_ < 0.05 maka kita tolak $H_0$. Artinya berdasarkan data sampel, ada cukup bukti pada tingkat signifikansi $\alpha=0.05$ untuk menyimpulkan bahwa waktu rata-rata penyajian burger lebih dari 5 menit.
+
+**Contoh kasus dua sampel saling bebas**  
+
+Sebuah perusahaan makanan cepat saji ingin mengetahui apakah rata-rata waktu pelayanan di dua cabangnya berbeda secara signifikan.
+
+* Cabang A: Sampel ukuran 30, rata-rata waktu pelayanan $\bar{x}_A = 5.5$ menit, standar deviasi $s_A = 1.2$ menit.  
+* Cabang B: Sampel ukuran 25, rata-rata waktu pelayanan $\bar{x}_B = 6.0$ menit, standar deviasi $s_B = 1.5$ menit.
+
+Kita gunakan tingkat signifikansi $\alpha = 0.05$ untuk menguji apakah waktu pelayanan kedua cabang tersebut berbeda.
+
+Ada beberapa asumsi yang harus kita perhatikan ketika menggunakan uji _t_ dua populasi saling bebas. Pertama adalah sample berasal dr sebaran Normal. Meskipun dalam beberapa kasus kita masih dapat menggunakan uji _t_ walapun data tidak menyebar Normal. Kedua adalah kesamaan ragam dari kedua populasi. Kenapa hal ini perlu diperhatikan? Karena perbedaan ragam dapat mempengaruhi perhitungan dan kesimpulan. Sangat disarankan untuk mempelajari referensi lain yang relevan untuk menambah pengetahuan tentang pengetahuan mengenai uji _t_. Untuk memudahkan penjelasan pada contoh kali ini kita gunakan asumsi ragam dari dua sampel adalah sama. 
+
+Kita tentukan hipotesis yang akan kita uji, yaitu   
+
+* Hipotesis Nol ($H_0$): Tidak ada perbedaan rata-rata waktu pelayanan antara cabang A dan B ($\mu_A = \mu_B$).  
+* Hipotesis Alternatif ($H_1$): Terdapat perbedaan rata-rata waktu pelayanan ($\mu_A \neq \mu_B$).
+
+Selanjutnya kita hitung statistik uji _t_ untuk dua sampel saling bebas
+
+$$
+t = \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s^2_A}{n_A} + \frac{s^2_B}{n_B}}}
+$$
+
+* $\bar{x}_A - \bar{x}_B = 5.5 - 6.0 = -0.5$  
+* $\frac{s^2_A}{n_A} = \frac{(1.2)^2}{30} = 0.048$  
+* $\frac{s^2_B}{n_B} = \frac{(1.5)^2}{25} = 0.09$
+
+
+$$
+\begin{align*}
+t &= \frac{\bar{x}_A - \bar{x}_B}{\sqrt{\frac{s^2_A}{n_A} + \frac{s^2_B}{n_B}}} \\  
+  &= \frac{-0.5}{\sqrt{0.048+0.09}}  \\  
+  &\approx -1.346
+\end{align*}
+$$
+
+Derajat kebebasan (_df_) untuk dua sampel saling bebas kita hitung dengan 
+
+$$
+df = \frac{\left( \frac{s^2_A}{n_A} + \frac{s^2_B}{n_B} \right)^2}{\frac{\left( \frac{s^2_A}{n_A} \right)^2}{n_A-1} + \frac{\left( \frac{s^2_B}{n_B} \right)^2}{n_B-1}}
+$$
+
+* $\left( \frac{s^2_A}{n_A} + \frac{s^2_B}{n_B} \right)^2 = (0.048+0.09)^2 = 0.019044$  
+* $\frac{\left( \frac{s^2_A}{n_A} \right)^2}{n_A-1} = \frac{\left( \frac{0.048}{30} \right)^2}{30-1} \approx 0.00007945$  
+* $\frac{\left( \frac{s^2_B}{n_B} \right)^2}{n_B-1} = \frac{\left( \frac{0.09}{25} \right)^2}{30-1} \approx 0.0003375$
+
+$$
+\frac{\left( \frac{s^2_A}{n_A} \right)^2}{n_A-1} + \frac{\left( \frac{s^2_B}{n_B} \right)^2}{n_B-1} \approx 0.0004169483
+$$
+
+Jadi 
+
+$$
+\begin{align*}
+df &= \frac{\left( \frac{s^2_A}{n_A} + \frac{s^2_B}{n_B} \right)^2}{\frac{\left( \frac{s^2_A}{n_A} \right)^2}{n_A-1} + \frac{\left( \frac{s^2_B}{n_B} \right)^2}{n_B-1}} \\ 
+   &= \frac{0.019044}{0.0004169483} \\ 
+df &\approx 45.67 \approx 46 
+\end{align*}
+$$
+
+Dengan nilai di atas kita dapat membandingkan nilai statistik uji _t_ dengan nilai pada tabel _t_ dua arah dengan $df = 46$ dan $\alpha=0.05$. Nilai kritisnya yaitu $\pm 2.013$. Untuk nilai _p-value_ kita peroleh $\approx 0.185$.
+
+Karena $\textit{p-value} = 0.185>0.05$, kita gagal menolak $H_0$$. Artinya, tidak ada cukup bukti untuk menyimpulkan bahwa rata-rata waktu pelayanan cabang A dan cabang B berbeda secara signifikan.
+
+**Contoh kasus dua sampel berpasangan**  
+
+Seorang pelatih ingin mengetahui apakah program pelatihan fisik selama 4 minggu meningkatkan kemampuan lari atlet. Ia mengukur waktu tempuh lari 100 meter sebelum ($X_1$) dan sesudah ($X_2$) pelatihan untuk 8 atlet dalam satuan detik.
+
+| Atlet |	Sebelum ($X_1$) |	Sesudah ($X_2$) |  
+|-------|---|---|
+| 1 | 15.2 |  14.8 | 
+| 2 |	14.7 |	14.3 | 
+| 3 |	15.4 |	15.0 | 
+| 4 |	15.0 |	14.5 | 
+| 5 |	14.8 |	14.6 | 
+| 6 |	15.5 |	15.2 | 
+| 7 |	14.9 |	14.4 | 
+| 8 |	15.1 |	14.7 | 
+
+Hipotesis yang kita uji adalah apakah setelah mengikuti program pelatihan ada peningkatan kemampuan lari atlet. Karena yang diharapkan adalah waktu lari setelah program latihan lebih kecil dibanding sebelum latihan maka hipotesisnya satu arah.
+
+* Hipotesis nol ($H_0$): Tidak ada perbedaan rata-rata waktu tempuh sebelum dan sesudah pelatihan ($\mu_1-\mu_2 = \mu_d \le 0$).  
+* Hipotesis alternatif ($H_1$): Rata-rata waktu tempuh sesudah pelatihan lebih cepat dari sebelum pelatihan ($\mu_1-\mu_2 = \mu_d \gt 0$).  
+
+
+Pertama, kita hitung selisih wawktu lari dari masing-masing atlet. 
+
+$$
+d_i = X_{1i} - X_{2i}
+$$
+
+| Atlet |	Sebelum ($X_1$) |	Sesudah ($X_2$) | Selisih ($d_i$) | 
+|-------|---|---|----|
+| 1 | 15.2 |  14.8 | 0.4 | 
+| 2 |	14.7 |	14.3 | 0.4 | 
+| 3 |	15.4 |	15.0 | 0.4 | 
+| 4 |	15.0 |	14.5 | 0.5 | 
+| 5 |	14.8 |	14.6 | 0.2 | 
+| 6 |	15.5 |	15.2 | 0.3 | 
+| 7 |	14.9 |	14.4 | 0.5 | 
+| 8 |	15.1 |	14.7 | 0.4 | 
+
+Rata-rata selisih waktu dari 8 atlet tersebut adalah 
+
+$$
+\bar{d} = 0.3875
+$$
+
+dan standar deviasinya adalah 
+
+$$
+\begin{align*}
+s_d &= \sqrt{\frac{\sum\left( d_i - \bar{d} \right)^2}{n-1}} \\ 
+    &= \sqrt{\frac{(0.4 - 0.3875)^2+(0.4 - 0.3875)^2+ \dots + (0.4 - 0.3875)^2}{8-1}} \\ 
+    &= 0.0968
+\end{align*}
+$$
+
+Statistik uji _t_ kita hitung dengan 
+
+$$
+t = \frac{\bar{d} - 0}{\sqrt{\frac{s_d^2}{n}}}
+$$
+
+Nilai $\bar{d}$ dikurangi 0 karena selisih pada hipotesis kita adalah 0. 
+
+$$
+t = \frac{0.3875 - 0}{\sqrt{\frac{0.0968^2}{8}}} \approx 11.322
+$$
+
+Derajat kebebasan $df = n-1 = 7$. Dengan nilai ini kita dapatkan _p-value_ = 0.0000047 < 0.05 sehingga kita tolak $H_0$. Artinya cukup bukti untuk menyatakan bahwa kemampuan lari atlet mengalami perbedaan signifikan setlah program pelatihan. 
+
+## Uji Hipotesis dengan Sebaran Poisson  
+
+Sebaran Poisson digunakan ketika kita berurusan dengan data yang mewakili jumlah kejadian dalam suatu interval waktu atau ruang. Sebaran ini sering digunakan ketika data jarang terjadi, seperti jumlah kecelakaan lalu lintas per bulan atau jumlah keluhan pelanggan dalam satu hari.
+
+**Contoh kasus**:  
+
+Kamu bekerja di sebuah perusahaan transportasi dan ingin mengetahui apakah rata-rata kecelakaan dalam sebulan telah meningkat. Misalkan hipotesis nol ($H_0$) adalah bahwa rata-rata kecelakaan per bulan adalah 3 ($\lambda = 3$). Kamu mencatat bahwa dalam bulan terakhir, terjadi 5 kecelakaan ($k=5$). Dengan menggunakan uji Poisson, kita dapat menghitung apakah kejadian 5 kecelakaan ini cukup signifikan untuk menyimpulkan bahwa ada peningkatan kecelakaan. Jika hasil uji menunjukkan bahwa 5 kecelakaan jauh lebih tinggi dari yang diharapkan, kita dapat menolak hipotesis nol dan menyimpulkan bahwa ada peningkatan dalam rata-rata kecelakaan.
+
+Hipotesis yang kita uji adalah apakah rata-rata kecelakaan lebih dari 3 kecelakaan, karena itu maka hipotesisnya satu arah. 
+
+* Hipotesis nol ($H_0$): Rata-rata kecelakaan kurang dari atausama dengan 3 ($\lambda \le 3$).   
+* Hipotesis alternatif ($H_1$): Rata-rata kecelakaan lebih dari 3 ($\lambda \gt 3$).  
+
+Untuk menghitung _p-value_ dari sebaran Poisson adalah 
+
+$$
+\begin{align*}
+P(X \ge k) &= 1 - P(X \le k-1)  \\ 
+           &= 1 - P(X \le 5-1)  \\ 
+           &= 1 - P(X \le 4)  \\
+           &= 1 - \left( P(X = 0) + P(X = 1) + \dots + P(X = 4) \right)  \\ 
+           &= 1 - \left( \frac{\lambda^0e^{-\lambda}}{0!} + \frac{\lambda^1e^{-\lambda}}{1!} + \dots + \frac{\lambda^4e^{-\lambda}}{4!} \right)  \\ 
+           &= 1 - \left( \frac{3^0e^{-3}}{0!} + \frac{3^1e^{-3}}{1!} + \dots + \frac{3^4e^{-3}}{4!} \right)  \\ 
+           &= 1 - 0.8152632 \\ 
+   p-value &\approx 0.1847368
+\end{align*}
+$$
+
+Karena $\textit{p-value} \approx 0.185 \gt 0.05$ maka kita gagal tolak $H_0$. Artinya tidak ada cukup bukti untuk menyatakan bahwa rata-rata kecelakaan telah meningkat secara signifikan. 

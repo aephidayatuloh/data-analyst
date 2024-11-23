@@ -1,6 +1,6 @@
 # Pola Pikir Data Analyst {#sec-polapikir} 
 
-<h1 style='font-size: 156;font-weight:bold;text-align:center;color:#f11313'>Jangan menganalisis data!</h1>
+<h1 style='font-size: 156;font-weight:bold;text-align:center;color:#f11313'>!Jangan menganalisis data!</h1>
 
 Seiring dengan perkembangan teknologi dan digitalisasi, kebutuhan akan data analyst semakin meningkat. Seorang data analyst memiliki peran penting dalam menganalisis data untuk membantu organisasi membuat keputusan yang lebih baik. Namun, menjadi seorang data analyst yang efektif tidak hanya memerlukan keterampilan teknis tetapi juga pola pikir yang tepat. Bab ini akan membahas pola pikir yang harus dimiliki seorang data analyst untuk berhasil dalam profesinya.
 
@@ -10,7 +10,7 @@ Beberapa hal yang perlu dilakukan ketika akan memulai kegiatan atau project data
 
 ## Berpikir Kritis  
 
-Bukan pikiran Anda yang dalam kondisi kritis!
+<strong>Bukan pikiran kamu yang dalam kondisi kritis!</strong>
 
 Berpikir kritis adalah kemampuan untuk menganalisis dan mengevaluasi informasi secara mendalam sebelum mencapai suatu kesimpulan. Ketika seorang data analyst akan bekerja maka yang pertama kali harus dia lakukan adalah membuat pertanyaan atau hipotesis. Hal ini penting agar langkah yang diambil menjadi terarah dan bukan hanya pekerjaan _receh_ yang nantinya akan gagal di tengah jalan atau bahkan hasil analisisnya tidak penting sama sekali. Bagi seorang data analyst, berpikir kritis melibatkan beberapa aspek:
 
@@ -44,7 +44,7 @@ Penting untuk menyadari bias yang mungkin ada dalam data dan bagaimana bias ters
 
 Misalnya, bias seleksi dapat terjadi ketika sampel data tidak mewakili populasi yang lebih besar. Jika sebuah survei hanya mengumpulkan responden dari kota-kota besar, hasilnya mungkin tidak berlaku untuk daerah pedesaan. Data analyst perlu menyadari potensi bias ini dan, jika mungkin, memperbaikinya dengan menyeimbangkan sampel atau menggunakan teknik statistik yang tepat.
 
-Bias dalam pengumpulan data juga bisa muncul dari cara pertanyaan disusun dalam survei atau dari alat yang digunakan untuk mengumpulkan data. Pertanyaan yang leading atau tidak jelas bisa mempengaruhi jawaban responden. Sebagai contoh, pertanyaan "Seberapa sering Anda menikmati bekerja di lingkungan yang dinamis?" sudah menyiratkan bahwa lingkungan yang dinamis adalah sesuatu yang positif, sehingga bisa mengarahkan responden untuk memberikan jawaban yang lebih positif. Mengidentifikasi bias semacam ini sangat penting dalam menjaga integritas data.
+Bias dalam pengumpulan data juga bisa muncul dari cara pertanyaan disusun dalam survei atau dari alat yang digunakan untuk mengumpulkan data. Pertanyaan yang leading atau tidak jelas bisa mempengaruhi jawaban responden. Sebagai contoh, pertanyaan "Seberapa sering kamu menikmati bekerja di lingkungan yang dinamis?" sudah menyiratkan bahwa lingkungan yang dinamis adalah sesuatu yang positif, sehingga bisa mengarahkan responden untuk memberikan jawaban yang lebih positif. Mengidentifikasi bias semacam ini sangat penting dalam menjaga integritas data.
 
 Bias interpretasi adalah jenis bias yang muncul saat data analyst menafsirkan hasil analisis. Setiap data analyst membawa perspektif dan asumsi mereka sendiri ke dalam proses analisis, yang bisa mempengaruhi cara mereka melihat data. Oleh karena itu, penting untuk selalu kritis terhadap interpretasi hasil dan, jika memungkinkan, mendapatkan opini kedua atau melakukan peer review untuk mengurangi bias interpretasi.
 
@@ -224,7 +224,7 @@ Visualisasi data adalah alat penting dalam menyampaikan hasil analisis. Grafik, 
 
 Kemampuan komunikasi yang efektif tidak hanya tentang berbicara atau menulis dengan jelas tetapi juga tentang mendengarkan secara aktif. Data analyst harus mendengarkan kebutuhan dan masalah dari pemangku kepentingan untuk memahami konteks dan tujuan dari analisis yang diminta. Dengan mendengarkan secara aktif, data analyst dapat mengidentifikasi pertanyaan kunci yang perlu dijawab dan mengumpulkan informasi yang relevan untuk analisis.
 
-Mendengarkan aktif melibatkan memberikan perhatian penuh pada pembicara, mengajukan pertanyaan klarifikasi, dan memberikan umpan balik yang tepat. Misalnya, ketika berinteraksi dengan tim pemasaran, data analyst harus mendengarkan dengan seksama untuk memahami tantangan yang mereka hadapi dan tujuan yang ingin dicapai. Mengajukan pertanyaan seperti “Bisakah Anda menjelaskan lebih lanjut tentang bagaimana Anda mengukur keberhasilan kampanye pemasaran?” dapat membantu mengumpulkan informasi yang lebih mendalam dan relevan untuk analisis.
+Mendengarkan aktif melibatkan memberikan perhatian penuh pada pembicara, mengajukan pertanyaan klarifikasi, dan memberikan umpan balik yang tepat. Misalnya, ketika berinteraksi dengan tim pemasaran, data analyst harus mendengarkan dengan seksama untuk memahami tantangan yang mereka hadapi dan tujuan yang ingin dicapai. Mengajukan pertanyaan seperti “Bisakah kamu menjelaskan lebih lanjut tentang bagaimana kamu mengukur keberhasilan kampanye pemasaran?” dapat membantu mengumpulkan informasi yang lebih mendalam dan relevan untuk analisis.
 
 Mendengarkan aktif juga membantu dalam membangun hubungan kerja yang baik dengan pemangku kepentingan. Dengan menunjukkan minat yang tulus pada masalah dan kebutuhan mereka, data analyst dapat membangun kepercayaan dan kolaborasi yang lebih baik. Ini pada gilirannya membantu dalam mendapatkan dukungan dan partisipasi yang lebih besar dalam proses analisis data.
 

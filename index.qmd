@@ -4,8 +4,14 @@ Data Analyst dan Data Scientist menjadi pekerjaan yang diinginkan banyak orang s
 
 Mereka yang memang menempuh pendidikan yang berkaitan erat dengan data seperti Statistika dan Ilmu Komputer, atau yang tidak hubungannya sama sekali seperti lulusan Ilmu Hukum, Perikanan dan Kelautan, dan lain-lain yang ingin beralih karir menjadi data analyst atau data scientist mulai banyak bermunculan. 
 
-Karena banyaknya keinginan dan kebutuhan akan pendidikan tentang data, banyak universitas atau kampus mulai mempertimbangkan atau bahkan sudah mulai untuk mengampu pendidikan yang berkaitan dengan bidang ini. Bahkan banyak lembaga penyedia pendidikan, training atau kursus yang menydiakan kesempatan bagi mereka yang ingin belajar untuk menjadi Data Analyst atau Data Scientist. Buku ini akan mengajak Anda untuk mulai memahami apa itu data analyst, kemampuan yang dibutuhkan dan disertai dengan contoh kasus dan teknis pengerjaannya yang akan menambah pemahaman dan kemampuan Anda untuk menjadi data analyst. 
+Karena banyaknya keinginan dan kebutuhan akan pendidikan tentang data, banyak universitas atau kampus mulai mempertimbangkan atau bahkan sudah mulai untuk mengampu pendidikan yang berkaitan dengan bidang ini. Bahkan banyak lembaga penyedia pendidikan, training atau kursus yang menydiakan kesempatan bagi mereka yang ingin belajar untuk menjadi Data Analyst atau Data Scientist. Buku ini akan mengajak kamu untuk mulai memahami apa itu data analyst, kemampuan yang dibutuhkan dan disertai dengan contoh kasus dan teknis pengerjaannya yang akan menambah pemahaman dan kemampuan kamu untuk menjadi data analyst. 
 
-Alat atau _Tools_ yang akan sangat berguna dan biasanya digunakan dalam mengerjakan analisis data adalah Excel, SQL, dan terkadang juga menggunakan bahasa pemrograman. Bahasa Pemrograman yang biasanya digunakan dalam kegiatan analisis data adalah R atau Python. Oleh karena itu, buku ini akan mengajak Anda untuk mengenal lebih jauh tentang data analytics dan _tools_ yang biasanya digunakan untuk menunjang aktivitas analisis data.
+Alat atau _Tools_ yang akan sangat berguna dan biasanya digunakan dalam mengerjakan analisis data adalah Excel, SQL, dan terkadang juga menggunakan bahasa pemrograman. Bahasa Pemrograman yang biasanya digunakan dalam kegiatan analisis data adalah R atau Python. Oleh karena itu, buku ini akan mengajak kamu untuk mengenal lebih jauh tentang data analytics dan _tools_ yang biasanya digunakan untuk menunjang aktivitas analisis data.
 
-Tentu saja penulis menyadari bahwa tulisan ini hanya berdasarkan pengetahuan dan pengalaman yang diketahui oleh penulis, shingga masih banyak kekurangan dan perlu perbaikan dalam berbagai hal. Jika Anda ingin berkontribusi pada tulisan ini, Anda dapat menjadi kontributor pada repository GitHub <https://github.com/aephidayatuloh/data-analyst>. 
+Tentu saja penulis menyadari bahwa tulisan ini hanya berdasarkan pengetahuan dan pengalaman yang diketahui oleh penulis, shingga masih banyak kekurangan dan perlu perbaikan dalam berbagai hal. Jika kamu ingin berkontribusi pada tulisan ini, kamu dapat menjadi kontributor pada repository GitHub <https://github.com/aephidayatuloh/data-analyst>. 
+
+```{r}
+#| include: false
+start_dt <- format(as.Date("2024-09-29"), "%d %B %Y")
+```
+Buku ini mulai ditulis sejak `{r} start_dt` dan sudah mengalami banyak perubahan dan penambahan. Penulisan buku ini juga dibantu menggunakan chatGPT. 

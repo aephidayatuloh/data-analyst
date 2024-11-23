@@ -2,15 +2,15 @@
 
 Statistika adalah fondasi dari data analytics yang memungkinkan data analyst untuk dapat memahami, menginterpretasikan, dan membuat keputusan berdasarkan data. Tanpa statistika, data hanyalah angka-angka yang tidak berarti. Statistika memberikan alat dan metode yang memungkinkan kita untuk menarik kesimpulan yang valid dan relevan dari data yang tersedia. Di dalam dunia yang semakin data-driven ini, kemampuan untuk memahami dan menerapkan konsep-konsep statistika dasar menjadi sangat penting bagi seorang data analyst.
 
-Statistika dasar mencakup berbagai teknik dan metode yang memungkinkan kita untuk menganalisis data secara efektif. Ini termasuk konsep seperti ukuran pemusatan data, ukuran penyebaran, distribusi probabilitas, dan inferensi statistik. Dengan menguasai statistika dasar, kita dapat mengevaluasi dan menyajikan data dengan cara yang memberi nilai tambah dan mendukung pengambilan keputusan yang berbasis data. Selain itu, statistika dasar juga membekali kita dengan kemampuan untuk mengidentifikasi pola, membuat prediksi, dan mengkomunikasikan temuan dengan jelas dan akurat.
+Statistika dasar mencakup berbagai teknik dan metode yang memungkinkan kita untuk menganalisis data secara efektif. Ini termasuk konsep seperti ukuran pemusatan data, ukuran penyebaran, sebaran probabilitas, dan inferensi statistik. Dengan menguasai statistika dasar, kita dapat mengevaluasi dan menyajikan data dengan cara yang memberi nilai tambah dan mendukung pengambilan keputusan yang berbasis data. Selain itu, statistika dasar juga membekali kita dengan kemampuan untuk mengidentifikasi pola, membuat prediksi, dan mengkomunikasikan temuan dengan jelas dan akurat.
 
-Dalam bab ini, kita akan menjelajahi berbagai konsep statistika dasar secara mendalam. Kita akan memulai dengan pengertian populasi dan contoh (sampel), ukuran pemusatan data, dan ukuran penyebaran data. Kemudian, kita akan membahas distribusi probabilitas dan bagaimana mereka dapat digunakan untuk memahami perilaku data. Terakhir, kita akan mempelajari dasar-dasar inferensi statistik, termasuk uji hipotesis dan interval kepercayaan, yang memungkinkan kita untuk membuat kesimpulan tentang populasi berdasarkan sampel.
+Dalam bab ini, kita akan menjelajahi berbagai konsep statistika dasar secara mendalam. Kita akan memulai dengan pengertian populasi dan contoh (sampel), ukuran pemusatan data, dan ukuran penyebaran data. Kemudian, kita akan membahas sebaran probabilitas dan bagaimana mereka dapat digunakan untuk memahami perilaku data. Terakhir, kita akan mempelajari dasar-dasar inferensi statistik, termasuk uji hipotesis dan interval kepercayaan, yang memungkinkan kita untuk membuat kesimpulan tentang populasi berdasarkan sampel.
 
 Salah satu konsep fundamental dalam statistika dasar adalah ukuran pemusatan data. Ukuran pemusatan memberikan gambaran tentang titik pusat atau nilai representatif dari sebuah dataset. Mean atau rata-rata adalah salah satu ukuran pemusatan yang paling umum digunakan. Mean dihitung dengan menjumlahkan semua nilai dalam dataset dan membaginya dengan jumlah data. Namun, mean bisa dipengaruhi oleh nilai ekstrim atau outlier, yang membuatnya kadang tidak mencerminkan representasi yang akurat dari data. Dalam kasus ini, median menjadi ukuran pemusatan yang lebih baik karena tidak terpengaruh oleh nilai ekstrem. Median adalah nilai tengah dari dataset ketika data diurutkan. Jika jumlah data genap, median adalah rata-rata dari dua nilai tengah. Mode, ukuran pemusatan lainnya, adalah nilai yang paling sering muncul dalam dataset. Meskipun mode tidak selalu ada atau mungkin lebih dari satu, ia memberikan wawasan tentang nilai yang paling umum dalam data.
 
 Ukuran dispersi data juga merupakan bagian penting dari statistika dasar. Ukuran dispersi mengukur sejauh mana nilai-nilai dalam dataset menyebar atau bervariasi dari nilai pemusatan. Rentang adalah ukuran dispersi yang paling sederhana, dihitung dengan mengurangkan nilai minimum dari nilai maksimum dalam dataset. Namun, rentang tidak mempertimbangkan bagaimana nilai-nilai di antara nilai ekstrem tersebar. Untuk mengatasi hal ini, kita menggunakan varians dan deviasi standar. Varians adalah rata-rata kuadrat selisih antara setiap nilai dan mean dataset. Semakin besar varians, semakin besar penyebaran data dari mean. Deviasi standar, yang merupakan akar kuadrat dari varians, memberikan ukuran penyebaran yang lebih mudah diinterpretasikan karena berada dalam satuan yang sama dengan data asli.
 
-Distribusi probabilitas adalah konsep statistika dasar yang penting untuk memahami bagaimana data tersebar dan berperilaku. Distribusi probabilitas menggambarkan kemungkinan terjadinya berbagai nilai dalam dataset. Dua distribusi probabilitas yang sering digunakan adalah distribusi normal dan distribusi binomial. Distribusi normal, yang sering disebut sebagai distribusi Gaussian, berbentuk lonceng dan simetris di sekitar mean. Distribusi ini sering digunakan karena banyak fenomena alami mengikuti pola distribusi normal. Di sisi lain, distribusi binomial digunakan untuk memodelkan jumlah keberhasilan dalam sejumlah percobaan yang independen, seperti jumlah heads yang muncul dalam serangkaian lemparan koin.
+Sebaran probabilitas adalah konsep statistika dasar yang penting untuk memahami bagaimana data tersebar dan berperilaku. Sebaran probabilitas menggambarkan kemungkinan terjadinya berbagai nilai dalam dataset. Dua sebaran probabilitas yang sering digunakan adalah sebaran Normal dan sebaran Binomial. Sebaran Normal, yang sering disebut sebagai sebaran Gaussian, berbentuk lonceng dan simetris di sekitar mean. Sebaran ini sering digunakan karena banyak fenomena alami mengikuti pola sebaran Normal. Di sisi lain, sebaran Binomial digunakan untuk memodelkan jumlah keberhasilan dalam sejumlah percobaan yang independen, seperti jumlah heads yang muncul dalam serangkaian lemparan koin.
 
 Inferensi statistik memungkinkan kita untuk menarik kesimpulan tentang populasi berdasarkan sampel data. Dua konsep utama dalam inferensi statistik adalah uji hipotesis dan interval kepercayaan. Uji hipotesis digunakan untuk menguji pernyataan atau klaim tentang populasi dengan menggunakan data sampel. Proses ini melibatkan penentuan hipotesis nol ($H_0$) dan hipotesis alternatif ($H_1$: "H 1"), serta menggunakan data sampel untuk menentukan apakah ada cukup bukti untuk menolak hipotesis nol. Interval kepercayaan memberikan rentang nilai yang, dengan tingkat kepercayaan tertentu, diyakini mencakup parameter populasi yang tidak diketahui. Interval kepercayaan membantu kita untuk memahami seberapa akurat estimasi parameter dari sampel kita.
 
@@ -30,11 +30,11 @@ Namun, dalam praktiknya, sering kali tidak mungkin atau tidak praktis untuk meng
 
 Contoh:
 
-Kembali ke contoh studi kebiasaan makan masyarakat di suatu negara. Alih-alih mengumpulkan data dari semua warga negara, peneliti mungkin memutuskan untuk mengambil sampel. Misalnya, mereka bisa memilih 1.000 orang dari berbagai wilayah di negara tersebut, dengan proporsi yang mencerminkan distribusi demografis negara tersebut. Sampel ini diharapkan dapat memberikan gambaran yang cukup representatif tentang kebiasaan makan warga negara secara keseluruhan.
+Kembali ke contoh studi kebiasaan makan masyarakat di suatu negara. Alih-alih mengumpulkan data dari semua warga negara, peneliti mungkin memutuskan untuk mengambil sampel. Misalnya, mereka bisa memilih 1.000 orang dari berbagai wilayah di negara tersebut, dengan proporsi yang mencerminkan sebaran demografis negara tersebut. Sampel ini diharapkan dapat memberikan gambaran yang cukup representatif tentang kebiasaan makan warga negara secara keseluruhan.
 
 Dalam studi kesehatan tentang prevalensi diabetes, peneliti mungkin memilih sampel dari 500 orang yang berusia 60 tahun ke atas untuk melakukan survei. Sampel ini dipilih secara acak atau berdasarkan kriteria tertentu untuk memastikan bahwa sampel tersebut mewakili populasi berusia 60 tahun ke atas dengan cara yang adil. Hasil survei pada sampel ini kemudian digunakan untuk membuat estimasi tentang prevalensi diabetes di seluruh populasi.
 
-:::{.callout-tip title="Dalam Matematika dan Statistika"}
+:::{.callout-note title="Dalam Matematika dan Statistika"}
 Berbagai notasi untuk populasi umumnya menggunakan huruf kapital, misalnya $N$, $X$, $\sigma$ (dibaca: sigma), $\mu$ (dibaca: myu) dan lain-lain, sedangkan untuk contoh (sampel) umumnya menggunakan notasi huruf kecil. Misalnya $n$, $x$, $s$, $\bar{x}$  (dibaca: "X bar").
 :::
 
@@ -42,11 +42,11 @@ Berbagai notasi untuk populasi umumnya menggunakan huruf kapital, misalnya $N$, 
 
 Ukuran pemusatan dan penyebaran data adalah dua konsep fundamental yang membentuk dasar dari analisis statistik. Untuk memahami data secara menyeluruh, tidak cukup hanya dengan mengetahui nilai rata-rata (mean atau average) atau median; penting juga untuk memahami bagaimana data tersebar di sekitar nilai pusat tersebut.
 
-Ukuran pemusatan data adalah statistik yang digunakan untuk menentukan nilai representatif dari suatu dataset. Ukuran ini memberikan gambaran tentang pusat distribusi data, yang dapat membantu dalam memahami pola dan tren dalam data. Tiga ukuran pemusatan utama yang sering digunakan adalah mean, median, dan modus (mode). Masing-masing memiliki kegunaan dan aplikasi tertentu tergantung pada sifat data yang dianalisis.
+Ukuran pemusatan data adalah statistik yang digunakan untuk menentukan nilai representatif dari suatu dataset. Ukuran ini memberikan gambaran tentang pusat sebaran data, yang dapat membantu dalam memahami pola dan tren dalam data. Tiga ukuran pemusatan utama yang sering digunakan adalah mean, median, dan modus (mode). Masing-masing memiliki kegunaan dan aplikasi tertentu tergantung pada sifat data yang dianalisis.
 
 ### Rata-Rata 
 
-Rata-rata, atau mean, adalah ukuran pemusatan yang paling umum dan sering digunakan. Mean dihitung dengan menjumlahkan semua nilai dalam dataset dan membaginya dengan jumlah data. Mean memberikan gambaran umum tentang pusat distribusi data. 
+Rata-rata, atau mean, adalah ukuran pemusatan yang paling umum dan sering digunakan. Mean dihitung dengan menjumlahkan semua nilai dalam dataset dan membaginya dengan jumlah data. Mean memberikan gambaran umum tentang pusat sebaran data. 
 
 **Contoh**:
 
@@ -70,7 +70,7 @@ Rata-rata pada data baru ini adalah 22.5, yang jauh lebih tinggi dibandingkan se
 
 Dari contoh sederhana di atas kita dapat memahami bahwa untuk mendapatkan nilai rata-rata adalah dengan cara menjumlahkan semua nilai dan dibagi dengan  banyaknya data. 
 
-:::{.callout-tip title="Dalam Matematika dan Statistika"}
+:::{.callout-note title="Dalam Matematika dan Statistika"}
 Penjumlahan dinotasikan dengan simbol Sigma ($\sum$), masing-masing nilai pada data dinotasikan dengan $x_i$ (dibaca: "X i"), banyaknya data adalah $n$, dan nilai rata-rata dinotasikan dengan $\bar{x}$ (dibaca: "X bar"). Formula untuk menghitung rata-rata adalah:
 
 $$\frac{3 + 7 + 5 + 9 + 11}{5}$$ 
@@ -126,7 +126,7 @@ Misalkan kita memiliki dataset berikut: 3, 2, 9, 8. Untuk menghitung median:
 Jadi, median dari dataset ini adalah 5.5.
 
 :::{.callout-warning title="Catatan"} 
-Median tidak terpengaruh oleh nilai ekstrem, sehingga memberikan gambaran yang lebih stabil tentang pusat data dalam distribusi yang tidak simetris atau mengandung outlier.
+Median tidak terpengaruh oleh nilai ekstrem, sehingga memberikan gambaran yang lebih stabil tentang pusat data dalam sebaran yang tidak simetris atau mengandung outlier.
 :::
 
 ### Modus 
@@ -156,16 +156,16 @@ Jadi, dataset ini tidak memiliki modus.
 
 Selain mean, median, dan modus, ada beberapa ukuran pemusatan lain yang mungkin berguna tergantung pada konteks data. Misalnya, trimmed mean adalah jenis rata-rata yang dihitung setelah menghilangkan persentase terendah dan tertinggi dari data. Ini berguna ketika data mengandung outlier yang signifikan yang dapat mempengaruhi rata-rata secara tidak proporsional.
 
-**Trimmed Mean** adalah salah satu variasi dari mean yang digunakan untuk mengatasi masalah yang disebabkan oleh nilai ekstrem atau outlier dalam dataset. Dengan memangkas sebagian dari data di ujung distribusi, trimmed mean memberikan gambaran yang lebih stabil tentang pusat data, mengurangi dampak nilai ekstrem yang mungkin mengganggu hasil analisis.
+**Trimmed Mean** adalah salah satu variasi dari mean yang digunakan untuk mengatasi masalah yang disebabkan oleh nilai ekstrem atau outlier dalam dataset. Dengan memangkas sebagian dari data di ujung sebaran, trimmed mean memberikan gambaran yang lebih stabil tentang pusat data, mengurangi dampak nilai ekstrem yang mungkin mengganggu hasil analisis.
 
-_Trimmed mean_ dihitung dengan menghilangkan persentase tertentu dari nilai-nilai tertinggi dan terendah dalam dataset sebelum menghitung rata-rata. Biasanya, proses ini dilakukan dengan menghapus nilai ekstrem dari kedua ujung distribusi (atas dan bawah) untuk meminimalkan pengaruh outlier.
+_Trimmed mean_ dihitung dengan menghilangkan persentase tertentu dari nilai-nilai tertinggi dan terendah dalam dataset sebelum menghitung rata-rata. Biasanya, proses ini dilakukan dengan menghapus nilai ekstrem dari kedua ujung sebaran (atas dan bawah) untuk meminimalkan pengaruh outlier.
 
 Misalnya, dalam sebuah dataset dengan 100 nilai, kita dapat menghapus 5% nilai terendah dan 5% nilai tertinggi, dan kemudian menghitung mean dari nilai-nilai yang tersisa.
 
 **Langkah-Langkah Menghitung Trimmed Mean**
 
 1. Urutkan data dari nilai terendah ke tertinggi.  
-2. Pilih persentase nilai yang akan dipangkas dari kedua ujung distribusi. Misalnya, jika kita menggunakan 10% pemangkasan, kita akan menghapus 10% nilai terendah dan 10% nilai tertinggi.  
+2. Pilih persentase nilai yang akan dipangkas dari kedua ujung sebaran. Misalnya, jika kita menggunakan 10% pemangkasan, kita akan menghapus 10% nilai terendah dan 10% nilai tertinggi.  
 3. Hapus nilai dari kedua ujung sesuai dengan persentase yang telah ditentukan.  
 4. Hitung rata-rata dari nilai-nilai yang tersisa setelah pemangkasan.  
 
@@ -191,7 +191,7 @@ Keuntungan:
 1. **Mengurangi Pengaruh Outlier**  
     Trimmed mean mengurangi dampak nilai ekstrem yang bisa mempengaruhi rata-rata aritmetika secara signifikan.  
 2. **Memberikan Gambaran Lebih Stabil**  
-    Trimmed mean memberikan gambaran yang lebih stabil tentang pusat distribusi data, terutama dalam dataset yang mengandung pencilan atau outlier.  
+    Trimmed mean memberikan gambaran yang lebih stabil tentang pusat sebaran data, terutama dalam dataset yang mengandung pencilan atau outlier.  
 
 Kekurangan:
 
@@ -210,7 +210,7 @@ Statistik lain seperti rentang (_range_), ragam (_variance_), dan deviasi standa
 
 ### Rentang 
 
-Rentang, atau range, adalah ukuran penyebaran yang paling sederhana. Range dihitung dengan mengurangkan nilai minimum dari nilai maksimum dalam dataset. Range memberikan gambaran kasar tentang seberapa jauh nilai-nilai dalam dataset tersebar, tetapi tidak memberikan informasi tentang distribusi nilai di antara nilai ekstrem. Misalnya, jika kita memiliki dataset nilai tes: 55, 67, 78, 85, dan 92, rentangnya adalah 92 - 55 = 37. Range ini menunjukkan bahwa ada perbedaan 37 poin antara nilai terendah dan tertinggi, tetapi tidak menggambarkan bagaimana nilai-nilai lain tersebar di antara keduanya.
+Rentang, atau range, adalah ukuran penyebaran yang paling sederhana. Range dihitung dengan mengurangkan nilai minimum dari nilai maksimum dalam dataset. Range memberikan gambaran kasar tentang seberapa jauh nilai-nilai dalam dataset tersebar, tetapi tidak memberikan informasi tentang sebaran nilai di antara nilai ekstrem. Misalnya, jika kita memiliki dataset nilai tes: 55, 67, 78, 85, dan 92, rentangnya adalah 92 - 55 = 37. Range ini menunjukkan bahwa ada perbedaan 37 poin antara nilai terendah dan tertinggi, tetapi tidak menggambarkan bagaimana nilai-nilai lain tersebar di antara keduanya.
 
 ### Ragam  
 
@@ -218,7 +218,7 @@ Ragam, atau variance, adalah ukuran penyebaran yang lebih komprehensif dibanding
 
 Sebagai contoh, jika dataset nilai ujian adalah 55, 67, 78, 85, dan 92, pertama-tama kita hitung rata-rata (75.4). Selisih setiap nilai dari rata-rata adalah 55-75.4 = -20.4, 67-75.4 = -8.4, dan seterusnya hingga 92-75.4 = 16.6. Kuadratkan selisih tersebut dan rata-ratakan hasilnya untuk mendapatkan varians.
 
-:::{.callout-tip title="Dalam Matematika dan Statistika"}
+:::{.callout-note title="Dalam Matematika dan Statistika"}
 Kita memiliki nili ujian dari 5 siswa adalah $x = \{ 55, 67, 78, 85, 92 \}$, $n = 5$. Pertama, kita hitung nilai rata-rata, $\bar{x}$, terlebih dahulu.
 $$
 \begin{align}
@@ -275,35 +275,35 @@ $$
 
 Deviasi standar adalah ukuran dispersi yang merupakan akar kuadrat dari varians. Deviasi standar memberikan ukuran variasi data dalam satuan yang sama dengan data asli, membuatnya lebih mudah diinterpretasikan dibandingkan varians. Jika deviasi standar kecil, berarti data cenderung berkumpul di sekitar mean, sedangkan deviasi standar besar menunjukkan variasi yang lebih besar. Menggunakan contoh yang sama, setelah menghitung varians, kita menghitung akar kuadrat dari varians untuk mendapatkan deviasi standar. Dalam kasus dataset nilai tes sebelumnya, jika variansnya adalah 142.16, deviasi standarnya adalah √142.16 ≈ 11.94. Ini menunjukkan seberapa jauh, rata-rata, nilai-nilai dalam dataset menyimpang dari mean.
 
-Ketiga ukuran ini—rentang, varians, dan deviasi standar—menyediakan informasi penting tentang bagaimana data tersebar dan bervariasi. Rentang memberikan gambaran umum, tetapi tidak mendetail. Varians memberikan informasi lebih mendalam namun dalam unit kuadrat, sedangkan deviasi standar, sebagai akar kuadrat dari varians, menawarkan ukuran variasi dalam satuan yang lebih intuitif dan mudah dipahami. Dalam analisis data, memilih ukuran dispersi yang tepat membantu kita untuk mendapatkan gambaran yang jelas tentang distribusi dan variasi data, yang penting untuk pengambilan keputusan dan interpretasi data yang akurat.
+Ketiga ukuran ini—rentang, varians, dan deviasi standar—menyediakan informasi penting tentang bagaimana data tersebar dan bervariasi. Rentang memberikan gambaran umum, tetapi tidak mendetail. Varians memberikan informasi lebih mendalam namun dalam unit kuadrat, sedangkan deviasi standar, sebagai akar kuadrat dari varians, menawarkan ukuran variasi dalam satuan yang lebih intuitif dan mudah dipahami. Dalam analisis data, memilih ukuran dispersi yang tepat membantu kita untuk mendapatkan gambaran yang jelas tentang sebaran dan variasi data, yang penting untuk pengambilan keputusan dan interpretasi data yang akurat.
 
 Untuk data yang sangat besar atau kompleks, konsep seperti koefisien variasi juga dapat digunakan. Koefisien variasi adalah rasio deviasi standar terhadap mean, sering dinyatakan sebagai persentase. Ini memungkinkan perbandingan variasi antara dataset yang memiliki unit yang berbeda atau mean yang berbeda.
 
-## Distribusi Probabilitas
+## Sebaran Peluang  
 
-Distribusi probabilitas adalah konsep yang menghubungkan probabilitas dengan nilai data yang mungkin. Dalam statistika, distribusi probabilitas digunakan untuk memahami dan memodelkan bagaimana data terdistribusi dan seberapa mungkin nilai-nilai tertentu terjadi.
+Sebaran Peluang adalah konsep yang menghubungkan peluang dengan nilai data yang mungkin. Dalam statistika, sebaran peluang digunakan untuk memahami dan memodelkan bagaimana data terdistribusi dan seberapa mungkin nilai-nilai tertentu terjadi.
 
-Distribusi normal, atau distribusi Gaussian, adalah salah satu distribusi yang paling sering digunakan dalam statistika. Distribusi ini memiliki bentuk lonceng simetris dan ditentukan oleh dua parameter: mean dan deviasi standar. Banyak fenomena alami, seperti tinggi badan manusia dan hasil ujian, cenderung mengikuti distribusi normal.
+Sebaran Normal, atau sebaran Gaussian, adalah salah satu sebaran yang paling sering digunakan dalam statistika. Sebaran ini memiliki bentuk lonceng simetris dan ditentukan oleh dua parameter: mean dan deviasi standar. Banyak fenomena alami, seperti tinggi badan manusia dan hasil ujian, cenderung mengikuti sebaran Normal.
 
-Namun, tidak semua data mengikuti distribusi normal. Dalam kasus seperti itu, distribusi lain mungkin lebih sesuai. Misalnya, distribusi binomial digunakan untuk model probabilitas dari sejumlah percobaan independen dengan dua hasil yang mungkin, seperti lemparan koin. Distribusi Poisson digunakan untuk menghitung probabilitas kejadian yang jarang terjadi dalam interval waktu tertentu.
+Namun, tidak semua data mengikuti sebaran Normal. Dalam kasus seperti itu, sebaran lain mungkin lebih sesuai. Misalnya, sebaran Binomial digunakan untuk model probabilitas dari sejumlah percobaan independen dengan dua hasil yang mungkin, seperti lemparan koin. Sebaran Poisson digunakan untuk menghitung probabilitas kejadian yang jarang terjadi dalam interval waktu tertentu.
 
-Selain distribusi-distribusi tersebut, distribusi eksponensial, chi-square, dan t-student juga memiliki aplikasi penting dalam statistika, terutama dalam analisis inferensial dan uji hipotesis.
+Selain sebaran-sebaran tersebut, sebaran Eksponensial, Chi-square, dan _t_-student juga memiliki aplikasi penting dalam statistika, terutama dalam analisis inferensial dan uji hipotesis.
 
 ## Inferensi Statistik
 
 Inferensi statistik adalah proses menarik kesimpulan tentang populasi berdasarkan data sampel. Ini adalah salah satu aspek terpenting dari analisis data karena memungkinkan kita untuk membuat keputusan dan prediksi yang informatif dengan hanya menggunakan subset data yang lebih kecil daripada populasi keseluruhan.
 
-Uji hipotesis adalah metode yang digunakan untuk menguji klaim atau pernyataan tentang populasi berdasarkan sampel. Proses ini melibatkan penyusunan hipotesis nol dan hipotesis alternatif. Hipotesis nol adalah pernyataan yang ingin kita uji dan sering kali merupakan asumsi bahwa tidak ada efek atau perbedaan. Hipotesis alternatif adalah pernyataan yang menunjukkan adanya efek atau perbedaan. Setelah menetapkan hipotesis, analisis dilakukan untuk menentukan apakah data mendukung hipotesis alternatif atau tidak.
+Uji hipotesis adalah metode yang digunakan untuk menguji klaim atau pernyataan tentang populasi berdasarkan sampel. Proses ini melibatkan penyusunan hipotesis nol ($H_0$) dan hipotesis alternatif ($H_1$ atau  ($H_a$)). Hipotesis nol umumnya adalah pernyataan yang ingin kita uji dan sering kali merupakan asumsi bahwa tidak ada efek atau perbedaan. Hipotesis alternatif adalah pernyataan yang menunjukkan adanya efek atau perbedaan. Setelah menetapkan hipotesis, analisis dilakukan untuk menentukan apakah data **mendukung hipotesis alternatif** atau tidak.
 
 Selain uji hipotesis, interval kepercayaan memberikan rentang nilai yang diharapkan mencakup parameter populasi dengan tingkat kepercayaan tertentu. Misalnya, interval kepercayaan 95% berarti bahwa jika kita melakukan analisis yang sama berulang kali, 95% dari interval kepercayaan yang dihasilkan akan mencakup parameter populasi yang sebenarnya. Interval kepercayaan membantu kita untuk memahami sejauh mana estimasi sampel dapat dipercaya.
 
 ## Aplikasi dalam Data Analytics 
 
-Konsep-konsep statistika dasar ini sangat penting dalam praktik data analytics. Dalam proses analisis data, statistika membantu kita untuk mengidentifikasi pola, tren, dan hubungan yang signifikan. Misalnya, ukuran pemusatan dan dispersi data memungkinkan kita untuk memahami distribusi data dan mengidentifikasi outlier yang mungkin memerlukan perhatian khusus.
+Konsep-konsep statistika dasar ini sangat penting dalam praktik data analytics. Dalam proses analisis data, statistika membantu kita untuk mengidentifikasi pola, tren, dan hubungan yang signifikan. Misalnya, ukuran pemusatan dan dispersi data memungkinkan kita untuk memahami sebaran data dan mengidentifikasi outlier yang mungkin memerlukan perhatian khusus.
 
-Distribusi probabilitas membantu kita untuk memodelkan dan memahami ketidakpastian dalam data, sedangkan inferensi statistik memungkinkan kita untuk membuat keputusan berdasarkan data sampel. Semua ini adalah keterampilan yang sangat berharga dalam dunia data yang semakin kompleks dan berbasis bukti.
+Sebaran probabilitas membantu kita untuk memodelkan dan memahami ketidakpastian dalam data, sedangkan inferensi statistik memungkinkan kita untuk membuat keputusan berdasarkan data sampel. Semua ini adalah keterampilan yang sangat berharga dalam dunia data yang semakin kompleks dan berbasis bukti.
 
 Sebagai contoh, dalam analisis data penjualan, kita dapat menggunakan statistika dasar untuk mengidentifikasi produk yang paling populer, mengevaluasi tren penjualan dari waktu ke waktu, dan membuat prediksi tentang penjualan masa depan. Dengan memahami ukuran pemusatan dan dispersi, kita dapat mengidentifikasi produk yang memiliki penjualan tinggi secara konsisten dan produk yang menunjukkan variasi besar dalam penjualan.
 
-Distribusi probabilitas dapat digunakan untuk memodelkan kemungkinan permintaan produk di masa depan, dan uji hipotesis dapat membantu kita untuk menguji apakah strategi pemasaran baru memiliki dampak yang signifikan terhadap penjualan.
+Sebaran probabilitas dapat digunakan untuk memodelkan kemungkinan permintaan produk di masa depan, dan uji hipotesis dapat membantu kita untuk menguji apakah strategi pemasaran baru memiliki dampak yang signifikan terhadap penjualan.
 

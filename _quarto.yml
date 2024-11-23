@@ -31,11 +31,13 @@ book:
     
     - part: statistik.qmd
       chapters: 
-        - st-dasarstats.qmd
         - st-tipedata.qmd
+        - st-dasarstats.qmd
         - st-eksplorasi.qmd
         - st-sebaran.qmd
-        - st-ujihipotesis.qmd
+        - st-ujihipotesis.qmd 
+        - text: "Analisis Korelasi" 
+          file: st-korelasi.qmd
         
     - part: spreadsheet.qmd
       chapters: 

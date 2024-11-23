@@ -27,7 +27,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./st-sebaran.html" rel="next">
-<link href="./st-tipedata.html" rel="prev">
+<link href="./st-dasarstats.html" rel="prev">
 <link href="./icon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -97,7 +97,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistik</a></li><li class="breadcrumb-item"><a href="./st-eksplorasi.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistika</a></li><li class="breadcrumb-item"><a href="./st-eksplorasi.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -166,7 +166,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./statistik.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bagian 2: Memahami Statistik</span></a>
+ <span class="menu-text">Bagian 2: Memahami Statistika</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -174,14 +174,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./st-dasarstats.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Statistika Dasar</span></span></a>
+  <a href="./st-tipedata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Mengenal Tipe Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./st-tipedata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mengenal Tipe Data</span></span></a>
+  <a href="./st-dasarstats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Statistika Dasar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -421,16 +421,17 @@ window.Quarto = {
 <a href="#jenis-jenis-visualisasi-statistik" id="toc-jenis-jenis-visualisasi-statistik" class="nav-link" data-scroll-target="#jenis-jenis-visualisasi-statistik"><span class="header-section-number">7.2</span> Jenis-jenis Visualisasi Statistik</a>
   <ul class="collapse">
 <li><a href="#histogram" id="toc-histogram" class="nav-link" data-scroll-target="#histogram"><span class="header-section-number">7.2.1</span> Histogram</a></li>
-  <li><a href="#boxplot" id="toc-boxplot" class="nav-link" data-scroll-target="#boxplot"><span class="header-section-number">7.2.2</span> Boxplot</a></li>
-  <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link" data-scroll-target="#scatter-plot"><span class="header-section-number">7.2.3</span> Scatter Plot</a></li>
-  <li><a href="#line-chart" id="toc-line-chart" class="nav-link" data-scroll-target="#line-chart"><span class="header-section-number">7.2.4</span> Line Chart</a></li>
+  <li><a href="#density" id="toc-density" class="nav-link" data-scroll-target="#density"><span class="header-section-number">7.2.2</span> Density</a></li>
+  <li><a href="#boxplot" id="toc-boxplot" class="nav-link" data-scroll-target="#boxplot"><span class="header-section-number">7.2.3</span> Boxplot</a></li>
+  <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link" data-scroll-target="#scatter-plot"><span class="header-section-number">7.2.4</span> Scatter Plot</a></li>
+  <li><a href="#line-chart" id="toc-line-chart" class="nav-link" data-scroll-target="#line-chart"><span class="header-section-number">7.2.5</span> Line Chart</a></li>
   </ul>
 </li>
   <li><a href="#contoh-kasus-eksplorasi-dan-visualisasi" id="toc-contoh-kasus-eksplorasi-dan-visualisasi" class="nav-link" data-scroll-target="#contoh-kasus-eksplorasi-dan-visualisasi"><span class="header-section-number">7.3</span> Contoh Kasus Eksplorasi dan Visualisasi</a></li>
   </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistik</a></li><li class="breadcrumb-item"><a href="./st-eksplorasi.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span></a></li></ol></nav><div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistik.html">Bagian 2: Memahami Statistika</a></li><li class="breadcrumb-item"><a href="./st-eksplorasi.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span></a></li></ol></nav><div class="quarto-title">
 <h1 class="title">
 <span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span>
 </h1>
@@ -448,13 +449,29 @@ window.Quarto = {
 
 
 </header><p>Ketika berbicara tentang data, langkah pertama yang sangat penting adalah memahami data tersebut dengan baik. Sebelum kita mulai menarik kesimpulan atau membangun model, kita harus melihat data secara mendalam—memahami distribusi, tren, pola, atau bahkan anomali yang ada di dalamnya. Di sinilah eksplorasi data berperan. Eksplorasi data atau <em>Exploratory Data Analysis</em> (EDA) adalah proses awal dalam analisis data yang berfokus pada pemahaman karakteristik dasar dari dataset. Dengan teknik ini, kita bisa lebih peka terhadap pola-pola yang mungkin tersembunyi, serta menilai asumsi-asumsi awal yang bisa kita gunakan dalam analisis lebih lanjut.</p>
-<p>Eksplorasi data tidak hanya berhenti pada angka-angka. Kadang, angka saja tidak cukup untuk memberikan gambaran lengkap tentang data. Oleh karena itu, visualisasi memainkan peran krusial. Visualisasi data memungkinkan kita untuk mengubah angka menjadi gambar yang lebih mudah dipahami dan ditangkap oleh otak manusia. Misalnya, dengan menggunakan grafik seperti <em>histogram</em>, <em>boxplot</em>, atau <em>scatter plot</em>, kita dapat melihat distribusi dan hubungan antarvariabel dengan lebih jelas. Visualisasi yang baik bisa membantu kita mengidentifikasi tren atau korelasi yang mungkin terlewat jika hanya berfokus pada angka.</p>
+<p>Eksplorasi data tidak hanya berhenti pada angka-angka. Kadang, angka saja tidak cukup untuk memberikan gambaran lengkap tentang data. Oleh karena itu, visualisasi memainkan peran krusial. Visualisasi data memungkinkan kita untuk mengubah angka menjadi gambar yang lebih mudah dipahami dan ditangkap oleh otak manusia. Misalnya, dengan menggunakan grafik seperti <em>histogram</em>, <em>boxplot</em>, atau <em>scatter plot</em>, kita dapat melihat distribusi dan hubungan antar variabel dengan lebih jelas. Visualisasi yang baik bisa membantu kita mengidentifikasi tren atau korelasi yang mungkin terlewat jika hanya berfokus pada angka.</p>
 <p>Sebagai seorang data analyst, kemampuan untuk melakukan eksplorasi data dan menciptakan visualisasi yang informatif sangat penting. Visualisasi yang tepat bukan hanya untuk analisis pribadi, tetapi juga sangat berguna ketika kita ingin menyampaikan hasil analisis kepada audiens yang lebih luas, termasuk mereka yang mungkin tidak memiliki latar belakang teknis. Seorang data analyst yang baik adalah yang mampu menceritakan cerita di balik data melalui visualisasi yang sederhana namun kuat.</p>
 <section id="teknik-eksplorasi-data" class="level2" data-number="7.1"><h2 data-number="7.1" class="anchored" data-anchor-id="teknik-eksplorasi-data">
 <span class="header-section-number">7.1</span> Teknik Eksplorasi Data</h2>
 <p>Eksplorasi data melibatkan beberapa teknik yang cukup sederhana namun efektif. Teknik-teknik ini biasanya dimulai dengan perhitungan statistik dasar seperti mean, median, mode, varians, dan standar deviasi untuk mendapatkan gambaran awal tentang distribusi data. Misalnya, jika kita memiliki dataset yang berisi tinggi badan sekelompok orang, langkah pertama yang bisa dilakukan adalah menghitung rata-rata dan standar deviasinya.</p>
 <p>Dari sini, kita bisa mengetahui apakah tinggi badan rata-rata kelompok tersebut tinggi atau rendah, serta seberapa besar penyebaran data tersebut. Selain itu, kita juga bisa mencari nilai ekstrim atau pencilan (<em>outlier</em>) yang mungkin ada dalam data. <em>Outlier</em> ini bisa menjadi tanda adanya kesalahan dalam pengumpulan data atau justru merupakan indikasi fenomena khusus yang perlu ditelusuri lebih lanjut.</p>
-</section><section id="jenis-jenis-visualisasi-statistik" class="level2" data-number="7.2"><h2 data-number="7.2" class="anchored" data-anchor-id="jenis-jenis-visualisasi-statistik">
+<p>Teknik eksplorasi data adalah metode yang digunakan untuk memahami dan menganalisis data secara awal, sebelum menerapkan model statistik atau machine learning. Berikut adalah beberapa jenis teknik eksplorasi data yang umum digunakan:</p>
+<ol type="1">
+<li><p>Statistik Deskriptif<br>
+Teknik ini melibatkan perhitungan nilai-nilai statistik seperti rata-rata, median, modus, standar deviasi, dan berbagai ukuran dispersi lainnya. Statistik deskriptif membantu merangkum dan memahami distribusi data, menyajikan informasi tentang karakteristik penting data secara numerik.</p></li>
+<li><p>Visualisasi Data<br>
+Visualisasi digunakan untuk menampilkan data dalam bentuk grafis, sehingga pola dan tren bisa lebih mudah dipahami. Beberapa visualisasi umum termasuk histogram, boxplot, scatter plot, heatmap, dan bar chart. Teknik ini sangat efektif untuk menemukan outlier, distribusi data, dan hubungan antar variabel.</p></li>
+<li><p>Tabulasi Silang (<em>Crosstabulation</em>)<br>
+Teknik ini digunakan untuk menganalisis hubungan antara dua variabel kategorikal dengan menampilkan data dalam bentuk tabel kontingensi. Ini membantu dalam memahami interaksi atau pola yang ada antara variabel-variabel tersebut.</p></li>
+<li><p>Analisis Korelasi<br>
+Korelasi digunakan untuk menentukan hubungan linier antara dua variabel numerik. Koefisien korelasi Pearson adalah salah satu metode yang paling umum digunakan untuk mengukur seberapa kuat hubungan antar variabel. Korelasi dapat membantu mengidentifikasi variabel yang saling mempengaruhi.</p></li>
+<li><p>Deteksi Outlier<br>
+Teknik ini digunakan untuk mengidentifikasi data yang jauh menyimpang dari mayoritas data lainnya. Outlier dapat memberikan informasi penting tentang kemungkinan kesalahan data, peristiwa langka, atau aspek yang perlu dianalisis lebih lanjut.</p></li>
+<li><p>Analisis Dimensi dan Reduksi Dimensi<br>
+Ketika bekerja dengan data yang memiliki banyak fitur, reduksi dimensi seperti Principal Component Analysis (PCA) dapat membantu mengurangi kompleksitas data sambil mempertahankan informasi yang paling penting. Teknik ini berguna untuk mengidentifikasi pola dalam data berdimensi tinggi.</p></li>
+<li><p>Grouping atau <em>Clustering</em><br>
+Clustering seperti K-Means atau DBSCAN adalah teknik yang digunakan untuk mengelompokkan data ke dalam beberapa grup berdasarkan kesamaan. Ini berguna dalam eksplorasi data yang tidak berlabel untuk menemukan kelompok atau segmen alami dalam data.</p></li>
+</ol></section><section id="jenis-jenis-visualisasi-statistik" class="level2" data-number="7.2"><h2 data-number="7.2" class="anchored" data-anchor-id="jenis-jenis-visualisasi-statistik">
 <span class="header-section-number">7.2</span> Jenis-jenis Visualisasi Statistik</h2>
 <p>Ada berbagai jenis visualisasi yang bisa digunakan tergantung dari tipe data dan tujuan analisis yang ingin dicapai. Beberapa visualisasi dasar yang sering digunakan dalam eksplorasi data antara lain:</p>
 <section id="histogram" class="level3" data-number="7.2.1"><h3 data-number="7.2.1" class="anchored" data-anchor-id="histogram">
@@ -470,7 +487,7 @@ Ingat!
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Histogram hanya bisa digunakan untuk memvisualisasikan data numerik, tidak bisa untuk data kategorik. Untuk memvisualisasikan data kategorik Anda dapat menggunakan Bar chart (diagram batang) atau pie chart (diagram lingkaran)</p>
+<p>Histogram hanya bisa digunakan untuk memvisualisasikan data numerik, tidak bisa untuk data kategorik. Untuk memvisualisasikan data kategorik kamu dapat menggunakan Bar chart (diagram batang) atau pie chart (diagram lingkaran)</p>
 </div>
 </div>
 <p>Informasi atau insight yang dapat diperoleh dari histogram antara lain:</p>
@@ -481,17 +498,17 @@ Ingat!
 </li>
 <li>Mengidentifikasi outlier pada data. Jika ada batang yang berada jauh atau terpisah dari batang histogram yang lain maka dapat dicurigai bahwa data tersebut adalah outlier.</li>
 </ol>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Dari contoh histogram di atas kita dapat mengetahui bahwa sebaran data tersebut hampir simetrik. Tetapi karena ada nilai data yang jauh lebih besar dari nilai pada umumnya, sehingga menyebabkan sebarannya sedikit menjulur ke kanan(<em>skewed to the right</em>). Data yang jauh ini kita dapat mencurigainya sebagai pencilan/outlier. Outlier tersebut bernilai antara 205 hingga 210 cm.</p>
 <p>Kita perlu mengetahui rentang nilai yang dimiliki oleh masing-masing batang. Diantara nilai 160 hingga 170 terdapat 5 batang, sehingga rentang batang adalah (170-160)/5 = 2 cm. Lebar rentang ini sama untuk semua batang. Jadi untuk rentang batang dari 160 sampai 170 cm adalah [160, 162], [162, 164], [164, 166], [166, 168], dan [168, 170]. Oleh karena itu kita dapat menyimpulkan bahwa rentang nilai terbanyak pada data tersebut adalah [168, 170] cm karena batangnya yang paling tinggi. Jika kita mengabaikan outlier, maka nilai rata-rata dan median dari data ini sekitar 168 cm.</p>
-<p>Contoh pembuatan histogram berikut ini akan membantu Anda dalam memahami bagaimana histogram bekerja dan interpretasinya. Tentu saja ketika Anda bekerja sebagai data analyst tidak perlu menghitung manual. Anda dapat menggunakan software untuk mempercepat pekerjaan Anda.</p>
+<p>Contoh pembuatan histogram berikut ini akan membantu kamu dalam memahami bagaimana histogram bekerja dan interpretasinya. Tentu saja ketika kamu bekerja sebagai data analyst tidak perlu menghitung manual. kamu dapat menggunakan software untuk mempercepat pekerjaan kamu.</p>
 <p>Misalnya, kita memiliki data tinggi badan dari 20 orang (dalam cm):</p>
 <p>180.7, 167, 166.9, 153.5, 164.8, 167.2, 174.3, 164.4, 162.7, 158.8, 169.8, 177.5, 164.4, 170.7, 176.2, 168.6, 178.8, 162, 160.2, 171.2.</p>
 <p>Maka kita tahu bahwa <span class="math inline">\(n = 20\)</span>.</p>
@@ -591,16 +608,130 @@ Tabel frekuensi adalah sebuah tabel yang memberikan informasi banyaknya kemuncul
 <li><p>Menggambar histogram<br>
 Selanjutnya membuat batang histogram dengan batas kelas berada di sumbu X (horizontal) dan frekuensi di sumbu Y (vertikal). Tinggi batang menyesuaikan dengan nilai frekuensi pada setiap kelas. Histogram akan terlihat seperti berikut ini.</p></li>
 </ol>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-</section><section id="boxplot" class="level3" data-number="7.2.2"><h3 data-number="7.2.2" class="anchored" data-anchor-id="boxplot">
-<span class="header-section-number">7.2.2</span> Boxplot</h3>
+</section><section id="density" class="level3" data-number="7.2.2"><h3 data-number="7.2.2" class="anchored" data-anchor-id="density">
+<span class="header-section-number">7.2.2</span> Density</h3>
+<p>Density plot merupakan salah satu metode yang sering digunakan untuk visualisasi distribusi data numerik. Berbeda dengan histogram yang memecah data ke dalam interval atau bin, density plot menampilkan estimasi <em>smooth</em> (halus) dari sebaran peluang variabel numerik. Estimasi ini biasanya diperoleh menggunakan metode <em>Kernel Density Estimation</em> (KDE). Bentuk sebaran data dengan histogram sangat bergantung pada banyaknya kelas dalam membentuk sebaran data. Dengan density plot, kita bisa lebih mudah melihat pola sebaran data dan membandingkan sebaran antar kelompok yang berbeda dalam data.</p>
+<p>Density plot sangat berguna dalam tahap eksplorasi data, terutama ketika kita ingin mengetahui bentuk sebaran (apakah normal, skewed, atau bimodal), dan mengidentifikasi kemungkinan <em>outliers</em> (nilai yang berada jauh dari mayoritas data). Dengan tampilan yang lebih halus daripada histogram, density plot memudahkan kita untuk mengenali pola sebaran dengan lebih jelas. Berikut ini contoh visualisasi density plot dari sebuah pengukuran jarak yang dapat ditempuh oleh 32 jenis kendaraan sehingga dapat diperoleh hasil rata-rata jarak tempuh dalam mil per galon.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Dalam Matematika dan Statistika">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dalam Matematika dan Statistika
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Untuk membuat sebuah density plot dari data empiris kamu memerlukan beberapa langkah yang bisa dibilang cukup rumit bagi orang yang tidak memiliki latar belakang pendidikan matematika/statsitika apalagi yang tidak suka matematika.</p>
+<ol type="1">
+<li><p>Data Sampel<br>
+Pertama, kita harus memiliki data sampel terlebih dahulu. Misalnya, sebagai contoh sederhana, kita memiliki data {2, 3, 5, 6, 8}.</p></li>
+<li><p>Memilih Kernel<br>
+Kernel adalah fungsi yang digunakan untuk memperkirakan distribusi data di sekitar titik data. <em>Kernel Density Estimation</em> (KDE) yang biasanya digunakan adalah kernel <strong>Gaussian</strong>. Gaussian Kernel memiliki rumus</p></li>
+</ol>
+<p><span class="math display">\[
+K(x) = \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}
+\]</span></p>
+<p>Mirip dengan fungsi sebaran Normal? Ya! Rumus di atas adalah fungsi sebaran Normal dengan <span class="math inline">\(\mu=0\)</span> dan <span class="math inline">\(\sigma=1\)</span>.</p>
+<ol start="3" type="1">
+<li>Memilih Bandwidth<br><strong>Bandwidth</strong> (<strong>h</strong>) adalah parameter penting dalam KDE yang menentukan lebar kernel akan menyebar di sekitar tiitk setiap titik data. Bandwidth bisa dipilih secara manual atau menggunakan aturan standar, seperti *<strong>Silverman’s rule</strong>
+</li>
+</ol>
+<p><span class="math display">\[
+h = 1.06\sigma n^{-1/5}
+\]</span></p>
+<p>dengan <span class="math inline">\(\sigma\)</span> adalah standar deviasi sampel, dan n adalah banyaknya data. Bandwidth menentukan tingkat <em>smoothness</em> dari sebuah density plot. Untuk contoh ini kita gunakan <span class="math inline">\(h=1\)</span> agar sederhana.</p>
+<ol start="4" type="1">
+<li>Menghitung KDE<br>
+Density di setiap titik <span class="math inline">\(x\)</span> dalam rentang yang kita ingin hitung dengan rumus berikut:</li>
+</ol>
+<p><span class="math display">\[
+\hat{f}\left(x\right)=\frac{1}{nh}\sum_{i=1}^{n}K\left(\frac{x-x_i}{h}\right)
+\]</span></p>
+<p>dengan<br>
+* <span class="math inline">\(x_i\)</span> adalah titik data ke-<span class="math inline">\(i\)</span><br>
+* <span class="math inline">\(h\)</span> adalah bandwidth<br>
+* <span class="math inline">\(K\)</span> adalah kernel (Gaussian)</p>
+<p>Kita akan menghitung estimasi KDE secara manual pada beberapa titik <span class="math inline">\(x\)</span> untuk data sampel kita, misalnya <span class="math inline">\(x=4\)</span>. Untuk <span class="math inline">\(x=4\)</span> kita hitung KDE dengan rumus: <span class="math display">\[
+\hat{f}\left(4\right)=\frac{1}{nh}\sum_{i=1}^{n}K\left(\frac{4-x_i}{h}\right)
+\]</span></p>
+<p>Sekarang kita hitung masing-masing komponen Gaussian untuk setiap titik data.</p>
+<ul>
+<li><p>Untuk <span class="math inline">\(x_1=2\)</span> <span class="math display">\[
+\begin{align}
+K\left(\frac{4-2}{1}\right) &amp;= K(2) \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-\frac{2^2}{2}} \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-2}  \\
+&amp;\approx 0.05399 \\
+\end{align}
+\]</span></p></li>
+<li><p>Untuk <span class="math inline">\(x_2=3\)</span> <span class="math display">\[
+\begin{align}
+K\left(\frac{4-3}{1}\right) &amp;= K(1) \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-\frac{1^2}{2}} \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}}  \\
+&amp;\approx 0.24197 \\
+\end{align}
+\]</span></p></li>
+<li><p>Untuk <span class="math inline">\(x_3=5\)</span> <span class="math display">\[
+\begin{align}
+K\left(\frac{4-5}{1}\right) &amp;= K(-1) \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-\frac{(-1)^2}{2}} \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}}  \\
+&amp;\approx 0.24197 \\
+\end{align}
+\]</span></p></li>
+<li><p>Untuk <span class="math inline">\(x_4=6\)</span> <span class="math display">\[
+\begin{align}
+K\left(\frac{4-6}{1}\right) &amp;= K(2) \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-\frac{2^2}{2}} \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-\frac{4}{2}}  \\
+&amp;\approx 0.05399 \\
+\end{align}
+\]</span></p></li>
+<li><p>Untuk <span class="math inline">\(x_5=8\)</span> <span class="math display">\[
+\begin{align}
+K\left(\frac{4-8}{1}\right) &amp;= K(4) \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-\frac{4^2}{2}} \\
+&amp;= \frac{1}{\sqrt{2\pi}}e^{-\frac{16}{2}}  \\
+&amp;\approx 0.00013 \\
+\end{align}
+\]</span></p></li>
+</ul>
+<p>Sekarang kita hitung dengan menjumlahkan semuanya</p>
+<p><span class="math display">\[
+\begin{align}
+\hat{f}\left(4\right)&amp;=\frac{1}{5\times 1}\sum_{i=1}^{5}K\left(\frac{4-x_i}{1}\right) \\
+&amp;= \frac{1}{5}\left( K\left( \frac{4-2}{1}\right) + K\left( \frac{4-3}{1}\right) + \dots + K\left( \frac{4-8}{1}\right) \right) \\
+&amp;= \frac{1}{5}(0.05399+0.24197+0.24197+0.05399+0.00013) \\
+&amp;\approx 0.11841
+\end{align}
+\]</span></p>
+<ol start="5" type="1">
+<li>Visualisasi<br>
+Jika kita ulangi langkah ini untuk berbagai nilai <span class="math inline">\(x\)</span> dalam rentang data kita, kita bisa mendapatkan kurva <em>smooth</em> yang merepresentasikan density plot secara keseluruhan. Density plot ini akan menunjukkan sebaran dari sampel data kita dengan representasi <em>smooth</em> berdasarkan KDE.<br>
+</li>
+</ol>
+</div>
+</div>
+</section><section id="boxplot" class="level3" data-number="7.2.3"><h3 data-number="7.2.3" class="anchored" data-anchor-id="boxplot">
+<span class="header-section-number">7.2.3</span> Boxplot</h3>
 <p>Boxplot atau diagram kotak garis adalah salah satu visualisasi paling populer untuk melihat distribusi data, terutama dalam mengidentifikasi median, kuartil, dan outlier. Dengan boxplot, kita bisa langsung melihat apakah ada data yang jauh lebih besar atau kecil dari yang lain, serta bagaimana rentang data pada 50% tengahnya. Jenis visualisasi ini juga sangat berguna untuk menggambarkan sebaran data dan membandingkan beberapa kelompok data.</p>
 <div class="callout callout-style-default callout-important callout-titled" title="Ingat!">
 <div class="callout-header d-flex align-content-center">
@@ -612,10 +743,10 @@ Ingat!
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Boxplot juga hanya bisa untuk data numerik seperti pada histogram.</p>
+<p>Boxplot juga hanya bisa untuk data numerik seperti pada histogram, data kategorik pada boxplot hanya dapat digunakan untuk pengelompokan boxplot.</p>
 </div>
 </div>
-<p><img src="boxplot.png" style="width:80%;"></p>
+<p><img src="boxplot.png" style="width:80%;display:block;margin-left:auto;margin-right:auto;"></p>
 <p>Dengan menggunakan data pada contoh histogram sebelumnya kita akan membuat boxplot.</p>
 <ol type="1">
 <li>
@@ -704,24 +835,24 @@ Batas bawah dan batas atas digunakan untuk membuat batasan penentuan suatu data 
 <p>Data yang lebih kecil dari batas bawah atau lebih besar dari batas atas dianggap pencilan/outlier. Pada contoh ini semua data berada dalam rentang batas bawah dan batas atas sehingga tidak ada data pencilan/outlier.</p>
 </li>
 <li><p>Membuat visualisasi boxplot<br>
-Pada ilustrasi boxplot di atas, boxplot terbentuk dari kotak dan garis. Kotak tersebut dibentuk dari nilai <span class="math inline">\(Q_1\)</span> dan <span class="math inline">\(Q_3\)</span>, sedangkan garis di tengah kotak dalah <span class="math inline">\(Q_2\)</span>. Garis di sebelah kiri kotak dibentuk dengan menarik garis dari ujung kotak sebelah kiri (<span class="math inline">\(Q_1\)</span>) ke nilai batas bawah. Garis di sebelah kanan kotak dibentuk dengan menarik garis dari ujung kotak sebelah kanan (<span class="math inline">\(Q_3\)</span>) ke nilai batas atas. Jika ada data di luar batas bawah atau batas atasImaka ditandai dengan titik. Boxplot dapat dibuat dengan posisi horizontal atau vertikal. Jika boxplot dibuat dalam posisi vertikal maka akan terlihat seperti pada gambar kedua dibawah ini.</p></li>
+Pada ilustrasi boxplot di atas, boxplot terbentuk dari kotak dan garis. Kotak tersebut dibentuk dari nilai <span class="math inline">\(Q_1\)</span> dan <span class="math inline">\(Q_3\)</span>, sedangkan garis di tengah kotak dalah <span class="math inline">\(Q_2\)</span>. Garis di sebelah kiri kotak dibentuk dengan menarik garis dari ujung kotak sebelah kiri (<span class="math inline">\(Q_1\)</span>) ke nilai batas bawah. Garis di sebelah kanan kotak dibentuk dengan menarik garis dari ujung kotak sebelah kanan (<span class="math inline">\(Q_3\)</span>) ke nilai batas atas. Jika ada data di luar batas bawah atau batas atasImaka ditandai dengan titik. Boxplot dapat dibuat dengan posisi horizontal atau vertikal. Berikut ini visualisasi boxplot yang dibuat dalam posisi horizontal dan vertikal.</p></li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-</section><section id="scatter-plot" class="level3" data-number="7.2.3"><h3 data-number="7.2.3" class="anchored" data-anchor-id="scatter-plot">
-<span class="header-section-number">7.2.3</span> Scatter Plot</h3>
+</section><section id="scatter-plot" class="level3" data-number="7.2.4"><h3 data-number="7.2.4" class="anchored" data-anchor-id="scatter-plot">
+<span class="header-section-number">7.2.4</span> Scatter Plot</h3>
 <p>Scatter plot atau diagram pencar atau plot tebaran, digunakan untuk melihat hubungan antar dua variabel numerik. Jika kita ingin mengecek apakah ada hubungan antara tinggi badan dan berat badan, scatter plot dapat menunjukkan apakah ada pola tertentu. Bentuk visual dari scatter plot berupa titik-titik berdasarkan koordinat nilai berpasangan antara variabel satu dan variabel kedua. Tujuan dari scatter plot adalah untuk melihat pola hubungan antar variabel. Jika dua variabel tersebut memiliki hubungan sebab-akibat atau sejenisnya, maka umumnya variabel yang menjadi penyebab ditempatkan pada sumbu horizontal dan variabel yang menjadi sebab ditempatkan pada sumbu vertikal.</p>
 <div class="callout callout-style-default callout-important callout-titled" title="Ingat!">
 <div class="callout-header d-flex align-content-center">
@@ -740,19 +871,19 @@ Ingat!
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Dalam beberapa kasus, kita juga bisa menggunakan visualisasi yang lebih kompleks seperti heatmap untuk melihat korelasi antar banyak variabel atau pairplot untuk membandingkan distribusi dan hubungan antar beberapa variabel sekaligus.</p>
-</section><section id="line-chart" class="level3" data-number="7.2.4"><h3 data-number="7.2.4" class="anchored" data-anchor-id="line-chart">
-<span class="header-section-number">7.2.4</span> Line Chart</h3>
+</section><section id="line-chart" class="level3" data-number="7.2.5"><h3 data-number="7.2.5" class="anchored" data-anchor-id="line-chart">
+<span class="header-section-number">7.2.5</span> Line Chart</h3>
 <p>Line chart atau diagram garis adalah salah satu jenis visualisasi data yang paling umum dan digunakan untuk menampilkan perubahan atau tren dari data secara kontinu sepanjang waktu atau urutan. Biasanya, line chart menampilkan hubungan antara dua variabel, di mana sumbu horizontal (sumbu X) mewakili variabel waktu atau urutan, sedangkan sumbu vertikal (sumbu Y) mewakili nilai dari variabel yang diukur. Berikut ini contoh visualisasi ketinggian muka air danau Huron yang diukur sekali setiap tahun. Variabel <code>Tahun</code> menjadi urutan waktu dan ditempatkan pada sumbu X, variabel <code>Tinggi Air Danau</code> menjadi variabel yang diukur dan ditempatkan pada sumbu Y.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="st-eksplorasi_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -763,16 +894,16 @@ Ingat!
 <strong><em>Menggambarkan Tren Waktu</em></strong>: Line chart sangat cocok untuk menampilkan data yang terorganisir berdasarkan waktu (seperti harian, mingguan, bulanan, atau tahunan). Misalnya, tren penjualan tahunan atau perubahan suhu selama beberapa hari.<br>
 </li>
 <li>
-<strong><em>Perbandingan Antara Beberapa Seri Data</em></strong>: Anda juga dapat menggunakan line chart untuk membandingkan beberapa set data dalam satu grafik. Misalnya, membandingkan tren penjualan dua produk yang berbeda dalam satu tahun.<br>
+<strong><em>Perbandingan Antara Beberapa Seri Data</em></strong>: kamu juga dapat menggunakan line chart untuk membandingkan beberapa set data dalam satu grafik. Misalnya, membandingkan tren penjualan dua produk yang berbeda dalam satu tahun.<br>
 </li>
 <li>
 <strong><em>Sederhana dan Efektif</em></strong>: Line chart mudah dibaca dan memberikan gambaran visual yang jelas tentang bagaimana nilai suatu variabel berubah dari waktu ke waktu. Ini menjadikannya alat yang kuat untuk memahami pola atau fluktuasi data.</li>
 </ol>
-<p>Contohnya, jika Anda memiliki data penjualan bulanan selama satu tahun, Anda dapat memplotkan waktu pada sumbu x (bulan) dan nilai penjualan pada sumbu y. Garis yang menghubungkan titik-titik data akan menunjukkan bagaimana penjualan meningkat atau menurun selama waktu tersebut. Diagram garis sering digunakan dalam laporan bisnis, penelitian ilmiah, dan berbagai aplikasi data analitik untuk membantu melihat perubahan dan membuat keputusan berdasarkan pola yang terlihat.</p>
+<p>Contohnya, jika kamu memiliki data penjualan bulanan selama satu tahun, kamu dapat memplotkan waktu pada sumbu X (bulan) dan nilai penjualan pada sumbu Y. Garis yang menghubungkan titik-titik data akan menunjukkan bagaimana penjualan meningkat atau menurun selama waktu tersebut. Diagram garis sering digunakan dalam laporan bisnis, penelitian ilmiah, dan berbagai aplikasi data analitik untuk membantu melihat perubahan dan membuat keputusan berdasarkan pola yang terlihat.</p>
 </section></section><section id="contoh-kasus-eksplorasi-dan-visualisasi" class="level2" data-number="7.3"><h2 data-number="7.3" class="anchored" data-anchor-id="contoh-kasus-eksplorasi-dan-visualisasi">
 <span class="header-section-number">7.3</span> Contoh Kasus Eksplorasi dan Visualisasi</h2>
-<p>Mari kita lihat sebuah contoh kasus sederhana. Misalkan kita bekerja dengan data penjualan sebuah toko online, yang mencakup jumlah produk terjual per hari, harga per produk, dan total pendapatan harian. Langkah pertama adalah melakukan eksplorasi untuk melihat tren penjualan secara keseluruhan. Dengan menggunakan statistik dasar seperti rata-rata penjualan harian, kita bisa mengetahui apakah ada hari-hari tertentu di mana penjualan lebih tinggi dari biasanya. Kemudian, kita bisa membuat visualisasi seperti line plot untuk menggambarkan tren penjualan dari waktu ke waktu, serta scatter plot untuk melihat apakah ada korelasi antara harga produk dan jumlah penjualan.</p>
-<p>Dengan langkah-langkah ini, kita tidak hanya memahami data secara mendalam, tetapi juga mampu menyajikan informasi tersebut dengan cara yang mudah dipahami oleh pihak lain. Eksplorasi dan visualisasi adalah dua komponen yang tidak terpisahkan dalam dunia analisis data—keduanya membantu kita dalam mengambil keputusan yang lebih baik berdasarkan data yang ada.</p>
+<p>Mari kita lihat sebuah contoh kasus sederhana. Misalkan kita bekerja dengan data penjualan sebuah toko online, yang mencakup jumlah produk terjual per hari, harga per produk, dan total pendapatan harian. Langkah pertama adalah melakukan eksplorasi untuk melihat tren penjualan secara keseluruhan. Dengan menggunakan statistik dasar seperti rata-rata penjualan harian, kita bisa mengetahui apakah ada hari-hari tertentu di mana penjualan lebih tinggi dari biasanya. Kemudian, kita bisa membuat visualisasi seperti line plot untuk menggambarkan tren penjualan dari waktu ke waktu, serta scatter plot untuk melihat apakah ada korelasi antara harga produk dan jumlah penjualan.Praktik eksplorasi data retail akan dibahas di <a href="r-eksplor.html" class="quarto-xref">Bab&nbsp;<span>23</span></a> dan <a href="usecase1.html" class="quarto-xref">Bab&nbsp;<span>26</span></a>.</p>
+<p>Dengan langkah-langkah ini, kita tidak hanya memahami data secara mendalam, tetapi juga mampu menyajikan informasi tersebut dengan cara yang mudah dipahami oleh pihak lain. Eksplorasi dan visualisasi adalah dua komponen yang tidak terpisahkan dalam dunia analisis data, keduanya membantu kita dalam mengambil keputusan yang lebih baik berdasarkan data yang ada.</p>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -1195,8 +1326,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./st-tipedata.html" class="pagination-link" aria-label="Mengenal Tipe Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mengenal Tipe Data</span></span>
+      <a href="./st-dasarstats.html" class="pagination-link" aria-label="Statistika Dasar">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Statistika Dasar</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
