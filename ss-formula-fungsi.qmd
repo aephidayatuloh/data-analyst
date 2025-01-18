@@ -1,0 +1,14 @@
+# Formula dan Fungsi  
+
+Excel menyediakan banyak fungsi yang mendukung analisis statistik, eksplorasi data, dan manipulasi data:  
+- **Fungsi Statistika**  
+  - `AVERAGE`, `MEDIAN`, `MODE`: Menghitung ukuran pemusatan data.  
+  - `STDEV`, `VAR`: Mengukur penyebaran data.  
+  - `COUNTIF` dan `COUNTIFS`: Menghitung jumlah data berdasarkan kriteria tertentu.  
+  - `PERCENTILE`, `RANK`: Mengidentifikasi peringkat dan distribusi data.  
+- **Fungsi Lookup dan Referensi**  
+  Menggunakan `VLOOKUP`, `INDEX`, dan `MATCH` untuk menghubungkan data dari tabel berbeda.  
+- **Fungsi Logika dan Teks**  
+  Menggunakan `IF`, `AND`, `OR` untuk kondisi logis, serta `CONCAT`, `LEFT`, dan `RIGHT` untuk manipulasi teks.  
+
+---

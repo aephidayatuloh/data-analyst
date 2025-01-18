@@ -1,2 +1,33 @@
 # Pengenalan Spreadsheet
 
+Sebagai seorang data analyst, salah satu alat yang paling sering digunakan dalam pekerjaan sehari-hari adalah spreadsheet. Excel, Google Sheets, atau software spreadsheet lainnya sudah seperti "pisau serbaguna" dalam dunia analisis data. Meskipun banyak alat canggih yang tersedia saat ini, spreadsheet tetap menjadi pilihan utama untuk pekerjaan analisis ringan, eksplorasi data cepat, atau bahkan presentasi hasil analisis ke kolega yang mungkin tidak familiar dengan software yang lebih kompleks. Jadi, menguasai spreadsheet bukan sekadar opsional; ini adalah dasar yang harus dikuasai oleh siapa saja yang ingin melangkah ke dunia data analytics.
+
+Di dalam spreadsheet, hampir semua kebutuhan dasar analisis data bisa dilakukan. Mulai dari membersihkan data, membuat pivot table untuk menganalisis pola, hingga visualisasi sederhana menggunakan grafik. Bayangkan Anda sedang bekerja dengan data penjualan bulanan. Dengan hanya beberapa klik, Anda bisa mengetahui produk mana yang paling laris, periode waktu dengan penjualan tertinggi, hingga menghitung rata-rata pendapatan per transaksi. Fungsi-fungsi seperti **SUM**, **AVERAGE**, **IF**, hingga **VLOOKUP** atau **XLOOKUP** menjadi sahabat sehari-hari seorang data analyst untuk menyelesaikan masalah-masalah sederhana dengan efisien. Bahkan, beberapa analisis yang lebih kompleks seperti regresi linear atau analisis time series sederhana juga bisa dilakukan dengan fitur tambahan atau plugin di Excel.
+
+Namun, spreadsheet bukan hanya tentang menjalankan rumus. Dalam konteks profesional, kemampuan Anda untuk membuat file spreadsheet yang rapi, terstruktur, dan mudah dipahami orang lain adalah nilai tambah yang besar. Misalnya, memberi nama yang jelas pada kolom, menggunakan format angka yang tepat, atau menyusun data secara logis sangat membantu kolega atau atasan Anda dalam memahami analisis yang Anda lakukan. Tak jarang, file spreadsheet yang baik bahkan menjadi dasar keputusan penting di sebuah perusahaan.
+
+Selain itu, menguasai teknik-teknik lanjutan seperti automasi dengan **Macros** atau **Power Query** bisa membawa karier Anda ke tingkat berikutnya. Automasi ini membantu Anda menghemat waktu dalam mengerjakan tugas-tugas yang berulang, sehingga Anda bisa fokus pada analisis yang lebih strategis dan substantif. Dengan semakin banyaknya data yang diolah di perusahaan, memahami bagaimana spreadsheet dapat diintegrasikan dengan database atau alat lain seperti Tableau dan Power BI juga menjadi keterampilan yang sangat bernilai.
+
+Jadi, jika Anda baru memulai langkah menjadi seorang data analyst, mulailah dengan menguasai dasar-dasar spreadsheet. Jadikan itu fondasi Anda untuk memahami logika data, membangun pola pikir analitis, dan melatih kepekaan Anda terhadap detail. Dengan spreadsheet, Anda tidak hanya belajar cara menganalisis data, tetapi juga bagaimana membuat data tersebut berbicara dan memberikan makna. Sederhananya, spreadsheet adalah langkah pertama yang solid untuk melangkah lebih jauh di dunia data.
+
+## Mengenal Struktur dan Menu di Excel
+
+Sebelum kita masuk ke berbagai trik dan tips menggunakan Excel untuk analisis data, langkah pertama yang tak boleh dilewatkan adalah memahami struktur dan menu yang ada di dalamnya. Sama seperti mengenal ruangan sebelum mulai bekerja, mengetahui "denah" Excel akan membantu kita lebih cepat beradaptasi dan menguasai berbagai fiturnya. Jangan khawatir, meskipun tampilan awalnya terlihat penuh dengan kotak dan tombol, sebenarnya Excel cukup mudah dipahami jika didekati satu per satu.
+
+![Tampilan awal Excel](excel1.png){fig-align="center"}
+
+Memahami struktur dan menu di Excel adalah langkah awal yang penting untuk memanfaatkan kemampuannya secara maksimal. Sama seperti seorang chef yang harus tahu di mana letak setiap alat dapur, seorang data analyst juga perlu mengenal berbagai bagian Excel ini. Begitu Anda terbiasa, bekerja di Excel akan terasa lebih cepat, efisien, dan menyenangkan. Dari sinilah perjalanan Anda sebagai seorang data analyst yang handal dimulai.
+
+Ketika pertama kali membuka Excel, hal yang paling mencolok tentu adalah lembar kerja (worksheet) yang penuh dengan kotak kecil — ini yang disebut *cells*. Setiap cell memiliki alamat unik, seperti A1, B2, dan seterusnya, yang membuatnya mudah untuk diidentifikasi. Cell ini adalah tempat Anda memasukkan data, mulai dari angka, teks, hingga rumus-rumus ajaib yang akan Anda pelajari nanti. Worksheet ini sendiri adalah bagian dari sebuah *workbook*, yang bisa diibaratkan sebagai sebuah buku besar berisi beberapa lembar kerja. Anda bisa menambah, menghapus, atau mengganti nama worksheet sesuai kebutuhan, yang sangat membantu jika Anda mengelola banyak data sekaligus.
+
+![Nama bagian-bagian Excel](excel2.png){fig-align="center"}
+
+Di atas lembar kerja, ada *Ribbon*, yaitu deretan menu utama yang menjadi pusat komando. Ribbon ini dibagi menjadi beberapa tab, seperti **Home**, **Insert**, **Page Layout**, **Formulas**, **Data**, **Review**, dan **View**. Masing-masing tab memiliki kelompok perintah yang dirancang untuk tugas tertentu. Misalnya, tab **Home** adalah tempat utama untuk melakukan tugas-tugas dasar seperti format teks, mengatur warna, atau memfilter data. Tab **Insert** memungkinkan Anda menambahkan elemen seperti tabel, grafik, atau gambar. Tab **Formulas** adalah jantung dari Excel bagi seorang data analyst, karena di sinilah Anda akan menemukan berbagai fungsi matematika, logika, dan statistik yang mempermudah analisis data.
+
+Selain Ribbon, ada juga **Quick Access Toolbar** yang terletak di pojok kiri atas. Toolbar ini bisa Anda sesuaikan untuk menambahkan perintah-perintah yang sering digunakan, seperti *Save*, *Undo*, atau *Redo*. Fitur ini kecil tapi sangat membantu untuk mempercepat pekerjaan. Di bagian bawah, Anda akan menemukan **Status Bar**, yang memberikan informasi singkat tentang data yang sedang dipilih, seperti jumlah total (*sum*) atau rata-rata (*average*), tanpa perlu mengetikkan rumus.
+
+Jangan lupa juga untuk mengenal **Formula Bar**, yang terletak di bawah Ribbon. Ketika Anda bekerja dengan data, Formula Bar menjadi tempat Anda bisa melihat atau mengedit isi dari sebuah cell, terutama jika berisi rumus. Ini sangat membantu ketika Anda ingin memastikan formula yang digunakan benar tanpa perlu mengeklik cell terus-menerus.
+
+## Cakupan Bahasan Excel  
+
+Excel adalah alat yang sangat bermanfaat bagi seorang data analyst, terutama dalam pengelolaan data, analisis statistik, dan visualisasi. Pembelajaran Excel untuk pemula tidak perlu terlalu mendalami fungsi dasar, seperti mengenal antarmuka, cara input data amnual di excel, dan sebagainya. Bahasan di buku lebih diarahkan pada pemahaman fitur yang relevan untuk analisis data.
