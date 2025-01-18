@@ -50,11 +50,16 @@ rsconnect/
 
 /.quarto/
 
+Album*
 # book-cover.png
+bagusco.png 
 book-cover-print.png 
+book-cover-print.pdf 
 book-cover-print-bw.png 
+book-cover-print-bw.pdf 
 book-cover.psd  
 brain.png 
+chinook-portofolio.qmd 
 cover.png
 cover.psd
 cover belakang.png 
@@ -62,17 +67,26 @@ cover belakang path.png
 cover depan.png 
 cover depan brain.png 
 cover depan minimalis.png 
+cover-print.pdf 
 da.png 
 dacolorcrop.png
 dacolourful.png
 dacrop.png 
 # dawhite.png 
+dark-cover.png 
 data-pana-blue.png
 dawhiteback.png 
 excel.png 
+foto-sendiri-745x744.png 
+kelinci.png 
 me.jpg 
 office-amico.png 
 office-colourful.png 
 python.png 
 R.png 
+rabbit.png 
+rabbit-transformed.png 
 sql.png 
+server-amico.png 
+*.psd
+*.pptx

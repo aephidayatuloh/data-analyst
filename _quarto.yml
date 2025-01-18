@@ -6,16 +6,19 @@ project:
     browser: true
 
 book:
-  title: "Langkah Awal Menjadi Data Analyst"
-  subtitle: "Menguasai Statistika, Spreadsheet, SQL, Programming dan Visualisasi untuk Pemula"
+  title: "Menjadi Data Analyst"
+  subtitle: "Menguasai Statistika, Spreadsheet, SQL, Programming, dan Visualisasi untuk Pemula"
   author: 
-    - name: Aep Hidayatuloh
+    # - name: Dr. Bagus Sartono, M.Si
+    - name: Aep Hidayatuloh #, S.Stat
       # affiliations: StarCore Analytics
       email: aephidayatuloh.mail@gmail.com
   date: today
   date-format: D MMM YYYY
-  cover-image: cover.png
+  cover-image: book-cover-rabbit-front.png #dark-cover.png
   favicon: icon.png
+  sidebar:
+    collapse-level: 1
   chapters:
     - part: DAFTAR ISI
     - index.qmd
@@ -29,7 +32,7 @@ book:
         - text: "Metrik dalam Bisnis"
           file: metric.qmd 
     
-    - part: statistik.qmd
+    - part: st-statistik.qmd
       chapters: 
         - st-tipedata.qmd
         - st-dasarstats.qmd
@@ -39,14 +42,19 @@ book:
         - text: "Analisis Korelasi" 
           file: st-korelasi.qmd
         
-    - part: spreadsheet.qmd
+    - part: ss-spreadsheet.qmd
       chapters: 
         - ss-pengenalan.qmd
+        - ss-dataprep.qmd
+        - ss-formula-fungsi.qmd 
+        - ss-analisis-stat.qmd 
+        - ss-viz.qmd 
+        - ss-lain-lain.qmd 
         - ss-tabelformula.qmd
         - ss-pivot.qmd
         - ss-chart.qmd
     
-    - part: sql.qmd
+    - part: sql-sql.qmd
       chapters: 
         - sql-database.qmd
         - sql-select.qmd  # SELECT Clause
@@ -71,7 +79,7 @@ book:
         - visualisasi.qmd
         - storytelling.qmd
     
-    - part: proyek.qmd 
+    - part: pr-proyek.qmd 
       chapters: 
         - usecase1.qmd
         - usecase2.qmd
@@ -92,7 +100,10 @@ format:
     theme: cosmo
     df-print: tibble
     css: style.css
-    code-link: true
+    code-link: true 
+    toc-depth: 3 
+    toc-expand: false
+    section-divs: false
   docx:
     reference-doc: custom-reference-doc.docx
     toc: true
@@ -102,5 +113,7 @@ format:
   # pdf:
   #   documentclass: scrbook
 
-
+knitr: 
+  opts_chunk: 
+    comment: "#>" 
 

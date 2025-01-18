@@ -11,6 +11,7 @@ Alat atau _Tools_ yang akan sangat berguna dan biasanya digunakan dalam mengerja
 Tentu saja penulis menyadari bahwa tulisan ini hanya berdasarkan pengetahuan dan pengalaman yang diketahui oleh penulis, shingga masih banyak kekurangan dan perlu perbaikan dalam berbagai hal. Jika kamu ingin berkontribusi pada tulisan ini, kamu dapat menjadi kontributor pada repository GitHub <https://github.com/aephidayatuloh/data-analyst>. 
 
 ```{r}
+#| label: generate-tanggal
 #| include: false
 start_dt <- format(as.Date("2024-09-29"), "%d %B %Y")
 ```

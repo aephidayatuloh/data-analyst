@@ -1,0 +1,14 @@
+# Visualisasi Data  
+
+Visualisasi membantu meringkas data dan menyampaikan wawasan secara lebih efektif. Pembelajaran mencakup:  
+- **Pembuatan Grafik Dasar**  
+  Membuat grafik batang, garis, scatter plot, pie chart, dan kombinasi.  
+- **Conditional Formatting**  
+  Memberikan warna atau simbol tertentu pada cell berdasarkan kondisi untuk menyoroti pola atau anomali data.  
+- **Sparklines**  
+  Menampilkan tren dalam cell individu dengan grafik kecil seperti garis atau batang.  
+- **Diagram Lanjutan**  
+  Membuat waterfall chart, histogram, atau box plot untuk analisis statistik yang lebih mendalam.  
+
+---
+

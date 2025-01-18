@@ -1,5 +1,30 @@
 # Tentang Penulis {.unnumbered}
+<!-- 
+<p style="float:left;margin-right:1px;margin-bottom:5px;">
+  <img src="foto-sendiri-607x703.png" alt="Aep Hidayatuloh" style="width:30%;margin-right:0px;">
+</p>
 
 **Aep Hidayatuloh**
 
-Sejak lulus dari Program Sarjana Statistika di Institut Pertanian Bogor (IPB University), dia menempati beberapa posisi sebagai Data Analyst mulai dari level internship, junior, senior hingga Head of Data Analytics di beberapa perusahaan dan konsultan analisis data science. Sepanjang karirnya dia memiliki pengalaman luas terlibat di berbagai proyek analisis data di perbankan, telekomunikasi, instansi pemerintahan dan retail. Bahasa pemrograman R menjadi pilihan utama, Python sebagai bahasa pemrograman kedua dan juga kemampuan SAS. Dia mengajar di berbagai pelatihan, menjadi dosen tamu di beberapa universitas dan menjadi narasumber di berbagai webinar.
+Sejak lulus dari Program Sarjana Statistika di Institut Pertanian Bogor (IPB University), dia menempati beberapa posisi sebagai Data Analyst mulai dari level Internship, Junior, Senior Data Analyst, Head of Data Analytics, hingga sekarang menjadi Head of Artificial Intelligence di beberapa perusahaan dan konsultan analisis data science. Sepanjang karirnya dia memiliki pengalaman terlibat di berbagai proyek analisis data di perbankan, telekomunikasi, instansi pemerintahan dan retail. Bahasa pemrograman R menjadi pilihan utama, Python sebagai bahasa pemrograman kedua dan juga kemampuan SAS. Dia mengajar di berbagai pelatihan, menjadi dosen tamu di beberapa universitas dan menjadi narasumber di berbagai webinar. -->
+
+
+:::{.grid}
+<!-- ::: {.g-col-4}
+![](bagusco.png)
+:::
+::: {.g-col-8}
+**Dr. Bagus Sartono, M.Si**
+
+Saat ini dia berprofesi sebagai dosen di Program Studi Statistika dan Sains Data - IPB University. Selain memiliki kompetensi dari pendidikan formal hingga jenjang doktoral di bidang statistika, pengetahuan dan keterampilannya juga terbangun melalui keterlibatan dalam aktivitas kajian dan konsultasi di berbagai industri, baik di lembaga pemerintahan maupun perusahaan komersial. Bidang utama yang ditekuni adalah pemodelan statistika dan machine learning, terutama untuk keperluan prediksi. Bagus Sartono telah menulis puluhan artikel ilmiah dan beberapa buku bidang statistika dan sains data, serta menjadi instruktur pelatihan analitika data.
+::: -->
+
+::: {.g-col-4}
+![](foto-sendiri-607x703.png)
+:::
+::: {.g-col-8}
+**Aep Hidayatuloh, S.Stat**
+
+Saat ini dia menjadi Head of Artificial Intelligence di StarCore Analytics (PT Exorty Indonesia). Sejak lulus dari Program Sarjana Statistika di Institut Pertanian Bogor (IPB University), dia menempati beberapa posisi sebagai Data Analyst mulai dari level internship, junior, senior, hingga head di beberapa perusahaan dan konsultan analisis data science. Sepanjang karirnya dia memiliki pengalaman luas terlibat di berbagai proyek analisis data di perbankan, telekomunikasi, instansi pemerintahan dan retail. Bahasa pemrograman R menjadi pilihan utama, Python sebagai bahasa pemrograman kedua, dan juga kemampuan SAS Programming. Dia mengajar di berbagai pelatihan, menjadi dosen tamu di beberapa universitas dan menjadi narasumber di berbagai webinar.
+:::
+:::

@@ -135,7 +135,7 @@ Uji hipotesis dengan sebaran Normal ini mengasumsikan kita mengetahui bahwa seba
 
 Jika data berasal dari populasi yang tidak diketahui sebarannya atau ukuran sampel lebih kecil, gunakan uji _t_.
 
-## Uji Hipotesis dengan Sebaran t-Student  
+## Uji Hipotesis dengan Sebaran _t_-Student  
 
 Sebaran _t_-Student digunakan ketika ukuran sampel kecil dan varians populasi tidak diketahui. Biasanya digunakan untuk menguji rata-rata ketika data mengikuti sebaran Normal atau mendekati Normal, tetapi ukuran sampelnya terlalu kecil untuk menggunakan sebaran Normal. 
 

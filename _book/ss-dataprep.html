@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>12&nbsp; Pengelolaan dan Persiapan Data – Menjadi Data Analyst</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ss-formula-fungsi.html" rel="next">
+<link href="./ss-pengenalan.html" rel="prev">
+<link href="./icon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ss-spreadsheet.html">Bagian 3: Spreadsheet</a></li><li class="breadcrumb-item"><a href="./ss-dataprep.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pengelolaan dan Persiapan Data</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Menjadi Data Analyst</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">DAFTAR ISI</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengantar</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./dasar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 1: Dasar Data Analytics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./polapikir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Pola Pikir Data Analyst</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fondasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fondasi Data Analytics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./keuntungan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Keuntungan Data Analyst</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./metric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Metrik dalam Bisnis</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./st-statistik.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 2: Statistika</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-tipedata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Mengenal Tipe Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-dasarstats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Statistika Dasar</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-eksplorasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Eksplorasi dan Visualisasi</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-sebaran.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sebaran Peubah Acak</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-ujihipotesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uji Hipotesis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./st-korelasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Analisis Korelasi</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./ss-spreadsheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 3: Spreadsheet</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-pengenalan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Pengenalan Spreadsheet</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-dataprep.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pengelolaan dan Persiapan Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-formula-fungsi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Formula dan Fungsi</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-analisis-stat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Analisis Statistik</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-viz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Visualisasi Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-lain-lain.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Lain-lain</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-tabelformula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tabel dan Formula</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-pivot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pivot Tabel</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ss-chart.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Visualisasi Chart</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./sql-sql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 4: SQL</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-database.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Database</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-select.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">SELECT Clause</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-filter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Filtering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-order.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sorting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sql-join.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Join Tabel</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 5: Programming</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r-programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Dasar R Programming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r-ifloop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Alur Kendali</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r-importexport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Memperoleh Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r-eksplor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Eksplorasi Data</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./komunikasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 6: Komunikasi</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./visualisasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Panduan Visualisasi</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./storytelling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Storytelling</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./pr-proyek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 7: Proyek</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./usecase1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Contoh Use Case 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./usecase2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Contoh Use Case 2</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./tips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bagian 8: Mencari Pekerjaan</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./portofolio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Membangun Portofolio</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./jobseek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Tips Mencari Pekerjaan</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pustaka.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pustaka</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./penulis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tentang Penulis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./penutup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Penutup</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="-1">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#memahami-struktur-data" id="toc-memahami-struktur-data" class="nav-link active" data-scroll-target="#memahami-struktur-data"><span class="header-section-number">12.1</span> Memahami Struktur Data</a></li>
+  <li><a href="#memformat-data-sebagai-tabel" id="toc-memformat-data-sebagai-tabel" class="nav-link" data-scroll-target="#memformat-data-sebagai-tabel"><span class="header-section-number">12.2</span> Memformat Data Sebagai Tabel</a></li>
+  <li><a href="#membersihkan-data-data-cleaning" id="toc-membersihkan-data-data-cleaning" class="nav-link" data-scroll-target="#membersihkan-data-data-cleaning"><span class="header-section-number">12.3</span> Membersihkan Data (Data Cleaning)</a></li>
+  <li><a href="#validasi-data" id="toc-validasi-data" class="nav-link" data-scroll-target="#validasi-data"><span class="header-section-number">12.4</span> Validasi Data</a></li>
+  <li><a href="#mengelompokkan-dan-mengelola-data" id="toc-mengelompokkan-dan-mengelola-data" class="nav-link" data-scroll-target="#mengelompokkan-dan-mengelola-data"><span class="header-section-number">12.5</span> Mengelompokkan dan Mengelola Data</a></li>
+  <li><a href="#menangani-dataset-besar" id="toc-menangani-dataset-besar" class="nav-link" data-scroll-target="#menangani-dataset-besar"><span class="header-section-number">12.6</span> Menangani Dataset Besar</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ss-spreadsheet.html">Bagian 3: Spreadsheet</a></li><li class="breadcrumb-item"><a href="./ss-dataprep.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pengelolaan dan Persiapan Data</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pengelolaan dan Persiapan Data</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Pengelolaan dan persiapan data merupakan langkah awal yang sangat penting dalam proses analisis data. Tahap ini memastikan bahwa data yang digunakan bersih, terorganisasi, dan siap untuk dianalisis. Excel menyediakan berbagai fitur dan alat yang mempermudah pekerjaan ini. Berikut adalah cakupan lengkap pengelolaan dan persiapan data dengan Excel:</p>
+<ul>
+<li><strong>Table dan Formating</strong><br>
+Membuat data tabular sebagai Table dan memberi nama.<br>
+</li>
+<li><strong>Sorting dan Filtering Data</strong><br>
+Mengurutkan data berdasarkan kriteria tertentu dan menyaring data untuk fokus pada subset yang relevan.<br>
+</li>
+<li><strong>Data Cleaning</strong><br>
+Membersihkan data dengan fitur seperti:
+<ul>
+<li><em>Remove Duplicates</em> untuk menghapus data duplikat.<br>
+</li>
+<li><em>Text to Columns</em> untuk memisahkan data dalam satu cell menjadi beberapa kolom.<br>
+</li>
+<li><em>Find and Replace</em> untuk memperbaiki data secara massal.<br>
+</li>
+</ul></li>
+<li><strong>Data Validation</strong><br>
+Mencegah kesalahan input dengan membuat aturan validasi untuk data.</li>
+</ul>
+<hr>
+<!-- # Pengelolaan dan Persiapan Data   -->
+<p>Pengelolaan dan Persiapan Data dengan Excel</p>
+<p>Sebagai seorang data analyst, salah satu keterampilan dasar yang harus dikuasai adalah pengelolaan dan persiapan data. Microsoft Excel, meskipun sering dianggap sebagai alat sederhana, memiliki kemampuan yang luar biasa untuk membantu kita dalam tahap awal pengolahan data. Dengan antarmuka yang intuitif dan fitur-fitur yang beragam, Excel menjadi teman setia bagi banyak data analyst, terutama saat bekerja dengan dataset kecil hingga menengah.</p>
+<p>Ketika berbicara tentang pengelolaan data di Excel, hal pertama yang perlu kita pahami adalah bagaimana data itu diorganisasi. Bayangkan Anda menerima file berisi data transaksi penjualan dari toko-toko di seluruh Indonesia. Data ini mungkin berisi informasi seperti tanggal transaksi, nama produk, jumlah unit terjual, harga satuan, dan total pendapatan. Namun, sering kali data yang Anda terima tidak rapi. Ada kolom yang kosong, format tanggal yang berantakan, atau bahkan duplikasi data. Di sinilah Excel mulai menunjukkan kegunaannya.</p>
+<p>Langkah pertama yang biasanya dilakukan adalah membersihkan data. Fitur seperti “Find and Replace” bisa membantu Anda menghilangkan karakter yang tidak diinginkan, misalnya spasi tambahan atau tanda baca yang salah. Anda juga bisa menggunakan “Remove Duplicates” untuk memastikan bahwa tidak ada data yang terduplikasi, yang sangat penting ketika Anda menganalisis data penjualan atau pelanggan. Jika terdapat sel kosong dalam kolom yang penting, Anda dapat mengisinya dengan menggunakan logika tertentu atau bahkan memanfaatkan fitur “Go To Special” untuk menemukan sel kosong dan mengisinya secara massal.</p>
+<p>Setelah data bersih, langkah berikutnya adalah mempersiapkan data agar mudah dianalisis. Salah satu cara termudah adalah dengan mengubah data mentah menjadi tabel. Dalam Excel, Anda hanya perlu memilih data Anda dan menekan shortcut Ctrl+T untuk membuat tabel. Fitur tabel ini tidak hanya membuat data terlihat lebih rapi, tetapi juga memberi Anda akses ke filter dan fitur pengelompokan data secara langsung. Misalnya, Anda bisa memfilter transaksi hanya untuk bulan tertentu atau mengelompokkan data berdasarkan kategori produk.</p>
+<p>Selain itu, Excel memiliki kemampuan untuk melakukan transformasi data sederhana. Misalnya, Anda ingin menghitung total pendapatan per bulan. Dengan menggunakan fungsi seperti <code>SUMIF</code> atau <strong>PIVOT TABLE</strong>, Anda dapat merangkum data tersebut dalam hitungan detik. <strong>PIVOT TABLE</strong> adalah salah satu fitur favorit data analyst karena memungkinkan kita untuk melihat pola dan tren dalam data tanpa perlu menulis rumus yang rumit. Anda bisa menyeret kolom tanggal ke bagian baris dan kolom total pendapatan ke bagian nilai, lalu dengan mudah melihat bagaimana pendapatan berubah setiap bulan.</p>
+<p>Contoh lain yang sering ditemui adalah ketika format data tidak konsisten. Misalnya, nama kota dalam dataset ada yang ditulis “Jakarta” dan ada yang “JKT”. Anda bisa menggunakan fungsi seperti <code>FIND</code>, <code>REPLACE</code>, atau bahkan formula logis seperti <code>IF</code> dan <code>VLOOKUP</code> untuk menstandarkan format data ini. Dengan sedikit kreativitas, Excel memungkinkan Anda melakukan banyak hal tanpa memerlukan perangkat lunak yang lebih kompleks.</p>
+<p>Pengelolaan dan persiapan data di Excel mungkin terlihat sederhana, tetapi ini adalah langkah fundamental yang menentukan keberhasilan analisis data Anda. Data yang bersih dan terorganisasi dengan baik akan mempermudah proses analisis lebih lanjut, baik itu di Excel sendiri maupun di tools lain seperti Python atau R. Jadi, meskipun Excel bukanlah satu-satunya alat dalam perjalanan karier Anda sebagai data analyst, memahaminya dengan baik akan memberi Anda fondasi yang kuat untuk melangkah lebih jauh.</p>
+<h2 data-number="12.1" id="memahami-struktur-data" class="anchored"><span class="header-section-number">12.1</span> Memahami Struktur Data</h2>
+<p>Sebelum memulai pengolahan data, seorang data analyst harus memahami struktur data yang dimiliki. Secara umum, data dalam Excel disusun dalam bentuk tabel dengan karakteristik berikut:<br>
+- <strong>Data Tersusun dalam Kolom dan Baris</strong><br>
+Setiap kolom dalam tabel mewakili variabel, sementara setiap baris merepresentasikan observasi. Penting untuk memastikan tidak ada kolom atau baris kosong di dalam dataset karena hal tersebut dapat memengaruhi formula dan analisis data.<br>
+- <strong>Header yang Jelas</strong><br>
+Kolom data sebaiknya memiliki header yang mendeskripsikan isi data. Gunakan nama header yang deskriptif dan hindari nama yang ambigu, seperti “Kolom1” atau “Data”.</p>
+<p>Memahami struktur data yang benar menjadi fondasi untuk analisis yang sukses. Dataset yang terorganisasi dengan baik akan mempermudah proses pengelolaan, analisis, dan interpretasi data.</p>
+<hr>
+<h2 data-number="12.2" id="memformat-data-sebagai-tabel" class="anchored"><span class="header-section-number">12.2</span> Memformat Data Sebagai Tabel</h2>
+<p>Fitur <strong>Format as Table</strong> adalah salah satu fitur terpenting dalam Excel untuk mengelola dataset. Fitur ini mengubah dataset menjadi tabel yang dinamis dan memberikan berbagai keuntungan dalam pengelolaan data.</p>
+<ul>
+<li><strong>Cara Memformat Data Sebagai Tabel</strong>
+<ol type="1">
+<li>Pilih seluruh dataset, termasuk header.<br>
+</li>
+<li>Klik menu <strong>Home</strong>, kemudian pilih <strong>Format as Table</strong>.<br>
+</li>
+<li>Pilih salah satu desain tabel yang tersedia.<br>
+</li>
+<li>Jika dataset memiliki header, centang opsi <em>My Table Has Headers</em>.</li>
+</ol></li>
+<li><strong>Keuntungan Memformat Data Sebagai Tabel</strong>
+<ol type="1">
+<li><strong>Dinamis:</strong> Tabel akan otomatis meluas saat Anda menambahkan baris atau kolom baru.<br>
+</li>
+<li><strong>Filter dan Sort Otomatis:</strong> Filter dan pengurutan data tersedia secara langsung.<br>
+</li>
+<li><strong>Structured References:</strong> Formula dalam tabel menggunakan referensi terstruktur, seperti <code>Table1[Column Name]</code>, sehingga lebih mudah dipahami dan tidak rentan terhadap kesalahan.<br>
+</li>
+<li><strong>Integrasi dengan Pivot Table dan Grafik:</strong> Data dalam tabel lebih mudah digunakan untuk Pivot Table, grafik, dan fitur analisis lainnya.</li>
+</ol></li>
+</ul>
+<p>Dengan menggunakan format tabel, data menjadi lebih terstruktur dan fleksibel, yang sangat membantu dalam analisis data skala besar.</p>
+<hr>
+<h2 data-number="12.3" id="membersihkan-data-data-cleaning" class="anchored"><span class="header-section-number">12.3</span> Membersihkan Data (Data Cleaning)</h2>
+<p>Data yang digunakan untuk analisis sering kali memiliki berbagai masalah, seperti duplikasi, format yang tidak konsisten, atau nilai kosong (<em>blanks</em>) . Membersihkan data adalah langkah penting untuk memastikan keakuratan analisis.</p>
+<ul>
+<li><strong>Menghapus Duplikasi (Remove Duplicates)</strong><br>
+Excel menyediakan fitur untuk menghapus data duplikat dalam satu atau beberapa kolom.
+<ul>
+<li>Langkah: Pilih dataset, lalu buka <strong>Data &gt; Remove Duplicates</strong>.<br>
+</li>
+<li>Centang kolom yang ingin diperiksa untuk duplikasi, lalu klik <em>OK</em>.</li>
+</ul></li>
+<li><strong>Memisahkan Data dengan Text to Columns</strong><br>
+Fitur ini digunakan untuk memisahkan data yang digabungkan dalam satu kolom menjadi beberapa kolom.
+<ul>
+<li>Contoh: Memisahkan “Nama Depan Nama Belakang” menjadi dua kolom.<br>
+</li>
+<li>Langkah: Pilih kolom, lalu buka <strong>Data &gt; Text to Columns</strong>, dan ikuti panduan.</li>
+</ul></li>
+<li><strong>Menggunakan Find and Replace</strong><br>
+Fitur ini memungkinkan Anda mencari nilai tertentu dalam dataset dan menggantinya dengan nilai lain.
+<ul>
+<li>Langkah: Tekan <strong>Ctrl + H</strong> atau buka <strong>Home &gt; Find &amp; Select &gt; Replace</strong>.<br>
+</li>
+<li>Masukkan teks yang ingin dicari dan teks penggantinya, lalu klik <em>Replace All</em>.</li>
+</ul></li>
+<li><strong>Menghapus Spasi Berlebih dengan TRIM</strong><br>
+Fungsi <code>TRIM</code> digunakan untuk menghapus spasi tambahan di sekitar teks.
+<ul>
+<li>Contoh: <code>=TRIM(A2)</code> akan menghapus spasi berlebih pada teks di cell A2.</li>
+</ul></li>
+<li><strong>Menangani Nilai Kosong (Missing Values)</strong>
+<ul>
+<li>Identifikasi nilai kosong dengan fitur <strong>Go To Special</strong> (Ctrl + G &gt; Special &gt; Blanks).<br>
+</li>
+<li>Isi nilai kosong dengan metode tertentu, seperti rata-rata kolom atau nilai default.</li>
+</ul></li>
+</ul>
+<p>Pembersihan data adalah langkah yang membutuhkan perhatian terhadap detail. Data yang bersih akan meningkatkan kualitas analisis dan menghasilkan wawasan yang lebih akurat.</p>
+<hr>
+<h2 data-number="12.4" id="validasi-data" class="anchored"><span class="header-section-number">12.4</span> Validasi Data</h2>
+<p>Validasi data adalah proses memastikan bahwa data yang dimasukkan sesuai dengan aturan yang telah ditentukan. Excel menyediakan fitur <em>Data Validation</em> untuk membantu proses ini.</p>
+<ul>
+<li><strong>Menggunakan Data Validation</strong>
+<ul>
+<li>Langkah: Pilih cell atau kolom yang ingin divalidasi, lalu buka <strong>Data &gt; Data Validation</strong>.<br>
+</li>
+<li>Atur aturan validasi, seperti rentang angka, panjang teks, atau daftar pilihan tertentu.</li>
+</ul></li>
+<li><strong>Membuat Drop-Down List</strong>
+<ul>
+<li>Fitur ini memungkinkan pengguna memilih data dari daftar yang telah ditentukan.<br>
+</li>
+<li>Langkah: Gunakan menu <em>Data Validation</em> dan pilih <em>List</em>. Masukkan daftar nilai yang diinginkan.</li>
+</ul></li>
+</ul>
+<p>Validasi data membantu mencegah kesalahan input, seperti memasukkan teks dalam kolom yang seharusnya berisi angka, sehingga data tetap konsisten dan sesuai standar.</p>
+<hr>
+<h2 data-number="12.5" id="mengelompokkan-dan-mengelola-data" class="anchored"><span class="header-section-number">12.5</span> Mengelompokkan dan Mengelola Data</h2>
+<p>Setelah data siap, fitur pengelompokan dan pengelolaan dapat digunakan untuk menganalisis dataset lebih lanjut.</p>
+<ul>
+<li><strong>Sort dan Filter</strong>
+<ul>
+<li>Fitur ini mempermudah pengurutan data berdasarkan kolom tertentu atau memfilter data berdasarkan kriteria tertentu.<br>
+</li>
+<li>Langkah: Pilih dataset, lalu gunakan menu <strong>Data &gt; Sort &amp; Filter</strong>.</li>
+</ul></li>
+<li><strong>Conditional Formatting</strong>
+<ul>
+<li>Fitur ini menyoroti data berdasarkan aturan tertentu, seperti nilai di atas rata-rata atau data yang mendekati tenggat waktu.<br>
+</li>
+<li>Langkah: Gunakan menu <strong>Home &gt; Conditional Formatting</strong> dan pilih aturan yang diinginkan.</li>
+</ul></li>
+<li><strong>Grouping dan Subtotal</strong>
+<ul>
+<li>Data dapat dikelompokkan berdasarkan kategori tertentu untuk menghitung subtotal atau membuat analisis yang lebih fokus.<br>
+</li>
+<li>Langkah: Pilih data, lalu buka <strong>Data &gt; Subtotal</strong> atau gunakan fitur <em>Group</em>.</li>
+</ul></li>
+</ul>
+<hr>
+<h2 data-number="12.6" id="menangani-dataset-besar" class="anchored"><span class="header-section-number">12.6</span> Menangani Dataset Besar</h2>
+<p>Ketika bekerja dengan dataset yang besar, Excel menawarkan beberapa trik untuk menjaga kinerja dan kecepatan analisis:<br>
+- <strong>Gunakan Format Tabel:</strong> Format tabel membantu membuat dataset lebih dinamis dan mengurangi kesalahan referensi.<br>
+- <strong>Hindari Formula yang Volatile:</strong> Formula seperti <code>NOW()</code> atau <code>OFFSET()</code> dapat memperlambat Excel jika digunakan pada dataset besar.<br>
+- <strong>Filter Data Secara Selektif:</strong> Gunakan filter atau slicer untuk melihat subset data tanpa memuat semuanya sekaligus.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ss-pengenalan.html" class="pagination-link" aria-label="Pengenalan Spreadsheet">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Pengenalan Spreadsheet</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ss-formula-fungsi.html" class="pagination-link" aria-label="Formula dan Fungsi">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Formula dan Fungsi</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,4 @@
+# Bagian 4: SQL 
+
+![](Server-status-rafiki.png){fig-align="center"}
+

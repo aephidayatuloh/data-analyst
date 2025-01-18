@@ -1,1 +1,13 @@
 # Pivot Tabel
+
+# Penggunaan Pivot Table untuk Analisis Data
+Pivot Table adalah alat yang sangat berguna untuk eksplorasi data:  
+- **Pengelompokan dan Penyaringan Data**  
+  Mengelompokkan data berdasarkan kategori atau waktu.  
+- **Menghitung Agregasi**  
+  Menggunakan fungsi seperti sum, average, count, dan lainnya langsung di Pivot Table.  
+- **Membuat Pivot Chart**  
+  Menghasilkan visualisasi dari Pivot Table untuk mendukung analisis.
+
+---
+

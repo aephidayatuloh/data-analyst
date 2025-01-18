@@ -1,1 +1,3 @@
 # Bagian 6: Komunikasi 
+
+![](Conference-cuate.png){fig-align="center"}

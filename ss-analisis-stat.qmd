@@ -1,0 +1,12 @@
+# Analisis Statistik  
+
+Fitur Excel yang dapat digunakan untuk analisis statistik mencakup:  
+- **Descriptive Statistics**  
+  Memanfaatkan fungsi bawaan atau *Analysis ToolPak* untuk mendapatkan ringkasan statistik, seperti mean, median, modus, variansi, dan standar deviasi.  
+- **Analisis Korelasi dan Regresi**  
+  Menggunakan *Data Analysis ToolPak* untuk menghitung korelasi antar variabel dan membuat model regresi sederhana.  
+- **Distribusi Data**  
+  Membuat histogram menggunakan fungsi bawaan atau *Pivot Table* untuk menganalisis distribusi data.  
+
+---
+

@@ -1,0 +1,21 @@
+# Lain-lain  
+
+### Analisis Lanjutan dan Prediktif
+Excel juga mendukung analisis lanjutan, seperti:  
+- **What-If Analysis**  
+  Menggunakan fitur seperti *Goal Seek*, *Scenario Manager*, dan *Data Table* untuk eksplorasi skenario dan prediksi.  
+- **Solver**  
+  Menyelesaikan masalah optimasi, seperti mencari nilai optimal dari parameter tertentu.  
+- **Trend Analysis**  
+  Menambahkan garis tren pada grafik untuk mempelajari pola data historis.  
+
+---
+
+### Automasi dan Efisiensi Kerja  
+Untuk meningkatkan efisiensi pekerjaan, penting juga mempelajari:  
+- **Shortcut Keyboard**  
+  Mempercepat navigasi dan penggunaan fitur Excel dengan pintasan keyboard.  
+- **Template Excel**  
+  Membuat template yang dapat digunakan kembali untuk laporan analisis atau visualisasi data yang berulang.  
+- **Makro dan VBA (Opsional)**  
+  Merekam makro sederhana atau menggunakan Visual Basic for Applications (VBA) untuk mengotomasi tugas rutin.  

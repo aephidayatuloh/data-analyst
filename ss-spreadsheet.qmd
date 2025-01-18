@@ -1,0 +1,7 @@
+# Bagian 3: Spreadsheet
+
+![](Spreadsheets-pana.png){fig-align="center"}
+
+Spreadsheet atau yang lebih sering disebut Excel merupakan alat utama yang biasanya digunakan dan harus dikuasai oleh seorang data analyst. Oleh karena itu, sangat penting untuk menguasai fitur-fitur dari software ini. Anda bisa menggunakan Microsoft Excel atau Google Sheet untuk melakukan pekerjaan Anda. Saat ini sudah banyak yang menggunakan Google Sheet sebagai alternatif bagi Microsoft Excel. Fitur yang ditawarkan oleh Google Sheet untuk mengerjakan analisis data bisa dibilang sudah mencukupi seperti membuat pivot table dan chart. 
+
+Excel biasanya digunakan untuk menyimpan data berupa data tabular atau pekerjaan yang menggunakan formula/fungsi. Data ini bisa disimpan dalam format \*.xlsx atau \*.csv. Pada bagian ini kita akan mempelajari Excel dari dasar. Mulai dari pengenalan tampilan antar muka (_interface_) hingga membuat visualisasi menggunakan chart.
